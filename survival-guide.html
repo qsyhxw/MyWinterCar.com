@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Survival Guide | How to Survive Your First Days - mywintercar.com</title>
+    <meta name="description" content="Master My Winter Car survival mechanics: body temperature, hypothermia prevention, hunger management, permadeath strategies, and essential first-day tips for 1999 Finnish winter.">
+    <link rel="canonical" href="https://mywintercar.com/survival-guide">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(125, 211, 252, 0.15), rgba(26, 29, 35, 0.95)),
+                        url('https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=1600&q=80') center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-ice), white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 40px rgba(125, 211, 252, 0.3);
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(125, 211, 252, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .survival-stat {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .stat-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+        }
+
+        .stat-info h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-critical {
+            color: var(--danger-red);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .temp-bar {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to right, #3b82f6 0%, #a855f7 50%, #ef4444 100%);
+            border-radius: 8px;
+            margin: 1rem 0;
+            position: relative;
+            border: 2px solid var(--border-color);
+        }
+
+        .temp-label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .temp-label.cold {
+            left: 10px;
+        }
+
+        .temp-label.neutral {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .temp-label.hot {
+            right: 10px;
+        }
+
+        .checklist {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .checklist-item {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-blue);
+        }
+
+        .checklist-item.critical {
+            border-left-color: var(--danger-red);
+        }
+
+        .step {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: var(--bg-card);
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .death-cause {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger-red);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .death-cause h4 {
+            color: var(--danger-red);
+            margin-bottom: 0.5rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/guides">Guides</a> / Winter Survival
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Winter Survival Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Master the Harsh Finnish Winter & Avoid Permadeath</p>
+        <div class="hero-meta">
+            <div class="meta-item">❄️ Location: Finland, 1999 Winter</div>
+            <div class="meta-item">💀 Permadeath: Enabled</div>
+            <div class="meta-item">⏱️ Read Time: 20 min</div>
+            <div class="meta-item">🎮 Difficulty: Very Hard</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. Survival Overview & Core Mechanics</a></li>
+                <li><a href="#temperature">2. Body Temperature System</a></li>
+                <li><a href="#clothing">3. Clothing Strategy & Management</a></li>
+                <li><a href="#hunger-fatigue">4. Hunger & Fatigue Systems</a></li>
+                <li><a href="#first-hour">5. Your First Hour - Critical Actions</a></li>
+                <li><a href="#common-deaths">6. Common Death Scenarios & Prevention</a></li>
+                <li><a href="#housing">7. Housing Choice Strategy</a></li>
+                <li><a href="#daily-routine">8. Sustainable Daily Routine</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box danger">
+            <div class="info-box-title">🚨 CRITICAL: This Game is HARD</div>
+            <p><strong>Developer Warning:</strong> "This game is for players who already master the challenge of My Summer Car. Definitely not recommended for any player not familiar with the original installment."</p>
+            <p style="margin-top: 0.5rem;">My Winter Car features <strong>permadeath</strong>. When you die, your save is deleted. There is no second chance. Read this guide carefully before starting.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. Survival Overview & Core Mechanics</h2>
+            
+            <p>My Winter Car is set in <span class="highlight">rural Finland, Winter 1999</span>. Unlike My Summer Car's manageable summer conditions, winter introduces life-threatening survival mechanics that can kill you in minutes if mismanaged.</p>
+
+            <h3>The Six Survival Stats</h3>
+            <p>You must constantly monitor and manage:</p>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">🌡️</div>
+                    <div class="stat-info">
+                        <h4>Body Temperature</h4>
+                        <span class="stat-critical">CRITICAL - Death in 10-15 minutes</span>
+                    </div>
+                </div>
+                <p>Your core body temperature. Dropping too low causes hypothermia and death. The most dangerous stat in the game.</p>
+            </div>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">🍖</div>
+                    <div class="stat-info">
+                        <h4>Hunger</h4>
+                        <span class="stat-critical">FATAL - Starvation</span>
+                    </div>
+                </div>
+                <p>Must eat regularly. Food available at Teimo's shop or Pub Nappo. Moose meat also provides sustenance.</p>
+            </div>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">😴</div>
+                    <div class="stat-info">
+                        <h4>Fatigue</h4>
+                        <span class="stat-critical">FATAL - Blackouts while driving</span>
+                    </div>
+                </div>
+                <p>Sleep requirement. Over-fatigue causes blackouts that shake your view - deadly while driving.</p>
+            </div>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">😰</div>
+                    <div class="stat-info">
+                        <h4>Stress</h4>
+                        <span class="stat-critical">FATAL - Heart attack/breakdown</span>
+                    </div>
+                </div>
+                <p>Increases from failures (inspection fail, traffic tickets). Too much stress kills. Lower with alcohol, driving fast (120+ km/h), sauna, or chopping firewood.</p>
+            </div>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">💧</div>
+                    <div class="stat-info">
+                        <h4>Problem Bar (NEW)</h4>
+                        <span class="stat-critical">NEW MECHANIC - Substance dependency</span>
+                    </div>
+                </div>
+                <p>New to MWC. Related to alcohol/substance use. Fills over time. Alcohol lowers it but creates dependency cycle.</p>
+            </div>
+
+            <div class="survival-stat">
+                <div class="stat-header">
+                    <div class="stat-icon">💦</div>
+                    <div class="stat-info">
+                        <h4>Sweat</h4>
+                        <span class="stat-critical">DANGEROUS - Accelerates hypothermia</span>
+                    </div>
+                </div>
+                <p>Occurs when too hot (heavy clothes indoors, exercising). Wet clothing loses insulation, causing rapid temperature drop.</p>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Permadeath Mode</div>
+                <p>Permadeath functions identically to My Summer Car:</p>
+                <ul>
+                    <li><strong>Optional:</strong> Can be toggled off in settings</li>
+                    <li><strong>When enabled:</strong> Any death deletes your entire save file</li>
+                    <li><strong>No autosaves:</strong> Manual save by sleeping (skips 1 hour, not 2 like MSC)</li>
+                    <li><strong>Recommended:</strong> Keep permadeath OFF until you master survival mechanics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="temperature" class="content-section">
+            <h2>2. Body Temperature System</h2>
+            
+            <p>The temperature system is MWC's most complex and deadly mechanic. Understanding it is essential for survival.</p>
+
+            <h3>Temperature Bar Explained</h3>
+            <div class="temp-bar">
+                <span class="temp-label cold">BLUE = Cold (-30°C)</span>
+                <span class="temp-label neutral">PURPLE = Neutral</span>
+                <span class="temp-label hot">RED = Warm (+15°C)</span>
+            </div>
+
+            <p><strong>Color Meaning:</strong> The bar's color represents <em>environmental temperature</em> you're currently in, NOT your body temperature.</p>
+            <p><strong>Bar Fullness:</strong> How full the bar is shows your body temperature "reserve":</p>
+            <ul>
+                <li><strong>Full bar:</strong> You start sweating (dangerous!)</li>
+                <li><strong>Half bar:</strong> Optimal temperature</li>
+                <li><strong>Empty bar:</strong> Cold shivers begin, hypothermia imminent</li>
+            </ul>
+
+            <div class="info-box danger">
+                <div class="info-box-title">💀 Hypothermia Death Timer</div>
+                <p><strong>Developer Confirmed:</strong> In worst-case scenario (freezing weather + inadequate clothing), you will die from hypothermia in <span class="highlight">10-15 real-time minutes</span>.</p>
+                <p>This is FAST. Always monitor your temperature bar outdoors.</p>
+            </div>
+
+            <h3>Temperature Factors</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Factor</th>
+                    <th>Effect</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td><strong>Ambient Temperature</strong></td>
+                    <td>-30°C to +15°C</td>
+                    <td>Most important factor</td>
+                </tr>
+                <tr>
+                    <td><strong>Clothing</strong></td>
+                    <td>Insulation value</td>
+                    <td>See clothing section below</td>
+                </tr>
+                <tr>
+                    <td><strong>Exercise</strong></td>
+                    <td>Increases body heat</td>
+                    <td>Running, working causes sweat</td>
+                </tr>
+                <tr>
+                    <td><strong>Vehicle Heater</strong></td>
+                    <td>+warmth when driving</td>
+                    <td>Sorbett has heater controls</td>
+                </tr>
+                <tr>
+                    <td><strong>Indoor Heating</strong></td>
+                    <td>Radiators provide warmth</td>
+                    <td>Set to 30°C for sleeping</td>
+                </tr>
+                <tr>
+                    <td><strong>Body Weight</strong></td>
+                    <td>Affects sweat rate</td>
+                    <td>Heavier = sweat more easily</td>
+                </tr>
+            </table>
+
+            <h3>The Deadly Sweat Mechanic</h3>
+            <p>Developer Quote: <em>"Getting too warm starts to turn into sweating, and that begins to decrease body temperature at faster rate."</em></p>
+
+            <div class="death-cause">
+                <h4>⚠️ Death Scenario: Sweat-Induced Hypothermia</h4>
+                <p><strong>Common mistake:</strong> Player wears heavy coverall indoors (heated apartment/garage)</p>
+                <ol>
+                    <li>Indoor heat + heavy clothing = temperature bar fills</li>
+                    <li>Player starts sweating</li>
+                    <li>Player goes outside still wearing wet coverall</li>
+                    <li>Wet clothing loses ALL insulation value</li>
+                    <li>Body temperature drops rapidly</li>
+                    <li><strong>Result:</strong> Death from hypothermia in &lt;10 minutes</li>
+                </ol>
+                <p><strong>Prevention:</strong> Remove heavy clothing before entering warm areas. Change into indoor clothes.</p>
+            </div>
+        </section>
+
+        <section id="clothing" class="content-section">
+            <h2>3. Clothing Strategy & Management</h2>
+            
+            <p>You start the game with three clothing sets. Choose wisely based on activity and location.</p>
+
+            <h3>Clothing Types</h3>
+
+            <div class="step">
+                <div class="step-title">🏠 Indoor Clothing (Light)</div>
+                <p><strong>Use when:</strong> Inside heated buildings (apartment, parents' house, Teimo's shop)</p>
+                <p><strong>Properties:</strong></p>
+                <ul>
+                    <li>Minimal insulation</li>
+                    <li>Prevents overheating indoors</li>
+                    <li>No sweat risk in heated spaces</li>
+                    <li><strong>WARNING:</strong> Will cause hypothermia outdoors in seconds</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🧥 Jacket (Medium)</div>
+                <p><strong>Use when:</strong> Light outdoor work, driving with heater, active movement</p>
+                <p><strong>Properties:</strong></p>
+                <ul>
+                    <li>Moderate insulation</li>
+                    <li><strong>Better sweat management</strong> - less likely to sweat during activity</li>
+                    <li>Good for temperatures -5°C to -20°C</li>
+                    <li>Recommended for car work in garage</li>
+                </ul>
+                <p><strong>Player Confirmed:</strong> "The jacket does a better job at reducing sweat but isn't as good for insulation."</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🦺 Coverall (Heavy)</div>
+                <p><strong>Use when:</strong> Extreme cold, standing still outdoors, minimal movement</p>
+                <p><strong>Properties:</strong></p>
+                <ul>
+                    <li>Maximum insulation</li>
+                    <li>Keeps body temperature stable</li>
+                    <li><strong>High sweat risk</strong> - any activity causes rapid sweating</li>
+                    <li>Essential for -25°C and below</li>
+                    <li><strong>DANGER:</strong> Remove before entering heated spaces</li>
+                </ul>
+                <p><strong>Player Confirmed:</strong> "A coverall keeps body temperature more stable, but with any physical activity or heat, sweat builds up quickly, reducing its insulation down to nothing."</p>
+            </div>
+
+            <h3>Clothing Management Tips</h3>
+            <div class="checklist">
+                <div class="checklist-item critical">
+                    <strong>✓ ALWAYS remove heavy clothing before entering heated buildings</strong><br>
+                    <small>Sweating indoors then going outside = death sentence</small>
+                </div>
+                <div class="checklist-item">
+                    <strong>✓ Keep extra clothing sets in vehicles</strong><br>
+                    <small>Allows quick changes based on situation</small>
+                </div>
+                <div class="checklist-item">
+                    <strong>✓ Use jacket for most daytime activities</strong><br>
+                    <small>Best balance of warmth and sweat control</small>
+                </div>
+                <div class="checklist-item">
+                    <strong>✓ Switch to coverall only in extreme cold</strong><br>
+                    <small>Below -20°C or when standing still outdoors</small>
+                </div>
+                <div class="checklist-item">
+                    <strong>✓ Monitor temperature bar constantly</strong><br>
+                    <small>If bar filling = remove clothing before sweating starts</small>
+                </div>
+            </div>
+
+            <h3>How to Change Clothing</h3>
+            <ul>
+                <li><strong>Equip:</strong> Look at clothing set on ground, press F</li>
+                <li><strong>Remove:</strong> Look straight down, press F</li>
+                <li><strong>Location:</strong> Can change anywhere, including inside vehicles</li>
+                <li><strong>Storage:</strong> Clothing sets are physical items - can be carried and placed</li>
+            </ul>
+
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=800&q=80" alt="Winter clothing layering example">
+                <div class="image-caption">Proper winter clothing management is the difference between life and death</div>
+            </div>
+        </section>
+
+        <section id="hunger-fatigue" class="content-section">
+            <h2>4. Hunger & Fatigue Systems</h2>
+            
+            <h3>Hunger Mechanic</h3>
+            <p>Hunger will slowly kill you if not addressed. Food sources are limited compared to MSC.</p>
+
+            <h4>Food Sources</h4>
+            <table class="specs-table">
+                <tr>
+                    <th>Source</th>
+                    <th>Availability</th>
+                    <th>Cost</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td><strong>Teimo's Shop (PSK)</strong></td>
+                    <td>Daily</td>
+                    <td>Varies</td>
+                    <td>Primary food source - stock up!</td>
+                </tr>
+                <tr>
+                    <td><strong>Pub Nappo</strong></td>
+                    <td>When Teimo closed</td>
+                    <td>~30-50mk</td>
+                    <td>Sausage with fries available</td>
+                </tr>
+                <tr>
+                    <td><strong>Moose Meat</strong></td>
+                    <td>Rare</td>
+                    <td>Free</td>
+                    <td>Solid food source if found</td>
+                </tr>
+                <tr>
+                    <td><strong>Drinks</strong></td>
+                    <td>Various</td>
+                    <td>Low</td>
+                    <td>Slightly reduce hunger</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Food Strategy</div>
+                <ul>
+                    <li>Buy 3-5 days of food at once from Teimo</li>
+                    <li>Keep non-perishables at both apartment and parents' house</li>
+                    <li>Pub Nappo is backup when Teimo closed</li>
+                    <li>Most drinks provide small hunger reduction</li>
+                </ul>
+            </div>
+
+            <h3>Fatigue System</h3>
+            <p>Fatigue is extremely aggressive in MWC. Players report needing sleep after only 10-12 hours awake.</p>
+
+            <h4>Sleep Locations</h4>
+            <ul>
+                <li><strong>Bed (Parents' house):</strong> Best sleep quality, saves game</li>
+                <li><strong>Sofa (Apartment/Cottage):</strong> Must be in heated room, saves game</li>
+                <li><strong>Bench (Ventti house):</strong> Poor rest</li>
+                <li><strong>Gifu truck bed:</strong> Emergency only, poor rest</li>
+            </ul>
+
+            <div class="info-box warning">
+                <div class="info-box-title">🛏️ Cannot Sleep When Too Cold</div>
+                <p><strong>Critical Rule:</strong> If your body temperature is too low OR the room is too cold, you CANNOT sleep even with full fatigue.</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Set radiator to <strong>30°C</strong> (maximum)</li>
+                    <li>Wait 5-10 minutes for room to warm up</li>
+                    <li>Ensure you're wearing indoor clothing (not freezing)</li>
+                    <li>Try sleeping again</li>
+                </ol>
+                <p>This is a common death trap - players get stuck unable to sleep, fatigue increases, they black out while driving.</p>
+            </div>
+
+            <h4>Fatigue Blackouts</h4>
+            <div class="death-cause">
+                <h4>💀 Death Scenario: Fatigue Blackout Crash</h4>
+                <ol>
+                    <li>Player ignores red fatigue bar</li>
+                    <li>Continues driving</li>
+                    <li>Screen suddenly shakes violently - BLACKOUT</li>
+                    <li>Player must shake mouse violently to wake up</li>
+                    <li>During blackout, car veers off road</li>
+                    <li><strong>Result:</strong> Crash into tree/ditch, vehicle damage or death</li>
+                </ol>
+                <p><strong>Prevention:</strong> Sleep BEFORE fatigue reaches red zone. If red while driving, pull over immediately.</p>
+            </div>
+
+            <h3>Coffee & Energy Drinks</h3>
+            <p><strong>IMPORTANT CHANGE from MSC:</strong> Coffee is no longer unlimited fatigue cure.</p>
+            <ul>
+                <li><strong>Coffee addiction:</strong> Drinking too much coffee increases your baseline fatigue rate</li>
+                <li><strong>Energy drinks:</strong> New alternative available at stores - reduces fatigue</li>
+                <li><strong>Strategy:</strong> Use coffee/energy drinks as emergency measure, not primary fatigue management</li>
+                <li><strong>Proper solution:</strong> Maintain regular sleep schedule</li>
+            </ul>
+        </section>
+
+        <section id="first-hour" class="content-section">
+            <h2>5. Your First Hour - Critical Actions</h2>
+            
+            <p>The first hour sets the tone for your entire playthrough. Follow these steps precisely.</p>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">1</span>Spawn & Immediate Orientation</div>
+                <p>You spawn at your <strong>apartment</strong> (not parents' house). Immediately:</p>
+                <ul>
+                    <li>Check your stats - temperature, hunger, fatigue</li>
+                    <li>You're wearing indoor clothes - DO NOT go outside yet</li>
+                    <li>Find your jacket or coverall (should be in apartment)</li>
+                    <li>Check radiators - set to 25-30°C for now</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">2</span>Get to Your Vehicle (Sorbett)</div>
+                <p>The Sorbett is parked outside your apartment door.</p>
+                <ul>
+                    <li><strong>CRITICAL:</strong> Put on jacket or coverall BEFORE going outside</li>
+                    <li>Press C to unlock, click door to open</li>
+                    <li><strong>UNPLUG BLOCK HEATER</strong> at front of car (orange cord)</li>
+                    <li>Get in, press Enter to start engine</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">3</span>Clear Windshield & Learn Heater Controls</div>
+                <p>Your windshield will be foggy/frozen. Learn these controls:</p>
+                <ul>
+                    <li><strong>Black button:</strong> Fan speed (Off / Low / High)</li>
+                    <li><strong>Temperature dial:</strong> Heat level</li>
+                    <li><strong>Direction toggle:</strong> Ctrl+zoom to see - aim at windshield</li>
+                    <li>Set to High fan, max heat, towards windshield</li>
+                    <li>Wait 1-2 minutes for visibility</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">4</span>Drive to Teimo's Shop - First Priority</div>
+                <p><strong>Directions from apartment:</strong></p>
+                <ol>
+                    <li>Turn LEFT out of apartment complex</li>
+                    <li>Follow road until you see Pub Nappo at crossroads</li>
+                    <li>Turn LEFT at Pub Nappo</li>
+                    <li>Down the hill = Gas station/Teimo's shop (PSK)</li>
+                </ol>
+                <p><strong>DRIVE CAREFULLY:</strong> Roads are icy. Brake early, avoid sudden turns.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">5</span>Critical Purchases at PSK</div>
+                <p><strong>You start with ~1,000-1,500mk. Buy:</strong></p>
+                <ul>
+                    <li>🍖 <strong>Food</strong> (3-4 days worth) - ~200mk</li>
+                    <li>📰 <strong>Parts Magazine</strong> (15mk) - ESSENTIAL for Rivett parts later</li>
+                    <li>☕ Coffee/drinks (optional) - ~50mk</li>
+                    <li>⚡ Energy drinks if available - ~30mk each</li>
+                </ul>
+                <p><strong>Total cost:</strong> ~300-400mk</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">6</span>Important: Information Board</div>
+                <p>Inside PSK, on your RIGHT as you enter:</p>
+                <ul>
+                    <li>Information board on wall</li>
+                    <li>Contains phone numbers including <strong>Rivett seller (08609553)</strong></li>
+                    <li><strong>Take a photo</strong> or write down numbers - you'll need them</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">7</span>Learn to Fuel Up (CRITICAL)</div>
+                <p><strong>BEFORE touching pump:</strong></p>
+                <ol>
+                    <li>Drive up to pump</li>
+                    <li>Get out</li>
+                    <li><strong>Interact with RED MACHINE next to pump FIRST</strong></li
