@@ -1,0 +1,1265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corris Rivett Complete Build Guide | Assembly, Parts & Tips - mywintercar.com</title>
+    <meta name="description" content="Complete guide to building the Corris Rivett in My Winter Car. Learn how to buy, assemble, and maintain the 1971-1976 Ford Taunus TC-based project car with 200+ parts.">
+    <link rel="canonical" href="https://mywintercar.com/corris-rivett-guide">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(26, 29, 35, 0.95)),
+                        url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg/1200px-Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg') center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(74, 158, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Step by Step */
+        .step {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Image Container */
+        .image-container {
+            margin: 2rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: var(--bg-card);
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/vehicles">Vehicles</a> / Corris Rivett Guide
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Corris Rivett Complete Build Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">The Ultimate Assembly Manual for My Winter Car's Project Car</p>
+        <div class="hero-meta">
+            <div class="meta-item">📅 Based on: 1971-1976 Ford Taunus TC1</div>
+            <div class="meta-item">🔧 Total Parts: 200+</div>
+            <div class="meta-item">⏱️ Read Time: 45 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2024)</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. Vehicle Overview & Specifications</a></li>
+                <li><a href="#buying">2. How to Buy the Rivett</a></li>
+                <li><a href="#parts-sources">3. Parts Sources & Acquisition</a></li>
+                <li><a href="#vin-system">4. VIN System & Trim Levels</a></li>
+                <li><a href="#assembly">5. Assembly Order & Build Process</a></li>
+                <li><a href="#engine">6. Engine Build & Tuning</a></li>
+                <li><a href="#maintenance">7. Maintenance & Common Issues</a></li>
+                <li><a href="#tips">8. Pro Tips & Troubleshooting</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Important Notice</div>
+            <p>This guide is based on My Winter Car Early Access version (December 29, 2025 release). Some features may change as development continues. Always check the in-game VIN plate and current parts catalogs for your specific Rivett configuration.</p>
+        </div>
+
+        <!-- Section 1: Overview -->
+        <section id="overview" class="content-section">
+            <h2>1. Vehicle Overview & Specifications</h2>
+            
+            <p>The <span class="highlight">Corris Rivett</span> is the main project car in My Winter Car, based on the real-world Ford Taunus TC1 (1971-1976 model years). Unlike My Summer Car's Satsuma, the Rivett must be purchased rather than being provided at the start, and represents a significantly more challenging build with over 200 individual parts.</p>
+
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ford_Taunus_TC_1975_%2826.7.2015%29_2328.JPG/1200px-Ford_Taunus_TC_1975_%2826.7.2015%29_2328.JPG" alt="Ford Taunus TC - Real-world inspiration for Corris Rivett">
+                <div class="image-caption">Ford Taunus TC (1975) - The real-world inspiration for the Corris Rivett</div>
+            </div>
+
+            <h3>Technical Specifications</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Base Vehicle</strong></td>
+                    <td>Ford Taunus TC1 (1971-1976)</td>
+                </tr>
+                <tr>
+                    <td><strong>Engine Type</strong></td>
+                    <td>2.0L SOHC Inline-4 (Ford Pinto TL20H)</td>
+                </tr>
+                <tr>
+                    <td><strong>Stock Power</strong></td>
+                    <td>98 hp @ 5,500 RPM</td>
+                </tr>
+                <tr>
+                    <td><strong>Stock Torque</strong></td>
+                    <td>155 Nm @ 3,700 RPM</td>
+                </tr>
+                <tr>
+                    <td><strong>Maximum Tuned Power</strong></td>
+                    <td>~215 hp @ 8,000 RPM (without nitrous)</td>
+                </tr>
+                <tr>
+                    <td><strong>Drivetrain</strong></td>
+                    <td>Rear-Wheel Drive (RWD)</td>
+                </tr>
+                <tr>
+                    <td><strong>Transmission Options</strong></td>
+                    <td>4-speed manual / 5-speed manual / 3-speed automatic</td>
+                </tr>
+                <tr>
+                    <td><strong>Rear Suspension</strong></td>
+                    <td>4-link solid axle</td>
+                </tr>
+                <tr>
+                    <td><strong>Weight (approx)</strong></td>
+                    <td>~1,000 kg (400 kg heavier than Satsuma)</td>
+                </tr>
+                <tr>
+                    <td><strong>Rev Limiter</strong></td>
+                    <td>None (risk of over-revving)</td>
+                </tr>
+            </table>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🚨 Critical Warning: No Rev Limiter</div>
+                <p>Unlike the Satsuma, the Rivett has <strong>no electronic rev limiter</strong>. Over-revving will cause catastrophic engine damage. This is especially dangerous with tuned engines. Always watch your tachometer and avoid "money shifting" (accidentally downshifting at high RPM).</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Buying -->
+        <section id="buying" class="content-section">
+            <h2>2. How to Buy the Rivett</h2>
+            
+            <p>Purchasing the Corris Rivett is a multi-step process that many players initially struggle with. Follow these exact steps to successfully acquire your project car.</p>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">1</span>Find the Advertisement Poster</div>
+                <p>Look for a car sale poster inside PSK (Teimo's shop) or at the gas station. The poster displays a phone number in the format: <strong>08-609 553</strong></p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">2</span>Make the Phone Call</div>
+                <p><strong>Location:</strong> Use the phone in your apartment or parents' house<br>
+                <strong>CRITICAL:</strong> Use your keyboard's <span class="highlight">numpad</span> to dial: <code>08609553</code></p>
+                
+                <div class="info-box danger">
+                    <div class="info-box-title">❌ Common Mistake</div>
+                    <p><strong>DO NOT type the dash (-)</strong>. Entering "08-609 553" will cause the call to fail with a beeping error. Only use numbers: <code>08609553</code></p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">3</span>Listen to the Entire Conversation</div>
+                <p>After dialing, wait for the seller (the firewood delivery guy from My Summer Car) to finish talking. <strong>Do not hang up early</strong> - this will cancel the purchase. Wait until he hangs up automatically.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">4</span>Check Your Map</div>
+                <p>After the call completes successfully, a new map marker labeled <span class="highlight">"Car for sale"</span> will appear. If no marker appears, the call failed - try again.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">5</span>Visit During Daytime</div>
+                <p>Use the Sorbett, Gifu, or Kekmet to drive to the seller's location. <strong>Important:</strong> Arrive during daylight hours - the seller won't complete the transaction at night.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">6</span>Complete the Purchase</div>
+                <p>Approach the seller to trigger dialogue. When he quotes the price (approximately <span class="highlight">500 mk</span>), walk up to him and pay. The exact price may vary slightly based on the random parts included.</p>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ What You Receive</div>
+                <p>You will get:</p>
+                <ul>
+                    <li>Bare Rivett body/chassis (disassembled)</li>
+                    <li>10-12 random parts in randomized condition</li>
+                    <li>Random trim level (L, LX, SLX, or GT)</li>
+                    <li>Random manufacturing year (1971-1976)</li>
+                    <li>Random color and interior combination</li>
+                </ul>
+            </div>
+
+            <h3>Transportation Options</h3>
+            <p>After purchase, you need to transport the Rivett to your build location:</p>
+            <ul>
+                <li><strong>Kekmet (tractor with trailer):</strong> Most reliable option</li>
+                <li><strong>Gifu (flatbed truck):</strong> Can carry the chassis</li>
+                <li><strong>Parents' house vs Apartment:</strong> Parents' house has a garage, making assembly much easier</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Parts Sources -->
+        <section id="parts-sources" class="content-section">
+            <h2>3. Parts Sources & Acquisition</h2>
+            
+            <p>Gathering all necessary parts is one of the most challenging aspects of the Rivett build. Unlike My Summer Car where most parts were lying around, you must actively source everything through multiple channels.</p>
+
+            <h3>Primary Parts Sources</h3>
+
+            <div class="step">
+                <div class="step-title">📰 Parts Magazine (Kansalaisen Marketti)</div>
+                <p><strong>Primary Source:</strong> This is your main supplier for most parts.</p>
+                <p><strong>How to Order:</strong></p>
+                <ol>
+                    <li>Purchase the magazine at PSK (Teimo's shop)</li>
+                    <li>Open the magazine and find parts listings with phone numbers</li>
+                    <li>Call from your phone using the numpad (same method as buying Rivett)</li>
+                    <li><strong>CRITICAL:</strong> Wait until the seller finishes talking before hanging up</li>
+                    <li>Parts arrive in approximately 2 days at PSK</li>
+                    <li>Check for post notification, then pick up parts</li>
+                </ol>
+                
+                <div class="info-box warning">
+                    <div class="info-box-title">⚠️ Magazine Tips</div>
+                    <ul>
+                        <li>Parts are in <strong>used condition</strong> - quality varies</li>
+                        <li>Inventory changes weekly/bi-weekly</li>
+                        <li>Parts come in boxes via mail</li>
+                        <li>Hanging up early <strong>cancels the order</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔧 Fleetari's Repair Shop</div>
+                <p><strong>Location:</strong> Loppe (town)</p>
+                <p><strong>Operating Hours:</strong> Monday-Friday, 8:00-16:00 (4:00 PM)</p>
+                <p><strong>Specialization:</strong> New/NOS (New Old Stock) engine parts and performance components</p>
+                
+                <p><strong>Available Services:</strong></p>
+                <ul>
+                    <li>Engine parts sales (limited stock, restocks periodically)</li>
+                    <li>Suspension components</li>
+                    <li>Repair services (tire changes, painting, bodywork)</li>
+                    <li>Metal recycling (dispose old parts for money)</li>
+                    <li>Possible garage space rental (not confirmed in EA)</li>
+                </ul>
+
+                <div class="info-box">
+                    <div class="info-box-title">💡 Fleetari Shopping Tips</div>
+                    <ul>
+                        <li>Parts come in individual packages, then packed into shopping bags</li>
+                        <li>Stock is limited - buy when available</li>
+                        <li>NOS parts are more expensive but guaranteed quality</li>
+                        <li>Payment happens <strong>after</strong> services (not before like MSC)</li>
+                        <li>Fleetari keeps your keys during repairs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🏪 Flea Market (Kirpputori)</div>
+                <p><strong>Location:</strong> Same building as inspection shop (previously vacant in MSC)</p>
+                <p><strong>Owner:</strong> Run by a woman</p>
+                <p><strong>Specialization:</strong> Random used parts, cosmetic items, rare finds</p>
+                
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Parts from different model years</li>
+                    <li>Non-essential wearable parts</li>
+                    <li>Fixed prices (no haggling)</li>
+                    <li>Inventory randomizes after items sell</li>
+                    <li><strong>Selling:</strong> Rent a table to sell your extra parts</li>
+                </ul>
+
+                <div class="info-box success">
+                    <div class="info-box-title">💰 Making Money at Flea Market</div>
+                    <p>You can rent a sale table to sell unwanted parts or items. Payment occurs at the end of each week. Unsold items remain on your table.</p>
+                </div>
+            </div>
+
+            <h3>Parts You Cannot Duplicate</h3>
+            <p>The following parts are <strong>unique</strong> and cannot be purchased as spares:</p>
+            <ul>
+                <li>Engine Block</li>
+                <li>Cylinder Head</li>
+                <li>Steering Column</li>
+            </ul>
+            <p>All other parts can be purchased in unlimited quantities (limited only by your budget and PC performance).</p>
+
+            <h3>Strategic Parts Acquisition</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Part Category</th>
+                    <th>Best Source</th>
+                    <th>Priority</th>
+                </tr>
+                <tr>
+                    <td>Engine internals (pistons, crank, cam)</td>
+                    <td>Parts Magazine / Fleetari</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Electrical (alternator, starter, battery)</td>
+                    <td>Fleetari (NOS recommended)</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Suspension (springs, shocks)</td>
+                    <td>Fleetari / Parts Magazine</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Body panels, trim, interior</td>
+                    <td>Flea Market</td>
+                    <td>Low</td>
+                </tr>
+                <tr>
+                    <td>Performance parts (racing cam, dual carb)</td>
+                    <td>Fleetari / Magazine</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section 4: VIN System -->
+        <section id="vin-system" class="content-section">
+            <h2>4. VIN System & Trim Levels</h2>
+            
+            <p>Each Rivett has a unique Vehicle Identification Number (VIN) plate located in the engine bay. This system determines your car's factory specification and is critical for historical vehicle registration.</p>
+
+            <h3>Understanding the VIN Plate</h3>
+            <p>The VIN contains encoded information about:</p>
+            <ul>
+                <li>Manufacturing year (1971-1976)</li>
+                <li>Trim level (L, LX, SLX, or GT)</li>
+                <li>Factory options and equipment</li>
+                <li>Original color and interior specification</li>
+                <li>Engine and transmission variant</li>
+                <li>Differential type (open or limited-slip)</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-box-title">🔍 VIN Decoder Tool</div>
+                <p>Visit the official Amistech website VIN decoder at <code>www.amistech.com/mwc</code> to decode your Rivett's VIN. The VIN resets with each new game save.</p>
+            </div>
+
+            <h3>The Four Trim Levels</h3>
+
+            <div class="step">
+                <div class="step-title">🔹 L Trim (Base Spec)</div>
+                <p><strong>Characteristics:</strong> Entry-level economy model</p>
+                <ul>
+                    <li>Basic black interior (most common)</li>
+                    <li>Standard steel wheels</li>
+                    <li>Manual brakes (no power assist)</li>
+                    <li>Basic gauge cluster (speedometer + fuel/temp)</li>
+                    <li>Open differential</li>
+                    <li>4-speed manual transmission</li>
+                    <li>Single-barrel carburetor</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔹 LX Trim (Premium)</div>
+                <p><strong>Characteristics:</strong> Mid-range comfort model</p>
+                <ul>
+                    <li>Beige or woodgrain interior options</li>
+                    <li>Upgraded wheel options</li>
+                    <li>Power-assisted brakes possible</li>
+                    <li>Clock gauge option</li>
+                    <li>Better standard springs and shocks</li>
+                    <li>Chrome trim and badges</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔹 SLX Trim (Performance/Luxury)</div>
+                <p><strong>Characteristics:</strong> High-end sport-luxury model</p>
+                <ul>
+                    <li>Sport steering wheel</li>
+                    <li>Tachometer (7,000 RPM gauge)</li>
+                    <li>Additional instrumentation</li>
+                    <li>Stiffer suspension components</li>
+                    <li>Two-barrel carburetor (possible)</li>
+                    <li>Quick steering ratio option</li>
+                    <li>Special gear stick</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">⭐ GT Trim (Top Spec/Rare)</div>
+                <p><strong>Characteristics:</strong> Ultimate performance variant</p>
+                <ul>
+                    <li><strong>Rarest trim level</strong></li>
+                    <li>Red or blue interior (extremely rare colors)</li>
+                    <li>Sport alloy wheels or RS three-spokes</li>
+                    <li>Two-barrel carburetor (standard)</li>
+                    <li>Limited-slip differential</li>
+                    <li>Performance suspension (stiff springs)</li>
+                    <li>Full sport instrumentation</li>
+                    <li>Special GT rocker cover with Rivett branding</li>
+                    <li>Vinyl roof option</li>
+                    <li>Rear spoiler</li>
+                </ul>
+            </div>
+
+            <h3>Historical Vehicle Registration</h3>
+            <p>If you restore the Rivett to match its factory VIN specification exactly, you can register it as a <span class="highlight">historical vehicle</span>:</p>
+            
+            <div class="info-box success">
+                <div class="info-box-title">📜 Historical Registration Requirements</div>
+                <ul>
+                    <li><strong>Age Requirement:</strong> Car must be 30+ years old</li>
+                    <li><strong>Game Timeline:</strong> Set in 1999, so only 1971-early 1974 models qualify</li>
+                    <li><strong>Condition:</strong> Must match VIN factory specification</li>
+                    <li><strong>Benefit:</strong> Longer inspection intervals</li>
+                    <li><strong>Tip:</strong> Check manufacture date on VIN before starting restoration</li>
+                </ul>
+            </div>
+
+            <h3>Factory Color Options</h3>
+            <p>The Rivett spawns with one of <strong>20 different factory exterior colors</strong> and <strong>4-5 interior colors</strong>:</p>
+            <ul>
+                <li><strong>Common Interior:</strong> Black, Beige, Black with Brown Woodgrain</li>
+                <li><strong>Rare Interior:</strong> Red, Blue (GT trim only)</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Assembly -->
+        <section id="assembly" class="content-section">
+            <h2>5. Assembly Order & Build Process</h2>
+            
+            <p>The Rivett assembly is more complex than the Satsuma due to the sheer number of parts (200+) and the need to source everything separately. While there's flexibility in build order, following a logical sequence prevents frustration.</p>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Before You Begin</div>
+                <ul>
+                    <li><strong>Choose your build location wisely:</strong> Parents' house has a garage (recommended)</li>
+                    <li><strong>Organize parts:</strong> Group engine, suspension, body, electrical components</li>
+                    <li><strong>Check VIN first:</strong> Understand your target specification</li>
+                    <li><strong>Plan for winter:</strong> Cold starts are much harder - work in heated spaces</li>
+                </ul>
+            </div>
+
+            <h3>Recommended Assembly Order</h3>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">1</span>Chassis & Suspension</div>
+                <p><strong>Start with the foundation:</strong></p>
+                <ul>
+                    <li>Install front suspension (control arms, springs, shocks)</li>
+                    <li>Attach rear axle assembly (4-link suspension)</li>
+                    <li>Install coil springs (varies by trim - note spring rates)</li>
+                    <li>Mount steering column (unique part - cannot duplicate)</li>
+                    <li>Install steering rack and tie rods</li>
+                    <li>Attach brake components (calipers, lines, master cylinder)</li>
+                </ul>
+                <div class="info-box">
+                    <p><strong>Tip:</strong> Adjustable shocks can be tuned later. Different spring lengths available for ride height adjustment.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">2</span>Engine Assembly (Off-Car)</div>
+                <p><strong>Build the engine separately on a stand or bench:</strong></p>
+                <ul>
+                    <li>Start with engine block (unique - check condition)</li>
+                    <li>Install crankshaft, connecting rods, pistons</li>
+                    <li>Attach oil pump (can fail - replaceable)</li>
+                    <li>Install cylinder head (unique part)</li>
+                    <li>Fit timing belt and tensioner</li>
+                    <li>Mount camshaft (single overhead cam)</li>
+                    <li>Install cam followers/lifters</li>
+                    <li>Attach alternator, starter motor</li>
+                    <li>Install water pump (failure point)</li>
+                    <li>Fit carburetor (single or dual-barrel)</li>
+                    <li>Add exhaust manifold</li>
+                </ul>
+                <div class="info-box danger">
+                    <p><strong>Cold Engine Warning:</strong> Never rev a cold engine! Engine damage occurs when oil hasn't circulated. Always warm up first.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">3</span>Drivetrain Installation</div>
+                <p><strong>Install engine and transmission:</strong></p>
+                <ul>
+                    <li>Lower engine into engine bay</li>
+                    <li>Bolt engine to mounts</li>
+                    <li>Choose transmission (4-spd manual / 3-spd auto / 5-spd manual aftermarket)</li>
+                    <li>Install clutch assembly (cable-operated)</li>
+                    <li>Attach driveshaft to differential</li>
+                    <li>Connect exhaust system (stronger than Satsuma's)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">4</span>Fuel & Cooling Systems</div>
+                <ul>
+                    <li>Install fuel tank (can be damaged by impacts)</li>
+                    <li>Connect fuel lines and filter</li>
+                    <li>Mount radiator (check hoses for cracks)</li>
+                    <li>Fill coolant and check for leaks</li>
+                    <li>Install fan belt (check tension)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">5</span>Electrical System</div>
+                <ul>
+                    <li>Install battery (buy fresh from Teimo - 12V)</li>
+                    <li>Connect alternator wiring</li>
+                    <li>Wire starter motor</li>
+                    <li>Install fuse box</li>
+                    <li>Connect headlights, taillights, indicators</li>
+                    <li>Wire interior lights and switches</li>
+                    <li>Test all circuits before final assembly</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">6</span>Wheels & Tires</div>
+                <ul>
+                    <li>Choose wheel type (depends on trim/VIN)</li>
+                    <li>Install brake rotors and drums</li>
+                    <li>Mount wheels (steel or alloy - varies by trim)</li>
+                    <li>Use appropriate tire type for season</li>
+                    <li><strong>Winter tires mandatory</strong> for snow conditions</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">7</span>Body Panels & Interior</div>
+                <ul>
+                    <li>Attach doors (heavy - may need help)</li>
+                    <li>Install hood and trunk lid</li>
+                    <li>Fit front and rear bumpers</li>
+                    <li>Install fenders and trim</li>
+                    <li>Mount seats (varies by trim)</li>
+                    <li>Install dashboard and gauges</li>
+                    <li>Fit interior panels and carpet</li>
+                    <li>Install steering wheel</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">8</span>Final Checks</div>
+                <ul>
+                    <li>Fill all fluids (oil, coolant, brake fluid)</li>
+                    <li>Double-check all bolts (suspension critical)</li>
+                    <li>Test lights and horn</li>
+                    <li>Check tire pressure</li>
+                    <li>Verify battery connection</li>
+                    <li>Perform brake system bleed</li>
+                </ul>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ First Start Checklist</div>
+                <ul>
+                    <li>Engine oil level correct</li>
+                    <li>Coolant filled (not frozen)</li>
+                    <li>Fuel in tank</li>
+                    <li>Battery charged</li>
+                    <li>Choke engaged (if cold)</li>
+                    <li>Clutch pedal depressed</li>
+                    <li>Don't rev immediately - let oil circulate</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 6: Engine -->
+        <section id="engine" class="content-section">
+            <h2>6. Engine Build & Tuning</h2>
+            
+            <p>The Rivett's 2.0L Ford Pinto TL20H engine offers significant tuning potential. Developer testing confirms properly built engines can reach approximately <span class="highlight">215 hp @ 8,000 RPM without nitrous</span>.</p>
+
+            <h3>Stock Engine Configuration</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Component</th>
+                    <th>Stock Spec</th>
+                    <th>Performance Option</th>
+                </tr>
+                <tr>
+                    <td>Carburetor</td>
+                    <td>Single-barrel Weber (L trim)</td>
+                    <td>Dual-barrel Weber (GT trim / aftermarket)</td>
+                </tr>
+                <tr>
+                    <td>Camshaft</td>
+                    <td>Mild street cam</td>
+                    <td>Racing cam (higher lift, longer duration)</td>
+                </tr>
+                <tr>
+                    <td>Exhaust</td>
+                    <td>Stock manifold + muffler</td>
+                    <td>Headers + free-flow exhaust</td>
+                </tr>
+                <tr>
+                    <td>Compression</td>
+                    <td>Stock pistons (~9:1)</td>
+                    <td>High-compression pistons</td>
+                </tr>
+                <tr>
+                    <td>Ignition</td>
+                    <td>Distributor + points</td>
+                    <td>Electronic ignition (if available)</td>
+                </tr>
+            </table>
+
+            <h3>Performance Build Guide</h3>
+
+            <div class="step">
+                <div class="step-title">Stage 1: Bolt-On Improvements (120-140 hp)</div>
+                <ul>
+                    <li><strong>Dual-barrel carburetor:</strong> +15-20 hp, better throttle response</li>
+                    <li><strong>Free-flow exhaust:</strong> Reduces backpressure, +10 hp</li>
+                    <li><strong>Air filter upgrade:</strong> Better breathing</li>
+                    <li><strong>Ignition timing optimization:</strong> Advance timing for power</li>
+                </ul>
+                <p><strong>Cost:</strong> Moderate | <strong>Difficulty:</strong> Easy | <strong>Reliability:</strong> High</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Stage 2: Cam & Head Work (160-180 hp)</div>
+                <ul>
+                    <li><strong>Racing camshaft:</strong> Aggressive profile, higher RPM power</li>
+                    <li><strong>Valve springs:</strong> Required for racing cam</li>
+                    <li><strong>Port & polish head:</strong> Improved airflow (if available)</li>
+                    <li><strong>Larger valves:</strong> Better breathing</li>
+                </ul>
+                <p><strong>Cost:</strong> High | <strong>Difficulty:</strong> Moderate | <strong>Reliability:</strong> Medium</p>
+                <div class="info-box warning">
+                    <p><strong>Warning:</strong> Racing cam reduces low-end torque. Car will be harder to drive in snow.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Stage 3: Full Build (200-215 hp)</div>
+                <ul>
+                    <li><strong>High-compression pistons:</strong> Requires premium fuel</li>
+                    <li><strong>Forged internals:</strong> Stronger rods and crank</li>
+                    <li><strong>Lightened flywheel:</strong> Faster revving</li>
+                    <li><strong>5-speed transmission:</strong> Better ratio spread</li>
+                    <li><strong>Limited-slip differential:</strong> Power delivery in corners</li>
+                </ul>
+                <p><strong>Cost:</strong> Very High | <strong>Difficulty:</strong> Hard | <strong>Reliability:</strong> Medium-Low</p>
+                <div class="info-box danger">
+                    <p><strong>CRITICAL:</strong> No rev limiter! High-performance builds can easily exceed 8,000 RPM and destroy the engine. Install a tachometer and watch it religiously.</p>
+                </div>
+            </div>
+
+            <h3>Tuning Tips</h3>
+            <ul>
+                <li><strong>Carburetor jetting:</strong> Richer mixture in winter (cold air denser)</li>
+                <li><strong>Spark timing:</strong> Advance for power, retard if pinging</li>
+                <li><strong>Valve adjustment:</strong> Check lash periodically</li>
+                <li><strong>Oil changes:</strong> Critical with racing builds (every 500-1000 km)</li>
+                <li><strong>Warm-up procedure:</strong> Always idle 2-3 minutes before driving</li>
+            </ul>
+        </section>
+
+        <!-- Section 7: Maintenance -->
+        <section id="maintenance" class="content-section">
+            <h2>7. Maintenance & Common Issues</h2>
+            
+            <p>Regular maintenance is crucial for the Rivett, especially in harsh winter conditions. Unlike the Satsuma, many parts have actual wear and failure mechanics.</p>
+
+            <h3>Regular Maintenance Schedule</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Interval</th>
+                    <th>Task</th>
+                    <th>Importance</th>
+                </tr>
+                <tr>
+                    <td>Daily</td>
+                    <td>Check oil level, coolant, tire pressure</td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td>Weekly</td>
+                    <td>Battery water level, brake fluid, lights</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>500 km</td>
+                    <td>Oil and filter change (racing builds)</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>1000 km</td>
+                    <td>Oil change (street builds), valve adjustment</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>2000 km</td>
+                    <td>Timing belt inspection, spark plugs</td>
+                    <td>Critical</td>
+                </tr>
+                <tr>
+                    <td>5000 km</td>
+                    <td>Timing belt replacement (mandatory)</td>
+                    <td>CRITICAL</td>
+                </tr>
+            </table>
+
+            <h3>Common Failures & Solutions</h3>
+
+            <div class="step">
+                <div class="step-title">🔴 Engine Won't Start (Cold Weather)</div>
+                <p><strong>Symptoms:</strong> Engine cranks but won't fire, especially below -15°C</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Use full choke (pull choke knob all the way)</li>
+                    <li>Battery may be too cold - warm up battery indoors</li>
+                    <li>Block heater recommended for winter</li>
+                    <li>Check spark plugs aren't fouled</li>
+                    <li>Try ether starting spray (available at Teimo's)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔴 Engine Overheating</div>
+                <p><strong>Causes:</strong></p>
+                <ul>
+                    <li>Low coolant level</li>
+                    <li>Radiator leaking or clogged</li>
+                    <li>Water pump failure</li>
+                    <li>Fan belt broken or loose</li>
+                    <li>Thermostat stuck closed</li>
+                </ul>
+                <div class="info-box danger">
+                    <p><strong>Emergency:</strong> If temperature gauge reaches red, stop immediately. Continuing will warp the cylinder head (unique part!).</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔴 Electrical Failures</div>
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Alternator failure: Battery light on dash, dimming lights</li>
+                    <li>Starter motor: Clicking sound, no crank</li>
+                    <li>Blown fuses: Check fuse box first</li>
+                    <li>Corroded connections: Clean battery terminals</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔴 Brake Problems</div>
+                <p><strong>Warning Signs:</strong></p>
+                <ul>
+                    <li>Soft pedal: Air in lines - bleed system</li>
+                    <li>Pulling to one side: Seized caliper or uneven pad wear</li>
+                    <li>Grinding noise: Pads worn to metal - replace immediately</li>
+                    <li>Brake light on: Low fluid or worn pads</li>
+                </ul>
+            </div>
+
+            <h3>Winter-Specific Issues</h3>
+            <ul>
+                <li><strong>Frozen coolant:</strong> Use proper antifreeze mixture (50/50)</li>
+                <li><strong>Icy roads:</strong> RWD Rivett very prone to spinning - use winter tires</li>
+                <li><strong>Battery drain:</strong> Cold weather reduces capacity - keep charged</li>
+                <li><strong>Door locks frozen:</strong> De-icer spray or heat key</li>
+                <li><strong>Windshield washer frozen:</strong> Use winter-grade fluid</li>
+            </ul>
+        </section>
+
+        <!-- Section 8: Tips -->
+        <section id="tips" class="content-section">
+            <h2>8. Pro Tips & Troubleshooting</h2>
+            
+            <h3>Money-Saving Tips</h3>
+            <ul>
+                <li><strong>Buy used parts from magazine:</strong> Much cheaper than Fleetari's NOS</li>
+                <li><strong>Check flea market weekly:</strong> Rare finds at good prices</li>
+                <li><strong>Don't over-tune early:</strong> Racing parts expensive and reduce reliability</li>
+                <li><strong>Learn to do your own work:</strong> Fleetari's labor costs add up</li>
+                <li><strong>Keep extra parts:</strong> Starters, alternators, water pumps fail</li>
+            </ul>
+
+            <h3>Building Strategy</h3>
+            <ul>
+                <li><strong>Start simple:</strong> Get car running stock before modifications</li>
+                <li><strong>One system at a time:</strong> Easier to troubleshoot</li>
+                <li><strong>Label parts boxes:</strong> 200+ parts get confusing fast</li>
+                <li><strong>Test drive often:</strong> Catch problems early</li>
+                <li><strong>Save before risky work:</strong> Manual saves are your friend</li>
+            </ul>
+
+            <h3>Performance vs Reliability</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Build Type</th>
+                    <th>Power</th>
+                    <th>Reliability</th>
+                    <th>Best For</th>
+                </tr>
+                <tr>
+                    <td>Stock</td>
+                    <td>98 hp</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Daily driving, beginners</td>
+                </tr>
+                <tr>
+                    <td>Street</td>
+                    <td>130-150 hp</td>
+                    <td>⭐⭐⭐⭐</td>
+                    <td>Balanced performance</td>
+                </tr>
+                <tr>
+                    <td>Sport</td>
+                    <td>170-190 hp</td>
+                    <td>⭐⭐⭐</td>
+                    <td>Track days, rally</td>
+                </tr>
+                <tr>
+                    <td>Race</td>
+                    <td>200-215 hp</td>
+                    <td>⭐⭐</td>
+                    <td>Competition only</td>
+                </tr>
+            </table>
+
+            <h3>Troubleshooting Quick Reference</h3>
+            <div class="step">
+                <p><strong>Car won't crank:</strong></p>
+                <ul>
+                    <li>Dead battery → Charge or replace</li>
+                    <li>Starter click → Starter motor failed</li>
+                    <li>No sound → Check battery connections</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <p><strong>Engine cranks but won't start:</strong></p>
+                <ul>
+                    <li>Check fuel in tank</li>
+                    <li>Pull choke if cold</li>
+                    <li>Verify spark (pull plug, check for spark)</li>
+                    <li>Carburetor may be flooded - wait 5 minutes</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <p><strong>Engine starts then dies:</strong></p>
+                <ul>
+                    <li>Release choke gradually as engine warms</li>
+                    <li>Fuel filter may be clogged</li>
+                    <li>Air leak in intake</li>
+                </ul>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Expert Advice</div>
+                <p>"The Rivett rewards patience. Take your time sourcing quality parts, follow the VIN specification, and don't rush the build. A well-maintained Rivett is one of the most satisfying builds in the game." - Experienced MWC Players</p>
+            </div>
+        </section>
+
+        <!-- Version Notice -->
+        <div class="info-box warning" style="margin-top: 3rem;">
+            <div class="info-box-title">📌 Content Version Notice</div>
+            <p><strong>This guide is based on:</strong> My Winter Car Early Access (Released December 29, 2025)</p>
+            <p><strong>Last Updated:</strong> December 30, 2025</p>
+            <p>Game is in active development. Some mechanics, part names, or acquisition methods may change in future updates. Always verify critical information against current in-game data.</p>
+        </div>
+
+        <!-- Community -->
+        <div class="info-box" style="margin-top: 2rem;">
+            <div class="info-box-title">🤝 Community Resources</div>
+            <p>Need help? Join the community:</p>
+            <ul>
+                <li><strong>Discord:</strong> Real-time help from experienced players</li>
+                <li><strong>Reddit r/MyWinterCar:</strong> Build logs and troubleshooting</li>
+                <li><strong>Steam Community:</strong> Guides and screenshots</li>
+                <li><strong>My Winter Car Wiki:</strong> Detailed part specifications</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Show/hide back to top button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
