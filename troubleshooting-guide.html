@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Winter Car Troubleshooting Guide - Fix Common Problems & Bugs | 2026</title>
+    <meta name="description" content="Complete troubleshooting guide for My Winter Car. Fix common problems including car starting issues, Problem Bar confusion, phone system bugs, crashes, and survival mechanics. Updated for Early Access 2026.">
+    <meta name="keywords" content="My Winter Car troubleshooting, fix problems, car won't start, Problem Bar, bugs, solutions, early access">
+
+  <link rel="canonical" href="https://mywintercar.com/troubleshooting-guide">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(239, 68, 68, 0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            line-height: 1.8;
+        }
+
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-ice);
+            margin: 2rem 0 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .problem-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-danger);
+        }
+
+        .problem-card.resolved {
+            border-left-color: var(--accent-success);
+        }
+
+        .problem-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--accent-ice);
+            margin-bottom: 0.75rem;
+        }
+
+        .severity {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .severity-critical {
+            background: var(--accent-danger);
+            color: #fff;
+        }
+
+        .severity-high {
+            background: var(--accent-warning);
+            color: #1a1d23;
+        }
+
+        .severity-medium {
+            background: var(--accent-blue);
+            color: #fff;
+        }
+
+        .severity-low {
+            background: var(--accent-success);
+            color: #fff;
+        }
+
+        .solution-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-success);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .solution-title {
+            font-weight: 600;
+            color: var(--accent-success);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--accent-warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .warning-title {
+            font-weight: 600;
+            color: var(--accent-warning);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .info-title {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .steps {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .steps ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .steps li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            padding-left: 0.5rem;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-ice);
+            font-size: 0.9em;
+        }
+
+        .patch-note {
+            background: rgba(74, 158, 255, 0.05);
+            border-left: 3px solid var(--accent-blue);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .patch-version {
+            font-weight: 600;
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+        }
+
+        .version-notice {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--accent-warning);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 2px solid var(--border-color);
+            padding: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .quick-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-survival {
+            background: var(--accent-warm);
+            color: #fff;
+        }
+
+        .badge-vehicle {
+            background: var(--accent-blue);
+            color: #fff;
+        }
+
+        .badge-technical {
+            background: var(--accent-danger);
+            color: #fff;
+        }
+
+        .badge-gameplay {
+            background: var(--accent-success);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <span>❄️</span>
+                <span>My Winter Car Wiki</span>
+            </a>
+            <nav>
+                <a href="#survival">Survival Issues</a>
+                <a href="#vehicles">Vehicle Problems</a>
+                <a href="#technical">Technical Issues</a>
+                <a href="#gameplay">Gameplay Bugs</a>
+                <a href="/vehicles-guide">Vehicles Guide</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>🔧 Troubleshooting Guide - My Winter Car</h1>
+                <p>Comprehensive solutions for common problems, bugs, and issues in My Winter Car Early Access. From the mysterious Problem Bar to car starting issues, we've got you covered with verified fixes.</p>
+            </div>
+        </div>
+
+        <div class="version-notice">
+            <strong>📋 Version Notice:</strong> This guide is based on My Winter Car Early Access patches through v.260102-01 (January 2, 2026). Game is in active development with frequent updates. Some issues may be resolved in newer patches. Check <a href="https://steamcommunity.com/app/4164420/discussions/0/" target="_blank">Steam Discussions</a> for latest updates.
+        </div>
+
+        <div class="quick-nav">
+            <a href="#problem-bar" class="quick-nav-item">
+                <div class="icon">🍺</div>
+                <div>Problem Bar Mystery</div>
+            </a>
+            <a href="#car-start" class="quick-nav-item">
+                <div class="icon">🚗</div>
+                <div>Car Won't Start</div>
+            </a>
+            <a href="#survival" class="quick-nav-item">
+                <div class="icon">❄️</div>
+                <div>Survival Issues</div>
+            </a>
+            <a href="#phone-system" class="quick-nav-item">
+                <div class="icon">📞</div>
+                <div>Phone System</div>
+            </a>
+            <a href="#crashes" class="quick-nav-item">
+                <div class="icon">💥</div>
+                <div>Crashes & Bugs</div>
+            </a>
+            <a href="#patches" class="quick-nav-item">
+                <div class="icon">🔄</div>
+                <div>Patch Notes</div>
+            </a>
+        </div>
+
+        <section id="problem-bar" class="content-section">
+            <h2>🍺 The Problem Bar - Most Confusing Mechanic</h2>
+            
+            <div class="problem-card">
+                <div class="problem-title">❓ "Why is my Problem Bar going up? Water doesn't help!"</div>
+                <span class="category-badge badge-survival">Survival</span>
+                <span class="severity severity-critical">CRITICAL UNDERSTANDING</span>
+                
+                <p><strong>This is NOT a bug</strong> - it's an intentional game mechanic that replaces the old thirst system from My Summer Car.</p>
+                
+                <div class="info-box">
+                    <div class="info-title">🔍 What Is The Problem Bar?</div>
+                    <p>The Problem Bar represents <strong>alcohol dependency (alcoholism)</strong>, NOT thirst or dehydration. Your character starts as an alcoholic, which is why:</p>
+                    <ul>
+                        <li>Empty beer bottles are scattered around your apartment</li>
+                        <li>Parents left a note saying "stop drinking"</li>
+                        <li>The bar is labeled "Problem" not "Thirst"</li>
+                        <li>Water has almost no effect on it</li>
+                    </ul>
+                </div>
+
+                <div class="solution-box">
+                    <div class="solution-title">✅ Solution: Managing Alcoholism</div>
+                    <p><strong>Short-term (Keep playing normally):</strong></p>
+                    <ol>
+                        <li><strong>Drink beer or alcoholic beverages</strong> to lower the Problem Bar</li>
+                        <li>Purchase beer from PSK store (cheap and effective)</li>
+                        <li>Visit neighbors at night for free alcohol</li>
+                        <li>Manage it like you'd manage hunger - keep it from hitting max</li>
+                    </ol>
+                    
+                    <p style="margin-top: 1rem;"><strong>Long-term (Cure alcoholism - "Mega Sobering"):</strong></p>
+                    <ol>
+                        <li>Let Problem Bar reach 100 (turns red)</li>
+                        <li><strong>Wait EXACTLY 38 minutes</strong> (NOT 40 - you'll die at 40)</li>
+                        <li>Drink water to bring bar back to white zone</li>
+                        <li>Repeat this cycle 4-5 times</li>
+                        <li>Bar label will change from "Problem" to "Thirst"</li>
+                        <li>After cure, water will work normally</li>
+                    </ol>
+                </div>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Important Warnings</div>
+                    <ul>
+                        <li><strong>Relapse is possible:</strong> If you drink alcohol again after partial cure, dependency returns</li>
+                        <li><strong>Complete all cycles:</strong> Ensure bar label says "Thirst" before stopping</li>
+                        <li><strong>Don't ignore it:</strong> Maxed Problem Bar causes negative effects (shaking, vision issues)</li>
+                        <li><strong>Timing is critical:</strong> 38 minutes exactly - set a real-world timer</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-title">💻 Alternative: Save File Editing (Advanced)</div>
+                    <p>If you prefer not to play as an alcoholic, you can edit your save file:</p>
+                    <ol>
+                        <li>Download <a href="https://www.nexusmods.com/mysummercar/mods/125" target="_blank">MSC Editor from Nexus Mods</a></li>
+                        <li>Open your My Winter Car save file</li>
+                        <li>Find "playeralcoholism" variable</li>
+                        <li>Set value to <code>0</code></li>
+                        <li>Save and reload game</li>
+                        <li>Water will now work normally to lower Problem Bar</li>
+                    </ol>
+                    <p style="margin-top: 0.5rem; font-style: italic;">Note: This is a workaround, not official gameplay. Use at your discretion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="car-start" class="content-section">
+            <h2>🚗 Car Won't Start - Complete Diagnosis Guide</h2>
+
+            <h3>Sorbett 1600 LTD (Your Daily Driver)</h3>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">❄️ "Car won't start - makes no sound / weak cranking"</div>
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-critical">CRITICAL</span>
+                
+                <p><strong>Cause:</strong> Block heater was NOT plugged in overnight. Engine oil is frozen solid.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Solution: Proper Block Heater Usage</div>
+                    
+                    <p><strong>Prevention (ESSENTIAL):</strong></p>
+                    <ol>
+                        <li>After parking at home, find black plug cord at front bumper</li>
+                        <li>Plug into electrical outlet near apartment</li>
+                        <li>Leave plugged in overnight</li>
+                        <li><strong>Before driving:</strong> UNPLUG the cord (right-click on plug)</li>
+                        <li>If you don't unplug, you'll rip it out while driving</li>
+                    </ol>
+
+                    <p style="margin-top: 1rem;"><strong>Emergency Start (If Already Frozen):</strong></p>
+                    <ol>
+                        <li>Plug in block heater and wait ~10-15 minutes</li>
+                        <li>Enter car, insert key</li>
+                        <li>Pull choke (small knob left of steering wheel)</li>
+                        <li>Pump accelerator 2-3 times</li>
+                        <li>Hold left-click on ignition while giving gas</li>
+                        <li>Keep trying - may take several attempts</li>
+                    </ol>
+                </div>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Developer Note</div>
+                    <p><strong>Patch v.260101-01 (Jan 1, 2026):</strong> Fixed issues with Sorbett engine shutoff/restart procedure.</p>
+                    <p><strong>Patch v.260102-01 (Jan 2, 2026):</strong> Additional Sorbett stability fixes. If still experiencing issues, verify game files on Steam.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">🌡️ "Car starts but heater doesn't work / body temperature dropping"</div>
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-high">High Priority</span>
+                
+                <p><strong>Cause:</strong> Heater system incorrectly configured or engine not warmed up.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Correct Heater Setup</div>
+                    
+                    <p><strong>Step-by-step configuration (Right side of dashboard):</strong></p>
+                    <ol>
+                        <li><strong>Blower button:</strong> Click TWICE for maximum (important!)</li>
+                        <li><strong>Temperature dial:</strong> Mouse scroll to LEFT (hot)</li>
+                        <li><strong>Direction toggle:</strong> Set to LEFT (windshield)</li>
+                        <li><strong>Window heater button:</strong> Click until yellow light appears</li>
+                        <li><strong>Wait 2-3 minutes:</strong> Engine must reach operating temperature</li>
+                    </ol>
+
+                    <p style="margin-top: 1rem;"><strong>Quick reference:</strong> Blower max + Temp left + Direction left</p>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-title">💡 Windshield Scraping</div>
+                    <p>While heater warms up, manually scrape ice:</p>
+                    <ol>
+                        <li>Exit car</li>
+                        <li>Look at windshield</li>
+                        <li>Hold left-click and drag mouse up/down</li>
+                        <li>This clears ice much faster than waiting for heater alone</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">⛽ "Car won't start after refueling at PSK"</div>
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Cause:</strong> Cold engine shutdown without proper procedure.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Solution</div>
+                    <ol>
+                        <li>Pull choke out (left of steering wheel)</li>
+                        <li>Pump accelerator several times</li>
+                        <li>Hold ignition + give gas steadily</li>
+                        <li>Engine should catch after a few seconds</li>
+                    </ol>
+                    
+                    <p style="margin-top: 1rem;"><strong>Prevention:</strong> Some players recommend NOT shutting engine off at PSK. Leave it running while refueling/shopping (realistic for Finnish winter).</p>
+                </div>
+            </div>
+
+            <h3>Corris Rivett (Project Car)</h3>
+
+            <div class="problem-card">
+                <div class="problem-title">🔧 "Rivett engine turns over but won't start"</div>
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-high">High Priority</span>
+                
+                <p><strong>Multiple possible causes - systematic diagnosis required.</strong></p>
+                
+                <div class="steps">
+                    <p><strong>Diagnosis Checklist:</strong></p>
+                    <ol>
+                        <li><strong>Camshaft timing:</strong>
+                            <ul>
+                                <li>Camshaft pulley: Align small arrow with stamp on engine head (behind pulley, slightly under)</li>
+                                <li>Crankshaft pulley: Top left corner has stamp on engine block - align with pulley mark</li>
+                                <li>Auxiliary shaft may also need timing (verify with community)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Electrical connections:</strong>
+                            <ul>
+                                <li>All spark plug wires connected</li>
+                                <li>Distributor connected</li>
+                                <li>Alternator wired</li>
+                                <li>Starter connections tight</li>
+                                <li>Battery terminals secure</li>
+                            </ul>
+                        </li>
+                        <li><strong>Fuel system:</strong>
+                            <ul>
+                                <li>Fuel pump connected and powered</li>
+                                <li>Fuel lines not kinked</li>
+                                <li>Carburetor installed correctly</li>
+                                <li>Fuel tank has gas</li>
+                            </ul>
+                        </li>
+                        <li><strong>Air/fuel mixture:</strong>
+                            <ul>
+                                <li>Target AFR for starting: approximately 11-12 (rich mixture)</li>
+                                <li>Check with AFR gauge if installed</li>
+                            </ul>
+                        </li>
+                        <li><strong>Missing parts:</strong>
+                            <ul>
+                                <li>Verify ALL engine parts installed (use in-game manual)</li>
+                                <li>Check for loose bolts (torque wrench recommended)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Known EA Issues</div>
+                    <p>As of January 2026, some players report Rivett engines that are 100% complete still won't start. If you've verified everything above:</p>
+                    <ul>
+                        <li>Check Steam discussions for latest community fixes</li>
+                        <li>Use MSC Editor to verify save file integrity</li>
+                        <li>Report to developer with save file if persistent</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">🔋 "Kekmet (Tractor) won't start or shut off properly"</div>
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Status:</strong> FIXED in Patch v.260101-01 (January 1, 2026)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.260101-01</div>
+                    <p>Fixed issues with Sorbett and Tractor engine shutoff / restart procedure</p>
+                </div>
+
+                <p>If still experiencing issues after this patch:</p>
+                <ol>
+                    <li>Verify game files on Steam</li>
+                    <li>Make sure you're on latest version</li>
+                    <li>Report on Steam discussions if persists</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="survival" class="content-section">
+            <h2>❄️ Survival Mechanics Issues</h2>
+
+            <div class="problem-card">
+                <div class="problem-title">😴 "Can't sleep - no prompt appears on bed"</div>
+                <span class="category-badge badge-survival">Survival</span>
+                <span class="severity severity-high">High Priority</span>
+                
+                <p><strong>Cause:</strong> Room temperature too low. Sleep is disabled in cold rooms.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Solution</div>
+                    <ol>
+                        <li>Locate radiator in the room (apartment OR parents' house)</li>
+                        <li>Turn on radiator using switch on left side</li>
+                        <li>Set temperature to <strong>30°C or higher</strong> using dial</li>
+                        <li>Wait 5-10 in-game minutes for room to warm</li>
+                        <li>Sleep prompt should appear on bed</li>
+                    </ol>
+                </div>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Known Bug</div>
+                    <p><strong>Death/Respawn Sleep Bug:</strong> After dying and respawning, some players cannot sleep at location different from where they last slept. Workaround:</p>
+                    <ol>
+                        <li>Return to location where you last slept</li>
+                        <li>Sleep there once</li>
+                        <li>After that, you can sleep anywhere again</li>
+                    </ol>
+                    <p style="margin-top: 0.5rem;">This bug has been reported to developer (Jan 2026) and may be fixed in future patch.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">🥶 "Character freezing to death even with jacket"</div>
+                <span class="category-badge badge-survival">Survival</span>
+                <span class="severity severity-critical">CRITICAL</span>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Multiple Solutions</div>
+                    
+                    <p><strong>Essential gear:</strong></p>
+                    <ul>
+                        <li><strong>Winter jacket:</strong> Found on floor near apartment door - press F to equip</li>
+                        <li>Jacket MUST be equipped, not just picked up</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong>Indoor heating:</strong></p>
+                    <ul>
+                        <li>Keep apartment radiators on and set high (25-30°C)</li>
+                        <li>Use sauna at parents' house to warm up quickly</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong>Vehicle heating:</strong></p>
+                    <ul>
+                        <li>Always run heater at max in Sorbett (see car heater section above)</li>
+                        <li>Don't travel long distances in cold car</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem;"><strong>Time management:</strong></p>
+                    <ul>
+                        <li>Minimize time outdoors in extreme cold</li>
+                        <li>Plan routes to reduce exposure</li>
+                        <li>Take warm-up breaks at PSK or parents' house</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="phone-system" class="content-section">
+            <h2>📞 Phone System Problems</h2>
+
+            <div class="problem-card">
+                <div class="problem-title">📱 "Called for Rivett/parts but nothing happened"</div>
+                <span class="category-badge badge-gameplay">Gameplay</span>
+                <span class="severity severity-high">High Priority</span>
+                
+                <p><strong>Cause:</strong> Hung up too early or didn't wait for map marker/delivery confirmation.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Correct Phone Procedure</div>
+                    
+                    <p><strong>Critical rule: NEVER hang up early. Wait until they hang up on you.</strong></p>
+                    
+                    <p><strong>Step-by-step:</strong></p>
+                    <ol>
+                        <li>Pick up receiver (left-click)</li>
+                        <li><strong>Use NUMPAD to dial</strong> (not number row!)</li>
+                        <li>Press Enter to call</li>
+                        <li><strong>DO NOT HANG UP</strong> - listen to entire message</li>
+                        <li>Wait for person to finish talking completely</li>
+                        <li>Wait for them to hang up (line goes dead)</li>
+                        <li><strong>Only then:</strong> Check map for marker (Rivett) or mailbox (parts)</li>
+                    </ol>
+
+                    <p style="margin-top: 1rem;"><strong>Common phone numbers:</strong></p>
+                    <ul>
+                        <li><strong>Corris Rivett seller:</strong> 08609553 (wait for map marker)</li>
+                        <li><strong>Delivery job:</strong> 08-231206 (PSK job board)</li>
+                        <li><strong>Taxi job:</strong> 08-712112 (PSK job board)</li>
+                        <li><strong>Parts orders:</strong> Various numbers from AMIS catalog</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-title">💡 Parts Order System</div>
+                    <p><strong>After successful parts order call:</strong></p>
+                    <ul>
+                        <li>Wait 2-3 in-game days</li>
+                        <li>Check PSK mailbox for delivery notification letter</li>
+                        <li>Drive to post office</li>
+                        <li>Pick up package</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">💼 "Futufon job door won't open"</div>
+                <span class="category-badge badge-gameplay">Gameplay</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Cause:</strong> Job hasn't started yet. Futufon jobs begin on MONDAY, not immediately.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Solution</div>
+                    <ol>
+                        <li>After calling and getting hired, note the current day</li>
+                        <li>Wait until <strong>next Monday</strong></li>
+                        <li>Locker door will unlock on Monday morning</li>
+                        <li>Work schedule: Monday-Friday, regular business hours</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="crashes" class="content-section">
+            <h2>💥 Crashes, Bugs & Technical Issues</h2>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">💥 "Game crashes at PSK when buying food"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-critical">CRITICAL</span>
+                
+                <p><strong>Status:</strong> KNOWN ISSUE - Temporary fix in Patch v.251230-04 (Dec 30, 2025)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.251230-04</div>
+                    <p>Burger and Ala Carte seller are disabled temporarily to figure out PSK crashing</p>
+                </div>
+
+                <p><strong>Current workaround:</strong></p>
+                <ul>
+                    <li>Food vendors at PSK temporarily disabled</li>
+                    <li>Shop for other items - no crashes reported</li>
+                    <li>Wait for developer to identify root cause</li>
+                    <li>Future patch will re-enable food vendors</li>
+                </ul>
+            </div>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">💾 "Permadeath not deleting save files"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-high">High Priority</span>
+                
+                <p><strong>Status:</strong> FIXED in Patch v.251230-04 (Dec 30, 2025)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.251230-04</div>
+                    <p>Fixed Permadeath not deleting save files</p>
+                </div>
+
+                <p>If you started before this patch and have "ghost" saves, manually delete them from:</p>
+                <code>C:\Users\[YourName]\AppData\LocalLow\Amistech\My Winter Car</code>
+            </div>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">🔊 "No sound from CD player / music"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Status:</strong> FIXED in Patch v.260101-01 (Jan 1, 2026)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.260101-01</div>
+                    <p>Fixed CD audio not having sound in Taxi and Sorbett</p>
+                </div>
+
+                <p>If imported CDs from My Summer Car, they should now work. If still no sound:</p>
+                <ol>
+                    <li>Verify game files on Steam</li>
+                    <li>Check Windows audio mixer (My Winter Car not muted)</li>
+                    <li>Re-import CD files</li>
+                </ol>
+            </div>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">🚪 "Car shed doors getting stuck / won't open"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-low">Low</span>
+                
+                <p><strong>Status:</strong> FIXED in Patch v.251230-04 (Dec 30, 2025)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.251230-04</div>
+                    <p>Fixed Car Shed doors getting stuck if closed</p>
+                </div>
+            </div>
+
+            <div class="problem-card resolved">
+                <div class="problem-title">📦 "Ordered Subwoofers/Antennas but only got one piece"</div>
+                <span class="category-badge badge-gameplay">Gameplay</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Status:</strong> FIXED in Patch v.260101-01 (Jan 1, 2026)</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.260101-01</div>
+                    <p>Fixed Subwoofers and Antennas order not delivering both pieces</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">🎮 "Controller throttle/brake not working"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Cause:</strong> Right stick defaulting to mouse cursor instead of throttle/brake.</p>
+                
+                <div class="solution-box">
+                    <div class="solution-title">✅ Workaround</div>
+                    <p>Controller remapping in Early Access has known issues. Community workaround:</p>
+                    <ol>
+                        <li>When setting pedals, <strong>keep pedals pressed IN</strong></li>
+                        <li>While pressed, press the map button</li>
+                        <li>Controls may be inverted - settings screen doesn't properly reflect this</li>
+                        <li>Test in-game and adjust as needed</li>
+                    </ol>
+                    <p style="margin-top: 0.5rem;">Note: Full controller support being improved in future updates.</p>
+                </div>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-title">🧊 "Physics glitches / Sorbett freaking out"</div>
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-medium">Medium</span>
+                
+                <p><strong>Status:</strong> Partially improved in Patch v.251230-04</p>
+                
+                <div class="patch-note">
+                    <div class="patch-version">Patch v.251230-04</div>
+                    <p>Improved some Sorbett colliders to lessen the possibility of physics glitching</p>
+                </div>
+
+                <p><strong>If still experiencing physics bugs:</strong></p>
+                <ul>
+                    <li>Save game frequently</li>
+                    <li>Avoid high-speed collisions</li>
+                    <li>Don't park vehicles at extreme angles</li>
+                    <li>Report specific triggers to developer</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="patches" class="content-section">
+            <h2>🔄 Recent Patch Notes Summary</h2>
+
+            <h3>Patch v.260102-01 (January 2, 2026)</h3>
+            <ul>
+                <li>Additional attempt to fix Sorbett issues</li>
+                <li>Fixed save data for some items/tools (locations may have reset)</li>
+            </ul>
+
+            <h3>Patch v.260101-01 (January 1, 2026)</h3>
+            <ul>
+                <li>Fixed issues with Sorbett and Tractor engine shutoff/restart procedure</li>
+                <li>Fixed Subwoofers and Antennas order not delivering both pieces</li>
+                <li>Fixed Passenger Race Seat not included in orders</li>
+                <li>Fixed CD audio not having sound in Taxi and Sorbett</li>
+            </ul>
+
+            <h3>Patch v.251230-04 (December 30, 2025)</h3>
+            <ul>
+                <li>Burger and Ala Carte sellers disabled temporarily (PSK crashing fix)</li>
+                <li>Fixed Wood Cutter breaking if attached to Tractor when player goes too far</li>
+                <li>Improved Sorbett colliders to reduce physics glitching</li>
+                <li>Fixed Permadeath not deleting save files</li>
+                <li>Fixed Car Shed doors getting stuck</li>
+                <li>Fixed CD music heard from long distances</li>
+                <li>Fixed floating Radio</li>
+                <li>Fixed Ignition hole available without Steering Column</li>
+                <li>Fixed Glovebox available without Dashboard</li>
+                <li>Fixed Cottage Sauna stove not heating</li>
+                <li>Fixed Corris rear window heater VIN plate issue</li>
+                <li>Fixed House and Apartment Fuses cross referencing</li>
+            </ul>
+
+            <h3>Known Issues (As of EA Launch - December 29, 2025)</h3>
+            <p>From <a href="https://steamcommunity.com/app/4164420/discussions/0/694248493352678508/" target="_blank">Developer's EA Release Notes</a>:</p>
+            <ul>
+                <li>No Steam achievements yet (will be added)</li>
+                <li>Lottery not implemented (Megaveto sports betting works)</li>
+                <li>Some imported CD issues</li>
+                <li>AMIS catalog missing interior tuning items</li>
+                <li>Store shelves appear empty (graphical issue - items purchasable)</li>
+                <li>No intro/ending implemented</li>
+                <li>Some texture work missing</li>
+                <li>Custom Corris paintjob import not yet implemented</li>
+                <li>Some parts can't be re-sprayed</li>
+                <li>Weather simplified (will be expanded with weekly forecasts)</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🆘 Still Having Problems?</h2>
+
+            <div class="info-box">
+                <div class="info-title">📢 Community Resources</div>
+                <ul>
+                    <li><strong>Steam Discussions:</strong> <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank">Official forums</a> - most active</li>
+                    <li><strong>Developer:</strong> Toplessgun actively responds on Steam</li>
+                    <li><strong>Discord:</strong> My Winter Car community Discord server</li>
+                    <li><strong>Reddit:</strong> r/MySummerCar covers My Winter Car too</li>
+                    <li><strong>Save File Editor:</strong> <a href="https://www.nexusmods.com/mysummercar/mods/125" target="_blank">MSC Editor on Nexus Mods</a></li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Backup Your Saves!</div>
+                <p>With Early Access bugs and Permadeath mode, ALWAYS keep backup saves:</p>
+                <ol>
+                    <li>Navigate to: <code>C:\Users\[YourName]\AppData\LocalLow\Amistech\My Winter Car</code></li>
+                    <li>Copy entire folder to safe location</li>
+                    <li>Create backups after major progress</li>
+                    <li>Keep multiple backups (different dates)</li>
+                </ol>
+            </div>
+
+            <h3>Reporting Bugs to Developer</h3>
+            <p>Help improve the game by reporting bugs properly:</p>
+            <ol>
+                <li>Check if issue already reported on Steam Discussions</li>
+                <li>Update to latest patch first</li>
+                <li>Verify game files (Steam > Properties > Local Files)</li>
+                <li>Include: Game version, what you were doing, reproducible steps</li>
+                <li>Attach save file if requested</li>
+                <li>Be patient - solo developer fixing issues rapidly</li>
+            </ol>
+        </section>
+
+        <section class="content-section">
+            <h2>🔗 Related Guides</h2>
+            <div class="quick-nav">
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <div>Complete Vehicles Guide</div>
+                </a>
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <div>Winter Survival Guide</div>
+                </a>
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <div>Rivett Build Guide</div>
+                </a>
+                <a href="/beginners-guide" class="quick-nav-item">
+                    <div class="icon">🎓</div>
+                    <div>Beginner's Guide</div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>My Winter Car Wiki</strong> - Unofficial fan-made troubleshooting guide</p>
+        <p>Game developed by Amistech Games | Early Access Release: December 29, 2025</p>
+        <p>All solutions verified against official patch notes and community testing</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Not affiliated with Amistech Games | Guide updated: January 4, 2026</p>
+    </footer>
+</body>
+</html>
