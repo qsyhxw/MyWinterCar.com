@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Community - My Winter Car Wiki 2026</title>
+    <meta name="description" content="Connect with the My Winter Car community, report issues, and get help. Official Discord, Steam forums, and community resources for 2026.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="canonical" href="https://mywintercar.com/contact">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+
+    <style>
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-success: #10b981;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 29, 35, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+            padding: 1rem 2rem;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-ice));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(125, 211, 252, 0.05));
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-ice));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .section-description {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Community Cards Grid */
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .community-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .community-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-ice));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .community-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+        }
+
+        .community-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .community-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .community-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-ice);
+        }
+
+        .community-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .badge-official {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-success);
+        }
+
+        .badge-community {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .community-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .community-stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-ice));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(74, 158, 255, 0.4);
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-box-title {
+            color: var(--accent-blue);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .warning-box-title {
+            color: var(--accent-warning);
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Report Section */
+        .report-section {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .report-section h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+        }
+
+        .report-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .report-option {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .report-option:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        .report-option h4 {
+            color: var(--accent-ice);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .report-option p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            color: var(--accent-ice);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .faq-answer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 2px solid var(--accent-blue);
+            padding: 3rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-blue);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .report-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <ul class="nav-links">
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/beginner-guide">Beginner's Guide</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Contact & Community</h1>
+        <p>Connect with fellow players, get help, and stay updated with the latest from the My Winter Car community</p>
+    </div>
+
+    <main>
+        <!-- Community Platforms Section -->
+        <section>
+            <h2 class="section-title">Join the Community</h2>
+            <p class="section-description">Connect with thousands of My Winter Car players across multiple platforms. Share tips, ask questions, and stay updated with the latest game developments.</p>
+
+            <div class="community-grid">
+                <!-- Discord -->
+                <div class="community-card">
+                    <div class="community-icon">💬</div>
+                    <h3>Discord Server</h3>
+                    <span class="community-badge badge-community">Community-Run</span>
+                    <p>Join the largest My Winter Car Discord community with over 26,000 members. Real-time chat, voice channels, and active community discussions.</p>
+                    <div class="community-stats">
+                        <div class="stat">
+                            <span class="stat-value">3,000+</span>
+                            <span class="stat-label">Online</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">26,000+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/rSJSyEUxyD" class="btn-primary" target="_blank" rel="noopener noreferrer">Join Discord</a>
+                </div>
+
+                <!-- Steam Community -->
+                <div class="community-card">
+                    <div class="community-icon">🎮</div>
+                    <h3>Steam Community</h3>
+                    <span class="community-badge badge-official">Official Platform</span>
+                    <p>The official discussion platform for My Winter Car. Report bugs, share feedback, and participate in developer-monitored discussions.</p>
+                    <div class="community-stats">
+                        <div class="stat">
+                            <span class="stat-value">Official</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">Active</span>
+                            <span class="stat-label">Forums</span>
+                        </div>
+                    </div>
+                    <a href="https://steamcommunity.com/app/4164420/discussions/" class="btn-primary" target="_blank" rel="noopener noreferrer">Visit Forums</a>
+                </div>
+
+                <!-- Fandom Wiki -->
+                <div class="community-card">
+                    <div class="community-icon">📚</div>
+                    <h3>Fandom Wiki</h3>
+                    <span class="community-badge badge-community">Community Resource</span>
+                    <p>Community-maintained wiki with extensive documentation, vehicle details, and game mechanics information updated by dedicated players.</p>
+                    <div class="community-stats">
+                        <div class="stat">
+                            <span class="stat-value">200+</span>
+                            <span class="stat-label">Articles</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">Daily</span>
+                            <span class="stat-label">Updates</span>
+                        </div>
+                    </div>
+                    <a href="https://my-winter-car.fandom.com/wiki/My_Winter_Car_Wiki" class="btn-primary" target="_blank" rel="noopener noreferrer">Visit Wiki</a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Community Guidelines</div>
+                <p>All community platforms follow standard online etiquette. Be respectful, help others, and avoid spoilers without warnings.</p>
+                <p>The Discord server is community-run and recommended by the development team. Steam Forums are the official platform for bug reports and developer feedback.</p>
+            </div>
+        </section>
+
+        <!-- Report Issues Section -->
+        <section class="report-section">
+            <h2>Report Issues & Feedback</h2>
+            <p class="section-description">Found a bug? Have suggestions? Your feedback helps improve both the game and this wiki.</p>
+
+            <div class="warning-box">
+                <div class="warning-box-title">⚠️ Early Access Notice</div>
+                <p>My Winter Car is currently in Early Access. Bugs and incomplete features are expected. Always check the latest patch notes before reporting known issues.</p>
+            </div>
+
+            <div class="report-options">
+                <div class="report-option">
+                    <h4>🐛 Game Bugs</h4>
+                    <p>Report technical issues, crashes, or gameplay bugs directly to the developers via Steam Forums.</p>
+                    <a href="https://steamcommunity.com/app/4164420/discussions/" class="btn-primary" target="_blank" rel="noopener noreferrer">Report on Steam</a>
+                </div>
+
+                <div class="report-option">
+                    <h4>📝 Wiki Corrections</h4>
+                    <p>Found incorrect information on this wiki? Report it on our Discord or Steam discussions with specific details.</p>
+                    <a href="https://discord.gg/rSJSyEUxyD" class="btn-primary" target="_blank" rel="noopener noreferrer">Report on Discord</a>
+                </div>
+
+                <div class="report-option">
+                    <h4>💡 Suggestions</h4>
+                    <p>Share your ideas for game improvements or wiki features in the Steam Community forums or Discord.</p>
+                    <a href="https://steamcommunity.com/app/4164420/discussions/" class="btn-primary" target="_blank" rel="noopener noreferrer">Share Ideas</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How do I contact the developer directly?</div>
+                <div class="faq-answer">Developer Johannes Rojola (Toplessgun) primarily monitors the <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" rel="noopener noreferrer">Steam Community Forums</a>. For official support, use the Steam platform. He occasionally participates in Discord discussions but Steam is the primary channel.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is this wiki official?</div>
+                <div class="faq-answer">No, mywintercar.com is a community-created resource independent of the game developers. We follow strict fact-checking protocols and cross-reference information with official sources. For official information, always check the <a href="https://store.steampowered.com/app/4164420/My_Winter_Car/" target="_blank" rel="noopener noreferrer">Steam Store page</a> and developer announcements.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Where can I find the latest game updates?</div>
+                <div class="faq-answer">Check the <a href="https://steamcommunity.com/app/4164420" target="_blank" rel="noopener noreferrer">Steam Community Hub</a> for official patch notes. The developer posts major updates in the Steam News section and discusses upcoming features in the forums.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How can I contribute to this wiki?</div>
+                <div class="faq-answer">We welcome contributions! Join our <a href="https://discord.gg/rSJSyEUxyD" target="_blank" rel="noopener noreferrer">Discord community</a> to discuss potential contributions. All submissions must include sources and follow our fact-checking standards outlined in the <a href="/about">About page</a>.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I use wiki content in my videos/streams?</div>
+                <div class="faq-answer">Yes! Our guides are free to reference in videos, streams, and other content. We appreciate attribution but it's not required. Just don't claim you wrote the guides yourself. See our <a href="/about">About page</a> for more details.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why isn't Reddit listed as a community platform?</div>
+                <div class="faq-answer">As of January 2026, there is no established official or large-scale My Winter Car subreddit. The primary community hubs are Discord and Steam Forums. If a dedicated subreddit emerges, we'll add it here.</div>
+            </div>
+        </section>
+
+        <!-- Additional Resources -->
+        <section>
+            <h2 class="section-title">Additional Resources</h2>
+            <div class="info-box">
+                <div class="info-box-title">🔗 Official Links</div>
+                <p><strong>Steam Store:</strong> <a href="https://store.steampowered.com/app/4164420/My_Winter_Car/" target="_blank" rel="noopener noreferrer">https://store.steampowered.com/app/4164420</a></p>
+                <p><strong>Developer Page:</strong> <a href="https://www.amistech.com/" target="_blank" rel="noopener noreferrer">Amistech Games</a></p>
+                <p><strong>My Summer Car (Predecessor):</strong> <a href="https://store.steampowered.com/app/516750/My_Summer_Car/" target="_blank" rel="noopener noreferrer">Steam Page</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="/about">About This Wiki</a></li>
+                    <li><a href="/about#mission">Our Mission</a></li>
+                    <li><a href="/about#changelog">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="/guides">All Guides</a></li>
+                    <li><a href="/beginner-guide">Beginner's Guide</a></li>
+                    <li><a href="/vehicles-guide">Vehicle Comparison</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="https://discord.gg/rSJSyEUxyD" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="https://steamcommunity.com/app/4164420" target="_blank" rel="noopener noreferrer">Steam Community</a></li>
+                    <li><a href="https://my-winter-car.fandom.com" target="_blank" rel="noopener noreferrer">Fandom Wiki</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/about#disclaimer">Disclaimer</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>My Winter Car Wiki - Community Resource | Not affiliated with Amistech Games</p>
+            <p>Version v.260105-02 | Last Updated: January 5, 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
