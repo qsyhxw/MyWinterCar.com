@@ -188,6 +188,17 @@
             font-size: 1.05rem;
         }
 
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+            text-decoration: underline;
+        }
+
         .info-box {
             background: var(--bg-card);
             border-left: 4px solid var(--accent-blue);
@@ -446,6 +457,31 @@
             color: var(--money-gold);
         }
 
+        .related-guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .related-guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .related-guide-card h3 {
+            margin-top: 0;
+        }
+
+        .section-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
         .back-to-top {
             position: fixed;
             bottom: 2rem;
@@ -535,8 +571,8 @@
             <p>Money (<span class="highlight">markka, mk</span>) is essential in My Winter Car. You need it for:</p>
             <ul>
                 <li><strong>Food & Survival:</strong> ~50-100mk daily at Teimo's shop</li>
-                <li><strong>Rivett Purchase:</strong> ~500mk for the car body</li>
-                <li><strong>Parts Acquisition:</strong> 200+ parts ranging from 50mk-500mk+ each</li>
+                <li><strong><a href="/corris-rivett-guide">Rivett Purchase</a>:</strong> ~500mk for the car body</li>
+                <li><strong><a href="/parts-acquisition-guide">Parts Acquisition</a>:</strong> 200+ parts ranging from 50mk-500mk+ each</li>
                 <li><strong>Fuel:</strong> Regular refueling costs</li>
                 <li><strong>Vehicle Maintenance:</strong> Repairs, inspection fees</li>
                 <li><strong>Total Rivett Build Cost:</strong> Estimated 15,000-30,000mk+ (unconfirmed)</li>
@@ -554,7 +590,7 @@
             </div>
 
             <h3>Starting Money</h3>
-            <p>You begin with approximately <span class="highlight">1,000-1,500mk</span> in cash and bank combined. This is barely enough for 2-3 weeks of survival without income. <strong>Getting a job immediately is critical.</strong></p>
+            <p>You begin with approximately <span class="highlight">1,000-1,500mk</span> in cash and bank combined. This is barely enough for 2-3 weeks of <a href="/survival-guide">survival</a> without income. <strong>Getting a job immediately is critical.</strong></p>
         </section>
 
         <section id="job-comparison" class="content-section">
@@ -577,7 +613,7 @@
                         <td><span class="highlight">2,470-2,910mk</span><br><small>Verified ✓</small></td>
                         <td>40 hrs/week<br>M-F, 7:00-17:00</td>
                         <td>⭐⭐ Easy</td>
-                        <td>Sorbett transport</td>
+                        <td><a href="/vehicles-guide#sorbett">Sorbett</a> transport</td>
                         <td>⭐⭐⭐⭐⭐<br>Guaranteed</td>
                     </tr>
                     <tr>
@@ -585,7 +621,7 @@
                         <td><span style="color: var(--text-secondary)">~3,200mk?</span><br><small>Unconfirmed</small></td>
                         <td>Flexible<br>~5-8 hours</td>
                         <td>⭐⭐⭐ Medium</td>
-                        <td>Kekmet + trailer</td>
+                        <td><a href="/vehicles-guide#kekmet">Kekmet</a> + trailer</td>
                         <td>⭐⭐⭐⭐<br>Repeatable</td>
                     </tr>
                     <tr>
@@ -601,7 +637,7 @@
                         <td><span style="color: var(--text-secondary)">Unknown</span><br><small>Prize money</small></td>
                         <td>Weekend event<br>Bi-weekly</td>
                         <td>⭐⭐⭐⭐ Hard</td>
-                        <td>Built Rivett</td>
+                        <td>Built <a href="/corris-rivett-guide">Rivett</a></td>
                         <td>⭐⭐<br>Skill-based</td>
                     </tr>
                     <tr>
@@ -687,6 +723,7 @@
                         <li>From apartment: Drive towards Loppe, look for highway exit</li>
                         <li>Large industrial building on left side</li>
                         <li>Park in employee lot</li>
+                        <li><strong>Vehicle needed:</strong> Use your <a href="/vehicles-guide#sorbett">Sorbett</a> for daily commute</li>
                     </ul>
                 </div>
 
@@ -786,7 +823,7 @@
                         <li><strong>Work 2-4 weeks:</strong> Save 10,000-15,000mk, then quit to build Rivett</li>
                         <li><strong>Sleep management:</strong> Go to bed by 23:00 to wake naturally for 7:00 shift</li>
                         <li><strong>Meal prep:</strong> Buy 5 days food Sunday, keep in office fridge (if available)</li>
-                        <li><strong>Weekend building:</strong> Use Sat-Sun for Rivett work</li>
+                        <li><strong>Weekend building:</strong> Use Sat-Sun for <a href="/corris-rivett-guide">Rivett work</a></li>
                     </ul>
                 </div>
             </div>
@@ -811,7 +848,7 @@
 
                 <h3>Requirements</h3>
                 <ul>
-                    <li><strong>Vehicle:</strong> Kekmet tractor + trailer (found at parents' house)</li>
+                    <li><strong>Vehicle:</strong> <a href="/vehicles-guide#kekmet">Kekmet tractor</a> + trailer (found at parents' house)</li>
                     <li><strong>Tool:</strong> Axe (at parents' house woodshed)</li>
                     <li><strong>Location:</strong> Must use parents' house property</li>
                     <li><strong>Time investment:</strong> Estimated 5-8 hours real-time for full load</li>
@@ -936,7 +973,7 @@
                     </ul>
                     <p><strong>Tips:</strong></p>
                     <ul>
-                        <li>Use Sorbett or Gifu for capacity</li>
+                        <li>Use <a href="/vehicles-guide#sorbett">Sorbett</a> or <a href="/vehicles-guide#gifu">Gifu</a> for capacity</li>
                         <li>Plan efficient route (minimize backtracking)</li>
                         <li>Mark delivered locations mentally</li>
                     </ul>
@@ -997,7 +1034,7 @@
                     <div class="job-salary unknown">Prize Money (Unknown)</div>
                 </div>
 
-                <p>Two racing events alternate bi-weekly: <strong>Rally Sprint Race</strong> (every other weekend) and <strong>Ice Track Race</strong> (opposite weekends, Fri-Sun).</p>
+                <p>Two racing events alternate bi-weekly: <strong>Rally Sprint Race</strong> (every other weekend) and <strong>Ice Track Race</strong> (opposite weekends, Fri-Sun). Full details in our <a href="/racing-guide">Racing Guide</a>.</p>
 
                 <h3>Rally Sprint Race</h3>
                 <p><strong>Track:</strong> Point-to-point rally stage through forest roads<br>
@@ -1011,7 +1048,7 @@
 
                 <p><strong>Requirements:</strong></p>
                 <ul>
-                    <li>Fully assembled, running Rivett</li>
+                    <li>Fully assembled, running <a href="/corris-rivett-guide">Rivett</a></li>
                     <li>Strong engine build recommended (tuned for power)</li>
                     <li>Good suspension setup</li>
                     <li>Driver skill - rally driving is difficult</li>
@@ -1086,7 +1123,7 @@
 
                 <p><strong>What to sell:</strong></p>
                 <ul>
-                    <li>Extra Rivett parts you don't need</li>
+                    <li>Extra <a href="/parts-acquisition-guide">Rivett parts</a> you don't need</li>
                     <li>Duplicate parts from Parts Magazine</li>
                     <li>Old/worn parts after upgrades</li>
                     <li>Found items around map</li>
@@ -1135,7 +1172,7 @@
                 <ul>
                     <li>ONLY job with confirmed, reliable income</li>
                     <li>Guaranteed 2,470-2,910mk per week</li>
-                    <li>Eliminates survival stress</li>
+                    <li>Eliminates <a href="/survival-guide">survival stress</a></li>
                     <li>Build financial buffer</li>
                 </ul>
 
@@ -1160,7 +1197,7 @@
             <div class="income-calculator">
                 <div class="calculator-title">💰 Strategy: Save for Rivett Build</div>
                 
-                <p><strong>Goal:</strong> Accumulate 15,000-20,000mk for Rivett purchase + initial parts</p>
+                <p><strong>Goal:</strong> Accumulate 15,000-20,000mk for <a href="/corris-rivett-guide">Rivett purchase</a> + initial parts</p>
 
                 <p><strong>Option A: Stay at Futufon</strong></p>
                 <ul>
@@ -1205,7 +1242,7 @@
                 <p><strong>Financial management:</strong></p>
                 <ul>
                     <li>Keep 2,000mk emergency fund (survival + fuel)</li>
-                    <li>Buy parts in batches (save on parts magazine calls)</li>
+                    <li>Buy <a href="/parts-acquisition-guide">parts</a> in batches (save on parts magazine calls)</li>
                     <li>Prioritize engine/drivetrain parts (get car running first)</li>
                     <li>Cosmetic parts can wait</li>
                 </ul>
@@ -1288,10 +1325,60 @@
             </div>
         </section>
 
+        <!-- NEW: Related Guides Section -->
+        <section class="content-section">
+            <h2>📚 Related Guides</h2>
+            <p class="section-description">Master other aspects of My Winter Car to maximize your efficiency and enjoyment.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <!-- Corris Rivett Build -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🏎️ Corris Rivett Build Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Learn how to spend your hard-earned money wisely. Complete build guide covering all 200+ parts, assembly order, and cost optimization strategies.</p>
+                    <a href="/corris-rivett-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Build Guide →</a>
+                </div>
+
+                <!-- Parts Acquisition -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🔧 Parts Acquisition Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Where to buy parts, price comparison between Fleetari's shop and flea market, and how to save money on your Rivett build.</p>
+                    <a href="/parts-acquisition-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Parts Guide →</a>
+                </div>
+
+                <!-- Winter Survival -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">❄️ Winter Survival Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Don't die from hypothermia! Temperature management, hunger/thirst systems, and emergency procedures to protect your hard-earned income.</p>
+                    <a href="/survival-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Survival Guide →</a>
+                </div>
+
+                <!-- Vehicles Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🚗 Complete Vehicles Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Master all vehicles including Sorbett (daily commute), Kekmet (firewood job), and Rivett (your money's final destination).</p>
+                    <a href="/vehicles-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Vehicles Guide →</a>
+                </div>
+
+                <!-- Beginner's Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🎓 Beginner's Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">New to My Winter Car? Start here. First 30 minutes tutorial, controls, basic mechanics, and how to survive your first week.</p>
+                    <a href="/beginner-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Beginner's Guide →</a>
+                </div>
+
+                <!-- Racing Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🏁 Racing & Performance</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Ice track and rally racing details. Potential income source once your Rivett is built and you've mastered driving mechanics.</p>
+                    <a href="/racing-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Racing Guide →</a>
+                </div>
+            </div>
+        </section>
+
         <div class="info-box warning" style="margin-top: 3rem;">
             <div class="info-box-title">📌 Content Version Notice</div>
             <p><strong>This guide is based on:</strong> My Winter Car Early Access (Released December 29, 2025)</p>
-            <p><strong>Last Updated:</strong> December 31, 2025</p>
+            <p><strong>Last Updated:</strong> January 5, 2026</p>
             <p><strong>Verified Data:</strong> Only Futufon office job salary (2,470/2,910mk) is developer-confirmed. All other job payouts marked as unconfirmed pending community testing.</p>
             <p><strong>Critical:</strong> This guide will be updated within 72 hours of any job payout confirmations from official sources or widespread community verification.</p>
         </div>
@@ -1333,5 +1420,6 @@
             }
         });
     </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
