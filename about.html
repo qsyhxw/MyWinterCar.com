@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About mywintercar.com - Mission, Team & Content Policy 2026</title>
+    <meta name="description" content="Learn about mywintercar.com's mission to provide fact-checked My Winter Car guides. Our content quality policy, fact-checking process, and community-driven approach to wiki building.">
+    <link rel="canonical" href="https://mywintercar.com/about">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-success: #10b981;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(125, 211, 252, 0.05));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .content-section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-title {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-success);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .success-title {
+            font-weight: 600;
+            color: var(--accent-success);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border-left: 4px solid var(--accent-warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .warning-title {
+            font-weight: 600;
+            color: var(--accent-warning);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-blue);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 3px solid var(--bg-primary);
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--accent-ice);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Tech Stack Grid */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .tech-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .tech-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-ice);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-ice);
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .stats-grid,
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <nav>
+                <a href="/#guides">Guides</a>
+                <a href="/beginner-guide">Beginner's Guide</a>
+                <a href="/#community">Community</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>About mywintercar.com</h1>
+        <p class="hero-subtitle">Building the most comprehensive, fact-checked resource hub for My Winter Car players worldwide</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Mission Statement -->
+        <section class="content-section" id="mission">
+            <h2>🎯 Our Mission</h2>
+            <p>mywintercar.com was created to address a critical need in the My Winter Car community: <strong>accurate, verified information</strong> for a game in Early Access where mechanics are constantly evolving.</p>
+            
+            <p>We're building a fast, dark-themed wiki that provides step-by-step guides, comprehensive data tables, and lightweight tools to help players navigate the harsh Finnish winter of 1999. Every piece of information on this site is fact-checked against multiple sources before publication.</p>
+
+            <div class="info-box">
+                <div class="info-title">💡 What Makes Us Different</div>
+                <p>Unlike general wikis that allow unchecked community edits, we enforce a strict <strong>fact-checking workflow</strong> before any guide goes live. This means you get reliable information you can trust, even as the game evolves through Early Access.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Comprehensive Guides</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Parts Documented</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Fact-Checked Content</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">EA</div>
+                    <div class="stat-label">Early Access Coverage</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Quality Policy -->
+        <section class="content-section" id="quality-policy">
+            <h2>✅ Content Quality Policy</h2>
+            <p>Every guide on mywintercar.com follows a mandatory quality assurance process to ensure accuracy and reliability.</p>
+
+            <h3>Our Fact-Checking Workflow</h3>
+            <p>Before any guide is published, we complete a comprehensive fact-check report that includes:</p>
+
+            <div class="success-box">
+                <div class="success-title">📋 Fact-Check Requirements</div>
+                <ul>
+                    <li><strong>Multi-Source Verification:</strong> Every claim must be verified by at least 2 independent sources</li>
+                    <li><strong>Source Hierarchy:</strong> We prioritize official wiki → developer statements → community consensus</li>
+                    <li><strong>Confidence Scoring:</strong> Each piece of information receives a confidence rating (0-1.0 scale)</li>
+                    <li><strong>Timestamp Requirements:</strong> All evidence must include dates/version numbers for time-sensitive data</li>
+                    <li><strong>EA Uncertainty Warnings:</strong> Information with confidence &lt; 0.7 receives explicit warning boxes</li>
+                </ul>
+            </div>
+
+            <h3>What We DON'T Publish</h3>
+            <ul>
+                <li>Single-source claims without verification</li>
+                <li>Speculation or theories presented as facts</li>
+                <li>Information from sources older than 12 months (unless re-verified)</li>
+                <li>Game data that cannot be independently confirmed</li>
+            </ul>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Early Access Disclaimer</div>
+                <p>My Winter Car is in Early Access. Game mechanics can change with any patch. When you see yellow warning boxes in our guides, it means that specific information has lower confidence or may be subject to change. We update our guides as the game evolves.</p>
+            </div>
+
+            <h3>Handling Conflicting Information</h3>
+            <p>When sources disagree, we document both perspectives and label them clearly. We never make arbitrary decisions about which source is "correct" without testing or community consensus.</p>
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="content-section" id="tech-stack">
+            <h2>🛠️ Technology & Design</h2>
+            <p>mywintercar.com is built with speed, accessibility, and maintainability in mind.</p>
+
+            <h3>Core Technologies</h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">📄</div>
+                    <div class="tech-name">HTML5</div>
+                    <div class="tech-desc">Semantic markup</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🎨</div>
+                    <div class="tech-name">CSS3</div>
+                    <div class="tech-desc">Custom design system</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">⚡</div>
+                    <div class="tech-name">No Framework</div>
+                    <div class="tech-desc">Zero JavaScript for speed</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">🌐</div>
+                    <div class="tech-name">Static Hosting</div>
+                    <div class="tech-desc">Fast global CDN</div>
+                </div>
+            </div>
+
+            <h3>Design Philosophy</h3>
+            <p>Our dark winter theme with ice-blue accents and warm warning tones reflects the harsh Finnish environment of the game. The color palette was carefully chosen to:</p>
+            <ul>
+                <li>Reduce eye strain during extended reading sessions</li>
+                <li>Create clear visual hierarchy with color-coded information boxes</li>
+                <li>Maintain brand consistency across all 8+ guides</li>
+                <li>Support both desktop and mobile reading experiences</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-title">🎯 Performance First</div>
+                <p>Every page is a self-contained HTML file with embedded CSS. No external stylesheets, no JavaScript frameworks, no database queries. This approach ensures:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li>Sub-second page load times</li>
+                    <li>Works offline after first visit</li>
+                    <li>Compatible with low-bandwidth connections</li>
+                    <li>Easy to archive and maintain long-term</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Version History -->
+        <section class="content-section" id="changelog">
+            <h2>📅 Version History</h2>
+            <p>Track major milestones in the development of mywintercar.com.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">v.260105-01 • January 5, 2026</div>
+                    <div class="timeline-content">
+                        <strong>About Page Launch</strong>
+                        <p>Added comprehensive About page with mission statement, content quality policy, and technology documentation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">v.260102-01 • January 2, 2026</div>
+                    <div class="timeline-content">
+                        <strong>Racing Guide Published</strong>
+                        <p>Completed final pillar guide covering Ice Track racing and Rally Sprint competitions. All 8 core guides now live.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">December 30, 2025</div>
+                    <div class="timeline-content">
+                        <strong>Wiki Launch</strong>
+                        <p>Official launch of mywintercar.com with 6 comprehensive guides: Vehicles, Money, Survival, Troubleshooting, Parts Acquisition, and Beginner's Guide.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">December 29, 2025</div>
+                    <div class="timeline-content">
+                        <strong>My Winter Car Early Access Release</strong>
+                        <p>Game launches on Steam with 97% positive reviews. Wiki development begins to serve the growing player community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team & Credits -->
+        <section class="content-section" id="team">
+            <h2>👥 Team & Contributors</h2>
+            <p>mywintercar.com is a community-driven project maintained by dedicated My Winter Car players who value accuracy and quality.</p>
+
+            <h3>Core Team</h3>
+            <p>This wiki is currently maintained by a small team of contributors who handle fact-checking, content creation, and technical maintenance. We welcome community contributions that meet our quality standards.</p>
+
+            <div class="info-box">
+                <div class="info-title">🤝 How to Contribute</div>
+                <p>Interested in helping improve mywintercar.com? We're looking for:</p>
+                <ul style="margin-top: 0.5rem;">
+                    <li><strong>Fact Checkers:</strong> Help verify game mechanics and data</li>
+                    <li><strong>Content Writers:</strong> Create new guides following our quality standards</li>
+                    <li><strong>Game Testers:</strong> Test and document Early Access changes</li>
+                    <li><strong>Community Moderators:</strong> Help manage Discord and feedback channels</li>
+                </ul>
+                <p style="margin-top: 1rem;">Join our <a href="https://discord.gg/mywintercar" target="_blank" rel="noopener noreferrer">Discord server</a> to get started or report issues you find in our guides.</p>
+            </div>
+
+            <h3>Special Thanks</h3>
+            <ul>
+                <li><strong>Amistech Games</strong> - For creating My Winter Car</li>
+                <li><strong>My Winter Car Community</strong> - For testing, feedback, and enthusiasm</li>
+                <li><strong>Early Testers</strong> - Community members who helped verify our initial guides</li>
+            </ul>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="content-section" id="disclaimer">
+            <h2>⚖️ Legal & Disclaimer</h2>
+            
+            <div class="warning-box">
+                <div class="warning-title">📋 Important Notice</div>
+                <p><strong>mywintercar.com is a fan-made community resource.</strong> We are not affiliated with, endorsed by, or connected to Amistech Games in any official capacity.</p>
+                <p style="margin-top: 0.5rem;">My Winter Car™ and all related game assets are trademarks and property of Amistech Games. All game content referenced on this site is used for educational and informational purposes under fair use principles.</p>
+            </div>
+
+            <h3>Content Usage</h3>
+            <p>All guides, tutorials, and original content on mywintercar.com are provided free of charge for the My Winter Car community. You may:</p>
+            <ul>
+                <li>Link to our guides from your own content</li>
+                <li>Share our URLs on social media and forums</li>
+                <li>Reference our data with proper attribution</li>
+            </ul>
+
+            <p>Please do not republish our content verbatim without permission. If you'd like to use our work in your own project, contact us through Discord.</p>
+
+            <h3>Accuracy Disclaimer</h3>
+            <p>While we enforce strict fact-checking standards, <strong>we cannot guarantee 100% accuracy</strong> for a game in active Early Access development. Players should always verify critical information in-game and report any errors they find.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="content-section" id="contact">
+            <h2>📬 Get in Touch</h2>
+            <p>We're always happy to hear from the My Winter Car community. Whether you have feedback, found an error, or want to contribute, here's how to reach us:</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="font-size: 2.5rem; margin-bottom: 0.5rem;">💬</div>
+                    <strong>Discord Server</strong>
+                    <p style="margin-top: 0.5rem; color: var(--text-secondary);"><a href="https://discord.gg/mywintercar" target="_blank" rel="noopener noreferrer">Join our community</a></p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="font-size: 2.5rem; margin-bottom: 0.5rem;">🐛</div>
+                    <strong>Report Issues</strong>
+                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">Found an error? Let us know on Discord</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="font-size: 2.5rem; margin-bottom: 0.5rem;">💡</div>
+                    <strong>Suggestions</strong>
+                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">Ideas for new guides? We're listening</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about">About This Wiki</a></li>
+                    <li><a href="/about#team">Contributors</a></li>
+                    <li><a href="/about#team">How to Contribute</a></li>
+                    <li><a href="/about#changelog">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/">All Guides</a></li>
+                    <li><a href="/vehicles-guide">Vehicle Database</a></li>
+                    <li><a href="/parts-acquisition-guide">Parts Catalog</a></li>
+                    <li><a href="/beginner-guide">Getting Started</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://discord.gg/mywintercar" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="https://reddit.com/r/MyWinterCar" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+                    <li><a href="https://steamcommunity.com/app/4164420" target="_blank" rel="noopener noreferrer">Steam Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/about#disclaimer">Disclaimer</a></li>
+                    <li><a href="/about#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p><strong>mywintercar.com v.260105-01</strong> - Fan-made community Wiki & resource hub</p>
+                <p style="margin-top: 0.5rem;">Not affiliated with Amistech Games. My Winter Car™ is a trademark of Amistech Games.</p>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">© 2025-2026 mywintercar.com • All game content © Amistech Games</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
