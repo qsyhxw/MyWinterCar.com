@@ -370,6 +370,31 @@
             background: rgba(74, 158, 255, 0.05);
         }
 
+        .section-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .related-guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .related-guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .related-guide-card h3 {
+            margin-top: 0;
+        }
+
         footer {
             background: var(--bg-secondary);
             border-top: 2px solid var(--border-color);
@@ -429,7 +454,7 @@
                 <a href="#drivable">Drivable Vehicles</a>
                 <a href="#comparison">Comparison</a>
                 <a href="/guides">Guides</a>
-                <a href="/parts">Parts Database</a>
+                <a href="/parts-acquisition-guide">Parts Guide</a>
             </nav>
         </div>
     </header>
@@ -443,7 +468,7 @@
         </div>
 
         <div class="version-notice">
-            <strong>📋 Version Notice:</strong> This guide is based on My Winter Car Early Access v251229-01 (Released December 29, 2025). Some features may change as development continues. Last updated: January 4, 2026.
+            <strong>📋 Version Notice:</strong> This guide is based on My Winter Car Early Access v251229-01 (Released December 29, 2025). Some features may change as development continues. Last updated: January 5, 2026.
         </div>
 
         <div class="quick-nav">
@@ -475,7 +500,7 @@
 
         <section id="overview" class="content-section">
             <h2>🎮 Vehicle System Overview</h2>
-            <p>My Winter Car features a realistic vehicle simulation where every car has unique characteristics, maintenance needs, and purposes. Understanding each vehicle's role is crucial for survival and progress in the harsh Finnish winter of 1999.</p>
+            <p>My Winter Car features a realistic vehicle simulation where every car has unique characteristics, maintenance needs, and purposes. Understanding each vehicle's role is crucial for <a href="/survival-guide">survival</a> and progress in the harsh Finnish winter of 1999.</p>
             
             <h3>Vehicle Categories</h3>
             <table class="comparison-table">
@@ -594,7 +619,7 @@
                 <h3>Build Overview</h3>
                 <p>Building the Rivett is the game's main challenge, requiring 200+ individual parts sourced from multiple locations:</p>
                 <ul>
-                    <li><strong>Fleetari's Repair Shop:</strong> Primary parts supplier, engine components, suspension</li>
+                    <li><strong>Fleetari's Repair Shop:</strong> <a href="/parts-acquisition-guide">Primary parts supplier</a>, engine components, suspension</li>
                     <li><strong>Flea Market:</strong> Used parts, varying condition and prices</li>
                     <li><strong>Classifieds Magazine:</strong> Order via phone, 2-day delivery to PSK mailbox</li>
                     <li><strong>Random spawns:</strong> Some parts found around the map</li>
@@ -612,7 +637,7 @@
                 </div>
 
                 <h3>Trim Levels (VIN System)</h3>
-                <p>Each Rivett has a randomized VIN determining factory specification. Check the VIN plate in engine bay and decode at <a href="https://www.amistech.com/mwc" target="_blank">www.amistech.com/mwc</a></p>
+                <p>Each Rivett has a randomized VIN determining factory specification. Check the VIN plate in engine bay and decode at <a href="https://www.amistech.com/mwc" target="_blank" rel="noopener noreferrer">www.amistech.com/mwc</a></p>
                 <ul>
                     <li><strong>L:</strong> Base trim - basic interior, manual brakes, standard suspension</li>
                     <li><strong>LX:</strong> Premium trim - upgraded interior, power-assisted brakes</li>
@@ -634,7 +659,7 @@
                     <h4>💡 Build Tips from the Community</h4>
                     <ul>
                         <li><strong>Work in heated space:</strong> Parents' garage recommended for easier assembly</li>
-                        <li><strong>Follow VIN spec for historical registration:</strong> 30+ years old, factory-correct parts = longer inspection intervals</li>
+                        <li><strong>Follow VIN spec for historical registration:</strong> 30+ years old, factory-correct parts = longer <a href="/troubleshooting-guide">inspection intervals</a></li>
                         <li><strong>Use Kekmet front lift:</strong> Easier undercarriage access than jack stands</li>
                         <li><strong>Check torque specs:</strong> In-game manual shows correct bolt torque values</li>
                         <li><strong>Budget 20,000+ mk:</strong> For complete, reliable build with decent parts</li>
@@ -642,7 +667,7 @@
                     </ul>
                 </div>
 
-                <p><strong>Related guides:</strong> <a href="/corris-rivett-complete-guide">Complete Rivett Build Guide</a> | <a href="/corris-rivett-parts-list">All 200+ Parts List</a> | <a href="/engine-tuning-guide">Engine Tuning Guide</a></p>
+                <p><strong>Related guides:</strong> <a href="/corris-rivett-guide">Complete Rivett Build Guide</a> | <a href="/parts-acquisition-guide">Parts Acquisition Guide</a> | <a href="/racing-guide">Racing & Performance</a></p>
             </div>
 
             <div id="sorbett" class="vehicle-card">
@@ -725,7 +750,7 @@
                     <ul>
                         <li><strong>Always plug in at home:</strong> Make it muscle memory - park, plug in, done</li>
                         <li><strong>Fuel economy:</strong> Approximately 165 km range per tank (based on player data)</li>
-                        <li><strong>Use for all errands:</strong> Futufon job, PSK shopping, town trips while building Rivett</li>
+                        <li><strong>Use for all errands:</strong> <a href="/money-guide">Futufon job</a>, PSK shopping, town trips while building Rivett</li>
                         <li><strong>FWD advantage:</strong> Much easier to control on icy roads than RWD vehicles</li>
                         <li><strong>Cargo capacity:</strong> Fold rear seats to fit engine parts, small components</li>
                         <li><strong>Avoid off-road:</strong> Will get stuck in snow immediately - stick to paved roads</li>
@@ -741,7 +766,7 @@
                     <li><strong>No engine work needed:</strong> Reliable daily driver for entire playthrough</li>
                 </ul>
 
-                <p><strong>Related guides:</strong> <a href="/winter-driving-basics">Winter Driving Basics</a> | <a href="/block-heater-guide">Block Heater Complete Guide</a></p>
+                <p><strong>Related guides:</strong> <a href="/survival-guide">Winter Survival Guide</a> | <a href="/beginner-guide">Beginner's Guide</a></p>
             </div>
 
             <div id="kekmet" class="vehicle-card">
@@ -848,7 +873,7 @@
                     <li>Earn income deposited to bank account</li>
                 </ol>
 
-                <p><strong>Related guides:</strong> <a href="/firewood-job-guide">Complete Firewood Job Guide</a> | <a href="/kekmet-controls">Tractor Controls Tutorial</a></p>
+                <p><strong>Related guides:</strong> <a href="/money-guide">Money Making Guide</a> | <a href="/beginner-guide">Beginner's Guide</a></p>
             </div>
 
             <div id="gifu" class="vehicle-card">
@@ -952,7 +977,7 @@
                     <p>The Gifu's full implementation in My Winter Car is still being finalized. Features may be limited in current Early Access build. Check patch notes for updates on septic job mechanics and vehicle changes.</p>
                 </div>
 
-                <p><strong>Related guides:</strong> <a href="/septic-tank-job">Septic Tank Job Complete Guide</a> | <a href="/truck-driving-basics">Heavy Truck Driving Tutorial</a></p>
+                <p><strong>Related guides:</strong> <a href="/money-guide">Money Making Guide</a> | <a href="/beginner-guide">Beginner's Guide</a></p>
             </div>
 
             <div id="bachglotz" class="vehicle-card">
@@ -1046,7 +1071,7 @@
                     <p>The Bachglotz's full implementation in My Winter Car EA may be limited. Some sources indicate it may not be fully drivable yet. Check current patch version for availability status.</p>
                 </div>
 
-                <p><strong>Related guides:</strong> <a href="/fleetari-repair-shop">Fleetari's Repair Shop Guide</a> | <a href="/winter-driving-rwd">RWD Winter Driving Tips</a></p>
+                <p><strong>Related guides:</strong> <a href="/parts-acquisition-guide">Parts & Repairs Guide</a> | <a href="/survival-guide">Winter Survival Tips</a></p>
             </div>
 
             <div id="machtwagen" class="vehicle-card">
@@ -1196,7 +1221,7 @@
                     </ul>
                 </div>
 
-                <p><strong>Related guides:</strong> <a href="/taxi-job-complete-guide">Complete Taxi Job Guide</a> | <a href="/all-job-locations-map">Job Locations Map</a></p>
+                <p><strong>Related guides:</strong> <a href="/money-guide">Money Making Guide</a> | <a href="/beginner-guide">Beginner's Guide</a></p>
             </div>
         </section>
 
@@ -1278,30 +1303,80 @@
             </ol>
         </section>
 
+        <!-- NEW: Related Guides Section -->
+        <section class="content-section">
+            <h2>📚 Related Guides</h2>
+            <p class="section-description">Expand your knowledge with these comprehensive guides covering vehicle building, survival, and income strategies.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <!-- Rivett Build Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🏎️ Corris Rivett Build Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Complete step-by-step instructions for building your Rivett from bare shell to race-ready machine. Covers all 200+ parts with installation tips.</p>
+                    <a href="/corris-rivett-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Complete Guide →</a>
+                </div>
+
+                <!-- Parts Acquisition -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🔧 Parts Acquisition Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Learn where to source every part for your vehicles. Compare Fleetari's shop, flea market prices, and classified orders with budget planning tips.</p>
+                    <a href="/parts-acquisition-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Parts Guide →</a>
+                </div>
+
+                <!-- Winter Survival -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">❄️ Winter Survival Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Master Finnish winter conditions with temperature management, hunger/thirst systems, and emergency procedures. Essential for all vehicle owners.</p>
+                    <a href="/survival-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Survival Guide →</a>
+                </div>
+
+                <!-- Money Making -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">💰 Money Making Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Compare all job options including Futufon factory work, taxi driving, firewood delivery, and septic pumping. Maximize your income for faster builds.</p>
+                    <a href="/money-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Money Guide →</a>
+                </div>
+
+                <!-- Racing Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🏁 Racing & Performance</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Ice track racing, rally sprints, and performance tuning strategies. Learn how to tune your Rivett for competitive events and maximize prize money.</p>
+                    <a href="/racing-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Racing Guide →</a>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🔍 Troubleshooting Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Fix common vehicle problems including starting issues, overheating, electrical failures, and mechanical breakdowns. Comprehensive diagnostic procedures.</p>
+                    <a href="/troubleshooting-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Troubleshooting →</a>
+                </div>
+            </div>
+        </section>
+
         <section class="content-section">
             <h2>🔗 Related Guides & Resources</h2>
             <div class="quick-nav">
-                <a href="/corris-rivett-complete-guide" class="quick-nav-item">
+                <a href="/corris-rivett-guide" class="quick-nav-item">
                     <div class="icon">📖</div>
                     <div>Complete Rivett Build</div>
                 </a>
-                <a href="/winter-survival-guide" class="quick-nav-item">
+                <a href="/survival-guide" class="quick-nav-item">
                     <div class="icon">❄️</div>
                     <div>Winter Survival Guide</div>
                 </a>
-                <a href="/jobs-and-money" class="quick-nav-item">
+                <a href="/money-guide" class="quick-nav-item">
                     <div class="icon">💰</div>
                     <div>Jobs & Money Guide</div>
                 </a>
-                <a href="/parts-database" class="quick-nav-item">
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
                     <div class="icon">🔧</div>
-                    <div>Parts Database</div>
+                    <div>Parts Acquisition</div>
                 </a>
                 <a href="/racing-guide" class="quick-nav-item">
                     <div class="icon">🏁</div>
                     <div>Racing & Events</div>
                 </a>
-                <a href="/beginners-guide" class="quick-nav-item">
+                <a href="/beginner-guide" class="quick-nav-item">
                     <div class="icon">🎓</div>
                     <div>Beginner's Guide</div>
                 </a>
@@ -1313,7 +1388,8 @@
         <p><strong>My Winter Car Wiki</strong> - Unofficial fan-made guide</p>
         <p>Game developed by Amistech Games | Early Access Release: December 29, 2025</p>
         <p>All vehicle specifications verified against official My Winter Car Wiki and developer statements</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">Not affiliated with Amistech Games | <a href="/about">About</a> | <a href="/privacy">Privacy</a> | <a href="/contact">Contact</a></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Not affiliated with Amistech Games | <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/guides">All Guides</a></p>
     </footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
