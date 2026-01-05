@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Winter Car Beginner's Guide - First 30 Minutes Tutorial & Survival Tips | 2026</title>
+    <meta name="description" content="Complete beginner's guide for My Winter Car. Learn how to survive your first 30 minutes, start the Sorbett, buy the Corris Rivett, and master essential controls. Step-by-step tutorial verified for Early Access v.260102-01.">
+    <meta name="keywords" content="My Winter Car beginner guide, first 30 minutes, how to start, Sorbett tutorial, survival tips, controls guide, Corris Rivett purchase, new player tips">
+
+  <link rel="canonical" href="https://mywintercar.com/beginner-guide">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            line-height: 1.8;
+        }
+
+        .ea-notice {
+            background: rgba(251, 191, 36, 0.1);
+            border: 2px solid var(--accent-warning);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .ea-notice strong {
+            color: var(--accent-warning);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-section {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-ice);
+            margin: 2rem 0 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .checklist {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-success);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: rgba(16, 185, 129, 0.05);
+            border-radius: 8px;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checklist-item label {
+            flex: 1;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .time-badge {
+            display: inline-block;
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid var(--accent-warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .warning-title {
+            font-weight: 600;
+            color: var(--accent-warning);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .info-title {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid var(--accent-success);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .success-title {
+            font-weight: 600;
+            color: var(--accent-success);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .danger-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--accent-danger);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .danger-title {
+            font-weight: 600;
+            color: var(--accent-danger);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .controls-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .control-item {
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .control-key {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+            font-family: 'Courier New', monospace;
+            background: rgba(74, 158, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .control-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin: 1.5rem 0;
+            padding: 0;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 1.5rem;
+            padding-left: 3rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        code {
+            background: var(--bg-card);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-ice);
+            font-size: 0.9em;
+        }
+
+        kbd {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 0.25rem 0.5rem;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-ice);
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            border-top: 2px solid var(--border-color);
+            padding: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: rgba(74, 158, 255, 0.1);
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .quick-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <span>❄️</span>
+                <span>My Winter Car Wiki</span>
+            </a>
+            <nav>
+                <a href="#first-30-min">First 30 Min</a>
+                <a href="#controls">Controls</a>
+                <a href="#sorbett">Sorbett</a>
+                <a href="#rivett">Buy Rivett</a>
+                <a href="/vehicles-guide">Vehicles</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>🎮 Beginner's Guide - Survive Your First Day</h1>
+                <p>Welcome to My Winter Car! This brutal Finnish winter simulation doesn't hold your hand. Learn how to survive your first 30 minutes, master the Sorbett, buy the Corris Rivett, and avoid the most common beginner mistakes. Step-by-step tutorial verified for Early Access.</p>
+            </div>
+        </div>
+
+        <div class="ea-notice">
+            <strong>⚠️ New Player Notice</strong>
+            <p>My Winter Car has <strong>NO built-in tutorial</strong>. The game explains nothing and expects you to learn through trial and error (and death). This guide will save you hours of frustration. <strong>Read before playing!</strong></p>
+            <p style="margin-top: 0.5rem;">🎯 <strong>Quick Start:</strong> Follow the First 30 Minutes Checklist below step-by-step. Don't skip steps or you'll break things.</p>
+        </div>
+
+        <div class="quick-nav">
+            <a href="#first-30-min" class="quick-nav-item">
+                <div class="icon">⏱️</div>
+                <div>First 30 Minutes</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Step-by-Step Checklist</div>
+            </a>
+            <a href="#controls" class="quick-nav-item">
+                <div class="icon">🎮</div>
+                <div>Essential Controls</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Keyboard Guide</div>
+            </a>
+            <a href="#sorbett" class="quick-nav-item">
+                <div class="icon">🚗</div>
+                <div>Starting Sorbett</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Cold Start Tutorial</div>
+            </a>
+            <a href="#rivett" class="quick-nav-item">
+                <div class="icon">📞</div>
+                <div>Buy Corris Rivett</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">500mk Project Car</div>
+            </a>
+            <a href="#survival" class="quick-nav-item">
+                <div class="icon">❄️</div>
+                <div>Survival Basics</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Don't Freeze</div>
+            </a>
+            <a href="#mistakes" class="quick-nav-item">
+                <div class="icon">⚠️</div>
+                <div>Common Mistakes</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">Avoid These!</div>
+            </a>
+        </div>
+
+        <section id="first-30-min" class="content-section">
+            <h2>⏱️ First 30 Minutes - Complete Checklist</h2>
+
+            <p>Follow this checklist in order. Each step is critical. Skipping or reordering causes problems.</p>
+
+            <div class="checklist">
+                <h3 style="margin-top: 0;">Phase 1: Apartment Setup <span class="time-badge">0-5 min</span></h3>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="check1">
+                    <label for="check1"><strong>Grab winter jacket</strong> - On floor near door. Press <kbd>F</kbd> to equip. <strong>DO NOT go outside without this!</strong></label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check2">
+                    <label for="check2"><strong>Turn on radiators</strong> - Set to 30°C in bedroom. You <strong>cannot sleep</strong> if apartment is too cold.</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check3">
+                    <label for="check3"><strong>Note phone location</strong> - You'll need it later. Phone is in apartment hallway.</label>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3 style="margin-top: 0;">Phase 2: Start Sorbett <span class="time-badge">5-15 min</span></h3>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="check4">
+                    <label for="check4"><strong>Unplug block heater</strong> - Go to front of Sorbett, right-click cable, drop it. <strong>CRITICAL: If you drive with it plugged, you'll rip the cord!</strong></label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check5">
+                    <label for="check5"><strong>Get in car</strong> - Press <kbd>C</kbd> to open, click door. Windows will be frozen - normal.</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check6">
+                    <label for="check6"><strong>Start engine</strong> - Press <kbd>Enter</kbd> for driving mode → Pull choke (left of wheel) → Hold LMB on ignition → Give gas</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check7">
+                    <label for="check7"><strong>Turn on heater</strong> - Window Heater button (yellow light) → Blower (click twice for max) → Temperature to hot</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check8">
+                    <label for="check8"><strong>Scrape windshield</strong> - Get out, look at windshield, hold LMB + move mouse up/down. Clear driver side first.</label>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3 style="margin-top: 0;">Phase 3: First Drive to PSK <span class="time-badge">15-25 min</span></h3>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="check9">
+                    <label for="check9"><strong>Release handbrake</strong> - Look at handbrake, click or press <kbd>Space</kbd></label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check10">
+                    <label for="check10"><strong>Drive to PSK</strong> - Left out of apartment → Straight to Pub Nappo → Left at crossroads → Down hill to gas station</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check11">
+                    <label for="check11"><strong>Set PIN code</strong> - First PIN you enter is <strong>permanent</strong>! Remember it. Use payment terminal at pump.</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check12">
+                    <label for="check12"><strong>Fuel up</strong> - Interact with red terminal FIRST → Select amount → Use green pump (petrol)</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check13">
+                    <label for="check13"><strong>Check job board</strong> - Inside PSK, right side. Take photo or write down numbers.</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check14">
+                    <label for="check14"><strong>Find Rivett ad</strong> - Same job board. Number is <code>08609553</code></label>
+                </div>
+            </div>
+
+            <div class="checklist">
+                <h3 style="margin-top: 0;">Phase 4: Buy Corris Rivett <span class="time-badge">25-30 min</span></h3>
+                
+                <div class="checklist-item">
+                    <input type="checkbox" id="check15">
+                    <label for="check15"><strong>Drive home</strong> - Reverse route, don't forget to plug in block heater when you park!</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check16">
+                    <label for="check16"><strong>Call Firewood Guy</strong> - Use apartment phone → NUMPAD only → Dial <code>08609553</code> → <strong>WAIT for him to hang up!</strong></label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check17">
+                    <label for="check17"><strong>Check map</strong> - "Car for Sale" pin should appear (map location 9)</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check18">
+                    <label for="check18"><strong>Visit during DAY</strong> - Bring 500mk. Drive to marker. Pay seller. Car is yours!</label>
+                </div>
+
+                <div class="checklist-item">
+                    <input type="checkbox" id="check19">
+                    <label for="check19"><strong>SAVE YOUR GAME</strong> - Go home, sleep in bed. Game ONLY saves when you sleep!</label>
+                </div>
+            </div>
+
+            <div class="success-box">
+                <div class="success-title">✅ Congratulations!</div>
+                <p>You've survived the critical first 30 minutes. You have:</p>
+                <ul>
+                    <li>Working Sorbett with fuel</li>
+                    <li>PIN code set</li>
+                    <li>Corris Rivett purchased (500mk)</li>
+                    <li>Game saved</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Next steps:</strong> Start a job for money → Order parts → Begin Rivett assembly</p>
+            </div>
+        </section>
+
+        <section id="controls" class="content-section">
+            <h2>🎮 Essential Controls - Quick Reference</h2>
+
+            <h3>Movement & Interaction</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <div class="control-key">WASD</div>
+                    <div class="control-desc">Move forward/left/back/right</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">C</div>
+                    <div class="control-desc">Crouch (open car doors)</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">F</div>
+                    <div class="control-desc">Pick up / Equip items</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">Q</div>
+                    <div class="control-desc">Reach mode (interact)</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">E</div>
+                    <div class="control-desc">Lean right</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">Left Ctrl</div>
+                    <div class="control-desc">Zoom in (inspect items)</div>
+                </div>
+            </div>
+
+            <h3>Driving Controls</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <div class="control-key">Enter</div>
+                    <div class="control-desc">Enter/Exit driving mode</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">W</div>
+                    <div class="control-desc">Gas / Accelerate</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">S</div>
+                    <div class="control-desc">Brake</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">A / D</div>
+                    <div class="control-desc">Steer left / right</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">X</div>
+                    <div class="control-desc">Clutch (or enable auto-clutch in settings)</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">G</div>
+                    <div class="control-desc">Shift up</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">B</div>
+                    <div class="control-desc">Shift down</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">Space</div>
+                    <div class="control-desc">Handbrake</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">L</div>
+                    <div class="control-desc">Headlights on/off</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">Arrow Keys</div>
+                    <div class="control-desc">Turn signals</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">J</div>
+                    <div class="control-desc">Push mode (when stuck)</div>
+                </div>
+            </div>
+
+            <h3>Survival & Utility</h3>
+            <div class="controls-grid">
+                <div class="control-item">
+                    <div class="control-key">P</div>
+                    <div class="control-desc">Urinate (also quick saves)</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">U</div>
+                    <div class="control-desc">Check wristwatch (time)</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">F1 / Esc</div>
+                    <div class="control-desc">Settings menu</div>
+                </div>
+                <div class="control-item">
+                    <div class="control-key">M</div>
+                    <div class="control-desc">Map (in apartment)</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-title">💡 Pro Tip: Auto-Clutch</div>
+                <p>If manual transmission is too hard, enable <strong>auto-clutch</strong> in settings (F1). This removes the need to use <kbd>X</kbd> when shifting gears.</p>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ NUMPAD Required for Phone</div>
+                <p>The <strong>number row (1234567890)</strong> does NOT work for phone calls. You MUST use the <strong>NUMPAD</strong> on the right side of your keyboard. If you don't have a numpad, you may need to remap controls.</p>
+            </div>
+        </section>
+
+        <section id="sorbett" class="content-section">
+            <h2>🚗 Starting the Sorbett - Complete Tutorial</h2>
+
+            <p>The Sorbett 1600 LTD (based on Talbot 1510) is your daily driver. It's parked outside your apartment, already plugged into a block heater. Here's how to start it properly:</p>
+
+            <h3>CRITICAL: Block Heater Management</h3>
+
+            <div class="danger-box">
+                <div class="danger-title">🔴 ALWAYS Unplug Before Driving!</div>
+                <p>If you drive with the block heater cable attached, <strong>you will rip it out</strong> and damage your car. Always unplug at the FRONT of the car before getting in.</p>
+                <p style="margin-top: 0.5rem;"><strong>When parked at home:</strong> ALWAYS plug it back in! If left unplugged overnight, the oil freezes and the car won't start.</p>
+            </div>
+
+            <h3>Cold Start Procedure</h3>
+
+            <ol class="steps">
+                <li>
+                    <strong>Approach the Sorbett</strong><br>
+                    Go to the front of the car, find the block heater cable
+                </li>
+                <li>
+                    <strong>Unplug block heater</strong><br>
+                    Right-click the cable, drop it on ground
+                </li>
+                <li>
+                    <strong>Get inside</strong><br>
+                    Press <kbd>C</kbd> to crouch, click driver door. Windows will be frozen - this is normal.
+                </li>
+                <li>
+                    <strong>Enter driving mode</strong><br>
+                    Press <kbd>Enter</kbd>. You'll see "N" (neutral) in bottom-right corner.
+                </li>
+                <li>
+                    <strong>Insert key</strong><br>
+                    Hover over ignition, click ONCE with LMB. Dashboard lights turn on.
+                </li>
+                <li>
+                    <strong>Pull choke</strong><br>
+                    Look to LEFT of steering wheel, find small knob. Click with LMB to pull it OUT fully.
+                </li>
+                <li>
+                    <strong>Start engine</strong><br>
+                    HOLD LMB on ignition while giving a little gas (<kbd>W</kbd>). Engine will sputter and struggle.
+                </li>
+                <li>
+                    <strong>Let it idle</strong><br>
+                    Once running, let engine idle for 1-2 minutes. After driving a bit, slowly push choke back IN with RMB.
+                </li>
+            </ol>
+
+            <h3>Defrosting Windows</h3>
+
+            <p>Your windshield will be covered in ice. Two methods:</p>
+
+            <h4>Method 1: Heater (Slow but thorough)</h4>
+            <ul>
+                <li><strong>Window Heater button:</strong> Square button on right dashboard. Press until yellow light turns on.</li>
+                <li><strong>Blower:</strong> Click button TWICE for maximum power (you'll hear it get louder)</li>
+                <li><strong>Temperature:</strong> Mouse scroll on temperature dial → Set to HOT (all the way left/red)</li>
+                <li><strong>Direction:</strong> Adjust toggle so arrows point toward windshield</li>
+                <li><strong>Wait:</strong> Idle 3-5 minutes. Ice will slowly melt.</li>
+            </ul>
+
+            <h4>Method 2: Manual Scraping (Fast but incomplete)</h4>
+            <ul>
+                <li>Exit car, approach windshield from outside</li>
+                <li>Hover over frozen glass until you see "Scrape Window" prompt</li>
+                <li>Hold LMB and move mouse UP and DOWN repeatedly</li>
+                <li>Clear driver's window and left side of windshield (minimum to see)</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-title">💡 Recommended: Combine Both Methods</div>
+                <p>Start heater first, then manually scrape while it warms up. Gives you 50% visibility in 1-2 minutes instead of waiting 5 minutes.</p>
+            </div>
+
+            <h3>Driving Basics</h3>
+
+            <ol>
+                <li><strong>Release handbrake:</strong> Look at handbrake lever, click or press <kbd>Space</kbd></li>
+                <li><strong>First gear:</strong> Press <kbd>G</kbd> to shift into 1st</li>
+                <li><strong>Accelerate:</strong> Press <kbd>W</kbd> (yes, even in reverse you use W!)</li>
+                <li><strong>Steer:</strong> <kbd>A</kbd> and <kbd>D</kbd></li>
+                <li><strong>Shift up:</strong> As RPMs increase, press <kbd>G</kbd> for 2nd, 3rd, etc.</li>
+                <li><strong>Brake:</strong> <kbd>S</kbd> to slow down</li>
+                <li><strong>Shift down:</strong> <kbd>B</kbd> when slowing or need more power</li>
+            </ol>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Ice Roads Are Extremely Slippery</div>
+                <p>Drive slowly, especially on turns. Brake BEFORE corners, not during. Use engine braking (downshift) instead of brakes when possible.</p>
+            </div>
+        </section>
+
+        <section id="rivett" class="content-section">
+            <h2>📞 Buying the Corris Rivett - Step-by-Step</h2>
+
+            <p>The Corris Rivett (based on Ford Taunus TC) is your main project car. It costs <strong>500mk</strong> and requires precise steps to purchase.</p>
+
+            <h3>Where to Find the Ad</h3>
+
+            <p>Drive to <strong>PSK gas station</strong>. Inside, look for the job board on the right wall (past the automatic sliding doors). You'll see an advertisement with a phone number.</p>
+
+            <div class="info-box">
+                <div class="info-title">💡 Phone Number</div>
+                <p>The Corris Rivett seller's number is: <strong><code>08609553</code></strong></p>
+                <p>You can skip the PSK visit and call directly from home if you already know the number.</p>
+            </div>
+
+            <h3>Making the Call (CRITICAL STEPS)</h3>
+
+            <ol class="steps">
+                <li>
+                    <strong>Go to apartment phone</strong><br>
+                    Phone is in the hallway. Pick up receiver (LMB).
+                </li>
+                <li>
+                    <strong>Dial using NUMPAD</strong><br>
+                    Type: <code>08609553</code><br>
+                    <strong>MUST use NUMPAD!</strong> Number row doesn't work. Press <kbd>Enter</kbd> after typing.
+                </li>
+                <li>
+                    <strong>Wait for seller to talk</strong><br>
+                    He'll ramble about the car. DO NOT hang up!
+                </li>
+                <li>
+                    <strong>Wait for HIM to hang up</strong><br>
+                    You'll hear the line go dead / beeping tone. <strong>If you hang up early, the quest won't trigger!</strong>
+                </li>
+                <li>
+                    <strong>Check your map</strong><br>
+                    Open map (in apartment). You should see a new "Car for Sale" pin at location 9.
+                </li>
+            </ol>
+
+            <div class="danger-box">
+                <div class="danger-title">🔴 Common Failure: Hanging Up Early</div>
+                <p>This is the #1 mistake. If you hang up before the seller finishes talking, the map marker WON'T appear. You'll have to call again. <strong>Be patient!</strong></p>
+            </div>
+
+            <h3>Visiting the Firewood Guy</h3>
+
+            <ul>
+                <li><strong>Location:</strong> Map marker shows "Car for Sale" (position 9 on map)</li>
+                <li><strong>When to visit:</strong> <strong>DAYTIME ONLY</strong> - He won't appear at night</li>
+                <li><strong>What to bring:</strong> 500mk cash (from bank account works too)</li>
+                <li><strong>How to get there:</strong> Drive Sorbett or use Kekmet tractor</li>
+            </ul>
+
+            <p>When you arrive:</p>
+            <ol>
+                <li>Approach the seller (Reijo Livaloinen, aka "Firewood Guy")</li>
+                <li>Wait for dialogue to complete</li>
+                <li>When prompted, pay 500mk</li>
+                <li>Car is yours!</li>
+            </ol>
+
+            <h3>What You Get</h3>
+
+            <p>The Corris Rivett comes as:</p>
+            <ul>
+                <li><strong>Empty shell</strong> - Just the body/frame</li>
+                <li><strong>10-12 random parts</strong> - Lying on ground nearby</li>
+                <li><strong>NO ENGINE</strong> - You must build everything</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-title">💡 Moving the Rivett</div>
+                <p>The Rivett cannot be driven (no engine!). You need to TOW it:</p>
+                <ul>
+                    <li><strong>Kekmet tractor</strong> - Safest, found at woodshed by parents' house</li>
+                    <li><strong>Gifu truck</strong> - Faster but harder to control</li>
+                </ul>
+                <p>Many players tow it to <strong>parents' house</strong> instead of apartment because of the motor hoist in garage.</p>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Budget Planning</div>
+                <p>After buying the Rivett (500mk), you still need:</p>
+                <ul>
+                    <li>100+ parts to assemble it (~8,000-14,000mk total)</li>
+                    <li>Weekly rent (525mk/week)</li>
+                    <li>Fuel, food, electricity bills</li>
+                </ul>
+                <p><strong>Start a job IMMEDIATELY</strong> to earn money. See our <a href="/money-guide">Money Making Guide</a>.</p>
+            </div>
+        </section>
+
+        <section id="survival" class="content-section">
+            <h2>❄️ Survival Basics - Don't Freeze to Death</h2>
+
+            <p>My Winter Car is set in January 1999 Finland. Temperature is around <strong>-24°C</strong>. Cold kills.</p>
+
+            <h3>Critical Stat: Body Temperature</h3>
+
+            <div class="danger-box">
+                <div class="danger-title">🔴 Hypothermia Warning</div>
+                <p>Without heat sources, hypothermia can kill you quickly. <strong>Never venture outdoors without the winter jacket!</strong></p>
+            </div>
+
+            <h4>Staying Warm:</h4>
+            <ul>
+                <li><strong>Winter jacket:</strong> Equip immediately (floor near apartment door, press <kbd>F</kbd>)</li>
+                <li><strong>Apartment radiators:</strong> Turn on in every room, set to 20-30°C</li>
+                <li><strong>Car heater:</strong> Use when driving (see Sorbett section above)</li>
+                <li><strong>Limit outdoor time:</strong> Get in/out of car quickly</li>
+            </ul>
+
+            <h3>Other Survival Stats</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stat</th>
+                        <th>What It Does</th>
+                        <th>How to Manage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>HUNGER</strong></td>
+                        <td>Affects energy and stamina</td>
+                        <td>Buy food at PSK. Eat sausages, meals at café.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THIRST</strong></td>
+                        <td>Dehydration affects health</td>
+                        <td>Drink water (apartment sink) or beverages from PSK</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROBLEM</strong></td>
+                        <td>Alcoholism meter (NOT thirst!)</td>
+                        <td>Drink beer/vodka to lower it. See <a href="/troubleshooting-guide">Troubleshooting Guide</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>FATIGUE</strong></td>
+                        <td>Affects ability to work</td>
+                        <td>Sleep in bed (also saves game)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>STRESS</strong></td>
+                        <td>Affects mental state</td>
+                        <td>Sauna, smoking, drinking</td>
+                    </tr>
+                    <tr>
+                        <td><strong>URINE</strong></td>
+                        <td>Bladder pressure</td>
+                        <td>Press <kbd>P</kbd> anywhere</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Sleeping & Saving</h3>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Game ONLY Saves When You Sleep</div>
+                <p>There is <strong>NO autosave</strong>. The ONLY way to save is:</p>
+                <ul>
+                    <li>Sleep in your bed (apartment or parents' house)</li>
+                    <li>Apartment must be warm (30°C radiator minimum) or sleep won't work</li>
+                </ul>
+                <p><strong>Save frequently!</strong> Death = lose all progress since last sleep.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="info-title">💡 Hidden Quick Save</div>
+                <p>Pressing <kbd>P</kbd> (urinate) also triggers a quick save. Use this when you're far from home and want to save progress.</p>
+            </div>
+
+            <h3>Money Management</h3>
+
+            <ul>
+                <li><strong>Bank account:</strong> You start with one. Use ATM at PSK to check balance.</li>
+                <li><strong>PIN code:</strong> First PIN you enter is <strong>PERMANENT</strong>. Remember it!</li>
+                <li><strong>Rent:</strong> 525mk/week automatically deducted from bank account</li>
+                <li><strong>Cannot deposit cash:</strong> In EA version, no way to put physical cash into bank</li>
+                <li><strong>Jobs pay into bank:</strong> Office job, delivery jobs deposit directly</li>
+            </ul>
+        </section>
+
+        <section id="mistakes" class="content-section">
+            <h2>⚠️ Top 10 Beginner Mistakes - Avoid These!</h2>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #1: Forgetting to Unplug Block Heater</div>
+                <p><strong>Result:</strong> Ripped cord, damaged car<br>
+                <strong>Prevention:</strong> ALWAYS unplug at front of car BEFORE driving. Make it a habit!</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #2: Hanging Up Phone Early</div>
+                <p><strong>Result:</strong> Corris Rivett quest doesn't trigger, map marker won't appear<br>
+                <strong>Prevention:</strong> Wait until you hear beeping tone / line goes dead. Be patient!</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #3: Using Number Row Instead of NUMPAD</div>
+                <p><strong>Result:</strong> Phone calls don't work, orders fail<br>
+                <strong>Prevention:</strong> ONLY use NUMPAD for all phone dialing. Number row (top of keyboard) doesn't work.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #4: Apartment Too Cold to Sleep</div>
+                <p><strong>Result:</strong> Can't save game, lose progress<br>
+                <strong>Prevention:</strong> Set bedroom radiator to 30°C. Leave on at least half the day.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #5: Driving Without Defrosting</div>
+                <p><strong>Result:</strong> Crash, death, loss of progress<br>
+                <strong>Prevention:</strong> ALWAYS scrape or heat windshield before driving. Zero visibility = guaranteed crash.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #6: No Headlights at Night</div>
+                <p><strong>Result:</strong> Crash or police fine<br>
+                <strong>Prevention:</strong> Press <kbd>L</kbd> to turn on headlights after sunset. Check dashboard indicator.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #7: Visiting Firewood Guy at Night</div>
+                <p><strong>Result:</strong> Wasted trip, fuel, time<br>
+                <strong>Prevention:</strong> Only visit during daytime. He won't spawn at night.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #8: Not Plugging In Block Heater Overnight</div>
+                <p><strong>Result:</strong> Oil freezes, car won't start in morning<br>
+                <strong>Prevention:</strong> ALWAYS plug in block heater when parking at home overnight.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #9: Forgetting to Save</div>
+                <p><strong>Result:</strong> Hours of progress lost on death<br>
+                <strong>Prevention:</strong> Sleep in bed regularly. Game ONLY saves when you sleep. Use <kbd>P</kbd> for emergency quick save.</p>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">❌ Mistake #10: Wrong First PIN Code</div>
+                <p><strong>Result:</strong> Locked out of bank card<br>
+                <strong>Prevention:</strong> First PIN you enter is PERMANENT. Choose something you'll remember. No way to reset in-game!</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎯 Next Steps After First Hour</h2>
+
+            <p>You've survived the tutorial. Now what?</p>
+
+            <h3>Immediate Goals (First Day)</h3>
+            <ul>
+                <li><strong>Start earning money</strong> - Office job or delivery job (see <a href="/money-guide">Money Guide</a>)</li>
+                <li><strong>Establish routine</strong> - Sleep to save, manage stats, keep apartment warm</li>
+                <li><strong>Learn the map</strong> - Know where PSK, Fleetari, Pub Nappo are</li>
+            </ul>
+
+            <h3>First Week Goals</h3>
+            <ul>
+                <li><strong>Stable income</strong> - Consistent job completion</li>
+                <li><strong>Order first parts</strong> - Use Classifieds magazine (see <a href="/parts-acquisition-guide">Parts Guide</a>)</li>
+                <li><strong>Begin Rivett assembly</strong> - Start with chassis/suspension</li>
+            </ul>
+
+            <h3>Recommended Reading Order</h3>
+            <div class="quick-nav">
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <div>Money Making Guide</div>
+                </a>
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <div>Parts Acquisition</div>
+                </a>
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon">🆘</div>
+                    <div>Troubleshooting</div>
+                </a>
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <div>Winter Survival</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🆘 Frequently Asked Questions</h2>
+
+            <div class="info-box">
+                <h4>Q: Can I play with a controller?</h4>
+                <p><strong>A:</strong> Controller support exists but is limited in EA. Many actions (like scraping windows) are easier with mouse. Keyboard is strongly recommended.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Q: What if I don't have a NUMPAD?</h4>
+                <p><strong>A:</strong> You'll need to remap phone controls or use an on-screen keyboard. NUMPAD is required for phone calls in default settings.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Q: How long does it take to build the Rivett?</h4>
+                <p><strong>A:</strong> With 100+ parts needed, expect 20-30 hours of real-time work for a first build. Experienced players can do it in 10-15 hours.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Q: Should I enable permadeath?</h4>
+                <p><strong>A:</strong> NO for first playthrough! Permadeath deletes your save on death. Learn the game with normal mode first.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Q: Why can't I sleep in my bed?</h4>
+                <p><strong>A:</strong> Apartment is too cold. Turn on bedroom radiator to 30°C and wait for room to warm up.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Q: The Sorbett won't start. Help!</h4>
+                <p><strong>A:</strong> Did you plug in the block heater overnight? If car was left unplugged, oil froze. See <a href="/troubleshooting-guide">Troubleshooting Guide</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>My Winter Car Wiki</strong> - Unofficial Beginner's Guide</p>
+        <p>Game developed by: Amistech Games | Early Access Launch: December 29, 2025</p>
+        <p>All information verified for v.260102-01 (January 2, 2026) | Guide Updated: January 5, 2026</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">⚠️ Early Access: Game mechanics may change with updates. No built-in tutorial - rely on community guides!</p>
+    </footer>
+</body>
+</html>
