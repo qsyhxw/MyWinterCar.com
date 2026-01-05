@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -402,6 +403,42 @@
             margin-bottom: 0.5rem;
         }
 
+        .related-guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .related-guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .related-guide-card h3 {
+            margin-top: 0;
+        }
+
+        .section-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+            text-decoration: underline;
+        }
+
         .back-to-top {
             position: fixed;
             bottom: 2rem;
@@ -508,7 +545,7 @@
                         <span class="stat-critical">FATAL - Starvation</span>
                     </div>
                 </div>
-                <p>Must eat regularly. Food available at Teimo's shop or Pub Nappo. Moose meat also provides sustenance.</p>
+                <p>Must eat regularly. Food available at Teimo's shop or Pub Nappo. Moose meat also provides sustenance. Learn more about <a href="/money-guide">earning money for food</a>.</p>
             </div>
 
             <div class="survival-stat">
@@ -530,7 +567,7 @@
                         <span class="stat-critical">FATAL - Heart attack/breakdown</span>
                     </div>
                 </div>
-                <p>Increases from failures (inspection fail, traffic tickets). Too much stress kills. Lower with alcohol, driving fast (120+ km/h), sauna, or chopping firewood.</p>
+                <p>Increases from failures (<a href="/troubleshooting-guide">inspection fail</a>, traffic tickets). Too much stress kills.</p>
             </div>
 
             <div class="survival-stat">
@@ -618,7 +655,8 @@
                 <tr>
                     <td><strong>Vehicle Heater</strong></td>
                     <td>+warmth when driving</td>
-                    <td>Sorbett has heater controls</td>
+                    <td><a href="/vehicles-guide#sorbett">Sorbett</a> has heater controls</td>
+
                 </tr>
                 <tr>
                     <td><strong>Indoor Heating</strong></td>
@@ -677,7 +715,7 @@
                     <li>Moderate insulation</li>
                     <li><strong>Better sweat management</strong> - less likely to sweat during activity</li>
                     <li>Good for temperatures -5°C to -20°C</li>
-                    <li>Recommended for car work in garage</li>
+                    <li>Recommended for <a href="/corris-rivett-guide">car work</a> in garage</li>
                 </ul>
                 <p><strong>Player Confirmed:</strong> "The jacket does a better job at reducing sweat but isn't as good for insulation."</p>
             </div>
@@ -703,7 +741,7 @@
                     <small>Sweating indoors then going outside = death sentence</small>
                 </div>
                 <div class="checklist-item">
-                    <strong>✓ Keep extra clothing sets in vehicles</strong><br>
+                    <strong>✓ Keep extra clothing sets in <a href="/vehicles-guide">vehicles</a></strong><br>
                     <small>Allows quick changes based on situation</small>
                 </div>
                 <div class="checklist-item">
@@ -781,6 +819,7 @@
                     <li>Keep non-perishables at both apartment and parents' house</li>
                     <li>Pub Nappo is backup when Teimo closed</li>
                     <li>Most drinks provide small hunger reduction</li>
+                    <li>Budget ~50-100mk daily for food - see <a href="/money-guide">Money Making Guide</a></li>
                 </ul>
             </div>
 
@@ -850,7 +889,7 @@
 
             <div class="step">
                 <div class="step-title"><span class="step-number">2</span>Get to Your Vehicle (Sorbett)</div>
-                <p>The Sorbett is parked outside your apartment door.</p>
+                <p>The <a href="/vehicles-guide#sorbett">Sorbett</a> is parked outside your apartment door.</p>
                 <ul>
                     <li><strong>CRITICAL:</strong> Put on jacket or coverall BEFORE going outside</li>
                     <li>Press C to unlock, click door to open</li>
@@ -888,7 +927,7 @@
                 <p><strong>You start with ~1,000-1,500mk. Buy:</strong></p>
                 <ul>
                     <li>🍖 <strong>Food</strong> (3-4 days worth) - ~200mk</li>
-                    <li>📰 <strong>Parts Magazine</strong> (15mk) - ESSENTIAL for Rivett parts later</li>
+                    <li>📰 <strong><a href="/parts-acquisition-guide">Parts Magazine</a></strong> (15mk) - ESSENTIAL for Rivett parts later</li>
                     <li>☕ Coffee/drinks (optional) - ~50mk</li>
                     <li>⚡ Energy drinks if available - ~30mk each</li>
                 </ul>
@@ -900,7 +939,7 @@
                 <p>Inside PSK, on your RIGHT as you enter:</p>
                 <ul>
                     <li>Information board on wall</li>
-                    <li>Contains phone numbers including <strong>Rivett seller (08609553)</strong></li>
+                    <li>Contains phone numbers including <strong><a href="/corris-rivett-guide">Rivett seller</a> (08609553)</strong></li>
                     <li><strong>Take a photo</strong> or write down numbers - you'll need them</li>
                 </ul>
             </div>
@@ -946,7 +985,7 @@
                 <h4>💀 Death #1: Sweat-Induced Hypothermia</h4>
                 <p><strong>How it happens:</strong></p>
                 <ol>
-                    <li>Wear heavy coverall indoors while working on car in heated garage</li>
+                    <li>Wear heavy coverall indoors while working on <a href="/corris-rivett-guide">car</a> in heated garage</li>
                     <li>Start sweating (temperature bar overfills)</li>
                     <li>Go outside still in wet coverall</li>
                     <li>Clothing loses all insulation</li>
@@ -1012,7 +1051,7 @@
                 <ul>
                     <li>Always keep 3+ days food at home</li>
                     <li>Stock up when visiting Teimo - don't buy just 1 day</li>
-                    <li>Keep emergency money (200mk minimum)</li>
+                    <li>Keep emergency <a href="/money-guide">money</a> (200mk minimum)</li>
                     <li>Know Pub Nappo location for after-hours food</li>
                 </ul>
             </div>
@@ -1039,7 +1078,7 @@
                 <h4>💀 Death #6: Stress Heart Attack</h4>
                 <p><strong>How it happens:</strong></p>
                 <ol>
-                    <li>Fail vehicle inspection (500mk fine, huge stress)</li>
+                    <li>Fail <a href="/troubleshooting-guide">vehicle inspection</a> (500mk fine, huge stress)</li>
                     <li>Get multiple traffic tickets</li>
                     <li>Rivett build not progressing</li>
                     <li>Stress accumulates to critical levels</li>
@@ -1065,7 +1104,7 @@
                 <ul>
                     <li><strong>Close to Teimo/PSK:</strong> 2 minute drive for food</li>
                     <li><strong>Close to gas station:</strong> Easy fueling</li>
-                    <li><strong>Close to town services:</strong> Fleetari repair shop, inspection</li>
+                    <li><strong>Close to town services:</strong> <a href="/parts-acquisition-guide">Fleetari repair shop</a>, <a href="/troubleshooting-guide">inspection</a></li>
                     <li><strong>Faster save cycling:</strong> Less travel time = more saves possible per day</li>
                     <li><strong>Beginner friendly:</strong> Resources nearby</li>
                 </ul>
@@ -1074,7 +1113,7 @@
             <div class="step">
                 <div class="step-title">🏢 Apartment Cons</div>
                 <ul>
-                    <li><strong>NO GARAGE:</strong> Must build Rivett outside or in parking lot</li>
+                    <li><strong>NO GARAGE:</strong> Must build <a href="/corris-rivett-guide">Rivett</a> outside or in parking lot</li>
                     <li><strong>Cold work environment:</strong> Outdoor assembly = constant hypothermia risk</li>
                     <li><strong>No workshop space:</strong> Limited organization for 200+ parts</li>
                     <li><strong>Part storage harder:</strong> No protected area</li>
@@ -1085,7 +1124,7 @@
             <div class="step">
                 <div class="step-title">🏠 Parents' House Pros</div>
                 <ul>
-                    <li><strong>GARAGE:</strong> Heated workspace for Rivett assembly</li>
+                    <li><strong>GARAGE:</strong> Heated workspace for <a href="/corris-rivett-guide">Rivett assembly</a></li>
                     <li><strong>Protected environment:</strong> Build car without freezing</li>
                     <li><strong>Large property:</strong> More storage space</li>
                     <li><strong>Better bed:</strong> Superior sleep quality</li>
@@ -1154,7 +1193,7 @@
                 </div>
                 <div class="checklist-item">
                     <strong>5. Plan daily goal</strong><br>
-                    <small>Parts run? Car work? Job? Money making?</small>
+                    <small><a href="/parts-acquisition-guide">Parts run</a>? Car work? <a href="/money-guide">Job</a>? Money making?</small>
                 </div>
             </div>
 
@@ -1162,7 +1201,7 @@
             <div class="checklist">
                 <div class="checklist-item">
                     <strong>Main activity window</strong><br>
-                    <small>Rivett assembly, parts shopping, jobs, etc.</small>
+                    <small><a href="/corris-rivett-guide">Rivett assembly</a>, parts shopping, <a href="/money-guide">jobs</a>, etc.</small>
                 </div>
                 <div class="checklist-item">
                     <strong>Monitor temperature constantly if working outside</strong><br>
@@ -1236,18 +1275,68 @@
                 <ul>
                     <li>Surviving 5+ game days without close calls</li>
                     <li>Stats rarely enter red zones</li>
-                    <li>Steady income from jobs</li>
-                    <li>Making progress on Rivett build</li>
+                    <li>Steady <a href="/money-guide">income from jobs</a></li>
+                    <li>Making progress on <a href="/corris-rivett-guide">Rivett build</a></li>
                     <li>Can predict when you'll need supplies</li>
                     <li>Haven't died to temperature in last week</li>
                 </ul>
             </div>
         </section>
 
+        <!-- NEW: Related Guides Section -->
+        <section class="content-section">
+            <h2>📚 Related Guides</h2>
+            <p class="section-description">Survival is just the beginning. Master these other aspects of My Winter Car to thrive in the harsh Finnish winter.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <!-- Beginner's Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🎓 Beginner's Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">New to My Winter Car? Start here for controls, basic mechanics, and your first 30 minutes tutorial before diving into survival.</p>
+                    <a href="/beginner-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Beginner's Guide →</a>
+                </div>
+
+                <!-- Money Making Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">💰 Money Making Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Survival costs money. Learn all job types, income strategies, and fastest earning methods to fund food and your Rivett build.</p>
+                    <a href="/money-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Money Guide →</a>
+                </div>
+
+                <!-- Vehicles Guide -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🚗 Complete Vehicles Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Master the Sorbett's block heater, learn winter driving techniques, and understand all available vehicles for work and transportation.</p>
+                    <a href="/vehicles-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Vehicles Guide →</a>
+                </div>
+
+                <!-- Corris Rivett Build -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🏎️ Corris Rivett Build Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Once you've mastered survival, build your dream car. Complete step-by-step instructions for all 200+ parts and assembly order.</p>
+                    <a href="/corris-rivett-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Build Guide →</a>
+                </div>
+
+                <!-- Parts Acquisition -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🔧 Parts Acquisition Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Where to buy Rivett parts, price comparison between shops, and how to use the Parts Magazine you bought at PSK during your first hour.</p>
+                    <a href="/parts-acquisition-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Parts Guide →</a>
+                </div>
+
+                <!-- Troubleshooting -->
+                <div class="related-guide-card">
+                    <h3 style="color: var(--accent-ice); font-size: 1.2rem; margin-bottom: 0.75rem;">🔍 Troubleshooting Guide</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Vehicle won't start? Failing inspection? Fix common problems with diagnostic procedures and repair strategies.</p>
+                    <a href="/troubleshooting-guide" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">Read Troubleshooting →</a>
+                </div>
+            </div>
+        </section>
+
         <div class="info-box warning" style="margin-top: 3rem;">
             <div class="info-box-title">📌 Content Version Notice</div>
             <p><strong>This guide is based on:</strong> My Winter Car Early Access (Released December 29, 2025)</p>
-            <p><strong>Last Updated:</strong> December 31, 2025</p>
+            <p><strong>Last Updated:</strong> January 5, 2026</p>
             <p><strong>Verified Information:</strong> All temperature mechanics, clothing systems, and survival stats confirmed through developer comments (Toplessgun) and Early Access player testing.</p>
             <p>Game is in active development. Survival mechanics may be rebalanced in future patches. Always verify critical information against current gameplay.</p>
         </div>
@@ -1287,5 +1376,6 @@
             }
         });
     </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
