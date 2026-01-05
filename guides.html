@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All My Winter Car Guides - Complete Tutorial Library 2026</title>
+    <meta name="description" content="Browse all My Winter Car guides organized by category. Vehicle builds, survival mechanics, money making, racing strategies, and troubleshooting - everything you need to master the Finnish winter.">
+    <link rel="canonical" href="https://mywintercar.com/guides">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-success: #10b981;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(125, 211, 252, 0.05));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .category-icon {
+            font-size: 2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Stats Overview */
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .stat-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Filter/Search Bar (Static Placeholder) */
+        .filter-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-section h3 {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .filter-tag {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* Guide Cards Grid */
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .guide-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-ice));
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .guide-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .guide-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+        }
+
+        .guide-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .guide-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .guide-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .guide-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .difficulty-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+
+        .badge-essential {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-danger);
+        }
+
+        .badge-critical {
+            background: rgba(251, 191, 36, 0.2);
+            color: var(--accent-warning);
+        }
+
+        .badge-intermediate {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .badge-advanced {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-success);
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .category-section:last-child {
+            border-bottom: none;
+        }
+
+        .category-description {
+            background: rgba(74, 158, 255, 0.05);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-title {
+            font-weight: 600;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 0;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-ice);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--accent-ice);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-tags {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <nav>
+                <a href="/#quick-nav">Quick Start</a>
+                <a href="/beginner-guide">Beginner's Guide</a>
+                <a href="/about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>📚 All Guides</h1>
+        <p class="hero-subtitle">Comprehensive tutorials and strategies for mastering My Winter Car. From your first 30 minutes to advanced racing techniques - we've got you covered.</p>
+        
+        <div class="stats-overview">
+            <div class="stat-box">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Complete Guides</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">~180</div>
+                <div class="stat-label">Minutes of Content</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Fact-Checked</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">EA</div>
+                <div class="stat-label">Early Access Ready</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Filter Section (Static Placeholder) -->
+        <div class="filter-section">
+            <h3>🔍 Filter by Category (Coming Soon)</h3>
+            <div class="filter-tags">
+                <span class="filter-tag">🚗 Vehicles</span>
+                <span class="filter-tag">💰 Economy</span>
+                <span class="filter-tag">❄️ Survival</span>
+                <span class="filter-tag">🏁 Gameplay</span>
+                <span class="filter-tag">⭐ Essential Only</span>
+            </div>
+        </div>
+
+        <!-- Survival Guides -->
+        <section class="category-section">
+            <h2>
+                <span class="category-icon">❄️</span>
+                Survival & Getting Started
+            </h2>
+            <div class="category-description">
+                Essential guides for staying alive in the harsh Finnish winter. Start here if you're new to the game or struggling with basic survival mechanics.
+            </div>
+
+            <div class="guides-grid">
+                <a href="/beginner-guide" class="guide-card">
+                    <span class="guide-icon">📖</span>
+                    <h3>Beginner's Guide</h3>
+                    <p class="guide-description">Your first 30 minutes in My Winter Car. Learn controls, get the Sorbett running, survive the cold, and earn your first money. The perfect starting point for new players.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 35 min read</span>
+                        <span class="difficulty-badge badge-essential">⭐ Essential</span>
+                    </div>
+                </a>
+
+                <a href="/survival-guide" class="guide-card">
+                    <span class="guide-icon">🥶</span>
+                    <h3>Winter Survival Guide</h3>
+                    <p class="guide-description">Master temperature management, hunger, the mysterious Problem bar, and permanent death mechanics. Detailed breakdown of all survival stats and how to keep them in check.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 20 min read</span>
+                        <span class="difficulty-badge badge-critical">⚠️ Critical</span>
+                    </div>
+                </a>
+
+                <a href="/troubleshooting-guide" class="guide-card">
+                    <span class="guide-icon">🔧</span>
+                    <h3>Troubleshooting Guide</h3>
+                    <p class="guide-description">Solutions for common problems from the Problem bar mystery to Sorbett cold starts. Includes step-by-step car starting procedures and fixes for known EA bugs.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 25 min read</span>
+                        <span class="difficulty-badge badge-intermediate">🔵 Intermediate</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Vehicle Guides -->
+        <section class="category-section">
+            <h2>
+                <span class="category-icon">🚗</span>
+                Vehicle & Building Guides
+            </h2>
+            <div class="category-description">
+                Everything about the Corris Rivett build, vehicle comparisons, and mechanical systems. Learn which car to drive and how to assemble your dream project.
+            </div>
+
+            <div class="guides-grid">
+                <a href="/vehicles-guide" class="guide-card">
+                    <span class="guide-icon">🚙</span>
+                    <h3>Complete Vehicle Comparison</h3>
+                    <p class="guide-description">Detailed comparison of Sorbett vs Rivett (complete). Performance specs, fuel consumption, starting procedures, and which vehicle to use for different jobs in 1999 Finland.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 30 min read</span>
+                        <span class="difficulty-badge badge-essential">⭐ Essential</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Economy Guides -->
+        <section class="category-section">
+            <h2>
+                <span class="category-icon">💰</span>
+                Economy & Money Making
+            </h2>
+            <div class="category-description">
+                Maximize your earnings to fund the Rivett build. Learn the best jobs, time-to-money ratios, and where to source affordable parts.
+            </div>
+
+            <div class="guides-grid">
+                <a href="/money-guide" class="guide-card">
+                    <span class="guide-icon">💼</span>
+                    <h3>Fast Money Making Guide</h3>
+                    <p class="guide-description">Compare all available jobs - firewood delivery, office work, and racing. Detailed hourly rate calculations and early-game vs late-game strategies to maximize income.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 25 min read</span>
+                        <span class="difficulty-badge badge-intermediate">🔵 Intermediate</span>
+                    </div>
+                </a>
+
+                <a href="/parts-acquisition-guide" class="guide-card">
+                    <span class="guide-icon">🔩</span>
+                    <h3>Parts Acquisition Guide</h3>
+                    <p class="guide-description">Master the three ways to get parts: salvage yards, Teimo's shop, and phone orders. Budget planning tables and sourcing strategies for 200+ Rivett components.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 30 min read</span>
+                        <span class="difficulty-badge badge-intermediate">🔵 Intermediate</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gameplay Guides -->
+        <section class="category-section">
+            <h2>
+                <span class="category-icon">🏁</span>
+                Gameplay & Racing
+            </h2>
+            <div class="category-description">
+                Advanced gameplay mechanics, racing strategies, and competitive events. Master the Ice Track and Rally Sprint to earn prizes and reputation.
+            </div>
+
+            <div class="guides-grid">
+                <a href="/racing-guide" class="guide-card">
+                    <span class="guide-icon">🏆</span>
+                    <h3>Racing & Events Guide</h3>
+                    <p class="guide-description">Complete coverage of Ice Track racing and Rally Sprint competitions. Vehicle preparation, racing lines, AI behavior, and prize breakdowns for both events.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ 20 min read</span>
+                        <span class="difficulty-badge badge-advanced">🟢 Advanced</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Getting Help -->
+        <div class="info-box">
+            <div class="info-title">💡 Need More Help?</div>
+            <p>Can't find what you're looking for? Here's where to get additional support:</p>
+            <ul style="margin-top: 0.5rem; margin-left: 1.5rem; color: var(--text-secondary);">
+                <li><strong>Discord:</strong> Join our <a href="https://discord.gg/mywintercar" target="_blank" rel="noopener noreferrer">community server</a> for real-time help</li>
+                <li><strong>Steam Discussions:</strong> Browse <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" rel="noopener noreferrer">official forums</a> for EA updates</li>
+                <li><strong>Report Errors:</strong> Found incorrect information? Let us know on Discord</li>
+                <li><strong>Request Guides:</strong> Suggest new topics for future guides</li>
+            </ul>
+            <p style="margin-top: 1rem; font-style: italic;">All guides are updated regularly as the game evolves through Early Access.</p>
+        </div>
+
+        <!-- Coming Soon -->
+        <section class="content-section">
+            <h2>🔜 Coming Soon</h2>
+            <p>Planned expansions to our guide library:</p>
+
+            <div class="guides-grid">
+                <div class="guide-card" style="opacity: 0.6; cursor: not-allowed;">
+                    <span class="guide-icon">⚙️</span>
+                    <h3>Engine Tuning Guide</h3>
+                    <p class="guide-description">Advanced carburetor tuning, ignition timing, and performance optimization for the Rivett. Coming in future update.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ TBD</span>
+                        <span class="difficulty-badge badge-advanced">🟢 Advanced</span>
+                    </div>
+                </div>
+
+                <div class="guide-card" style="opacity: 0.6; cursor: not-allowed;">
+                    <span class="guide-icon">🗺️</span>
+                    <h3>Map & Locations Guide</h3>
+                    <p class="guide-description">Interactive map of all important locations, shops, job sites, and points of interest across the game world. Coming soon.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ TBD</span>
+                        <span class="difficulty-badge badge-intermediate">🔵 Intermediate</span>
+                    </div>
+                </div>
+
+                <div class="guide-card" style="opacity: 0.6; cursor: not-allowed;">
+                    <span class="guide-icon">📊</span>
+                    <h3>Complete Parts Database</h3>
+                    <p class="guide-description">Searchable database of all 200+ parts with prices, weights, locations, and installation requirements. In development.</p>
+                    <div class="guide-meta">
+                        <span>⏱️ TBD</span>
+                        <span class="difficulty-badge badge-intermediate">🔵 Intermediate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about">About This Wiki</a></li>
+                    <li><a href="/about#team">Contributors</a></li>
+                    <li><a href="/about#team">How to Contribute</a></li>
+                    <li><a href="/about#changelog">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/guides">All Guides</a></li>
+                    <li><a href="/vehicles-guide">Vehicle Database</a></li>
+                    <li><a href="/parts-acquisition-guide">Parts Catalog</a></li>
+                    <li><a href="/beginner-guide">Getting Started</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="https://discord.gg/mywintercar" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="https://reddit.com/r/MyWinterCar" target="_blank" rel="noopener noreferrer">Reddit</a></li>
+                    <li><a href="https://steamcommunity.com/app/4164420" target="_blank" rel="noopener noreferrer">Steam Forum</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/about#disclaimer">Disclaimer</a></li>
+                    <li><a href="/about#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p><strong>mywintercar.com v.260105-01</strong> - Fan-made community Wiki & resource hub</p>
+                <p style="margin-top: 0.5rem;">Not affiliated with Amistech Games. My Winter Car™ is a trademark of Amistech Games.</p>
+                <p style="margin-top: 1rem; font-size: 0.85rem;">© 2025-2026 mywintercar.com • All game content © Amistech Games</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
