@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Save Editor Guide - MWCEditor & MSCEditor Setup, Safety, Cheats | My Winter Car 2026</title>
+    <meta name="description" content="Master My Winter Car save editing with MWCEditor and MSCEditor. Learn safe installation, backup procedures, money editing, vehicle teleportation, survival stat management, and avoid save corruption with our comprehensive 2026 guide.">
+    <link rel="canonical" href="https://mywintercar.com/save-editor-guide">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+
+  
+    <style>
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--accent-ice);
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
+            border-bottom: 2px solid var(--accent-ice);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Editor Comparison Cards */
+        .editor-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .editor-card {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .editor-card.recommended {
+            border-color: var(--accent-success);
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, var(--bg-card) 100%);
+        }
+
+        .editor-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+        }
+
+        .editor-badge {
+            display: inline-block;
+            background: var(--accent-success);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .editor-badge.legacy {
+            background: var(--accent-warning);
+        }
+
+        .editor-card h3 {
+            color: var(--accent-ice);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .editor-pros {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .editor-pros li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .editor-pros li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-success);
+            font-weight: 700;
+        }
+
+        .editor-cons {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .editor-cons li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .editor-cons li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: var(--accent-danger);
+            font-weight: 700;
+        }
+
+        /* Info Boxes */
+        .info-box, .warning-box, .danger-box, .success-box {
+            border-left: 4px solid var(--accent-blue);
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            border-left-color: var(--accent-warning);
+        }
+
+        .danger-box {
+            border-left-color: var(--accent-danger);
+        }
+
+        .success-box {
+            border-left-color: var(--accent-success);
+        }
+
+        .info-box h3, .warning-box h3, .danger-box h3, .success-box h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        /* Step Cards */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 2rem;
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: var(--accent-ice);
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content code {
+            background: var(--bg-primary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            color: var(--accent-ice);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .feature-card h4 {
+            color: var(--accent-ice);
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .feature-card ul li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .feature-card ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+
+        /* Code Block */
+        .code-block {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .code-block code {
+            color: var(--accent-ice);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin: 1rem 0;
+        }
+
+        .download-btn:hover {
+            background: var(--accent-ice);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(74, 158, 255, 0.4);
+        }
+
+        /* Sections */
+        section {
+            margin: 4rem 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--accent-ice);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-ice);
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin: 2rem 0 1rem 0;
+        }
+
+        /* Internal Links */
+        a.internal-link {
+            color: var(--accent-ice);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        a.internal-link:hover {
+            border-bottom-color: var(--accent-ice);
+        }
+
+        /* Related Guides */
+        .related-guides {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+        }
+
+        .guide-card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-card strong {
+            display: block;
+            color: var(--accent-ice);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .step-card {
+                flex-direction: column;
+            }
+
+            .editor-comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/vehicles-guide">Vehicles</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>💾 Complete Save Editor Guide</h1>
+            <p>Master MWCEditor & MSCEditor - safely edit money, <a href="/vehicles-guide" class="internal-link">vehicles</a>, <a href="/survival-guide" class="internal-link">survival stats</a>, and fix catastrophic failures in My Winter Car</p>
+            <div class="hero-meta">
+                <span>🛠️ 2 Editor Options</span>
+                <span>⚠️ Backup-First Safety</span>
+                <span>💰 Money & Stats Editing</span>
+                <span>🚗 Vehicle Teleportation</span>
+                <span>🎮 Version EA v.260102</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Critical Warning -->
+        <div class="danger-box">
+            <h3>🚨 CRITICAL: Backup Your Save BEFORE Editing</h3>
+            <p><strong>Save editors can permanently corrupt your progress.</strong> These tools were designed for My Summer Car and have partial compatibility with My Winter Car. Even with updated MWCEditor versions, unexpected behavior can occur. <strong>Always create a backup copy of your entire save folder before making ANY changes.</strong> Losing 20+ hours of progress because you didn't spend 30 seconds copying a folder is a terrible way to learn this lesson.</p>
+            <p style="margin-top: 1rem;"><strong>Backup Location:</strong> Copy entire folder at <code>%USERPROFILE%\AppData\LocalLow\Amistech\My Winter Car</code> to a safe location (Desktop, Documents, external drive).</p>
+        </div>
+
+        <!-- Editor Comparison -->
+        <section id="editor-comparison">
+            <h2>🔧 Which Save Editor Should You Use?</h2>
+            
+            <p>There are currently two save editors available for My Winter Car, each with different strengths and limitations. Both are community projects adapted from My Summer Car tools.</p>
+
+            <div class="editor-comparison">
+                <!-- MWCEditor (Recommended) -->
+                <div class="editor-card recommended">
+                    <span class="editor-badge">✅ RECOMMENDED FOR MWC</span>
+                    <h3>MWCEditor</h3>
+                    <p><strong>Developer:</strong> Marcinosky/Shedmann (community update)<br>
+                    <strong>Status:</strong> Active development (Dec 2025 - Jan 2026)<br>
+                    <strong>Version:</strong> Updated for My Winter Car specifically</p>
+
+                    <h4 style="color: var(--accent-success); margin-top: 1.5rem;">✓ Advantages</h4>
+                    <ul class="editor-pros">
+                        <li><strong>Rivett Report Feature:</strong> Added in Jan 2026 update, provides vehicle diagnostics (still improving)</li>
+                        <li><strong>Native MWC Support:</strong> Designed specifically for My Winter Car's save structure</li>
+                        <li><strong>Regular Updates:</strong> Active community development with bug fixes</li>
+                        <li><strong>Better Compatibility:</strong> Handles MWC-specific data more reliably</li>
+                        <li><strong>GitHub + Nexus Mods:</strong> Available on both platforms (Nexus ID: 246)</li>
+                    </ul>
+
+                    <h4 style="color: var(--accent-danger); margin-top: 1.5rem;">✗ Limitations</h4>
+                    <ul class="editor-cons">
+                        <li>Rivett wiring system not yet implemented</li>
+                        <li>Weather/time editing currently broken</li>
+                        <li>Some item spawning functions untested</li>
+                        <li>Documentation needs updating for MWC differences</li>
+                    </ul>
+
+                    <a href="https://github.com/Marcinosky/MWCEditor/releases" class="download-btn" target="_blank">Download from GitHub →</a>
+                    <a href="https://www.nexusmods.com/mywintercar/mods/246" class="download-btn" target="_blank" style="background: var(--accent-warm);">Download from Nexus Mods →</a>
+                </div>
+
+                <!-- MSCEditor (Legacy) -->
+                <div class="editor-card">
+                    <span class="editor-badge legacy">⚠️ LEGACY COMPATIBILITY</span>
+                    <h3>MSCEditor</h3>
+                    <p><strong>Developer:</strong> durkhaz (original MSC tool)<br>
+                    <strong>Status:</strong> No official MWC support<br>
+                    <strong>Version:</strong> Designed for My Summer Car</p>
+
+                    <h4 style="color: var(--accent-success); margin-top: 1.5rem;">✓ Advantages</h4>
+                    <ul class="editor-pros">
+                        <li><strong>Proven Stability:</strong> Extensively tested in My Summer Car</li>
+                        <li><strong>Complete MSC Feature Set:</strong> All original functions work perfectly for MSC</li>
+                        <li><strong>Comprehensive Guides:</strong> Extensive documentation and tutorials available</li>
+                        <li><strong>Wide Availability:</strong> Easy to find on Nexus Mods and community sites</li>
+                    </ul>
+
+                    <h4 style="color: var(--accent-danger); margin-top: 1.5rem;">✗ Limitations</h4>
+                    <ul class="editor-cons">
+                        <li><strong>CRITICAL:</strong> Rivett parts don't appear in editor (completely invisible)</li>
+                        <li>No Rivett Report functionality for MWC</li>
+                        <li>Must use x64 version (32-bit doesn't work with MWC)</li>
+                        <li>Higher risk of save corruption with MWC-specific data</li>
+                        <li>Sorbet/Ferndale/other vehicles work, but not comprehensive</li>
+                    </ul>
+
+                    <p style="margin-top: 1rem; padding: 1rem; background: var(--bg-primary); border-radius: 8px; color: var(--text-secondary);">
+                        <strong>Use MSCEditor only if:</strong> (1) MWCEditor is unavailable, (2) You're editing non-Rivett vehicles, (3) You need proven MSC compatibility for imported saves
+                    </p>
+
+                    <a href="https://www.nexusmods.com/mysummercar/mods/92" class="download-btn" target="_blank" style="background: var(--accent-warm);">Download from Nexus Mods →</a>
+                </div>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3>💡 Recommendation Summary</h3>
+                <p><strong>Use MWCEditor (Marcinosky version) for 95% of situations.</strong> It's specifically updated for My Winter Car and handles the game's save structure more reliably. Only fall back to MSCEditor if you're working with imported My Summer Car saves or if MWCEditor is temporarily unavailable.</p>
+            </div>
+        </section>
+
+        <!-- Installation Guide -->
+        <section id="installation">
+            <h2>📥 Installation & Setup Guide</h2>
+
+            <h3>Prerequisites & Requirements</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>💻 System Requirements</h4>
+                    <ul>
+                        <li>Windows 7/8/10/11 (64-bit)</li>
+                        <li>x64 version of editor required</li>
+                        <li>No additional dependencies</li>
+                        <li>~5 MB disk space</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>🎮 Game Requirements</h4>
+                    <ul>
+                        <li>My Winter Car installed</li>
+                        <li>At least one save file created</li>
+                        <li>Game closed before editing</li>
+                        <li>Save folder permissions</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>📁 Save File Location</h4>
+                    <ul>
+                        <li><code>%USERPROFILE%\AppData\LocalLow\Amistech\My Winter Car</code></li>
+                        <li>Main file: <code>savefile.txt</code></li>
+                        <li>Backup regularly</li>
+                        <li>Editor auto-detects folder</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Step-by-Step Installation</h3>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Create Backup</h4>
+                        <p><strong>CRITICAL FIRST STEP:</strong> Before downloading anything, backup your save:</p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Press <strong>Windows + R</strong> to open Run dialog</li>
+                            <li>Type <code>%USERPROFILE%\AppData\LocalLow\Amistech</code> and press Enter</li>
+                            <li>Right-click <strong>"My Winter Car"</strong> folder → Copy</li>
+                            <li>Paste to safe location (Desktop, Documents, external drive)</li>
+                            <li>Rename copy to <strong>"My Winter Car BACKUP [DATE]"</strong></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Download MWCEditor</h4>
+                        <p>Choose one download source:</p>
+                        <p><strong>Option A - GitHub (Recommended):</strong></p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Visit <a href="https://github.com/Marcinosky/MWCEditor/releases" target="_blank" class="internal-link">github.com/Marcinosky/MWCEditor/releases</a></li>
+                            <li>Download latest <strong>.zip</strong> file under "Assets"</li>
+                            <li>Right-click downloaded file → Extract All</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><strong>Option B - Nexus Mods:</strong></p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Visit <a href="https://www.nexusmods.com/mywintercar/mods/246" target="_blank" class="internal-link">nexusmods.com/mywintercar/mods/246</a></li>
+                            <li>Click "Files" tab → Manual Download</li>
+                            <li>Extract downloaded archive</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Launch MWCEditor</h4>
+                        <p>No installation required - it's a standalone executable:</p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Navigate to extracted folder</li>
+                            <li>Find <strong>MWCEditor.exe</strong> (or MSCEditor.exe for x64 version)</li>
+                            <li><strong>Right-click → Run as Administrator</strong> (recommended)</li>
+                            <li>If Windows SmartScreen appears, click "More info" → "Run anyway"</li>
+                        </ol>
+                        <p style="margin-top: 0.5rem; color: var(--accent-warning);">⚠️ <strong>Make sure you're using the x64 (64-bit) version</strong> - 32-bit version does NOT work with My Winter Car.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Open Your Save File</h4>
+                        <p>MWCEditor should auto-detect your save folder on first launch. If not:</p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Click <strong>File → Open</strong> in editor menu bar</li>
+                            <li>Navigate to <code>%USERPROFILE%\AppData\LocalLow\Amistech\My Winter Car</code></li>
+                            <li>Select <strong>savefile.txt</strong></li>
+                            <li>Click "Open" - editor will load your save data</li>
+                        </ol>
+                        <p style="margin-top: 0.5rem; color: var(--accent-ice);">✓ Success indicator: You'll see your player name, money amount, and vehicle data populate in the editor interface.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Make Changes & Save</h4>
+                        <p>Edit your save data carefully:</p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Make desired changes (see sections below for specific edits)</li>
+                            <li>Click <strong>File → Save</strong> (or Ctrl+S)</li>
+                            <li><strong>Close the editor completely</strong></li>
+                            <li>Launch My Winter Car to test changes</li>
+                        </ol>
+                        <p style="margin-top: 0.5rem; color: var(--accent-danger);">🚨 <strong>NEVER edit while game is running</strong> - this WILL corrupt your save. Always close game before opening editor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-box">
+                <h3>✅ Verification Checklist</h3>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li style="padding: 0.5rem 0;">☑️ Backup created and stored safely outside game folder</li>
+                    <li style="padding: 0.5rem 0;">☑️ Using x64 version of editor (not 32-bit)</li>
+                    <li style="padding: 0.5rem 0;">☑️ Game is completely closed before editing</li>
+                    <li style="padding: 0.5rem 0;">☑️ Editor successfully opened <code>savefile.txt</code></li>
+                    <li style="padding: 0.5rem 0;">☑️ Can see player data loaded in editor interface</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Common Edits & Features -->
+        <section id="common-edits">
+            <h2>💰 Common Save Edits & Features</h2>
+
+            <h3>1. Money Editing</h3>
+            <div class="feature-card" style="margin-bottom: 2rem;">
+                <h4>🪙 Infinite Money Cheat</h4>
+                <p>The most popular save edit. Perfect for skipping the early-game <a href="/jobs-guide" class="internal-link">money grind</a> and focusing on <a href="/vehicles-guide" class="internal-link">building your Rivett</a>.</p>
+                <p style="margin-top: 1rem;"><strong>How to Edit:</strong></p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>In MWCEditor, find the <strong>"Money" or "Player"</strong> tab</li>
+                    <li>Locate <strong>"Money" or "Cash"</strong> field (displays current Markka balance)</li>
+                    <li>Enter desired amount (e.g., <code>999999</code> for ~1 million MK)</li>
+                    <li>Click "Save" → Close editor → Launch game</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--accent-warning);">⚠️ <strong>Recommended Amounts:</strong> 50,000 MK = comfortable early game, 200,000 MK = all <a href="/parts-acquisition-guide" class="internal-link">Rivett parts</a> + safety buffer, 999,999 MK = effectively infinite money</p>
+            </div>
+
+            <h3>2. Vehicle Teleportation</h3>
+            <div class="feature-card" style="margin-bottom: 2rem;">
+                <h4>🚗 Teleport Vehicles & Player</h4>
+                <p>Rescue vehicles stuck in forests, underwater, or <a href="/map-guide" class="internal-link">off-map locations</a>. Essential for recovering from catastrophic failures.</p>
+                <p style="margin-top: 1rem;"><strong>How to Teleport:</strong></p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>Open <strong>Tools</strong> menu in MWCEditor</li>
+                    <li>Select <strong>"Teleport"</strong> or <strong>"Position"</strong> tool</li>
+                    <li>Choose object to teleport (Player, Sorbet, Rivett, etc.)</li>
+                    <li>Select preset location:
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                            <li><strong>"Garage Table"</strong> - Parents' house garage (safest)</li>
+                            <li><strong>"Player Apartment"</strong> - Your apartment in Peräjärvi</li>
+                            <li><strong>"Fleetari"</strong> - Repair shop in Loppe</li>
+                            <li>Or enter custom coordinates</li>
+                        </ul>
+                    </li>
+                    <li><strong>IMPORTANT:</strong> Set <strong>"Height Offset"</strong> to <code>1.0</code> meter</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--accent-danger);">🚨 <strong>Why Height Offset Matters:</strong> Without the +1m offset, vehicles spawn embedded in the ground, causing physics explosions that launch them into orbit or destroy them instantly. Always add vertical clearance.</p>
+            </div>
+
+            <h3>3. Survival Stats Management</h3>
+            <div class="feature-card" style="margin-bottom: 2rem;">
+                <h4>❄️ Edit Hunger, Thirst, Temperature, Problem</h4>
+                <p>Modify all 6 <a href="/survival-guide" class="internal-link">survival stats</a> to prevent death or skip tedious maintenance. Useful for testing or creative builds.</p>
+                <p style="margin-top: 1rem;"><strong>How to Edit Stats:</strong></p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>In MWCEditor, navigate to <strong>"Player Stats"</strong> tab</li>
+                    <li>Find survival stat fields:
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                            <li><strong>Hunger:</strong> Set to <code>0</code> (full) or <code>100</code> (starving)</li>
+                            <li><strong>Thirst:</strong> Set to <code>0</code> (hydrated) or <code>100</code> (dehydrated)</li>
+                            <li><strong>Temperature:</strong> Set to <code>37.0</code> (normal body temp °C)</li>
+                            <li><strong>Fatigue:</strong> Set to <code>0</code> (rested) or <code>100</code> (exhausted)</li>
+                            <li><strong>Urination:</strong> Set to <code>0</code> (empty bladder)</li>
+                            <li><strong>Problem (Alcoholism):</strong> Set to <code>0</code> (no addiction) - <strong>WARNING: Setting this too low removes beer requirement!</strong></li>
+                        </ul>
+                    </li>
+                    <li>Save changes and test in-game</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--accent-warning);">⚠️ <strong>Problem Stat Caution:</strong> The "Problem" stat represents alcoholism. Setting it to 0 means you won't need beer to survive, which removes a core survival mechanic. Consider setting to 10-20 instead to keep beer requirement but reduce urgency.</p>
+            </div>
+
+            <h3>4. Vehicle Diagnostics (Rivett Report)</h3>
+            <div class="feature-card" style="margin-bottom: 2rem;">
+                <h4>🔍 Rivett Report - Part Status Checker</h4>
+                <p>MWCEditor's killer feature (added Jan 2026). Shows which Rivett parts are loose, damaged, or missing. Essential for <a href="/troubleshooting-guide" class="internal-link">diagnosing why your car won't start</a>.</p>
+                <p style="margin-top: 1rem;"><strong>How to Use:</strong></p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>Open MWCEditor with your save loaded</li>
+                    <li>Click <strong>"Rivett Report"</strong> or <strong>"Car Report"</strong> tab</li>
+                    <li>View table showing:
+                        <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                            <li>Part name</li>
+                            <li>Installation status (installed/missing)</li>
+                            <li>Bolt tightness (loose bolts highlighted)</li>
+                            <li>Condition percentage</li>
+                            <li>Damage indicators</li>
+                        </ul>
+                    </li>
+                    <li>Identify problems → Fix in-game or edit directly in editor</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--accent-warning);">⚠️ <strong>Current Limitations:</strong> Wiring system not yet implemented in report. Electrical issues won't show up here. Developer is working on adding wiring diagnostics in future updates.</p>
+            </div>
+
+            <h3>5. Time & Date Adjustment</h3>
+            <div class="feature-card" style="margin-bottom: 2rem;">
+                <h4>⏰ Skip Time / Change Date</h4>
+                <p>Fast-forward to specific times for <a href="/jobs-guide" class="internal-link">job scheduling</a>, skip nights, or reach weekend events like <a href="/racing-guide" class="internal-link">ice racing</a> or Flea Market.</p>
+                <p style="margin-top: 1rem;"><strong>How to Edit Time:</strong></p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>Find <strong>"Time" or "Date"</strong> section in editor</li>
+                    <li>Adjust hour, day, or week values</li>
+                    <li>Save and load game</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--accent-danger);">🚨 <strong>BROKEN IN MWCEditor:</strong> Time/weather editing currently has bugs. Values may not apply correctly or may reset. Developer is aware and working on fix. Use in-game bed sleep for time skipping instead (safer).</p>
+            </div>
+        </section>
+
+        <!-- Advanced Features -->
+        <section id="advanced-features">
+            <h2>🎯 Advanced Features & Pro Tips</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>🔧 Bolt Tightness Editor</h4>
+                    <p>Tighten all Rivett bolts to 100% without manually using wrenches. Prevents parts falling off during driving.</p>
+                    <ul>
+                        <li>Open Rivett Report</li>
+                        <li>Select "Tighten All Bolts"</li>
+                        <li>Or manually set bolt values to <code>8</code> (max tightness)</li>
+                        <li>Save before major drives</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🗺️ Coordinate Finder</h4>
+                    <p>Get exact X/Y/Z coordinates for custom teleport locations. Useful for creating <a href="/map-guide" class="internal-link">custom spawn points</a>.</p>
+                    <ul>
+                        <li>Place character/vehicle at desired spot in-game</li>
+                        <li>Save game</li>
+                        <li>Open editor → Tools → Position</li>
+                        <li>Copy coordinates for future use</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🏪 Inventory Management</h4>
+                    <p>Add items directly to player inventory without shopping trips to PSK or Fleetari.</p>
+                    <ul>
+                        <li>Navigate to "Inventory" or "Items" tab</li>
+                        <li>Spawn items (beer, food, parts)</li>
+                        <li>⚠️ Feature untested in MWCEditor</li>
+                        <li>High risk of corruption - backup first!</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>📊 Condition Editing</h4>
+                    <p>Restore part condition to 100% NOS quality. Useful after crashes or wear damage.</p>
+                    <ul>
+                        <li>Open Rivett Report or part list</li>
+                        <li>Find damaged part</li>
+                        <li>Set "Condition" field to <code>100</code></li>
+                        <li>Cheaper than buying NOS parts at Fleetari</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🔓 Unlock Achievements</h4>
+                    <p>Some MSC achievements may be editable. MWC achievement system unknown.</p>
+                    <ul>
+                        <li>Explore "Achievements" tab if present</li>
+                        <li>May not work for MWC (Steam achievements)</li>
+                        <li>Not recommended - defeats purpose</li>
+                        <li>Use only for testing</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h4>🚫 Reset Fines & Tickets</h4>
+                    <p>Clear police fines from speeding, expired inspection, or fuel tax violations.</p>
+                    <ul>
+                        <li>Find "Police" or "Fines" section</li>
+                        <li>Set fine amount to <code>0</code></li>
+                        <li>Clear inspection violation flags</li>
+                        <li>Useful after false police stops</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3>💡 Pro Tips for Safe Editing</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary);">
+                    <li><strong>Make incremental changes:</strong> Edit one thing at a time, test in-game, then make next change. Don't modify 10 values at once.</li>
+                    <li><strong>Keep backup versions:</strong> Create numbered backups (Backup_v1, Backup_v2) so you can roll back to specific points.</li>
+                    <li><strong>Close game COMPLETELY:</strong> Check Task Manager to ensure MWC.exe isn't running before opening editor.</li>
+                    <li><strong>Don't spawn unknown items:</strong> Spawning items with incorrect IDs can crash the game or corrupt save. Stick to money/stat editing.</li>
+                    <li><strong>Height offset rule:</strong> Always add +1 meter when teleporting vehicles. Physics explosions are not fun.</li>
+                    <li><strong>Test after editing:</strong> Load save, check changes worked, play for 5-10 minutes, then save in-game before doing more edits.</li>
+                    <li><strong>Join community Discord:</strong> Ask questions before attempting risky edits. Community knows common pitfalls.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Known Issues & Limitations -->
+        <section id="known-issues">
+            <h2>⚠️ Known Issues & Limitations</h2>
+
+            <div class="warning-box">
+                <h3>🔧 MWCEditor Current Bugs (as of Jan 2026)</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 1rem;">
+                    <li><strong>Rivett Wiring:</strong> Not implemented yet. Electrical issues can't be diagnosed or fixed in editor.</li>
+                    <li><strong>Weather System:</strong> Time/weather combo values are broken. Editing causes incorrect values or game crashes.</li>
+                    <li><strong>Item Spawning:</strong> Untested functionality. Item ID tables from MSC may not match MWC. High corruption risk.</li>
+                    <li><strong>Documentation:</strong> Help text and warnings are outdated from MSC version. Some tooltips reference wrong game.</li>
+                    <li><strong>Some Rivett Parts:</strong> A few specific parts may not appear in editor even with Rivett Report. Developer working on fixes.</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h3>🚫 MSCEditor Incompatibilities with MWC</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 1rem;">
+                    <li><strong>Rivett Completely Invisible:</strong> Original MSCEditor can't see Rivett parts, attributes, or vehicle data at all.</li>
+                    <li><strong>No Rivett Report:</strong> Car diagnostics only work for MSC Satsuma, not MWC Rivett.</li>
+                    <li><strong>32-bit Version:</strong> Doesn't work with MWC at all. Must use x64 version or it won't open save files.</li>
+                    <li><strong>MWC-Specific Features:</strong> Any new mechanics added to MWC that weren't in MSC will be missing from editor.</li>
+                    <li><strong>Higher Corruption Risk:</strong> Because it's not designed for MWC, unexpected data can cause silent corruption.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>🐛 How to Report Bugs</h3>
+                <p>If you encounter editor bugs or issues:</p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li><strong>GitHub Issues:</strong> Report at <a href="https://github.com/Marcinosky/MWCEditor/issues" target="_blank" class="internal-link">github.com/Marcinosky/MWCEditor/issues</a></li>
+                    <li><strong>Provide Details:</strong> Game version, editor version, exact steps to reproduce, error messages</li>
+                    <li><strong>Attach Save File:</strong> If willing, upload problematic save (dev may need it to fix bug)</li>
+                    <li><strong>Steam Community:</strong> Post in <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" class="internal-link">MWC General Discussions</a> if unsure</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Safety & Best Practices -->
+        <section id="safety">
+            <h2>🛡️ Safety Checklist & Best Practices</h2>
+
+            <div class="success-box">
+                <h3>✅ Pre-Edit Safety Checklist</h3>
+                <ul style="list-style: none; margin-left: 0;">
+                    <li style="padding: 0.5rem 0;">☑️ <strong>Backup created:</strong> Full copy of <code>My Winter Car</code> folder stored safely</li>
+                    <li style="padding: 0.5rem 0;">☑️ <strong>Game closed:</strong> MWC.exe not running in Task Manager</li>
+                    <li style="padding: 0.5rem 0;">☑️ <strong>Using MWCEditor:</strong> Not MSCEditor (unless specific reason)</li>
+                    <li style="padding: 0.5rem 0;">☑️ <strong>x64 version:</strong> Not 32-bit version</li>
+                    <li style="padding: 0.5rem 0;">☑️ <strong>Know what you're editing:</strong> Clear goal (money, teleport, etc.)</li>
+                    <li style="padding: 0.5rem 0;">☑️ <strong>Read limitations:</strong> Aware of what doesn't work (wiring, weather)</li>
+                </ul>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem;">
+                <h3>📋 Best Practices for Long-Term Safety</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary);">
+                    <li><strong>Backup rotation:</strong> Keep 3-5 backup versions at different progress points. Delete oldest when creating new.</li>
+                    <li><strong>Name backups clearly:</strong> "MWC_Backup_Day15_BeforeRivettEdit_Jan06" beats "Backup1".</li>
+                    <li><strong>External storage:</strong> Keep at least one backup on USB drive or cloud storage (OneDrive, Google Drive).</li>
+                    <li><strong>Test immediately:</strong> After editing, load save and play for 10+ minutes to catch corruption early.</li>
+                    <li><strong>Don't edit critical moments:</strong> Avoid editing during important builds or before <a href="/racing-guide" class="internal-link">race events</a>. Wait for stable moment.</li>
+                    <li><strong>Document changes:</strong> Keep text file noting what you edited (e.g., "Added 50k MK on Jan 6"). Helps troubleshoot later issues.</li>
+                    <li><strong>Regular in-game saves:</strong> After editor changes work, make multiple in-game saves (toilet saves). Don't rely on single save point.</li>
+                    <li><strong>Community updates:</strong> Check GitHub/Nexus monthly for MWCEditor updates. Bug fixes released regularly.</li>
+                </ul>
+            </div>
+
+            <div class="danger-box" style="margin-top: 2rem;">
+                <h3>🚨 What NOT To Do</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 1rem;">
+                    <li><strong>NEVER:</strong> Edit while game is running (instant corruption)</li>
+                    <li><strong>NEVER:</strong> Skip backups "just this once" (Murphy's Law applies)</li>
+                    <li><strong>NEVER:</strong> Edit save file directly in text editor (guaranteed corruption unless you're a developer)</li>
+                    <li><strong>NEVER:</strong> Spawn items with unknown IDs (crashes/corruption)</li>
+                    <li><strong>NEVER:</strong> Teleport to coordinates without testing (can spawn inside solid objects)</li>
+                    <li><strong>NEVER:</strong> Edit weather/time in current MWCEditor version (known broken)</li>
+                    <li><strong>NEVER:</strong> Overwrite your only backup (keep multiple versions)</li>
+                    <li><strong>NEVER:</strong> Ignore corruption signs (weird physics, missing items, crashes) - restore backup immediately</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Importing MSC Saves -->
+        <section id="import-saves">
+            <h2>📦 Importing My Summer Car Saves to MWC</h2>
+
+            <p>My Winter Car supports importing progress from My Summer Car, allowing you to carry over unlocks and some items. This is useful for players transitioning from MSC to MWC who want to skip re-grinding basic progress.</p>
+
+            <div class="info-box">
+                <h3>🎯 What Gets Imported</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 1rem;">
+                    <li><strong>Vehicle Unlocks:</strong> Access to vehicles you owned in MSC</li>
+                    <li><strong>Some Items:</strong> Certain inventory items transfer</li>
+                    <li><strong>Player Stats:</strong> Some progression metrics</li>
+                    <li><strong>Money:</strong> Your MSC Markka balance</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h3>⚠️ What DOESN'T Import</h3>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 1rem;">
+                    <li><strong>Satsuma → Rivett:</strong> Your built Satsuma doesn't become a Rivett. Rivett starts unbuilt.</li>
+                    <li><strong>Map-Specific Locations:</strong> Item positions won't match (different map layout)</li>
+                    <li><strong>Some Quest Progress:</strong> MWC has different quest system</li>
+                    <li><strong>Current Save State:</strong> Must start NEW game in MWC after import (can't continue mid-game)</li>
+                </ul>
+            </div>
+
+            <h3>Import Process</h3>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Locate MSC Save File</h4>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Press <strong>Windows + R</strong></li>
+                            <li>Type <code>%USERPROFILE%\AppData\LocalLow\Amistech</code></li>
+                            <li>Open <strong>"My Summer Car"</strong> folder</li>
+                            <li>Find <strong>defaultES2File.txt</strong></li>
+                            <li>Right-click → Copy</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Backup Current MWC Save</h4>
+                        <p><strong>CRITICAL:</strong> Back up your current MWC progress before overwriting:</p>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Navigate to <code>My Winter Car</code> folder (same Amistech folder)</li>
+                            <li>Copy entire <strong>"My Winter Car"</strong> folder to safe location</li>
+                            <li>This ensures you can revert if import fails</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Paste & Rename</h4>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Open <strong>"My Winter Car"</strong> folder</li>
+                            <li>Right-click → Paste (the defaultES2File.txt from MSC)</li>
+                            <li><strong>Alternative method:</strong> Some users report needing to rename to <code>savefile.txt</code> instead</li>
+                            <li>If import doesn't work, try renaming defaultES2File.txt to savefile.txt</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Start New MWC Game</h4>
+                        <ol style="margin-left: 1.5rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                            <li>Launch My Winter Car</li>
+                            <li>Select <strong>"New Game"</strong> (not Continue)</li>
+                            <li>Game will import data from MSC save automatically</li>
+                            <li>Check inventory and vehicles to confirm import</li>
+                        </ol>
+                        <p style="margin-top: 0.5rem; color: var(--accent-warning);">⚠️ <strong>Will NOT work on existing MWC save</strong> - must start fresh game for import to trigger.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>💡 Post-Import Editing</h3>
+                <p>After importing MSC save, you can use MWCEditor to:</p>
+                <ul style="list-style: disc; margin-left: 2rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    <li>Adjust imported money amount (add more or reduce for challenge)</li>
+                    <li>Teleport vehicles to preferred starting locations</li>
+                    <li>Reset survival stats to fresh start values</li>
+                    <li>Remove items you don't want transferred</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Recommended:</strong> Use MSCEditor (original) for editing imported saves initially, as it understands MSC data structure better. After first few edits, switch to MWCEditor for ongoing modifications.</p>
+            </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="related-guides">
+            <h2>🔗 Related Guides</h2>
+            <p class="section-description">
+                Expand your My Winter Car knowledge with these essential guides covering vehicle building, money making, survival mechanics, and gameplay optimization.
+            </p>
+            
+            <div class="guides-grid">
+                <a href="/vehicles-guide" class="guide-card">
+                    <div class="guide-card-icon">🚗</div>
+                    <strong>Complete Vehicle Guide</strong>
+                    <p>Master all 6 drivable vehicles: Sorbet starting car, Rivett project build, Machtwagen taxi, Kekmet tractor, Ferndale, and Ruscko. Understand specs, handling, and optimal usage for each vehicle.</p>
+                </a>
+
+                <a href="/troubleshooting-guide" class="guide-card">
+                    <div class="guide-card-icon">🔧</div>
+                    <strong>Troubleshooting Guide</strong>
+                    <p>Diagnose and fix Rivett build issues: engine won't start, loose bolts, missing parts, electrical failures, and mysterious breakdowns. Use save editor for diagnostics when normal methods fail.</p>
+                </a>
+
+                <a href="/parts-acquisition-guide" class="guide-card">
+                    <div class="guide-card-icon">🔩</div>
+                    <strong>Parts Acquisition Guide</strong>
+                    <p>Source 200+ Rivett parts from Fleetari's (NOS, 08:00-16:00 Mon-Fri), Flea Market (Saturday mornings), Classifieds magazine, and AMIS catalog. Complete supplier comparison and pricing strategies.</p>
+                </a>
+
+                <a href="/money-guide" class="guide-card">
+                    <div class="guide-card-icon">💰</div>
+                    <strong>Money Making Guide</strong>
+                    <p>Earn 2000-3710 MK/week through jobs, optimize income strategies, and fund your Rivett build. Compare factory work, taxi driving, firewood delivery, and advert distribution for maximum efficiency.</p>
+                </a>
+
+                <a href="/survival-guide" class="guide-card">
+                    <div class="guide-card-icon">❄️</div>
+                    <strong>Winter Survival Guide</strong>
+                    <p>Manage 6 survival stats: Hunger, Thirst, Fatigue, Urination, Temperature, and Problem (alcoholism). Learn optimal resource management strategies to avoid death in harsh Finnish winter conditions.</p>
+                </a>
+
+                <a href="/beginner-guide" class="guide-card">
+                    <div class="guide-card-icon">📚</div>
+                    <strong>Beginner's Tutorial</strong>
+                    <p>Survive your first 30 minutes: apartment basics (bed=sleep, toilet=save), finding PSK gas station, making critical phone calls, grocery shopping, and avoiding early-game death traps in 1999 Finland.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>My Winter Car Wiki</strong> - Community-driven guide for Amistech Games' survival simulator</p>
+        <p>Game Version: EA v.260102 | Guide Updated: January 2026</p>
+        <p><em>Disclaimer: Save editors are unofficial community tools. Use at your own risk. Always backup saves before editing. MWCEditor is under active development - some features may be incomplete or buggy. MSCEditor compatibility with MWC is partial and unofficial. Information verified against v.260102 as of January 2026.</em></p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            <a href="/about" style="color: var(--accent-ice); text-decoration: none;">About This Wiki</a> | 
+            <a href="/guides" style="color: var(--accent-ice); text-decoration: none;">All Guides</a>
+        </p>
+    </footer>
+</body>
+</html>
