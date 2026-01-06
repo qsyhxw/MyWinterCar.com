@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIN Decoder Guide - Decode Your Corris Rivett Factory Specifications | My Winter Car 2026</title>
+    <meta name="description" content="Complete VIN decoder guide for My Winter Car: Find your Corris Rivett's VIN plate, decode 24-character codes, understand L/LX/SLX/GT trim levels, and restore to factory specification. Includes historical vehicle registration requirements.">
+    <link rel="canonical" href="https://mywintercar.com/vin-decoder-guide">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-ice);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .meta-tags {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Content Section */
+        .content-section {
+            margin: 4rem 0;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .content-section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-ice);
+            margin: 2rem 0 1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--accent-danger);
+        }
+
+        .info-box.success {
+            border-left-color: var(--accent-success);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .info-box ul, .info-box ol {
+            margin-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Trim Card */
+        .trim-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .trim-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .trim-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .trim-name {
+            font-size: 1.75rem;
+            color: var(--accent-ice);
+            font-weight: bold;
+        }
+
+        .trim-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .trim-badge.base {
+            background: rgba(156, 163, 175, 0.2);
+            color: var(--text-secondary);
+        }
+
+        .trim-badge.premium {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .trim-badge.luxury {
+            background: rgba(251, 191, 36, 0.2);
+            color: var(--accent-warning);
+        }
+
+        .trim-badge.rare {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-danger);
+        }
+
+        .trim-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .feature-icon {
+            color: var(--accent-success);
+            font-weight: bold;
+        }
+
+        /* VIN Example */
+        .vin-example {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .vin-code {
+            font-size: 1.5rem;
+            color: var(--accent-warning);
+            letter-spacing: 4px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .vin-breakdown {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .vin-segment {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: rgba(74, 158, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .vin-segment-label {
+            color: var(--accent-ice);
+            font-weight: bold;
+        }
+
+        .vin-segment-value {
+            color: var(--text-secondary);
+        }
+
+        /* Table */
+        .comparison-table {
+            width: 100%;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .comparison-table th {
+            background: rgba(74, 158, 255, 0.1);
+            color: var(--accent-ice);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(74, 158, 255, 0.05);
+        }
+
+        .comparison-table code {
+            font-family: 'Courier New', monospace;
+            background: rgba(125, 211, 252, 0.1);
+            color: var(--accent-ice);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        /* Step Card */
+        .step-card {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Tool Link Card */
+        .tool-card {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(74, 158, 255, 0.3);
+            border-color: var(--accent-ice);
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-name {
+            font-size: 1.5rem;
+            color: var(--accent-ice);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-url {
+            font-family: 'Courier New', monospace;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-description {
+            color: var(--text-secondary);
+        }
+
+        /* Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        /* Internal Links */
+        .internal-link {
+            color: var(--accent-ice);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .internal-link:hover {
+            border-bottom-color: var(--accent-ice);
+        }
+
+        /* Related Guides */
+        .related-guides {
+            margin: 4rem 0;
+            padding: 3rem 0;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .related-guides h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .guide-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .guide-card strong {
+            color: var(--accent-ice);
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            .vin-code {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .trim-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/vehicles-guide">Vehicles</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>🔍 VIN Decoder Guide</h1>
+        <p class="hero-subtitle">Decode Your Corris Rivett's Factory Specifications & Trim Level</p>
+        <div class="meta-tags">
+            <span>🚗 Factory Specs</span>
+            <span>⏱️ 10 min read</span>
+            <span>🏆 Historical Registration</span>
+            <span>✅ EA v.260102</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="introduction" class="content-section">
+            <h2>What is the VIN System?</h2>
+            <p>Every <strong>Corris Rivett</strong> in My Winter Car has a unique <strong>Vehicle Identification Number (VIN)</strong> - a 24-character code that reveals your car's complete factory specification. This system tells you:</p>
+
+            <div class="card-grid">
+                <div class="trim-card">
+                    <div class="trim-name">🏭 Factory Details</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Manufacturing year (1971-1976), assembly plant location, production month, and serial number</p>
+                </div>
+                <div class="trim-card">
+                    <div class="trim-name">⚙️ Mechanical Specs</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Engine type, transmission variant, axle ratio, differential type (open or limited-slip)</p>
+                </div>
+                <div class="trim-card">
+                    <div class="trim-name">🎨 Appearance</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Trim level (L/LX/SLX/GT), original color, vinyl roof options, interior color and features</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Why VIN Matters</div>
+                <p>Understanding your Rivett's VIN is essential for:</p>
+                <ul>
+                    <li><strong>Authentic restoration</strong> - Restore your car to exact factory specification</li>
+                    <li><strong>Historical vehicle registration</strong> - Required for museum/classic car status (30+ year requirement)</li>
+                    <li><strong>Parts sourcing strategy</strong> - Know which trim-specific parts to hunt for. See our <a href="/parts-acquisition-guide" class="internal-link">parts acquisition guide</a>.</li>
+                    <li><strong>Collector value</strong> - Rare trim levels (especially GT) increase bragging rights</li>
+                </ul>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Important: VIN is Save-Specific</div>
+                <p>Your Rivett's VIN <strong>resets with each new game save</strong>. Every time you start a new game, you'll get a different randomized VIN with different specs. The VIN you decode applies only to that specific save file.</p>
+            </div>
+        </section>
+
+        <section id="finding-vin" class="content-section">
+            <h2>1. Where to Find Your VIN Plate</h2>
+            <p>The VIN plate is located on the <strong>front chassis</strong> of your Corris Rivett, hidden under where the hood would be.</p>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">1</span> Open the Hood Area</div>
+                <p>Your Rivett starts as a bare chassis, so the VIN is visible immediately. If you've already installed the hood, you'll need to remove it first.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">2</span> Look Above Right Front Headlight</div>
+                <p><strong>Exact location:</strong> Front of the chassis, directly above the <strong>right-side front headlight</strong> position.</p>
+                <p style="margin-top: 1rem;">It appears as a small metal plate/sticker with multiple rows of letters and numbers printed on it.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">3</span> Write Down the Complete Code</div>
+                <p>The VIN contains <strong>24 characters</strong> (combination of letters and numbers). Write it down carefully - you'll need it for decoding tools.</p>
+                <p style="margin-top: 1rem;"><strong>Tip:</strong> Take a screenshot or photo of the VIN plate in-game for easy reference.</p>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🚫 Cannot Decode In-Game</div>
+                <p>My Winter Car does <strong>not have built-in VIN decoding</strong>. You must use external community-created decoder tools (see section 3 below) or mods to translate the code into readable specifications.</p>
+            </div>
+        </section>
+
+        <section id="vin-structure" class="content-section">
+            <h2>2. Understanding VIN Structure</h2>
+            <p>The 24-character VIN is divided into specific segments, each revealing different information about your Rivett:</p>
+
+            <div class="vin-example">
+                <div class="vin-code">UCBBDLC123456 1NAB C</div>
+                <div class="vin-breakdown">
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 1: Country</span>
+                        <span class="vin-segment-value">U = Britain</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 2: Assembly Plant</span>
+                        <span class="vin-segment-value">C = Saarlouis, Germany</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 3: Model</span>
+                        <span class="vin-segment-value">B = Rivett</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 4: Body Type</span>
+                        <span class="vin-segment-value">B = 2-Door Pillared Sedan</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 5: Trim Level</span>
+                        <span class="vin-segment-value">D = L (base) | E = LX | G = SLX | P = GT</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 6: Year</span>
+                        <span class="vin-segment-value">L = 1971 | M = 1972 | N = 1973 | P = 1974 | R = 1975 | S = 1976</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 7: Month</span>
+                        <span class="vin-segment-value">C = Jan | K = Feb | D = Mar ... (12 codes)</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Positions 8-13: Serial Number</span>
+                        <span class="vin-segment-value">6-digit unique identifier</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 14: Drivetrain</span>
+                        <span class="vin-segment-value">1 = RWD (all Rivetts are rear-wheel drive)</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Positions 15-16: Engine</span>
+                        <span class="vin-segment-value">NA = Standard 2.0L | NE = High Performance 2.0L</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 17: Transmission</span>
+                        <span class="vin-segment-value">B = 4-speed Manual | 7 = 3-speed Automatic</span>
+                    </div>
+                    <div class="vin-segment">
+                        <span class="vin-segment-label">Position 18: Axle Ratio</span>
+                        <span class="vin-segment-value">S = 3.44 | B = 3.75 | C = 3.89 | N = 4.11 | E = 4.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Key VIN Details</h3>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Possible Values</th>
+                        <th>Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Manufacturing Year</strong></td>
+                        <td><code>1971-1976</code> (randomized)</td>
+                        <td>Affects historical registration eligibility (30+ years in 1999 game setting = 1974 or older)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1974 Facelift</strong></td>
+                        <td>Code <code>P</code> for 1974+</td>
+                        <td>Visual design changes: updated bumpers, grilles, trim pieces differ from pre-facelift</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assembly Plants</strong></td>
+                        <td>Dagenham, Manchester, Saarlouis, Rheine</td>
+                        <td>Cosmetic detail only - no gameplay impact</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Trim Level</strong></td>
+                        <td>L / LX / SLX / GT</td>
+                        <td>Major impact - determines brakes, differential, interior, wheels, gauges (see section 4)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Engine Type</strong></td>
+                        <td>Standard 2.0L vs High Performance 2.0L</td>
+                        <td>HP variant typically comes with sportier trims (SLX/GT)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Transmission</strong></td>
+                        <td>4-speed Manual / 3-speed Auto</td>
+                        <td>Automatic transmission exclusive to SLX trim as factory option</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Axle Ratio</strong></td>
+                        <td>3.44 to 4.44 range</td>
+                        <td>Affects acceleration vs top speed balance. Higher ratio = better acceleration, lower top speed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="decoder-tools" class="content-section">
+            <h2>3. VIN Decoder Tools</h2>
+            <p>Use these community-created tools to decode your VIN. All are free and browser-based:</p>
+
+            <a href="https://www.amistech.com/mwc" target="_blank" class="tool-card">
+                <div class="tool-icon">🏢</div>
+                <div class="tool-name">Official Amistech VIN Decoder</div>
+                <div class="tool-url">www.amistech.com/mwc</div>
+                <p class="tool-description"><strong>Recommended:</strong> Official decoder from the game developer's website. Most authoritative and up-to-date with complete specification sheets.</p>
+            </a>
+
+            <a href="https://mywintercardatabase.com/vins" target="_blank" class="tool-card">
+                <div class="tool-icon">📊</div>
+                <div class="tool-name">My Winter Car Database (S800)</div>
+                <div class="tool-url">mywintercardatabase.com/vins</div>
+                <p class="tool-description">Comprehensive tool with dropdown selectors for each VIN position. Includes rarity ratings, desirability scores, and condition report features. Best for detailed analysis.</p>
+            </a>
+
+            <a href="https://epa720.github.io/" target="_blank" class="tool-card">
+                <div class="tool-icon">⚡</div>
+                <div class="tool-name">Quick VIN Decoder (GitHub)</div>
+                <div class="tool-url">epa720.github.io</div>
+                <p class="tool-description">Fast community tool with simple interface. Supports manual VIN input and copy/paste. Good for quick lookups during gameplay.</p>
+            </a>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ How to Use Decoder Tools</div>
+                <ol>
+                    <li>Find your Rivett's VIN plate (above right front headlight on chassis)</li>
+                    <li>Write down or screenshot the complete 24-character code</li>
+                    <li>Open one of the decoder tools above in your web browser</li>
+                    <li>Enter the VIN code or use dropdown selectors to build your VIN</li>
+                    <li>Tool displays complete factory specification including trim, options, colors</li>
+                    <li>Save the decoded information for your parts sourcing strategy</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="trim-levels" class="content-section">
+            <h2>4. Trim Levels Explained (L / LX / SLX / GT)</h2>
+            <p>Your Rivett's trim level determines a wide range of factory equipment and visual features. Understanding trim differences helps you source the correct parts. For comprehensive vehicle details, see our <a href="/vehicles-guide" class="internal-link">complete vehicles guide</a>.</p>
+
+            <div class="trim-card">
+                <div class="trim-header">
+                    <div class="trim-name">🔧 L Trim (Base Specification)</div>
+                    <div class="trim-badge base">Most Common</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Entry-level economy model with minimal frills. The workhorse variant.</p>
+                <div class="trim-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Basic black interior (most common color)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Standard steel wheels (no hubcaps)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Manual brakes (no power assist)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Basic gauge cluster (speedometer + fuel/temp)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Open differential</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>4-speed manual transmission</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Single-barrel carburetor</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Standard 2.0L engine</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trim-card">
+                <div class="trim-header">
+                    <div class="trim-name">✨ LX Trim (Premium)</div>
+                    <div class="trim-badge premium">Mid-Range</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Comfort-focused upgrade with better amenities and options.</p>
+                <div class="trim-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Beige or woodgrain interior options</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Upgraded wheel/hubcap options</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Power-assisted brakes (optional)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Clock gauge in cluster</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Better standard springs and shocks</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Open or limited-slip differential options</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>4-speed manual standard</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Vinyl roof covering options</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trim-card">
+                <div class="trim-header">
+                    <div class="trim-name">🏆 SLX Trim (Performance/Luxury)</div>
+                    <div class="trim-badge luxury">High-End</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Top-tier factory trim combining performance and luxury features.</p>
+                <div class="trim-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Premium interior colors (red/blue rare options)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Sport steering wheel (standard)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Center console (exclusive to SLX+)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Full gauge cluster with tachometer</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>3-speed automatic transmission (optional, SLX exclusive)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Limited-slip differential</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Performance springs/shocks</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Special grille options</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>High-performance 2.0L engine option</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trim-card">
+                <div class="trim-header">
+                    <div class="trim-name">🔥 GT Trim (Sporty/Rare)</div>
+                    <div class="trim-badge rare">Very Rare</div>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Ultimate performance variant. <strong>Extremely rare</strong> - GT parts have significantly lower spawn rates in parts catalogs.</p>
+                <div class="trim-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Sport steering wheel + special gear stick</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Quick steering ratio (GT package)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>GT-specific exhaust manifold (longer pipes)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Rear spoiler (bootlid with spoiler)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Special GT bumpers (modern 5-mile style)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Plastic paintable grille (GT exclusive)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Performance suspension (stiffer springs)</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>High-performance 2.0L engine</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Special GT rocker cover</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Two-barrel carburetor (performance)</span>
+                    </div>
+                </div>
+
+                <div class="info-box danger" style="margin-top: 1.5rem;">
+                    <div class="info-box-title">⚠️ GT Parts Sourcing Challenge</div>
+                    <p>GT-specific parts are <strong>notoriously rare</strong> in the classifieds magazine. Community reports indicate players ordering <strong>70+ packages</strong> with minimal GT parts found. Budget extra time and money if restoring a GT to factory spec. See our <a href="/parts-acquisition-guide" class="internal-link">parts guide</a> for sourcing strategies.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="historical-registration" class="content-section">
+            <h2>5. Historical Vehicle Registration</h2>
+            <p>If you restore your Rivett to <strong>exact factory VIN specification</strong>, you can register it as a historical/museum vehicle with special benefits.</p>
+
+            <h3>Requirements for Historical Registration</h3>
+
+            <div class="info-box">
+                <div class="info-box-title">📋 Eligibility Checklist</div>
+                <ol>
+                    <li><strong>Age Requirement:</strong> Vehicle must be <strong>30+ years old</strong>. Since the game is set in 1999, this means your Rivett must be manufactured in <strong>January 1974 or earlier</strong> (check VIN position 6 for year code L/M/N/early P)</li>
+                    <li><strong>Factory Specification Match:</strong> All parts must match the original VIN specification:
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Correct trim-level parts (L/LX/SLX/GT specific components)</li>
+                            <li>Original transmission type (4-speed manual / 3-speed auto)</li>
+                            <li>Matching differential and axle ratio</li>
+                            <li>Factory-spec interior components (seats, gauges, steering wheel)</li>
+                            <li>Original exterior colors and vinyl roof (if applicable)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Complete Restoration:</strong> Vehicle must be fully assembled and functional</li>
+                    <li><strong>Inspection Pass:</strong> Must pass standard vehicle inspection first (see our <a href="/troubleshooting-guide" class="internal-link">troubleshooting guide</a> for common inspection issues)</li>
+                </ol>
+            </div>
+
+            <h3>Benefits of Historical Status</h3>
+
+            <div class="card-grid">
+                <div class="trim-card">
+                    <div class="trim-name">🎯 Longer Inspection Intervals</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Historical vehicles are inspected <strong>less frequently</strong> than regular vehicles. Exact interval difference not yet confirmed in EA, but real-world standards suggest every 2 years vs annually.</p>
+                </div>
+                <div class="trim-card">
+                    <div class="trim-name">🏆 Collector Achievement</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Personal satisfaction of authentic restoration. Demonstrates mastery of the game's parts system and dedication to detail.</p>
+                </div>
+                <div class="trim-card">
+                    <div class="trim-name">📜 Special Documentation</div>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Historical registration paperwork serves as proof of your restoration efforts and VIN-matching achievement.</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Important Clarification</div>
+                <p><strong>VIN matching is ONLY required for historical registration.</strong> You can complete and drive your Rivett with mixed/mismatched parts for regular use. The developer has confirmed: <em>"The VIN on the car does not have to match"</em> for normal gameplay.</p>
+                <p style="margin-top: 1rem;">Historical registration is an <strong>optional challenge</strong> for purists and collectors, not mandatory for enjoying the game.</p>
+            </div>
+        </section>
+
+        <section id="practical-tips" class="content-section">
+            <h2>6. Practical VIN Usage Tips</h2>
+
+            <h3>For New Players</h3>
+            <div class="info-box success">
+                <div class="info-box-title">✅ Beginner-Friendly Approach</div>
+                <ul>
+                    <li><strong>Don't stress about VIN matching initially</strong> - Focus on just getting the Rivett running first</li>
+                    <li><strong>Use any parts that work</strong> - Mismatched parts function identically to VIN-correct ones</li>
+                    <li><strong>Decode your VIN anyway</strong> - Knowing your trim helps you recognize upgrades (e.g., if you have base L, finding GT parts is a bonus)</li>
+                    <li><strong>Save the VIN info</strong> - Write it down for future reference as you progress</li>
+                    <li>Check our <a href="/beginner-guide" class="internal-link">beginner's tutorial</a> for first 30 minutes of gameplay</li>
+                </ul>
+            </div>
+
+            <h3>For Collectors & Purists</h3>
+            <div class="info-box">
+                <div class="info-box-title">🏆 VIN-Matching Strategy</div>
+                <ol>
+                    <li><strong>Decode VIN immediately</strong> after buying Rivett - know what you're hunting for from day one</li>
+                    <li><strong>Create a parts checklist</strong> - List all trim-specific parts required (especially GT items)</li>
+                    <li><strong>Budget generously</strong> - VIN matching costs 2-3x more than mixed builds due to part hunting</li>
+                    <li><strong>Order parts aggressively</strong> - Buy every relevant classifieds package weekly, especially for rare trims</li>
+                    <li><strong>Keep duplicates</strong> - Wrong-spec parts can be sold or saved for future saves</li>
+                    <li><strong>Consider the year</strong> - If your Rivett is 1975-1976, you can't get historical registration (30+ year rule)</li>
+                    <li>For advanced restoration, see our <a href="/parts-acquisition-guide" class="internal-link">complete parts sourcing guide</a></li>
+                </ol>
+            </div>
+
+            <h3>Money-Saving Tips</h3>
+            <div class="info-box warning">
+                <div class="info-box-title">💰 Budget Management</div>
+                <ul>
+                    <li><strong>VIN matching is expensive</strong> - Expect to spend 5,000-10,000+ mk on parts hunting</li>
+                    <li><strong>Prioritize income first</strong> - Get stable job income before attempting VIN restoration (see <a href="/money-guide" class="internal-link">money guide</a>)</li>
+                    <li><strong>GT spec is most expensive</strong> - Rare parts may require 100+ classifieds orders</li>
+                    <li><strong>Mixed builds work fine</strong> - For your first playthrough, don't bother with VIN matching</li>
+                    <li><strong>Save before bulk orders</strong> - If you're hunting specific parts, save before buying 20+ packages</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section">
+            <h2>7. Common VIN Questions</h2>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Do I NEED to match VIN to complete the Rivett?</strong></td>
+                        <td><strong>No.</strong> VIN matching is optional. Any parts will work regardless of spec. VIN matching is only required for historical vehicle registration (collector achievement).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Will mismatched parts perform worse?</strong></td>
+                        <td><strong>No.</strong> A GT steering wheel works identically whether installed on an L or GT trim. Performance is not affected by VIN matching.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Can I change my VIN?</strong></td>
+                        <td><strong>No.</strong> VIN is locked when you start a new save. Only way to get a different VIN is to start a new game.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>What if I want a specific trim (like GT)?</strong></td>
+                        <td>Start new saves until you get the trim you want. Check VIN immediately after buying Rivett. GT trim code is <code>P</code> in position 5.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>How do I know which parts match my VIN?</strong></td>
+                        <td>Use decoder tools to see full spec, then cross-reference with parts lists. Steam community guides show VIN-specific part codes (e.g., VIN412C = GT spoiler bootlid).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Is historical registration worth it?</strong></td>
+                        <td>Only if you enjoy collector challenges. The main benefit (longer inspection intervals) is minor. Most players skip VIN matching.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Can I use mods to see VIN in-game?</strong></td>
+                        <td>Yes, some mods add in-game VIN display features. Check Nexus Mods or community resources. Our <a href="/mods-guide" class="internal-link">mods guide</a> coming soon.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>What's the rarest trim?</strong></td>
+                        <td>GT trim is significantly rarer than L/LX/SLX. GT parts also have much lower spawn rates in classifieds (community reports ~5-10% of packages contain GT items).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="related-guides">
+            <h2>📚 Related Guides</h2>
+            <p class="section-description">Master your Corris Rivett restoration with these essential guides</p>
+            <div class="guides-grid">
+                <a href="/vehicles-guide" class="guide-card">
+                    <span class="guide-icon">🚗</span>
+                    <strong>Complete Vehicles Guide</strong>
+                    <p>Full specifications for all 6 driveable vehicles including Corris Rivett detailed mechanics, handling characteristics, and maintenance requirements.</p>
+                </a>
+                <a href="/parts-acquisition-guide" class="guide-card">
+                    <span class="guide-icon">🔧</span>
+                    <strong>Parts Acquisition Strategy</strong>
+                    <p>Comprehensive sourcing guide for Rivett parts: Fleetari's shop inventory, classifieds magazine ordering, AMIS catalog, and finding rare trim-specific components.</p>
+                </a>
+                <a href="/phone-numbers-guide" class="guide-card">
+                    <span class="guide-icon">📞</span>
+                    <strong>Phone Numbers Guide</strong>
+                    <p>Essential phone system tutorial: Order parts from classifieds, apply for jobs, and correctly dial using numpad. Includes all important contact numbers.</p>
+                </a>
+                <a href="/money-guide" class="guide-card">
+                    <span class="guide-icon">💰</span>
+                    <strong>Fast Money Making</strong>
+                    <p>Optimize your income to afford VIN-matching restoration. Job comparison tables, hourly rates, and budget strategies for expensive GT parts hunting.</p>
+                </a>
+                <a href="/beginner-guide" class="guide-card">
+                    <span class="guide-icon">🎓</span>
+                    <strong>Beginner's Tutorial</strong>
+                    <p>First 30 minutes explained: Buying your first Rivett, basic survival, finding the VIN plate, and starting your restoration journey.</p>
+                </a>
+                <a href="/troubleshooting-guide" class="guide-card">
+                    <span class="guide-icon">🔍</span>
+                    <strong>Troubleshooting Guide</strong>
+                    <p>Fix common Rivett issues: Won't start diagnostics, inspection failures, missing parts problems, and mechanical troubleshooting flowcharts.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>❄️ My Winter Car Wiki</strong></p>
+        <p>Game Version: <strong>Early Access v.260102</strong> | Updated: <strong>January 6, 2026</strong></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            This is a fan-made wiki. My Winter Car is developed by <strong>Amistech Games</strong>.<br>
+            All game content © Amistech Games. VIN decoder tools created by community developers.
+        </p>
+        <p style="margin-top: 1rem;">
+            <a href="/about">About This Wiki</a> | <a href="/guides">All Guides</a>
+        </p>
+    </footer>
+</body>
+</html>
