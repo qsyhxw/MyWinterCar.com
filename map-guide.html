@@ -1,0 +1,1061 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Map & Navigation Guide - Peräjärvi Region (4.2×3.3 km) | My Winter Car 2026</title>
+    <meta name="description" content="Master the 13.86 km² Peräjärvi region in My Winter Car. Find all key locations: PSK gas station, Fleetari's garage, frozen lake ice roads, ice racing track, and navigation shortcuts across the 1999 Finnish winter map.">
+    <link rel="canonical" href="https://mywintercar.com/map-guide">
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--accent-ice);
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
+            border-bottom: 2px solid var(--accent-ice);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Map Stats Grid */
+        .map-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-card .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-card .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            border-left: 4px solid var(--accent-blue);
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box {
+            border-left: 4px solid var(--accent-warning);
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            border-left: 4px solid var(--accent-success);
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .danger-box {
+            border-left: 4px solid var(--accent-danger);
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box h3,
+        .warning-box h3,
+        .success-box h3,
+        .danger-box h3 {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        /* Location Cards */
+        .location-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .location-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .location-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+        }
+
+        .location-card h3 {
+            color: var(--accent-ice);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .location-card .location-type {
+            background: var(--accent-blue);
+            color: white;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .location-card .location-type.essential {
+            background: var(--accent-success);
+        }
+
+        .location-card .location-type.racing {
+            background: var(--accent-warm);
+        }
+
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .location-detail {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .location-detail .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .location-detail .value {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Road Types Table */
+        .road-types-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .road-types-table thead {
+            background: rgba(74, 158, 255, 0.2);
+        }
+
+        .road-types-table th,
+        .road-types-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .road-types-table th {
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .road-types-table tr:hover {
+            background: rgba(74, 158, 255, 0.05);
+        }
+
+        /* Sections */
+        section {
+            margin: 4rem 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--accent-ice);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-ice);
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin: 2rem 0 1rem 0;
+        }
+
+        /* Navigation Tips List */
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .tip-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .tip-card h4 {
+            color: var(--accent-ice);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .tip-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Related Guides */
+        .related-guides {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
+        }
+
+        .guide-card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-card strong {
+            display: block;
+            color: var(--accent-ice);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .road-types-table {
+                font-size: 0.85rem;
+            }
+
+            .road-types-table th,
+            .road-types-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/vehicles-guide">Vehicles</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🗺️ Complete Map & Navigation Guide</h1>
+            <p>Navigate the 13.86 km² Peräjärvi region - find every location, shortcut, and survival point in frozen Finland</p>
+            <div class="hero-meta">
+                <span>📏 4.2 × 3.3 km Map</span>
+                <span>🛣️ 13 km Highway Loop</span>
+                <span>❄️ Frozen Lake Shortcuts</span>
+                <span>📍 60+ Marked Locations</span>
+                <span>🎮 Version EA v.260102</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Quick Map Stats -->
+        <div class="map-stats">
+            <div class="stat-card">
+                <span class="stat-value">4.2 × 3.3</span>
+                <span class="stat-label">Kilometers (Map Size)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">13.86</span>
+                <span class="stat-label">Square Kilometers (Total Area)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">~13 km</span>
+                <span class="stat-label">Highway Loop Length</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">80</span>
+                <span class="stat-label">Speed Limit (km/h)</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">1989</span>
+                <span class="stat-label">Map Print Year</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h3>🧭 Essential Map Knowledge</h3>
+            <p>The Peräjärvi region in My Winter Car is a fictional area of Alivieska, Finland, set in January 1999. The playable map covers 4.2 × 3.3 kilometers (approximately 13.86 km²), identical in size to My Summer Car but with the critical addition of frozen lake ice roads. The National Route 70 encircles the entire lake, forming the main highway loop. A physical map hangs above the telephone table at your parents' house, providing in-game reference without pausing.</p>
+        </div>
+
+        <!-- Physical Map Location -->
+        <section id="physical-map">
+            <h2>📜 Finding the In-Game Physical Map</h2>
+            
+            <div class="success-box">
+                <h3>✅ Map Location</h3>
+                <p><strong>Where:</strong> Parents' house in Kesselinperä peninsula<br>
+                <strong>Exact Spot:</strong> Wall above the telephone table in main room<br>
+                <strong>Print Date:</strong> 1989 (making it approximately 10 years old by January 1999 game timeline)<br>
+                <strong>Label:</strong> "Peräjärven yleiskartta" (translates to "General map of Peräjärvi")<br>
+                <strong>Purpose:</strong> Shows entire region without pausing game, essential for immersive navigation</p>
+            </div>
+
+            <h3>🗺️ Map Legend & Symbols</h3>
+            <p>Understanding the physical map's visual language helps you navigate efficiently:</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>Red Thick Lines</h4>
+                    <p>Paved roads (National Route 70 highway). Best grip in dry conditions, worst grip in winter due to polished ice layer.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Dark Thin Lines</h4>
+                    <p>Unpaved dirt roads. Better winter grip than paved roads due to snow/gravel texture, but slower speeds.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Black Figures</h4>
+                    <p>Residential houses. Potential advert delivery locations, septic tank customers, and NPC homes.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Purple Figures</h4>
+                    <p>Commercial/public buildings. Includes PSK gas station, Fleetari's garage, Futufon factory, inspection office.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Yellow Areas</h4>
+                    <p>Farm fields. Generally not accessible for driving, visual reference for location identification.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Brownish Area (East)</h4>
+                    <p>Marsh terrain. Avoid driving here - vehicles can get stuck or damaged.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Gray Areas</h4>
+                    <p>Gravel pits. Some are drivable, others are obstacles. Approach with caution.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Light Gray Areas</h4>
+                    <p>Solid rock surfaces. Generally impassable terrain, navigate around these sections.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Blank White Areas</h4>
+                    <p>Forested regions. Typically inaccessible, form natural boundaries of playable area.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Road Types -->
+        <section id="road-types">
+            <h2>🛣️ Road Types & Driving Conditions</h2>
+
+            <table class="road-types-table">
+                <thead>
+                    <tr>
+                        <th>Road Type</th>
+                        <th>Length/Details</th>
+                        <th>Winter Grip</th>
+                        <th>Speed Limit</th>
+                        <th>Police Enforcement</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>National Route 70 (Highway)</strong></td>
+                        <td>~13 km loop around lake, 6 intersections</td>
+                        <td>WORST (thin polished white ice layer)</td>
+                        <td>80 km/h</td>
+                        <td>Yes (speed cameras + police checkpoints)</td>
+                        <td>Fast travel when dry, dangerous in winter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dirt Roads</strong></td>
+                        <td>Network connecting to highway at 4-6 points</td>
+                        <td>BETTER (snow/gravel texture provides traction)</td>
+                        <td>No posted limit (~50-60 km/h safe)</td>
+                        <td>No</td>
+                        <td>Safer winter driving, local access</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Frozen Lake Ice Road</strong></td>
+                        <td>Diagonal shortcut across Peräjärvi lake</td>
+                        <td>SLIPPERY (recommend studded winter tires)</td>
+                        <td>No limit (use caution)</td>
+                        <td>No (bypasses all checkpoints!)</td>
+                        <td>Shortcut, avoiding fines, time savings</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ice Racing Track</strong></td>
+                        <td>Oval circuit between town & cottage island</td>
+                        <td>PREPARED (track maintained for racing)</td>
+                        <td>No limit (race speeds 60-100+ km/h)</td>
+                        <td>No (racing venue)</td>
+                        <td>Folk racing every other weekend</td>
+                    </tr>
+                    <tr>
+                        <td><strong>River Ice Surface</strong></td>
+                        <td>Northeast corner river section</td>
+                        <td>VARIABLE (check surface carefully)</td>
+                        <td>No limit (use extreme caution)</td>
+                        <td>No</td>
+                        <td>Exploration, alternate routes</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <h3>⚠️ Highway Grip Warning</h3>
+                <p><strong>Developer Confirmation (Toplessgun, May 26, 2024):</strong> "And the worst grip is on the highways, because there the ice layer is most thin.. but packed.. it's very packed.." The National Route 70 features <strong>white ice</strong> (not black ice), which is a very thin, packed, and polished ice layer. Despite being paved, this creates the worst driving conditions in the entire game. Expect extremely long braking distances, easy spin-outs on turns, and difficulty maintaining control above 60 km/h.</p>
+            </div>
+
+            <div class="success-box">
+                <h3>✅ Winter Driving Survival Tips</h3>
+                <ul>
+                    <li><strong>Highway Strategy:</strong> Treat as ice rink. Brake BEFORE turns, not during. Maintain steady throttle through corners.</li>
+                    <li><strong>Dirt Road Advantage:</strong> Snow/gravel provides better grip. Use dirt roads for safer travel when possible.</li>
+                    <li><strong>Speed Management:</strong> 80 km/h limit is theoretical. Realistically, 50-60 km/h is safer on icy highway.</li>
+                    <li><strong>Emergency Maneuvers:</strong> If rear slides, ease off throttle + gentle countersteer. Avoid overcorrection.</li>
+                    <li><strong>Tire Choice:</strong> Studded winter tires dramatically improve grip, especially on lake ice roads.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Essential Locations -->
+        <section id="essential-locations">
+            <h2>📍 Essential Locations - Your Survival Network</h2>
+
+            <div class="location-cards">
+                <!-- PSK Gas Station -->
+                <div class="location-card">
+                    <h3>🏪 PSK Peräportti Gas Station</h3>
+                    <span class="location-type essential">CRITICAL - Visit First</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Highway exit to Peräjärvi</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Services:</span>
+                            <span class="value">Fuel, Food, ATM, Jobs</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Hours:</span>
+                            <span class="value">24/7 (Fuel Station)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Importance:</span>
+                            <span class="value">⭐⭐⭐⭐⭐ Essential</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Why Critical:</strong> PSK is your lifeline. Job board for taxi/advert work, ATM for banking, parts catalog sales, postal services, food/drinks for survival, and gambling machine. Every playthrough starts here. Inside the restaurant area, find the notice board with job flyers (taxi 08-712112, adverts 08-231206).</p>
+                </div>
+
+                <!-- Fleetari's Garage -->
+                <div class="location-card">
+                    <h3>🔧 Fleetari's Repair Shop</h3>
+                    <span class="location-type essential">ESSENTIAL - Parts & Repairs</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Loppe (West side of map)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Address:</span>
+                            <span class="value">Loppentie 8</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Hours:</span>
+                            <span class="value">08:00-16:00 (Mon-Fri)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Services:</span>
+                            <span class="value">NOS Parts, Repairs, Inspection</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>What You Find:</strong> Engine parts (NOS condition), tuning components, tire changes, bodywork repairs, paint jobs, and vehicle inspections. Limited stock that restocks at random intervals. Free tool cart inside with complete spanner and ratchet sets. Pay AFTER work is done (Fleetari keeps your keys until payment).</p>
+                </div>
+
+                <!-- Parents' House -->
+                <div class="location-card">
+                    <h3>🏠 Parents' House (Kesselinperä)</h3>
+                    <span class="location-type essential">HOME BASE - Storage & Map</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Peninsula south of map</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Features:</span>
+                            <span class="value">Woodshed, Kekmet, Map, Phone</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Storage:</span>
+                            <span class="value">Unlimited (garage + sheds)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Importance:</span>
+                            <span class="value">⭐⭐⭐⭐⭐ Critical</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Key Resources:</strong> Physical map above phone table, Kekmet 502 tractor in large red woodshed (for firewood job), AMIS parts catalog in garage, unlimited storage space, sandbags for vehicle weight, and sauna for warming up. Deliver Rivett here to unlock taxi job poster at PSK.</p>
+                </div>
+
+                <!-- Player's Apartment -->
+                <div class="location-card">
+                    <h3>🛏️ Player's Apartment (Peräjärvi)</h3>
+                    <span class="location-type essential">STARTING POINT - Your Home</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Peräjärvi town center</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Features:</span>
+                            <span class="value">Bed, Phone, Fridge, Save Point</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Sorbet 1600:</span>
+                            <span class="value">Parked outside at start</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Deliveries:</span>
+                            <span class="value">Advert pile spawns Monday</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Your Daily Hub:</strong> Game starts here. Bed for sleeping/time skip, toilet for saving progress, phone for calling jobs/parts orders, fridge for storing food/beer. Advert delivery job spawns pile at doorstep every Monday. Close to PSK, Pub Nappo, and Flea Market.</p>
+                </div>
+
+                <!-- Futufon Factory -->
+                <div class="location-card">
+                    <h3>🏭 Futufon Factory (TeffelGren)</h3>
+                    <span class="location-type">JOB SITE - Main Employment</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Near highway bridge (SE side)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Hours:</span>
+                            <span class="value">07:00-17:00 (Mon-Fri)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Salary:</span>
+                            <span class="value">2470-3710 MK/week</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Job:</span>
+                            <span class="value">Charger Box Packaging</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Factory Job Details:</strong> Large red building, easy to miss while driving. Park and plug in block heater before entering. Inside, turn LEFT to find receptionist. Main job offers guaranteed weekly income but requires Monday-Friday commitment. Mandatory Tuesday meetings. Sliding work hours (arrive late = leave late).</p>
+                </div>
+
+                <!-- Pub Nappo -->
+                <div class="location-card">
+                    <h3>🍺 Pub Nappo</h3>
+                    <span class="location-type">SURVIVAL - Food & Beer</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Owner:</span>
+                            <span class="value">Teimo</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Near player's apartment</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Services:</span>
+                            <span class="value">Beer, Coffee, Cigarettes, Ventti</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Importance:</span>
+                            <span class="value">⭐⭐⭐⭐ High Priority</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Survival Resource:</strong> Crucial for managing Problem meter (alcoholism). Beer is MANDATORY to lower Problem stat and prevent death. Also offers coffee for warmth, cigarettes, and Ventti card game (gambling - high risk but potential for big wins). Open daily, convenient location near apartment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frozen Lake Features -->
+        <section id="frozen-lake">
+            <h2>❄️ Frozen Lake Peräjärvi - Ice Roads & Racing</h2>
+
+            <div class="info-box">
+                <h3>🧊 Lake Overview</h3>
+                <p>"Peräjärvi" translates to "rear lake" or "end lake" in Finnish. The entire lake is frozen solid during winter, with thick snow-covered roads that are fully drivable. This is the primary difference between My Winter Car and My Summer Car maps - the addition of ice roads across the frozen lake surface.</p>
+            </div>
+
+            <h3>🛣️ Ice Road Shortcut</h3>
+            <div class="location-cards">
+                <div class="location-card">
+                    <h3>❄️ Frozen Lake Ice Road</h3>
+                    <span class="location-type">SHORTCUT - Time Saver</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Route:</span>
+                            <span class="value">Diagonal across lake center</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Entry Points:</span>
+                            <span class="value">Near Ventti cabin to Kesselinperä</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Surface:</span>
+                            <span class="value">Extremely slippery ice</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Benefits:</span>
+                            <span class="value">NO police, NO speed cameras!</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Critical Benefits:</strong> The ice road bypasses ALL speed cameras and police checkpoints, making it the fastest route for players worried about fines. Cuts straight across the map instead of following highway loop. However, requires careful throttle control - sudden acceleration causes wheelspin, sharp turns cause spin-outs. <strong>Studded winter tires HIGHLY recommended.</strong></p>
+                </div>
+
+                <div class="location-card">
+                    <h3>🏁 Ice Racing Track</h3>
+                    <span class="location-type racing">RACING - Folk Events</span>
+                    
+                    <div class="location-details">
+                        <div class="location-detail">
+                            <span class="label">Location:</span>
+                            <span class="value">Between town center & cottage island</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Event Schedule:</span>
+                            <span class="value">Every OTHER weekend (Fri-Sun)</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Race Type:</span>
+                            <span class="value">Finnish "Jokkis" folk racing</span>
+                        </div>
+                        <div class="location-detail">
+                            <span class="label">Facilities:</span>
+                            <span class="value">Tent with coffee & grilled sausages</span>
+                        </div>
+                    </div>
+                    
+                    <p><strong>Racing Details:</strong> Oval ice circuit prepared for side-by-side lap racing. Traditional Finnish winter motorsport. Folk race events alternate weekends with Rally Sprint (when ice track runs, rally doesn't, and vice versa). Small tent nearby serves coffee from thermos dispenser and grilled sausages. Track surface is maintained/prepared, offering better grip than random lake ice.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <h3>⚠️ Ice Breaking Mechanics (Current Status)</h3>
+                <p><strong>Current EA Version:</strong> Vehicles do NOT break through ice or fall into the lake. The frozen surface is completely solid and safe to drive on anywhere. <strong>Developer Note:</strong> Toplessgun has stated he wants to implement ice-breaking mechanics in the future, but this feature is not currently active in the game. Drive on ice roads and lake surface without fear of falling through - just worry about grip and control.</p>
+            </div>
+
+            <h3>❄️ Ice Driving Safety Guide</h3>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>🚗 Tire Selection</h4>
+                    <p>Studded winter tires provide dramatically better grip on ice. While possible to cross without them, the risk of spinning out increases significantly. Invest in proper tires before attempting lake shortcuts.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🎮 Smooth Inputs</h4>
+                    <p>Avoid sharp turns when transitioning from land to ice. Smooth steering helps prevent immediate loss of control. Gentle, progressive inputs are key to maintaining traction on slippery surfaces.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>⚡ Gradual Acceleration</h4>
+                    <p>Sudden throttle application causes wheelspin and loss of direction. Apply power gradually and let the car settle into a straight line before increasing speed. Patience prevents spin-outs.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🛑 Extended Braking</h4>
+                    <p>Braking distances are MUCH longer on ice (3-4x normal roads). Light, early braking is far safer than last-second stops. Plan stops 50-100 meters in advance.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🔄 Slide Recovery</h4>
+                    <p>If rear starts to slide, ease off throttle (don't brake!) and countersteer gently. Overcorrecting usually makes the slide worse. Small, smooth corrections work best.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>📊 Risk Assessment</h4>
+                    <p>If your car setup is unstable or you're still learning vehicle handling, stick to regular roads. Lake shortcuts save time but demand skill. Practice on empty lake sections first.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Strategy -->
+        <section id="navigation-strategy">
+            <h2>🧭 Navigation Strategy & Pro Tips</h2>
+
+            <h3>📞 Phone Call Map Markers</h3>
+            <div class="success-box">
+                <h3>✅ How Map Markers Work</h3>
+                <p>One of My Winter Car's most useful features is the automatic map marker system. When you dial specific phone numbers (like 08-609553 for Rivett purchase or 08-712112 for taxi job), a dart icon appears on your map showing exactly where to go. This prevents blind searching across 13.86 km² of snowy terrain.</p>
+                <p><strong>Pro Strategy:</strong> Keep a notepad (real or in-game notes) with important phone numbers from PSK job board, magazine classifieds, and posters. Call these numbers to generate map markers, making navigation trivial. Examples: Rivett seller, taxi meeting point, firewood delivery addresses.</p>
+            </div>
+
+            <h3>🗺️ Landmark Navigation Method</h3>
+            <p>When physical map markers aren't available, use visual landmarks:</p>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>🏠 From Apartment to Parents' House</h4>
+                    <p>South on main road → Turn at intersection after railroad tracks → Continue to peninsula. Look for large red woodshed and white house. ~5-7 minutes drive.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🏪 PSK Gas Station Location</h4>
+                    <p>Highway exit to Peräjärvi, visible from main road. Large building with fuel pumps. If coming from apartment, head toward highway then follow signs. Can't miss the PSK logo.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🔧 Finding Fleetari's in Loppe</h4>
+                    <p>From apartment: Down Kesselinperä road → Left at intersection after railroad → Left at next intersection → Continue straight to Loppe. Look for repair shop sign, orange Svoboda car outside.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🏭 Factory (Futufon) Location</h4>
+                    <p>Southeast side of map near highway bridge. From PSK, follow highway toward Loppe exit. Large red industrial building before bridge. Has block heater outlets in parking lot.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>🌲 Reijo's House (Firewood Buyer)</h4>
+                    <p>Call 08-609553 first to generate map marker. Located near woodshed area, same location as MSC firewood delivery. White shed and house, green tarpaulin for wood dumping.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>❄️ Ice Road Entry Points</h4>
+                    <p>Main entry near Ventti cabin area (look for cleared path onto lake). Exit at Kesselinperä peninsula side. Not a perfectly straight line - small turns at entry/exit, long stretch in middle.</p>
+                </div>
+            </div>
+
+            <h3>⏱️ Time-Saving Route Strategies</h3>
+            <div class="info-box">
+                <h3>💡 Optimal Travel Routes</h3>
+                <p><strong>Apartment → PSK → Parents' House Loop:</strong> Most efficient daily route. PSK for supplies/banking, Parents' house for firewood work. Use dirt roads for safer winter driving, highway only when confident in conditions.</p>
+                <p><strong>Parts Shopping Circuit:</strong> PSK (parts catalog) → Fleetari's (NOS parts) → Flea Market (used parts, Saturday mornings). Plan Saturday morning trip to hit Flea Market when stock is fresh.</p>
+                <p><strong>Ice Road Commute:</strong> When traveling Kesselinperä ↔ Town, ice road cuts 3-5 minutes vs highway loop. Worth the grip challenge if avoiding police or in hurry. No fines = saved money.</p>
+                <p><strong>Job Optimization:</strong> Live near apartment = easy Pub Nappo/PSK access for advert job + taxi calls. Parents' house = better for firewood job (Kekmet stored there). Choose residence based on primary income source.</p>
+            </div>
+
+            <h3>🚨 Danger Zones to Avoid</h3>
+            <div class="danger-box">
+                <h3>❌ High-Risk Areas</h3>
+                <ul>
+                    <li><strong>Marsh Area (East of Lake):</strong> Brownish area on map. Vehicles get stuck easily, difficult to recover. No reason to enter this zone.</li>
+                    <li><strong>Speed Camera Locations:</strong> Multiple cameras on highway. Learn their positions or use ice road to bypass entirely. Fines are 500-1500 MK.</li>
+                    <li><strong>Police Checkpoints:</strong> Random setup on highway. Check for fuel tax violations (fuel oil in tank = ticket), expired inspection. Ice road avoids these.</li>
+                    <li><strong>Techno Victra (Green Car):</strong> Speeds on highway, can cause rear-end collisions. If you see it, pull over or drive opposite direction until it passes.</li>
+                    <li><strong>Highway Blind Corners:</strong> Several sharp turns on Route 70 where oncoming traffic isn't visible. Reduce speed significantly, stay in your lane.</li>
+                    <li><strong>Forested White Areas:</strong> Inaccessible forest boundaries. Don't attempt off-road driving here - invisible walls and obstacles prevent passage.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="related-guides">
+            <h2>🔗 Related Guides</h2>
+            <p class="section-description">
+                Expand your My Winter Car knowledge with these comprehensive guides covering jobs, vehicles, survival mechanics, and advanced gameplay strategies.
+            </p>
+            
+            <div class="guides-grid">
+                <a href="/jobs-guide" class="guide-card">
+                    <div class="guide-card-icon">💼</div>
+                    <strong>Complete Jobs Guide</strong>
+                    <p>Master all 4 jobs with phone numbers, income comparison (2470-3710 MK/week factory, variable taxi, 2000-3200 MK firewood, 459 MK adverts), and application procedures for maximum earnings.</p>
+                </a>
+
+                <a href="/vehicles-guide" class="guide-card">
+                    <div class="guide-card-icon">🚗</div>
+                    <strong>Complete Vehicle Guide</strong>
+                    <p>Compare all 6 drivable vehicles: Sorbet starting car, Rivett project car, Machtwagen taxi (W124), Kekmet tractor, Ferndale, and Ruscko. Specs, handling, and optimal usage for each.</p>
+                </a>
+
+                <a href="/survival-guide" class="guide-card">
+                    <div class="guide-card-icon">❄️</div>
+                    <strong>Winter Survival Guide</strong>
+                    <p>Manage 6 survival stats: Hunger, Thirst, Fatigue, Urination, Temperature, and Problem (alcoholism). Learn optimal resource management and avoid death in harsh Finnish winter.</p>
+                </a>
+
+                <a href="/parts-acquisition-guide" class="guide-card">
+                    <div class="guide-card-icon">🔧</div>
+                    <strong>Parts Acquisition Guide</strong>
+                    <p>Source 200+ Rivett parts from Fleetari's (NOS, 08:00-16:00 Mon-Fri), Flea Market (Saturday mornings), Classifieds magazine, and AMIS catalog. Complete supplier comparison and pricing.</p>
+                </a>
+
+                <a href="/racing-guide" class="guide-card">
+                    <div class="guide-card-icon">🏁</div>
+                    <strong>Ice Racing Strategy</strong>
+                    <p>Compete in Finnish Jokkis folk racing on frozen lake track. Race schedule (every other weekend), vehicle preparation, driving techniques for ice conditions, and prize strategies.</p>
+                </a>
+
+                <a href="/beginner-guide" class="guide-card">
+                    <div class="guide-card-icon">📚</div>
+                    <strong>Beginner's Tutorial</strong>
+                    <p>Survive first 30 minutes: apartment basics (bed=sleep, toilet=save), finding PSK gas station, making critical phone calls, grocery shopping, and avoiding early-game death traps in 1999 Finland.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>My Winter Car Wiki</strong> - Community-driven guide for Amistech Games' survival simulator</p>
+        <p>Game Version: EA v.260102 | Guide Updated: January 2026</p>
+        <p><em>Disclaimer: My Winter Car is in Early Access. Map features, ice mechanics (vehicle fall-through planned but not yet implemented), and location details may change in future updates. All information verified against v.260102 as of January 2026. Physical map in-game dated 1989.</em></p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            <a href="/about" style="color: var(--accent-ice); text-decoration: none;">About This Wiki</a> | 
+            <a href="/guides" style="color: var(--accent-ice); text-decoration: none;">All Guides</a>
+        </p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
