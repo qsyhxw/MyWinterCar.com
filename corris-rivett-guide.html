@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,369 +7,108 @@
     <meta name="description" content="Complete guide to building the Corris Rivett in My Winter Car. Learn how to buy, assemble, and maintain the 1971-1976 Ford Taunus TC-based project car with 200+ parts.">
     <link rel="canonical" href="https://mywintercar.com/corris-rivett-guide">
 
-
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G0QRC4NKKP');
-</script>
-
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
-	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #1a1d23;
-            --bg-secondary: #252931;
-            --bg-card: #2d3139;
-            --accent-blue: #4a9eff;
-            --accent-ice: #7dd3fc;
-            --accent-warm: #ff8c42;
-            --accent-warning: #fbbf24;
-            --text-primary: #e5e7eb;
-            --text-secondary: #9ca3af;
-            --border-color: #374151;
-            --success-green: #10b981;
-            --danger-red: #ef4444;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-warning: #fbbf24; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; --success-green: #10b981; --danger-red: #ef4444; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
+        
         /* Header */
-        header {
-            background: rgba(26, 29, 35, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--accent-ice);
-            text-decoration: none;
-        }
-
-        .breadcrumb {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .breadcrumb a {
-            color: var(--accent-blue);
-            text-decoration: none;
-        }
-
+        header { background: rgba(26, 29, 35, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--accent-ice); text-decoration: none; }
+        .breadcrumb { color: var(--text-secondary); font-size: 0.9rem; }
+        .breadcrumb a { color: var(--accent-blue); text-decoration: none; }
+        
         /* Hero */
-        .hero {
-            background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(26, 29, 35, 0.95)),
-                        url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg/1200px-Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg') center/cover;
-            padding: 4rem 2rem;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-meta {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(74, 158, 255, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
+        .hero { background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(26, 29, 35, 0.95)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg/1200px-Ford_Taunus_TC_%281970-1975%29%2C_front_view%2C_Autopaedia.jpg') center/cover; padding: 4rem 2rem; text-align: center; border-bottom: 1px solid var(--border-color); }
+        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .hero-meta { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; background: rgba(74, 158, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+        
         /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+        
         /* Table of Contents */
-        .toc {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .toc h2 {
-            color: var(--accent-ice);
-            margin-bottom: 1rem;
-        }
-
-        .toc ul {
-            list-style: none;
-        }
-
-        .toc li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .toc li:last-child {
-            border-bottom: none;
-        }
-
-        .toc a {
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .toc a:hover {
-            color: var(--accent-blue);
-        }
-
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 3rem; }
+        .toc h2 { color: var(--accent-ice); margin-bottom: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { padding: 0.5rem 0; border-bottom: 1px solid var(--border-color); }
+        .toc li:last-child { border-bottom: none; }
+        .toc a { color: var(--text-primary); text-decoration: none; transition: color 0.3s; }
+        .toc a:hover { color: var(--accent-blue); }
+        
         /* Content Sections */
-        .content-section {
-            margin-bottom: 4rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent-ice);
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-blue);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            color: var(--text-primary);
-        }
-
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
-        }
-
+        .content-section { margin-bottom: 4rem; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-ice); padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-blue); }
+        h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--text-primary); }
+        p { margin-bottom: 1rem; font-size: 1.05rem; }
+        
         /* Info Boxes */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent-blue);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
-        }
-
-        .info-box.warning {
-            border-left-color: var(--accent-warning);
-            background: rgba(251, 191, 36, 0.1);
-        }
-
-        .info-box.success {
-            border-left-color: var(--success-green);
-            background: rgba(16, 185, 129, 0.1);
-        }
-
-        .info-box.danger {
-            border-left-color: var(--danger-red);
-            background: rgba(239, 68, 68, 0.1);
-        }
-
-        .info-box-title {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
+        .info-box { background: var(--bg-card); border-left: 4px solid var(--accent-blue); padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .info-box.warning { border-left-color: var(--accent-warning); background: rgba(251, 191, 36, 0.1); }
+        .info-box.success { border-left-color: var(--success-green); background: rgba(16, 185, 129, 0.1); }
+        .info-box.danger { border-left-color: var(--danger-red); background: rgba(239, 68, 68, 0.1); }
+        .info-box-title { font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        
         /* Specs Table */
-        .specs-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-secondary);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .specs-table th,
-        .specs-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .specs-table th {
-            background: var(--bg-card);
-            color: var(--accent-ice);
-            font-weight: 600;
-        }
-
-        .specs-table tr:last-child td {
-            border-bottom: none;
-        }
-
+        .specs-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-secondary); border-radius: 8px; overflow: hidden; }
+        .specs-table th, .specs-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        .specs-table th { background: var(--bg-card); color: var(--accent-ice); font-weight: 600; }
+        .specs-table tr:last-child td { border-bottom: none; }
+        
         /* Step by Step */
-        .step {
-            background: var(--bg-card);
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-radius: 12px;
-            border-left: 4px solid var(--accent-blue);
-        }
-
-        .step-number {
-            display: inline-block;
-            background: var(--accent-blue);
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 35px;
-            font-weight: 700;
-            margin-right: 1rem;
-        }
-
-        .step-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
+        .step { background: var(--bg-card); padding: 2rem; margin: 1.5rem 0; border-radius: 12px; border-left: 4px solid var(--accent-blue); }
+        .step-number { display: inline-block; background: var(--accent-blue); color: white; width: 35px; height: 35px; border-radius: 50%; text-align: center; line-height: 35px; font-weight: 700; margin-right: 1rem; }
+        .step-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; }
+        
         /* Image Container */
-        .image-container {
-            margin: 2rem 0;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .image-caption {
-            background: var(--bg-card);
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            text-align: center;
-        }
-
+        .image-container { margin: 2rem 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); }
+        .image-container img { width: 100%; height: auto; display: block; }
+        .image-caption { background: var(--bg-card); padding: 1rem; font-size: 0.9rem; color: var(--text-secondary); text-align: center; }
+        
         /* Lists */
-        ul, ol {
-            margin: 1rem 0 1rem 2rem;
-        }
-
-        li {
-            margin: 0.5rem 0;
-        }
-
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin: 0.5rem 0; }
+        
         /* Highlight */
-        .highlight {
-            background: rgba(74, 158, 255, 0.15);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
+        .highlight { background: rgba(74, 158, 255, 0.15); padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600; }
+        
         /* Back to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--accent-blue);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
-            transition: all 0.3s;
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-5px);
-        }
-
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--accent-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4); transition: all 0.3s; }
+        .back-to-top:hover { transform: translateY(-5px); }
+        
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-meta { flex-direction: column; gap: 1rem; } .container { padding: 2rem 1rem; } }
 
-            .hero-meta {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .container {
-                padding: 2rem 1rem;
-            }
-        }
+        /* Related Guides Section */
+        .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
+        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; text-align: left; }
+        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header-content">
             <a href="/" class="logo">❄️ My Winter Car Wiki</a>
             <div class="breadcrumb">
-                <a href="/">Home</a> / <a href="/vehicles">Vehicles</a> / Corris Rivett Guide
+                <a href="/">Home</a> / <a href="/vehicles-guide">Vehicles</a> / Corris Rivett Guide
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
     <div class="hero">
         <h1>Corris Rivett Complete Build Guide</h1>
         <p style="font-size: 1.2rem; margin-top: 1rem;">The Ultimate Assembly Manual for My Winter Car's Project Car</p>
@@ -382,9 +120,7 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <div class="container">
-        <!-- Table of Contents -->
         <div class="toc">
             <h2>📖 Table of Contents</h2>
             <ul>
@@ -404,7 +140,6 @@
             <p>This guide is based on My Winter Car Early Access version (December 29, 2025 release). Some features may change as development continues. Always check the in-game VIN plate and current parts catalogs for your specific Rivett configuration.</p>
         </div>
 
-        <!-- Section 1: Overview -->
         <section id="overview" class="content-section">
             <h2>1. Vehicle Overview & Specifications</h2>
             
@@ -469,7 +204,6 @@
             </div>
         </section>
 
-        <!-- Section 2: Buying -->
         <section id="buying" class="content-section">
             <h2>2. How to Buy the Rivett</h2>
             
@@ -483,7 +217,7 @@
             <div class="step">
                 <div class="step-title"><span class="step-number">2</span>Make the Phone Call</div>
                 <p><strong>Location:</strong> Use the phone in your apartment or parents' house<br>
-                <strong>CRITICAL:</strong> Use your keyboard's <span class="highlight">numpad</span> to dial: <code>08609553</code></p>
+                <strong>CRITICAL:</strong> Use your keyboard's <span class="highlight">numpad</span> to dial: <code>08609553</code> (see <a href="/beginner-guide#controls">controls guide</a> if unfamiliar)</p>
                 
                 <div class="info-box danger">
                     <div class="info-box-title">❌ Common Mistake</div>
@@ -524,22 +258,20 @@
             </div>
 
             <h3>Transportation Options</h3>
-            <p>After purchase, you need to transport the Rivett to your build location:</p>
+            <p>After purchase, you need to transport the Rivett to your build location. See our <a href="/vehicles-guide">Vehicles Guide</a> for detailed towing techniques:</p>
             <ul>
-                <li><strong>Kekmet (tractor with trailer):</strong> Most reliable option</li>
-                <li><strong>Gifu (flatbed truck):</strong> Can carry the chassis</li>
-                <li><strong>Parents' house vs Apartment:</strong> Parents' house has a garage, making assembly much easier</li>
+                <li><strong><a href="/vehicles-guide#kekmet">Kekmet</a> (tractor with trailer):</strong> Most reliable option, slow but safe</li>
+                <li><strong><a href="/vehicles-guide#gifu">Gifu</a> (flatbed truck):</strong> Can carry the chassis, faster but harder to control</li>
+                <li><strong>Parents' house vs Apartment:</strong> Parents' house has a garage with motor hoist, making assembly much easier</li>
             </ul>
         </section>
 
-        <!-- Section 3: Parts Sources -->
         <section id="parts-sources" class="content-section">
             <h2>3. Parts Sources & Acquisition</h2>
             
-            <p>Gathering all necessary parts is one of the most challenging aspects of the Rivett build. Unlike My Summer Car where most parts were lying around, you must actively source everything through multiple channels.</p>
+            <p>Gathering all necessary parts is one of the most challenging aspects of the Rivett build. Unlike My Summer Car where most parts were lying around, you must actively source everything through multiple channels. For complete details, see our dedicated <a href="/parts-acquisition-guide">Parts Acquisition Guide</a>.</p>
 
             <h3>Primary Parts Sources</h3>
-
             <div class="step">
                 <div class="step-title">📰 Parts Magazine (Kansalaisen Marketti)</div>
                 <p><strong>Primary Source:</strong> This is your main supplier for most parts.</p>
@@ -547,8 +279,8 @@
                 <ol>
                     <li>Purchase the magazine at PSK (Teimo's shop)</li>
                     <li>Open the magazine and find parts listings with phone numbers</li>
-                    <li>Call from your phone using the numpad (same method as buying Rivett)</li>
-                    <li><strong>CRITICAL:</strong> Wait until the seller finishes talking before hanging up</li>
+                    <li>Call from your phone using the numpad (same method as buying Rivett - see <a href="/beginner-guide#rivett">buying guide</a>)</li>
+                    <li><strong>CRITICAL:</strong> Wait until the seller finishes talking before hanging up (common mistake - see <a href="/troubleshooting-guide#phone-system">phone troubleshooting</a>)</li>
                     <li>Parts arrive in approximately 2 days at PSK</li>
                     <li>Check for post notification, then pick up parts</li>
                 </ol>
@@ -569,6 +301,7 @@
                 <p><strong>Location:</strong> Loppe (town)</p>
                 <p><strong>Operating Hours:</strong> Monday-Friday, 8:00-16:00 (4:00 PM)</p>
                 <p><strong>Specialization:</strong> New/NOS (New Old Stock) engine parts and performance components</p>
+                <p>For complete Fleetari shopping guide and pricing strategies, see <a href="/parts-acquisition-guide#fleetari">Parts Acquisition Guide - Fleetari section</a>.</p>
                 
                 <p><strong>Available Services:</strong></p>
                 <ul>
@@ -578,7 +311,6 @@
                     <li>Metal recycling (dispose old parts for money)</li>
                     <li>Possible garage space rental (not confirmed in EA)</li>
                 </ul>
-
                 <div class="info-box">
                     <div class="info-box-title">💡 Fleetari Shopping Tips</div>
                     <ul>
@@ -605,7 +337,6 @@
                     <li>Inventory randomizes after items sell</li>
                     <li><strong>Selling:</strong> Rent a table to sell your extra parts</li>
                 </ul>
-
                 <div class="info-box success">
                     <div class="info-box-title">💰 Making Money at Flea Market</div>
                     <p>You can rent a sale table to sell unwanted parts or items. Payment occurs at the end of each week. Unsold items remain on your table.</p>
@@ -654,9 +385,13 @@
                     <td>Medium</td>
                 </tr>
             </table>
+
+            <div class="info-box" style="margin-top: 1.5rem;">
+                <div class="info-box-title">💰 Budget Planning</div>
+                <p>Total estimated cost: <strong>8,000-14,000 mk</strong> depending on parts condition choices. Need money fast? Check our <a href="/money-guide">Money Making Guide</a> for delivery jobs (400-800 mk/run) and office work strategies.</p>
+            </div>
         </section>
 
-        <!-- Section 4: VIN System -->
         <section id="vin-system" class="content-section">
             <h2>4. VIN System & Trim Levels</h2>
             
@@ -679,7 +414,6 @@
             </div>
 
             <h3>The Four Trim Levels</h3>
-
             <div class="step">
                 <div class="step-title">🔹 L Trim (Base Spec)</div>
                 <p><strong>Characteristics:</strong> Entry-level economy model</p>
@@ -693,7 +427,6 @@
                     <li>Single-barrel carburetor</li>
                 </ul>
             </div>
-
             <div class="step">
                 <div class="step-title">🔹 LX Trim (Premium)</div>
                 <p><strong>Characteristics:</strong> Mid-range comfort model</p>
@@ -706,7 +439,6 @@
                     <li>Chrome trim and badges</li>
                 </ul>
             </div>
-
             <div class="step">
                 <div class="step-title">🔹 SLX Trim (Performance/Luxury)</div>
                 <p><strong>Characteristics:</strong> High-end sport-luxury model</p>
@@ -720,7 +452,6 @@
                     <li>Special gear stick</li>
                 </ul>
             </div>
-
             <div class="step">
                 <div class="step-title">⭐ GT Trim (Top Spec/Rare)</div>
                 <p><strong>Characteristics:</strong> Ultimate performance variant</p>
@@ -760,7 +491,6 @@
             </ul>
         </section>
 
-        <!-- Section 5: Assembly -->
         <section id="assembly" class="content-section">
             <h2>5. Assembly Order & Build Process</h2>
             
@@ -772,12 +502,12 @@
                     <li><strong>Choose your build location wisely:</strong> Parents' house has a garage (recommended)</li>
                     <li><strong>Organize parts:</strong> Group engine, suspension, body, electrical components</li>
                     <li><strong>Check VIN first:</strong> Understand your target specification</li>
-                    <li><strong>Plan for winter:</strong> Cold starts are much harder - work in heated spaces</li>
+                    <li><strong>Plan for winter:</strong> Cold starts are much harder - work in heated spaces (see <a href="/troubleshooting-guide#car-start">cold start troubleshooting</a>)</li>
+                    <li><strong>New to car mechanics?</strong> Review our <a href="/beginner-guide">Beginner's Guide</a> for basic controls and game mechanics first</li>
                 </ul>
             </div>
 
             <h3>Recommended Assembly Order</h3>
-
             <div class="step">
                 <div class="step-title"><span class="step-number">1</span>Chassis & Suspension</div>
                 <p><strong>Start with the foundation:</strong></p>
@@ -903,11 +633,10 @@
             </div>
         </section>
 
-        <!-- Section 6: Engine -->
         <section id="engine" class="content-section">
             <h2>6. Engine Build & Tuning</h2>
             
-            <p>The Rivett's 2.0L Ford Pinto TL20H engine offers significant tuning potential. Developer testing confirms properly built engines can reach approximately <span class="highlight">215 hp @ 8,000 RPM without nitrous</span>.</p>
+            <p>The Rivett's 2.0L Ford Pinto TL20H engine offers significant tuning potential. Developer testing confirms properly built engines can reach approximately <span class="highlight">215 hp @ 8,000 RPM without nitrous</span>. Planning to race? See our <a href="/racing-guide">Racing Guide</a> for competition-specific tuning strategies.</p>
 
             <h3>Stock Engine Configuration</h3>
             <table class="specs-table">
@@ -944,7 +673,6 @@
             </table>
 
             <h3>Performance Build Guide</h3>
-
             <div class="step">
                 <div class="step-title">Stage 1: Bolt-On Improvements (120-140 hp)</div>
                 <ul>
@@ -955,7 +683,6 @@
                 </ul>
                 <p><strong>Cost:</strong> Moderate | <strong>Difficulty:</strong> Easy | <strong>Reliability:</strong> High</p>
             </div>
-
             <div class="step">
                 <div class="step-title">Stage 2: Cam & Head Work (160-180 hp)</div>
                 <ul>
@@ -969,7 +696,6 @@
                     <p><strong>Warning:</strong> Racing cam reduces low-end torque. Car will be harder to drive in snow.</p>
                 </div>
             </div>
-
             <div class="step">
                 <div class="step-title">Stage 3: Full Build (200-215 hp)</div>
                 <ul>
@@ -984,6 +710,11 @@
                     <p><strong>CRITICAL:</strong> No rev limiter! High-performance builds can easily exceed 8,000 RPM and destroy the engine. Install a tachometer and watch it religiously.</p>
                 </div>
             </div>
+            
+            <div class="info-box" style="margin-top: 1.5rem;">
+                <div class="info-box-title">🏁 Racing Builds</div>
+                <p>Building for Ice Track or Rally Sprint competition? Check our <a href="/racing-guide">Racing & Tuning Guide</a> for safety equipment requirements, race-specific setups, and performance vs reliability trade-offs.</p>
+            </div>
 
             <h3>Tuning Tips</h3>
             <ul>
@@ -995,7 +726,6 @@
             </ul>
         </section>
 
-        <!-- Section 7: Maintenance -->
         <section id="maintenance" class="content-section">
             <h2>7. Maintenance & Common Issues</h2>
             
@@ -1041,10 +771,10 @@
             </table>
 
             <h3>Common Failures & Solutions</h3>
-
             <div class="step">
                 <div class="step-title">🔴 Engine Won't Start (Cold Weather)</div>
                 <p><strong>Symptoms:</strong> Engine cranks but won't fire, especially below -15°C</p>
+                <p>For complete cold start diagnosis, see <a href="/troubleshooting-guide#car-start">Troubleshooting Guide - Car Won't Start section</a>.</p>
                 <p><strong>Solutions:</strong></p>
                 <ul>
                     <li>Use full choke (pull choke knob all the way)</li>
@@ -1054,7 +784,6 @@
                     <li>Try ether starting spray (available at Teimo's)</li>
                 </ul>
             </div>
-
             <div class="step">
                 <div class="step-title">🔴 Engine Overheating</div>
                 <p><strong>Causes:</strong></p>
@@ -1069,7 +798,6 @@
                     <p><strong>Emergency:</strong> If temperature gauge reaches red, stop immediately. Continuing will warp the cylinder head (unique part!).</p>
                 </div>
             </div>
-
             <div class="step">
                 <div class="step-title">🔴 Electrical Failures</div>
                 <p><strong>Common Issues:</strong></p>
@@ -1080,7 +808,6 @@
                     <li>Corroded connections: Clean battery terminals</li>
                 </ul>
             </div>
-
             <div class="step">
                 <div class="step-title">🔴 Brake Problems</div>
                 <p><strong>Warning Signs:</strong></p>
@@ -1102,17 +829,17 @@
             </ul>
         </section>
 
-        <!-- Section 8: Tips -->
         <section id="tips" class="content-section">
             <h2>8. Pro Tips & Troubleshooting</h2>
             
             <h3>Money-Saving Tips</h3>
+            <p>Detailed money-making strategies in our <a href="/money-guide">Money Making Guide</a>. Key tips for Rivett builders:</p>
             <ul>
-                <li><strong>Buy used parts from magazine:</strong> Much cheaper than Fleetari's NOS</li>
+                <li><strong>Buy used parts from magazine:</strong> Much cheaper than Fleetari's NOS (see <a href="/parts-acquisition-guide#comparison">parts price comparison</a>)</li>
                 <li><strong>Check flea market weekly:</strong> Rare finds at good prices</li>
                 <li><strong>Don't over-tune early:</strong> Racing parts expensive and reduce reliability</li>
                 <li><strong>Learn to do your own work:</strong> Fleetari's labor costs add up</li>
-                <li><strong>Keep extra parts:</strong> Starters, alternators, water pumps fail</li>
+                <li><strong>Keep extra parts:</strong> Starters, alternators, water pumps fail (common failures in <a href="/troubleshooting-guide">troubleshooting guide</a>)</li>
             </ul>
 
             <h3>Building Strategy</h3>
@@ -1167,7 +894,6 @@
                     <li>No sound → Check battery connections</li>
                 </ul>
             </div>
-
             <div class="step">
                 <p><strong>Engine cranks but won't start:</strong></p>
                 <ul>
@@ -1177,7 +903,6 @@
                     <li>Carburetor may be flooded - wait 5 minutes</li>
                 </ul>
             </div>
-
             <div class="step">
                 <p><strong>Engine starts then dies:</strong></p>
                 <ul>
@@ -1193,7 +918,6 @@
             </div>
         </section>
 
-        <!-- Version Notice -->
         <div class="info-box warning" style="margin-top: 3rem;">
             <div class="info-box-title">📌 Content Version Notice</div>
             <p><strong>This guide is based on:</strong> My Winter Car Early Access (Released December 29, 2025)</p>
@@ -1201,7 +925,6 @@
             <p>Game is in active development. Some mechanics, part names, or acquisition methods may change in future updates. Always verify critical information against current in-game data.</p>
         </div>
 
-        <!-- Community -->
         <div class="info-box" style="margin-top: 2rem;">
             <div class="info-box-title">🤝 Community Resources</div>
             <p>Need help? Join the community:</p>
@@ -1212,9 +935,45 @@
                 <li><strong>My Winter Car Wiki:</strong> Detailed part specifications</li>
             </ul>
         </div>
+        
+        <section class="content-section" style="background: var(--bg-secondary); border-radius: 16px; padding: 2rem; margin-top: 3rem; border: 1px solid var(--border-color);">
+            <h2 style="font-size: 2rem; color: var(--accent-ice); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-blue);">🔗 Related Guides</h2>
+            <p class="section-description">Complete your Rivett build journey with our comprehensive guide collection</p>
+            <div class="quick-nav">
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">📦</div>
+                    <div><strong>Parts Acquisition Guide</strong></div>
+                    <p>Essential for Rivett builders. Learn Fleetari shop hours (Mon-Fri 08:00-16:00), AMIS catalog usage, and Classifieds magazine ordering. Master phone ordering to avoid failed orders.</p>
+                </a>
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon">🎓</div>
+                    <div><strong>Beginner's Guide</strong></div>
+                    <p>New to the game? Learn phone dialing with NUMPAD (not number row!), Sorbett controls for towing Rivett, and how to save your game properly.</p>
+                </a>
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <div><strong>Money Making Guide</strong></div>
+                    <p>Fund your 8,000-14,000 mk build cost. Delivery jobs earn 400-800 mk per run, office work provides steady income, wood cutting offers backup funds.</p>
+                </a>
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon">🛠️</div>
+                    <div><strong>Troubleshooting Guide</strong></div>
+                    <p>Fix "Rivett won't start" issues: cold start problems, overheating diagnosis, electrical failures, and phone ordering mistakes. Essential for first-time builders.</p>
+                </a>
+                <a href="/racing-guide" class="quick-nav-item">
+                    <div class="icon">🏁</div>
+                    <div><strong>Racing & Tuning Guide</strong></div>
+                    <p>Race your completed Rivett. Ice Track Jokkis racing schedule, Rally Sprint preparation, safety equipment requirements, and performance tuning strategies.</p>
+                </a>
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <div><strong>Complete Vehicles Guide</strong></div>
+                    <p>Compare Rivett specs with all 6 vehicles. Learn Kekmet towing techniques for transporting Rivett shell, Sorbett for parts hauling, and vehicle selection tips.</p>
+                </a>
+            </div>
+        </section>
     </div>
 
-    <!-- Back to Top -->
     <a href="#" class="back-to-top">↑</a>
 
     <script>
@@ -1239,43 +998,6 @@
             }
         });
     </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
