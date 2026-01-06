@@ -6,502 +6,81 @@
     <title>My Winter Car Beginner's Guide - First 30 Minutes Tutorial & Survival Tips | 2026</title>
     <meta name="description" content="Complete beginner's guide for My Winter Car. Learn how to survive your first 30 minutes, start the Sorbett, buy the Corris Rivett, and master essential controls. Step-by-step tutorial verified for Early Access v.260102-01.">
     <meta name="keywords" content="My Winter Car beginner guide, first 30 minutes, how to start, Sorbett tutorial, survival tips, controls guide, Corris Rivett purchase, new player tips">
-
-  <link rel="canonical" href="https://mywintercar.com/beginner-guide">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G0QRC4NKKP');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
-
+    <link rel="canonical" href="https://mywintercar.com/beginner-guide">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #1a1d23;
-            --bg-secondary: #252931;
-            --bg-card: #2d3139;
-            --accent-blue: #4a9eff;
-            --accent-ice: #7dd3fc;
-            --accent-warm: #ff8c42;
-            --accent-success: #10b981;
-            --accent-warning: #fbbf24;
-            --accent-danger: #ef4444;
-            --text-primary: #e5e7eb;
-            --text-secondary: #9ca3af;
-            --border-color: #374151;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--accent-blue);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--accent-ice);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--accent-blue);
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent-ice);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            line-height: 1.8;
-        }
-
-        .ea-notice {
-            background: rgba(251, 191, 36, 0.1);
-            border: 2px solid var(--accent-warning);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .ea-notice strong {
-            color: var(--accent-warning);
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .quick-nav {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .quick-nav-item {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s;
-        }
-
-        .quick-nav-item:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
-        }
-
-        .quick-nav-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .content-section {
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: var(--accent-blue);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--accent-ice);
-            margin: 2rem 0 1rem;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            color: var(--text-primary);
-            margin: 1.5rem 0 0.75rem;
-        }
-
-        .checklist {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            border-left: 4px solid var(--accent-success);
-        }
-
-        .checklist-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 1rem;
-            padding: 0.75rem;
-            background: rgba(16, 185, 129, 0.05);
-            border-radius: 8px;
-        }
-
-        .checklist-item input[type="checkbox"] {
-            margin-right: 1rem;
-            margin-top: 0.25rem;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        .checklist-item label {
-            flex: 1;
-            cursor: pointer;
-            color: var(--text-secondary);
-        }
-
-        .time-badge {
-            display: inline-block;
-            background: rgba(74, 158, 255, 0.2);
-            color: var(--accent-blue);
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-left: 0.5rem;
-        }
-
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid var(--accent-warning);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .warning-title {
-            font-weight: 600;
-            color: var(--accent-warning);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .info-box {
-            background: rgba(74, 158, 255, 0.1);
-            border: 1px solid var(--accent-blue);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .info-title {
-            font-weight: 600;
-            color: var(--accent-blue);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid var(--accent-success);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .success-title {
-            font-weight: 600;
-            color: var(--accent-success);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .danger-box {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid var(--accent-danger);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .danger-title {
-            font-weight: 600;
-            color: var(--accent-danger);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .controls-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .control-item {
-            background: var(--bg-card);
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .control-key {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--accent-blue);
-            font-family: 'Courier New', monospace;
-            background: rgba(74, 158, 255, 0.1);
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 0.5rem;
-        }
-
-        .control-desc {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-
-        .steps {
-            counter-reset: step-counter;
-            list-style: none;
-            margin: 1.5rem 0;
-            padding: 0;
-        }
-
-        .steps li {
-            counter-increment: step-counter;
-            margin-bottom: 1.5rem;
-            padding-left: 3rem;
-            position: relative;
-            color: var(--text-secondary);
-        }
-
-        .steps li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: var(--accent-blue);
-            color: var(--bg-primary);
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        ul, ol {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        strong {
-            color: var(--text-primary);
-        }
-
-        code {
-            background: var(--bg-card);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-            font-size: 0.9em;
-        }
-
-        kbd {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 0.25rem 0.5rem;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-            font-size: 0.9em;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: var(--accent-ice);
-            text-decoration: underline;
-        }
-
-        footer {
-            background: var(--bg-secondary);
-            border-top: 2px solid var(--border-color);
-            padding: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background: rgba(74, 158, 255, 0.1);
-            color: var(--accent-blue);
-            font-weight: 600;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero {
-                padding: 2rem 1rem;
-            }
-
-            .quick-nav {
-                grid-template-columns: 1fr;
-            }
-
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .controls-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-success: #10b981; --accent-warning: #fbbf24; --accent-danger: #ef4444; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        header { background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%); backdrop-filter: blur(10px); border-bottom: 2px solid var(--accent-blue); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+        .header-content { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-ice); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        nav a:hover { color: var(--accent-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .hero { background: linear-gradient(135deg, #1a1d23 0%, #252931 100%); border-radius: 16px; padding: 3rem 2rem; margin-bottom: 3rem; border: 1px solid var(--border-color); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent-ice); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 800px; line-height: 1.8; }
+        .ea-notice { background: rgba(251, 191, 36, 0.1); border: 2px solid var(--accent-warning); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+        .ea-notice strong { color: var(--accent-warning); display: block; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
+        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .content-section { background: var(--bg-secondary); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border: 1px solid var(--border-color); }
+        h2 { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        h3 { font-size: 1.5rem; color: var(--accent-ice); margin: 2rem 0 1rem; }
+        h4 { font-size: 1.2rem; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .checklist { background: var(--bg-card); border-radius: 12px; padding: 2rem; margin: 1.5rem 0; border-left: 4px solid var(--accent-success); }
+        .checklist-item { display: flex; align-items: flex-start; margin-bottom: 1rem; padding: 0.75rem; background: rgba(16, 185, 129, 0.05); border-radius: 8px; }
+        .checklist-item input[type="checkbox"] { margin-right: 1rem; margin-top: 0.25rem; width: 18px; height: 18px; cursor: pointer; }
+        .checklist-item label { flex: 1; cursor: pointer; color: var(--text-secondary); }
+        .time-badge { display: inline-block; background: rgba(74, 158, 255, 0.2); color: var(--accent-blue); padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.85rem; font-weight: 600; margin-left: 0.5rem; }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--accent-warning); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .warning-title { font-weight: 600; color: var(--accent-warning); margin-bottom: 0.75rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .info-box { background: rgba(74, 158, 255, 0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .info-title { font-weight: 600; color: var(--accent-blue); margin-bottom: 0.75rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .success-box { background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-success); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .success-title { font-weight: 600; color: var(--accent-success); margin-bottom: 0.75rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .danger-box { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--accent-danger); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .danger-title { font-weight: 600; color: var(--accent-danger); margin-bottom: 0.75rem; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .controls-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .control-item { background: var(--bg-card); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color); }
+        .control-key { font-size: 1.2rem; font-weight: bold; color: var(--accent-blue); font-family: 'Courier New', monospace; background: rgba(74, 158, 255, 0.1); padding: 0.25rem 0.75rem; border-radius: 4px; display: inline-block; margin-bottom: 0.5rem; }
+        .control-desc { font-size: 0.9rem; color: var(--text-secondary); }
+        .steps { counter-reset: step-counter; list-style: none; margin: 1.5rem 0; padding: 0; }
+        .steps li { counter-increment: step-counter; margin-bottom: 1.5rem; padding-left: 3rem; position: relative; color: var(--text-secondary); }
+        .steps li::before { content: counter(step-counter); position: absolute; left: 0; top: 0; background: var(--accent-blue); color: var(--bg-primary); width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        ul, ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        code { background: var(--bg-card); padding: 0.25rem 0.5rem; border-radius: 4px; font-family: 'Courier New', monospace; color: var(--accent-ice); font-size: 0.9em; }
+        kbd { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 4px; padding: 0.25rem 0.5rem; font-family: 'Courier New', monospace; color: var(--accent-ice); font-size: 0.9em; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+        a { color: var(--accent-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-ice); text-decoration: underline; }
+        footer { background: var(--bg-secondary); border-top: 2px solid var(--border-color); padding: 2rem; margin-top: 4rem; text-align: center; color: var(--text-secondary); }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background: rgba(74, 158, 255, 0.1); color: var(--accent-blue); font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } .hero { padding: 2rem 1rem; } .quick-nav { grid-template-columns: 1fr; } .header-content { flex-direction: column; text-align: center; } nav { flex-direction: column; gap: 1rem; } .controls-grid { grid-template-columns: 1fr; } }
+        
+        /* New styles for related guides cards */
+        .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
+        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; text-align: left; }
+        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
     </style>
 </head>
 <body>
@@ -570,9 +149,8 @@
 
         <section id="first-30-min" class="content-section">
             <h2>⏱️ First 30 Minutes - Complete Checklist</h2>
-
             <p>Follow this checklist in order. Each step is critical. Skipping or reordering causes problems.</p>
-
+            
             <div class="checklist">
                 <h3 style="margin-top: 0;">Phase 1: Apartment Setup <span class="time-badge">0-5 min</span></h3>
                 
@@ -580,12 +158,10 @@
                     <input type="checkbox" id="check1">
                     <label for="check1"><strong>Grab winter jacket</strong> - On floor near door. Press <kbd>F</kbd> to equip. <strong>DO NOT go outside without this!</strong></label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check2">
                     <label for="check2"><strong>Turn on radiators</strong> - Set to 30°C in bedroom. You <strong>cannot sleep</strong> if apartment is too cold.</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check3">
                     <label for="check3"><strong>Note phone location</strong> - You'll need it later. Phone is in apartment hallway.</label>
@@ -599,22 +175,18 @@
                     <input type="checkbox" id="check4">
                     <label for="check4"><strong>Unplug block heater</strong> - Go to front of Sorbett, right-click cable, drop it. <strong>CRITICAL: If you drive with it plugged, you'll rip the cord!</strong></label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check5">
                     <label for="check5"><strong>Get in car</strong> - Press <kbd>C</kbd> to open, click door. Windows will be frozen - normal.</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check6">
                     <label for="check6"><strong>Start engine</strong> - Press <kbd>Enter</kbd> for driving mode → Pull choke (left of wheel) → Hold LMB on ignition → Give gas</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check7">
                     <label for="check7"><strong>Turn on heater</strong> - Window Heater button (yellow light) → Blower (click twice for max) → Temperature to hot</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check8">
                     <label for="check8"><strong>Scrape windshield</strong> - Get out, look at windshield, hold LMB + move mouse up/down. Clear driver side first.</label>
@@ -628,27 +200,22 @@
                     <input type="checkbox" id="check9">
                     <label for="check9"><strong>Release handbrake</strong> - Look at handbrake, click or press <kbd>Space</kbd></label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check10">
                     <label for="check10"><strong>Drive to PSK</strong> - Left out of apartment → Straight to Pub Nappo → Left at crossroads → Down hill to gas station</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check11">
                     <label for="check11"><strong>Set PIN code</strong> - First PIN you enter is <strong>permanent</strong>! Remember it. Use payment terminal at pump.</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check12">
                     <label for="check12"><strong>Fuel up</strong> - Interact with red terminal FIRST → Select amount → Use green pump (petrol)</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check13">
                     <label for="check13"><strong>Check job board</strong> - Inside PSK, right side. Take photo or write down numbers.</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check14">
                     <label for="check14"><strong>Find Rivett ad</strong> - Same job board. Number is <code>08609553</code></label>
@@ -662,22 +229,18 @@
                     <input type="checkbox" id="check15">
                     <label for="check15"><strong>Drive home</strong> - Reverse route, don't forget to plug in block heater when you park!</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check16">
                     <label for="check16"><strong>Call Firewood Guy</strong> - Use apartment phone → NUMPAD only → Dial <code>08609553</code> → <strong>WAIT for him to hang up!</strong></label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check17">
                     <label for="check17"><strong>Check map</strong> - "Car for Sale" pin should appear (map location 9)</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check18">
                     <label for="check18"><strong>Visit during DAY</strong> - Bring 500mk. Drive to marker. Pay seller. Car is yours!</label>
                 </div>
-
                 <div class="checklist-item">
                     <input type="checkbox" id="check19">
                     <label for="check19"><strong>SAVE YOUR GAME</strong> - Go home, sleep in bed. Game ONLY saves when you sleep!</label>
@@ -699,7 +262,7 @@
 
         <section id="controls" class="content-section">
             <h2>🎮 Essential Controls - Quick Reference</h2>
-
+            
             <h3>Movement & Interaction</h3>
             <div class="controls-grid">
                 <div class="control-item">
@@ -776,6 +339,11 @@
                 </div>
             </div>
 
+            <div class="info-box" style="margin-top: 2rem;">
+                <div class="info-title">🏁 Advanced Driving</div>
+                <p>Once you master basic controls, check our <a href="/racing-guide">Racing & Tuning Guide</a> for performance driving techniques, rally strategies, and Rivett optimization tips.</p>
+            </div>
+
             <h3>Survival & Utility</h3>
             <div class="controls-grid">
                 <div class="control-item">
@@ -810,10 +378,9 @@
         <section id="sorbett" class="content-section">
             <h2>🚗 Starting the Sorbett - Complete Tutorial</h2>
 
-            <p>The Sorbett 1600 LTD (based on Talbot 1510) is your daily driver. It's parked outside your apartment, already plugged into a block heater. Here's how to start it properly:</p>
-
+            <p>The <a href="/vehicles-guide#sorbett">Sorbett 1600 LTD</a> (based on Talbot 1510) is your daily driver. It's parked outside your apartment, already plugged into a block heater. For detailed vehicle specs and maintenance, see our <a href="/vehicles-guide">Vehicles Guide</a>. Here's how to start it properly:</p>
+            
             <h3>CRITICAL: Block Heater Management</h3>
-
             <div class="danger-box">
                 <div class="danger-title">🔴 ALWAYS Unplug Before Driving!</div>
                 <p>If you drive with the block heater cable attached, <strong>you will rip it out</strong> and damage your car. Always unplug at the FRONT of the car before getting in.</p>
@@ -821,7 +388,6 @@
             </div>
 
             <h3>Cold Start Procedure</h3>
-
             <ol class="steps">
                 <li>
                     <strong>Approach the Sorbett</strong><br>
@@ -858,9 +424,7 @@
             </ol>
 
             <h3>Defrosting Windows</h3>
-
             <p>Your windshield will be covered in ice. Two methods:</p>
-
             <h4>Method 1: Heater (Slow but thorough)</h4>
             <ul>
                 <li><strong>Window Heater button:</strong> Square button on right dashboard. Press until yellow light turns on.</li>
@@ -884,7 +448,6 @@
             </div>
 
             <h3>Driving Basics</h3>
-
             <ol>
                 <li><strong>Release handbrake:</strong> Look at handbrake lever, click or press <kbd>Space</kbd></li>
                 <li><strong>First gear:</strong> Press <kbd>G</kbd> to shift into 1st</li>
@@ -904,10 +467,9 @@
         <section id="rivett" class="content-section">
             <h2>📞 Buying the Corris Rivett - Step-by-Step</h2>
 
-            <p>The Corris Rivett (based on Ford Taunus TC) is your main project car. It costs <strong>500mk</strong> and requires precise steps to purchase.</p>
-
+            <p>The <a href="/corris-rivett-guide">Corris Rivett</a> (based on Ford Taunus TC) is your main project car. It costs <strong>500mk</strong> and requires precise steps to purchase. After buying, see our complete <a href="/corris-rivett-guide">Rivett Build Guide</a> for assembly instructions.</p>
+            
             <h3>Where to Find the Ad</h3>
-
             <p>Drive to <strong>PSK gas station</strong>. Inside, look for the job board on the right wall (past the automatic sliding doors). You'll see an advertisement with a phone number.</p>
 
             <div class="info-box">
@@ -917,7 +479,6 @@
             </div>
 
             <h3>Making the Call (CRITICAL STEPS)</h3>
-
             <ol class="steps">
                 <li>
                     <strong>Go to apartment phone</strong><br>
@@ -948,14 +509,12 @@
             </div>
 
             <h3>Visiting the Firewood Guy</h3>
-
             <ul>
                 <li><strong>Location:</strong> Map marker shows "Car for Sale" (position 9 on map)</li>
                 <li><strong>When to visit:</strong> <strong>DAYTIME ONLY</strong> - He won't appear at night</li>
                 <li><strong>What to bring:</strong> 500mk cash (from bank account works too)</li>
                 <li><strong>How to get there:</strong> Drive Sorbett or use Kekmet tractor</li>
             </ul>
-
             <p>When you arrive:</p>
             <ol>
                 <li>Approach the seller (Reijo Livaloinen, aka "Firewood Guy")</li>
@@ -965,22 +524,21 @@
             </ol>
 
             <h3>What You Get</h3>
-
             <p>The Corris Rivett comes as:</p>
             <ul>
                 <li><strong>Empty shell</strong> - Just the body/frame</li>
                 <li><strong>10-12 random parts</strong> - Lying on ground nearby</li>
-                <li><strong>NO ENGINE</strong> - You must build everything</li>
+                <li><strong>NO ENGINE</strong> - You must build everything from 100+ parts (see <a href="/corris-rivett-guide">build guide</a>)</li>
             </ul>
 
             <div class="info-box">
                 <div class="info-title">💡 Moving the Rivett</div>
-                <p>The Rivett cannot be driven (no engine!). You need to TOW it:</p>
+                <p>The Rivett cannot be driven (no engine!). You need to TOW it using vehicles from our <a href="/vehicles-guide">Vehicles Guide</a>:</p>
                 <ul>
                     <li><strong>Kekmet tractor</strong> - Safest, found at woodshed by parents' house</li>
                     <li><strong>Gifu truck</strong> - Faster but harder to control</li>
                 </ul>
-                <p>Many players tow it to <strong>parents' house</strong> instead of apartment because of the motor hoist in garage.</p>
+                <p>Many players tow it to <strong>parents' house</strong> instead of apartment because of the motor hoist in garage (essential for <a href="/corris-rivett-guide">engine assembly</a>).</p>
             </div>
 
             <div class="warning-box">
@@ -997,11 +555,9 @@
 
         <section id="survival" class="content-section">
             <h2>❄️ Survival Basics - Don't Freeze to Death</h2>
-
             <p>My Winter Car is set in January 1999 Finland. Temperature is around <strong>-24°C</strong>. Cold kills.</p>
-
+            
             <h3>Critical Stat: Body Temperature</h3>
-
             <div class="danger-box">
                 <div class="danger-title">🔴 Hypothermia Warning</div>
                 <p>Without heat sources, hypothermia can kill you quickly. <strong>Never venture outdoors without the winter jacket!</strong></p>
@@ -1016,7 +572,6 @@
             </ul>
 
             <h3>Other Survival Stats</h3>
-
             <table>
                 <thead>
                     <tr>
@@ -1039,7 +594,7 @@
                     <tr>
                         <td><strong>PROBLEM</strong></td>
                         <td>Alcoholism meter (NOT thirst!)</td>
-                        <td>Drink beer/vodka to lower it. See <a href="/troubleshooting-guide">Troubleshooting Guide</a></td>
+                        <td>Drink beer/vodka to lower it. See <a href="/troubleshooting-guide#problem-bar">Problem Bar explanation</a> and <a href="/survival-guide">Survival Guide</a></td>
                     </tr>
                     <tr>
                         <td><strong>FATIGUE</strong></td>
@@ -1060,7 +615,6 @@
             </table>
 
             <h3>Sleeping & Saving</h3>
-
             <div class="warning-box">
                 <div class="warning-title">⚠️ Game ONLY Saves When You Sleep</div>
                 <p>There is <strong>NO autosave</strong>. The ONLY way to save is:</p>
@@ -1077,7 +631,6 @@
             </div>
 
             <h3>Money Management</h3>
-
             <ul>
                 <li><strong>Bank account:</strong> You start with one. Use ATM at PSK to check balance.</li>
                 <li><strong>PIN code:</strong> First PIN you enter is <strong>PERMANENT</strong>. Remember it!</li>
@@ -1089,61 +642,51 @@
 
         <section id="mistakes" class="content-section">
             <h2>⚠️ Top 10 Beginner Mistakes - Avoid These!</h2>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #1: Forgetting to Unplug Block Heater</div>
                 <p><strong>Result:</strong> Ripped cord, damaged car<br>
                 <strong>Prevention:</strong> ALWAYS unplug at front of car BEFORE driving. Make it a habit!</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #2: Hanging Up Phone Early</div>
                 <p><strong>Result:</strong> Corris Rivett quest doesn't trigger, map marker won't appear<br>
                 <strong>Prevention:</strong> Wait until you hear beeping tone / line goes dead. Be patient!</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #3: Using Number Row Instead of NUMPAD</div>
                 <p><strong>Result:</strong> Phone calls don't work, orders fail<br>
                 <strong>Prevention:</strong> ONLY use NUMPAD for all phone dialing. Number row (top of keyboard) doesn't work.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #4: Apartment Too Cold to Sleep</div>
                 <p><strong>Result:</strong> Can't save game, lose progress<br>
                 <strong>Prevention:</strong> Set bedroom radiator to 30°C. Leave on at least half the day.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #5: Driving Without Defrosting</div>
                 <p><strong>Result:</strong> Crash, death, loss of progress<br>
                 <strong>Prevention:</strong> ALWAYS scrape or heat windshield before driving. Zero visibility = guaranteed crash.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #6: No Headlights at Night</div>
                 <p><strong>Result:</strong> Crash or police fine<br>
                 <strong>Prevention:</strong> Press <kbd>L</kbd> to turn on headlights after sunset. Check dashboard indicator.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #7: Visiting Firewood Guy at Night</div>
                 <p><strong>Result:</strong> Wasted trip, fuel, time<br>
                 <strong>Prevention:</strong> Only visit during daytime. He won't spawn at night.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #8: Not Plugging In Block Heater Overnight</div>
                 <p><strong>Result:</strong> Oil freezes, car won't start in morning<br>
                 <strong>Prevention:</strong> ALWAYS plug in block heater when parking at home overnight.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #9: Forgetting to Save</div>
                 <p><strong>Result:</strong> Hours of progress lost on death<br>
                 <strong>Prevention:</strong> Sleep in bed regularly. Game ONLY saves when you sleep. Use <kbd>P</kbd> for emergency quick save.</p>
             </div>
-
             <div class="danger-box">
                 <div class="danger-title">❌ Mistake #10: Wrong First PIN Code</div>
                 <p><strong>Result:</strong> Locked out of bank card<br>
@@ -1153,9 +696,8 @@
 
         <section class="content-section">
             <h2>🎯 Next Steps After First Hour</h2>
-
             <p>You've survived the tutorial. Now what?</p>
-
+            
             <h3>Immediate Goals (First Day)</h3>
             <ul>
                 <li><strong>Start earning money</strong> - Office job or delivery job (see <a href="/money-guide">Money Guide</a>)</li>
@@ -1165,9 +707,9 @@
 
             <h3>First Week Goals</h3>
             <ul>
-                <li><strong>Stable income</strong> - Consistent job completion</li>
+                <li><strong>Stable income</strong> - Consistent job completion (see <a href="/money-guide">Money Guide</a>)</li>
                 <li><strong>Order first parts</strong> - Use Classifieds magazine (see <a href="/parts-acquisition-guide">Parts Guide</a>)</li>
-                <li><strong>Begin Rivett assembly</strong> - Start with chassis/suspension</li>
+                <li><strong>Begin Rivett assembly</strong> - Start with chassis/suspension (follow <a href="/corris-rivett-guide">Rivett Build Guide</a>)</li>
             </ul>
 
             <h3>Recommended Reading Order</h3>
@@ -1193,45 +735,70 @@
 
         <section class="content-section">
             <h2>🆘 Frequently Asked Questions</h2>
-
+            
             <div class="info-box">
                 <h4>Q: Can I play with a controller?</h4>
                 <p><strong>A:</strong> Controller support exists but is limited in EA. Many actions (like scraping windows) are easier with mouse. Keyboard is strongly recommended.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: What if I don't have a NUMPAD?</h4>
                 <p><strong>A:</strong> You'll need to remap phone controls or use an on-screen keyboard. NUMPAD is required for phone calls in default settings.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: How long does it take to build the Rivett?</h4>
-                <p><strong>A:</strong> With 100+ parts needed, expect 20-30 hours of real-time work for a first build. Experienced players can do it in 10-15 hours.</p>
+                <p><strong>A:</strong> With 100+ parts needed, expect 20-30 hours of real-time work for a first build. Experienced players can do it in 10-15 hours. Follow our step-by-step <a href="/corris-rivett-guide">Corris Rivett Build Guide</a> to minimize trial and error.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: Should I enable permadeath?</h4>
                 <p><strong>A:</strong> NO for first playthrough! Permadeath deletes your save on death. Learn the game with normal mode first.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: Why can't I sleep in my bed?</h4>
                 <p><strong>A:</strong> Apartment is too cold. Turn on bedroom radiator to 30°C and wait for room to warm up.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: The Sorbett won't start. Help!</h4>
                 <p><strong>A:</strong> Did you plug in the block heater overnight? If car was left unplugged, oil froze. See <a href="/troubleshooting-guide">Troubleshooting Guide</a>.</p>
             </div>
         </section>
-    </div>
 
-    <h2>📚 Related Guides</h2>
-     <ul>
-       <li><a href="/survival-guide">Winter Survival Guide</a> - 深入了解生存机制</li>
-       <li><a href="/vehicles-guide">Vehicle Comparison</a> - 选择合适的车辆</li>
-       <li><a href="/money-guide">Money Making Guide</a> - 快速赚钱策略</li>
-     </ul>
+        <section class="content-section">
+            <h2>🔗 Related Guides</h2>
+            <p class="section-description">Continue your My Winter Car journey with our comprehensive guide collection</p>
+            <div class="quick-nav">
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <div><strong>Money Making Guide</strong></div>
+                    <p>Essential for new players. Learn delivery jobs (400-800mk/run), office work (steady income), and wood cutting to fund your Rivett build.</p>
+                </a>
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <div><strong>Corris Rivett Build Guide</strong></div>
+                    <p>Next step after buying the shell. Complete 200+ parts assembly walkthrough with camshaft timing, electrical wiring, and first start procedures.</p>
+                </a>
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">📦</div>
+                    <div><strong>Parts Acquisition Guide</strong></div>
+                    <p>Learn Fleetari shop hours, AMIS catalog usage, and Classifieds ordering system. Master phone ordering to avoid common mistakes.</p>
+                </a>
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <div><strong>Winter Survival Guide</strong></div>
+                    <p>Deep dive into the six survival stats. Understand Problem Bar alcoholism mechanic, clothing strategies, and death scenario prevention.</p>
+                </a>
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon">🛠️</div>
+                    <div><strong>Troubleshooting Guide</strong></div>
+                    <p>Fix common issues: Sorbett won't start, phone ordering failures, Rivett engine problems, and Early Access bugs with verified solutions.</p>
+                </a>
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <div><strong>Complete Vehicles Guide</strong></div>
+                    <p>Detailed breakdown of all 6 vehicles. Learn when to use Sorbett vs Kekmet, towing strategies, and vehicle-specific maintenance tips.</p>
+                </a>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <p><strong>My Winter Car Wiki</strong> - Unofficial Beginner's Guide</p>
@@ -1239,5 +806,6 @@
         <p>All information verified for v.260102-01 (January 2, 2026) | Guide Updated: January 5, 2026</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">⚠️ Early Access: Game mechanics may change with updates. No built-in tutorial - rely on community guides!</p>
     </footer>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
