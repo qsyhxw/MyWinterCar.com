@@ -6,434 +6,79 @@
     <title>My Winter Car Troubleshooting Guide - Fix Common Problems & Bugs | 2026</title>
     <meta name="description" content="Complete troubleshooting guide for My Winter Car. Fix common problems including car starting issues, Problem Bar confusion, phone system bugs, crashes, and survival mechanics. Updated for Early Access 2026.">
     <meta name="keywords" content="My Winter Car troubleshooting, fix problems, car won't start, Problem Bar, bugs, solutions, early access">
-
-  <link rel="canonical" href="https://mywintercar.com/troubleshooting-guide">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G0QRC4NKKP');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
-
+    <link rel="canonical" href="https://mywintercar.com/troubleshooting-guide">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #1a1d23;
-            --bg-secondary: #252931;
-            --bg-card: #2d3139;
-            --accent-blue: #4a9eff;
-            --accent-ice: #7dd3fc;
-            --accent-warm: #ff8c42;
-            --accent-success: #10b981;
-            --accent-warning: #fbbf24;
-            --accent-danger: #ef4444;
-            --text-primary: #e5e7eb;
-            --text-secondary: #9ca3af;
-            --border-color: #374151;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--accent-blue);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--accent-ice);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--accent-blue);
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(239, 68, 68, 0.05) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent-ice);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            line-height: 1.8;
-        }
-
-        .quick-nav {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .quick-nav-item {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s;
-        }
-
-        .quick-nav-item:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
-        }
-
-        .quick-nav-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .content-section {
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: var(--accent-blue);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--accent-ice);
-            margin: 2rem 0 1rem;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            color: var(--text-primary);
-            margin: 1.5rem 0 0.75rem;
-        }
-
-        .problem-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid var(--accent-danger);
-        }
-
-        .problem-card.resolved {
-            border-left-color: var(--accent-success);
-        }
-
-        .problem-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--accent-ice);
-            margin-bottom: 0.75rem;
-        }
-
-        .severity {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .severity-critical {
-            background: var(--accent-danger);
-            color: #fff;
-        }
-
-        .severity-high {
-            background: var(--accent-warning);
-            color: #1a1d23;
-        }
-
-        .severity-medium {
-            background: var(--accent-blue);
-            color: #fff;
-        }
-
-        .severity-low {
-            background: var(--accent-success);
-            color: #fff;
-        }
-
-        .solution-box {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid var(--accent-success);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .solution-title {
-            font-weight: 600;
-            color: var(--accent-success);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid var(--accent-warning);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .warning-title {
-            font-weight: 600;
-            color: var(--accent-warning);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .info-box {
-            background: rgba(74, 158, 255, 0.1);
-            border: 1px solid var(--accent-blue);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .info-title {
-            font-weight: 600;
-            color: var(--accent-blue);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .steps {
-            background: var(--bg-secondary);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .steps ol {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        .steps li {
-            margin-bottom: 0.75rem;
-            color: var(--text-secondary);
-            padding-left: 0.5rem;
-        }
-
-        ul, ol {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        strong {
-            color: var(--text-primary);
-        }
-
-        code {
-            background: var(--bg-card);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-            font-size: 0.9em;
-        }
-
-        .patch-note {
-            background: rgba(74, 158, 255, 0.05);
-            border-left: 3px solid var(--accent-blue);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-
-        .patch-version {
-            font-weight: 600;
-            color: var(--accent-blue);
-            font-size: 0.9rem;
-        }
-
-        .version-notice {
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid var(--accent-warning);
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 1rem 0;
-            font-size: 0.9rem;
-        }
-
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: var(--accent-ice);
-            text-decoration: underline;
-        }
-
-        footer {
-            background: var(--bg-secondary);
-            border-top: 2px solid var(--border-color);
-            padding: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero {
-                padding: 2rem 1rem;
-            }
-
-            .quick-nav {
-                grid-template-columns: 1fr;
-            }
-
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-
-        .category-badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .badge-survival {
-            background: var(--accent-warm);
-            color: #fff;
-        }
-
-        .badge-vehicle {
-            background: var(--accent-blue);
-            color: #fff;
-        }
-
-        .badge-technical {
-            background: var(--accent-danger);
-            color: #fff;
-        }
-
-        .badge-gameplay {
-            background: var(--accent-success);
-            color: #fff;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-success: #10b981; --accent-warning: #fbbf24; --accent-danger: #ef4444; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        header { background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%); backdrop-filter: blur(10px); border-bottom: 2px solid var(--accent-blue); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+        .header-content { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-ice); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        nav a:hover { color: var(--accent-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .hero { background: linear-gradient(135deg, #1a1d23 0%, #252931 100%); border-radius: 16px; padding: 3rem 2rem; margin-bottom: 3rem; border: 1px solid var(--border-color); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(239, 68, 68, 0.05) 0%, transparent 100%); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent-ice); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 800px; line-height: 1.8; }
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
+        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .content-section { background: var(--bg-secondary); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border: 1px solid var(--border-color); }
+        h2 { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        h3 { font-size: 1.5rem; color: var(--accent-ice); margin: 2rem 0 1rem; }
+        h4 { font-size: 1.2rem; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .problem-card { background: var(--bg-card); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent-danger); }
+        .problem-card.resolved { border-left-color: var(--accent-success); }
+        .problem-title { font-size: 1.3rem; font-weight: 600; color: var(--accent-ice); margin-bottom: 0.75rem; }
+        .severity { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1rem; }
+        .severity-critical { background: var(--accent-danger); color: #fff; }
+        .severity-high { background: var(--accent-warning); color: #1a1d23; }
+        .severity-medium { background: var(--accent-blue); color: #fff; }
+        .severity-low { background: var(--accent-success); color: #fff; }
+        .solution-box { background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-success); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .solution-title { font-weight: 600; color: var(--accent-success); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--accent-warning); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .warning-title { font-weight: 600; color: var(--accent-warning); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .info-box { background: rgba(74, 158, 255, 0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .info-title { font-weight: 600; color: var(--accent-blue); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .steps { background: var(--bg-secondary); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .steps ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .steps li { margin-bottom: 0.75rem; color: var(--text-secondary); padding-left: 0.5rem; }
+        ul, ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        code { background: var(--bg-card); padding: 0.25rem 0.5rem; border-radius: 4px; font-family: 'Courier New', monospace; color: var(--accent-ice); font-size: 0.9em; }
+        .patch-note { background: rgba(74, 158, 255, 0.05); border-left: 3px solid var(--accent-blue); padding: 1rem; margin: 1rem 0; border-radius: 4px; }
+        .patch-version { font-weight: 600; color: var(--accent-blue); font-size: 0.9rem; }
+        .version-notice { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--accent-warning); border-radius: 8px; padding: 1rem; margin: 1rem 0; font-size: 0.9rem; }
+        a { color: var(--accent-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-ice); text-decoration: underline; }
+        footer { background: var(--bg-secondary); border-top: 2px solid var(--border-color); padding: 2rem; margin-top: 4rem; text-align: center; color: var(--text-secondary); }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } .hero { padding: 2rem 1rem; } .quick-nav { grid-template-columns: 1fr; } .header-content { flex-direction: column; text-align: center; } nav { flex-direction: column; gap: 1rem; } }
+        .category-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.85rem; margin-right: 0.5rem; margin-bottom: 0.5rem; }
+        .badge-survival { background: var(--accent-warm); color: #fff; }
+        .badge-vehicle { background: var(--accent-blue); color: #fff; }
+        .badge-technical { background: var(--accent-danger); color: #fff; }
+        .badge-gameplay { background: var(--accent-success); color: #fff; }
+        
+        /* New styles for description cards */
+        .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
+        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; }
+        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
     </style>
 </head>
 <body>
@@ -500,7 +145,7 @@
                 <span class="category-badge badge-survival">Survival</span>
                 <span class="severity severity-critical">CRITICAL UNDERSTANDING</span>
                 
-                <p><strong>This is NOT a bug</strong> - it's an intentional game mechanic that replaces the old thirst system from My Summer Car.</p>
+                <p><strong>This is NOT a bug</strong> - it's an intentional game mechanic that replaces the old thirst system from My Summer Car. For complete survival mechanics breakdown, see our <a href="/survival-guide">Winter Survival Guide</a>.</p>
                 
                 <div class="info-box">
                     <div class="info-title">🔍 What Is The Problem Bar?</div>
@@ -518,7 +163,7 @@
                     <p><strong>Short-term (Keep playing normally):</strong></p>
                     <ol>
                         <li><strong>Drink beer or alcoholic beverages</strong> to lower the Problem Bar</li>
-                        <li>Purchase beer from PSK store (cheap and effective)</li>
+                        <li>Purchase beer from PSK store (cheap and effective) — Need money? Check our <a href="/money-guide">Money Making Guide</a></li>
                         <li>Visit neighbors at night for free alcohol</li>
                         <li>Manage it like you'd manage hunger - keep it from hitting max</li>
                     </ol>
@@ -563,8 +208,7 @@
         <section id="car-start" class="content-section">
             <h2>🚗 Car Won't Start - Complete Diagnosis Guide</h2>
 
-            <h3>Sorbett 1600 LTD (Your Daily Driver)</h3>
-
+            <h3>Sorbett 1600 LTD (Your Daily Driver) <small style="font-size: 0.8rem; color: var(--text-secondary);">— <a href="/vehicles-guide#sorbett">Full vehicle details →</a></small></h3>
             <div class="problem-card resolved">
                 <div class="problem-title">❄️ "Car won't start - makes no sound / weak cranking"</div>
                 <span class="category-badge badge-vehicle">Vehicle</span>
@@ -656,8 +300,7 @@
                 </div>
             </div>
 
-            <h3>Corris Rivett (Project Car)</h3>
-
+            <h3>Corris Rivett (Project Car) <small style="font-size: 0.8rem; color: var(--text-secondary);">— <a href="/corris-rivett-guide">Complete build guide →</a></small></h3>
             <div class="problem-card">
                 <div class="problem-title">🔧 "Rivett engine turns over but won't start"</div>
                 <span class="category-badge badge-vehicle">Vehicle</span>
@@ -729,7 +372,6 @@
                     <div class="patch-version">Patch v.260101-01</div>
                     <p>Fixed issues with Sorbett and Tractor engine shutoff / restart procedure</p>
                 </div>
-
                 <p>If still experiencing issues after this patch:</p>
                 <ol>
                     <li>Verify game files on Steam</li>
@@ -741,6 +383,11 @@
 
         <section id="survival" class="content-section">
             <h2>❄️ Survival Mechanics Issues</h2>
+
+            <div class="info-box" style="margin-bottom: 2rem;">
+                <div class="info-title">🎓 New to the game?</div>
+                <p>If you're experiencing these survival issues in your first few hours, check our <a href="/beginner-guide">Beginner's Guide</a> for essential starting tips and common pitfalls to avoid.</p>
+            </div>
 
             <div class="problem-card">
                 <div class="problem-title">😴 "Can't sleep - no prompt appears on bed"</div>
@@ -845,7 +492,7 @@
 
                 <div class="info-box">
                     <div class="info-title">💡 Parts Order System</div>
-                    <p><strong>After successful parts order call:</strong></p>
+                    <p><strong>After successful parts order call:</strong> (See <a href="/parts-acquisition-guide">Parts Acquisition Guide</a> for pricing & suppliers)</p>
                     <ul>
                         <li>Wait 2-3 in-game days</li>
                         <li>Check PSK mailbox for delivery notification letter</li>
@@ -888,7 +535,6 @@
                     <div class="patch-version">Patch v.251230-04</div>
                     <p>Burger and Ala Carte seller are disabled temporarily to figure out PSK crashing</p>
                 </div>
-
                 <p><strong>Current workaround:</strong></p>
                 <ul>
                     <li>Food vendors at PSK temporarily disabled</li>
@@ -909,7 +555,6 @@
                     <div class="patch-version">Patch v.251230-04</div>
                     <p>Fixed Permadeath not deleting save files</p>
                 </div>
-
                 <p>If you started before this patch and have "ghost" saves, manually delete them from:</p>
                 <code>C:\Users\[YourName]\AppData\LocalLow\Amistech\My Winter Car</code>
             </div>
@@ -925,7 +570,6 @@
                     <div class="patch-version">Patch v.260101-01</div>
                     <p>Fixed CD audio not having sound in Taxi and Sorbett</p>
                 </div>
-
                 <p>If imported CDs from My Summer Car, they should now work. If still no sound:</p>
                 <ol>
                     <li>Verify game files on Steam</li>
@@ -991,7 +635,6 @@
                     <div class="patch-version">Patch v.251230-04</div>
                     <p>Improved some Sorbett colliders to lessen the possibility of physics glitching</p>
                 </div>
-
                 <p><strong>If still experiencing physics bugs:</strong></p>
                 <ul>
                     <li>Save game frequently</li>
@@ -1053,7 +696,6 @@
 
         <section class="content-section">
             <h2>🆘 Still Having Problems?</h2>
-
             <div class="info-box">
                 <div class="info-title">📢 Community Resources</div>
                 <ul>
@@ -1064,7 +706,7 @@
                     <li><strong>Save File Editor:</strong> <a href="https://www.nexusmods.com/mysummercar/mods/125" target="_blank">MSC Editor on Nexus Mods</a></li>
                 </ul>
             </div>
-
+            
             <div class="warning-box">
                 <div class="warning-title">⚠️ Backup Your Saves!</div>
                 <p>With Early Access bugs and Permadeath mode, ALWAYS keep backup saves:</p>
@@ -1090,22 +732,37 @@
 
         <section class="content-section">
             <h2>🔗 Related Guides</h2>
+            <p class="section-description">Master every aspect of My Winter Car with our comprehensive guide collection</p>
             <div class="quick-nav">
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon">🎓</div>
+                    <div><strong>Beginner's Guide</strong></div>
+                    <p>Start your Finnish winter adventure right. Learn the essential first 30 minutes, controls, and survival basics to avoid common rookie mistakes.</p>
+                </a>
                 <a href="/vehicles-guide" class="quick-nav-item">
                     <div class="icon">🚗</div>
-                    <div>Complete Vehicles Guide</div>
+                    <div><strong>Complete Vehicles Guide</strong></div>
+                    <p>Detailed breakdown of all 6 vehicles including Sorbett's heater system, Kekmet tractor mechanics, and when to use each vehicle type.</p>
                 </a>
                 <a href="/survival-guide" class="quick-nav-item">
                     <div class="icon">❄️</div>
-                    <div>Winter Survival Guide</div>
+                    <div><strong>Winter Survival Guide</strong></div>
+                    <p>Master the six survival indicators, clothing strategies, and death scenarios. Understand why the Problem Bar isn't what you think it is.</p>
                 </a>
                 <a href="/corris-rivett-guide" class="quick-nav-item">
                     <div class="icon">🔧</div>
-                    <div>Rivett Build Guide</div>
+                    <div><strong>Corris Rivett Build Guide</strong></div>
+                    <p>200+ parts assembly walkthrough with camshaft timing, electrical wiring, and VIN system explained. Fix "engine won't start" issues here.</p>
                 </a>
-                <a href="/beginners-guide" class="quick-nav-item">
-                    <div class="icon">🎓</div>
-                    <div>Beginner's Guide</div>
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">📦</div>
+                    <div><strong>Parts Acquisition Guide</strong></div>
+                    <p>Compare AMIS mail order vs PSK store prices, learn phone ordering procedures, and track delivery times for Rivett parts.</p>
+                </a>
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <div><strong>Money Making Guide</strong></div>
+                    <p>Earn fast cash through delivery jobs, taxi driving, and wood cutting. Fund your Rivett build and daily expenses efficiently.</p>
                 </a>
             </div>
         </section>
@@ -1117,5 +774,6 @@
         <p>All solutions verified against official patch notes and community testing</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">Not affiliated with Amistech Games | Guide updated: January 4, 2026</p>
     </footer>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
