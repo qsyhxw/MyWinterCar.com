@@ -3,437 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>My Winter Car Racing Guide - Ice Track & Rally Sprint Complete Strategy | 2026</title>
     <meta name="description" content="Complete racing guide for My Winter Car. Learn Ice Track Jokkis folk racing schedule, Rally Sprint strategies, safety equipment requirements, and Corris Rivett race preparation. Verified for Early Access v.260102-01.">
     <meta name="keywords" content="My Winter Car racing, ice track race, rally sprint, Jokkis folk racing, Corris Rivett race build, safety equipment, racing strategies">
-
     <link rel="canonical" href="https://mywintercar.com/racing-guide">
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G0QRC4NKKP');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
-
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #1a1d23;
-            --bg-secondary: #252931;
-            --bg-card: #2d3139;
-            --accent-blue: #4a9eff;
-            --accent-ice: #7dd3fc;
-            --accent-warm: #ff8c42;
-            --accent-success: #10b981;
-            --accent-warning: #fbbf24;
-            --accent-danger: #ef4444;
-            --text-primary: #e5e7eb;
-            --text-secondary: #9ca3af;
-            --border-color: #374151;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--accent-blue);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            padding: 1rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--accent-ice);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--accent-blue);
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #1a1d23 0%, #252931 100%);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent-ice);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            line-height: 1.8;
-        }
-
-        .ea-notice {
-            background: rgba(251, 191, 36, 0.1);
-            border: 2px solid var(--accent-warning);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .ea-notice strong {
-            color: var(--accent-warning);
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .quick-nav {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .quick-nav-item {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s;
-        }
-
-        .quick-nav-item:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
-        }
-
-        .quick-nav-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .content-section {
-            background: var(--bg-secondary);
-            border-radius: 16px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: var(--accent-blue);
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--accent-ice);
-            margin: 2rem 0 1rem;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            color: var(--text-primary);
-            margin: 1.5rem 0 0.75rem;
-        }
-
-        .race-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--accent-blue);
-        }
-
-        .race-card.rally {
-            border-left-color: var(--accent-warm);
-        }
-
-        .schedule-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .schedule-day {
-            background: rgba(74, 158, 255, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--accent-blue);
-            text-align: center;
-        }
-
-        .day-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .day-activity {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--accent-blue);
-        }
-
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid var(--accent-warning);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .warning-title {
-            font-weight: 600;
-            color: var(--accent-warning);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .info-box {
-            background: rgba(74, 158, 255, 0.1);
-            border: 1px solid var(--accent-blue);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .info-title {
-            font-weight: 600;
-            color: var(--accent-blue);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid var(--accent-success);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .success-title {
-            font-weight: 600;
-            color: var(--accent-success);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .danger-box {
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid var(--accent-danger);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-        }
-
-        .danger-title {
-            font-weight: 600;
-            color: var(--accent-danger);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        ul, ol {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        strong {
-            color: var(--text-primary);
-        }
-
-        code {
-            background: var(--bg-card);
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-            font-size: 0.9em;
-        }
-
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: var(--accent-ice);
-            text-decoration: underline;
-        }
-
-        footer {
-            background: var(--bg-secondary);
-            border-top: 2px solid var(--border-color);
-            padding: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        th {
-            background: rgba(74, 158, 255, 0.1);
-            color: var(--accent-blue);
-            font-weight: 600;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        .competitor-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .competitor-card {
-            background: var(--bg-card);
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .competitor-name {
-            font-weight: 600;
-            color: var(--accent-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero {
-                padding: 2rem 1rem;
-            }
-
-            .quick-nav {
-                grid-template-columns: 1fr;
-            }
-
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .schedule-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-success: #10b981; --accent-warning: #fbbf24; --accent-danger: #ef4444; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        header { background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%); backdrop-filter: blur(10px); border-bottom: 2px solid var(--accent-blue); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+        .header-content { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-ice); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        nav a:hover { color: var(--accent-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .hero { background: linear-gradient(135deg, #1a1d23 0%, #252931 100%); border-radius: 16px; padding: 3rem 2rem; margin-bottom: 3rem; border: 1px solid var(--border-color); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent-ice); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 800px; line-height: 1.8; }
+        .ea-notice { background: rgba(251, 191, 36, 0.1); border: 2px solid var(--accent-warning); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+        .ea-notice strong { color: var(--accent-warning); display: block; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
+        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .content-section { background: var(--bg-secondary); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border: 1px solid var(--border-color); }
+        h2 { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        h3 { font-size: 1.5rem; color: var(--accent-ice); margin: 2rem 0 1rem; }
+        h4 { font-size: 1.2rem; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .race-card { background: var(--bg-card); border-radius: 12px; padding: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--accent-blue); }
+        .race-card.rally { border-left-color: var(--accent-warm); }
+        .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .schedule-day { background: rgba(74, 158, 255, 0.1); padding: 1rem; border-radius: 8px; border: 1px solid var(--accent-blue); text-align: center; }
+        .day-label { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+        .day-activity { font-size: 1.1rem; font-weight: 600; color: var(--accent-blue); }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--accent-warning); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .warning-title { font-weight: 600; color: var(--accent-warning); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .info-box { background: rgba(74, 158, 255, 0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .info-title { font-weight: 600; color: var(--accent-blue); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .success-box { background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-success); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .success-title { font-weight: 600; color: var(--accent-success); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .danger-box { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--accent-danger); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .danger-title { font-weight: 600; color: var(--accent-danger); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        ul, ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        code { background: var(--bg-card); padding: 0.25rem 0.5rem; border-radius: 4px; font-family: 'Courier New', monospace; color: var(--accent-ice); font-size: 0.9em; }
+        a { color: var(--accent-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-ice); text-decoration: underline; }
+        footer { background: var(--bg-secondary); border-top: 2px solid var(--border-color); padding: 2rem; margin-top: 4rem; text-align: center; color: var(--text-secondary); }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        th { background: rgba(74, 158, 255, 0.1); color: var(--accent-blue); font-weight: 600; }
+        tr:last-child td { border-bottom: none; }
+        .competitor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .competitor-card { background: var(--bg-card); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color); }
+        .competitor-name { font-weight: 600; color: var(--accent-blue); margin-bottom: 0.5rem; }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } .hero { padding: 2rem 1rem; } .quick-nav { grid-template-columns: 1fr; } .header-content { flex-direction: column; text-align: center; } nav { flex-direction: column; gap: 1rem; } .schedule-grid { grid-template-columns: 1fr; } }
+        
+        /* New styles for related guides cards */
+        .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
+        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; text-align: left; }
+        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
     </style>
 </head>
 <body>
@@ -502,9 +145,8 @@
 
         <section class="content-section">
             <h2>🎯 Racing Overview</h2>
-
-            <p>My Winter Car features two main racing disciplines for the Corris Rivett:</p>
-
+            <p>My Winter Car features two main racing disciplines for the <a href="/corris-rivett-guide">Corris Rivett</a>. Before competing, ensure your car is fully built and tuned (see our <a href="/corris-rivett-guide">complete build guide</a>):</p>
+            
             <div class="race-card">
                 <h3>🧊 Ice Track Race (Jokkis Folk Racing)</h3>
                 <p><strong>What it is:</strong> Finnish "Jokkis" folk racing - side-by-side lap racing on a frozen lake ice track. Based on real Finnish winter motorsport tradition.</p>
@@ -533,7 +175,7 @@
                     <div class="warning-title">⚠️ Rally Details Not Fully Confirmed</div>
                     <p>Rally Sprint information is based on developer intentions and MSC experience. Exact route, timing, and requirements await EA updates. Expect differences from My Summer Car.</p>
                 </div>
-
+                
                 <div class="schedule-grid" style="margin-top: 1.5rem;">
                     <div class="schedule-day">
                         <div class="day-label">Schedule</div>
@@ -558,13 +200,16 @@
 
         <section id="ice-track" class="content-section">
             <h2>🧊 Ice Track Race - Complete Guide</h2>
+            
+            <div class="info-box" style="margin-bottom: 2rem;">
+                <div class="info-title">🔧 New to Racing?</div>
+                <p>If you're attempting your first race, review our <a href="/beginner-guide#sorbett">basic driving controls</a> and practice ice handling on regular roads first. Ice Track requires advanced car control skills.</p>
+            </div>
 
             <h3>What is Jokkis Folk Racing?</h3>
-
             <p>Jokkis (Finnish folk racing) is a traditional form of motorsport where modified cars race side-by-side on ice tracks. My Winter Car's version stays true to Finnish tradition with one key difference: <strong>you don't have to sell your car after the race</strong> (unlike real Jokkis rules).</p>
 
             <h3>Race Schedule & Format</h3>
-
             <div class="schedule-grid">
                 <div class="schedule-day">
                     <div class="day-label">FRIDAY</div>
@@ -589,7 +234,6 @@
             </div>
 
             <h3>Track Location</h3>
-
             <p>The ice track is located on the <strong>frozen lake surface</strong>, between Peräjärvi town center and the cottage island. Look for the prepared ice circuit marked on your map.</p>
 
             <div class="info-box">
@@ -603,7 +247,6 @@
             </div>
 
             <h3>Race Format</h3>
-
             <ul>
                 <li><strong>Side-by-Side Racing:</strong> Multiple cars race simultaneously, not time trial</li>
                 <li><strong>Lap-Based:</strong> Complete a set number of laps around the ice circuit</li>
@@ -614,16 +257,13 @@
 
         <section id="rally" class="content-section">
             <h2>🚗 Rally Sprint Race - What We Know</h2>
-
             <div class="danger-box">
                 <div class="danger-title">🚧 Information Status: Partially Confirmed</div>
                 <p>Rally Sprint details are based on developer intentions (Nov 2023) and MSC experience. EA implementation may differ significantly. Treat this as "expected" rather than "confirmed."</p>
             </div>
 
             <h3>Expected Format (Based on MSC)</h3>
-
             <p>If similar to My Summer Car's rally:</p>
-
             <ul>
                 <li><strong>Event Name:</strong> Possibly "Peräjärven Talvi-Sprint" (Peräjärven Winter Sprint)</li>
                 <li><strong>Days:</strong> Likely Saturday and Sunday</li>
@@ -632,7 +272,6 @@
             </ul>
 
             <h3>AI Competitors</h3>
-
             <div class="info-box">
                 <div class="info-title">🏎️ Developer Statement (Nov 2023)</div>
                 <p><em>"I would like to add some 90s models. As the ice racing runs on older cars it would be cool to see newer cars in the rally, maybe with AWD configuration as well."</em> - Toplessgun</p>
@@ -640,7 +279,6 @@
             </div>
 
             <h3>What Remains Unknown</h3>
-
             <ul>
                 <li>❓ Exact route and stage length</li>
                 <li>❓ Pace notes system (if any)</li>
@@ -657,17 +295,15 @@
 
         <section id="preparation" class="content-section">
             <h2>🔧 Race Preparation - Requirements</h2>
-
+            
             <h3>Vehicle Eligibility</h3>
-
             <div class="danger-box">
                 <div class="danger-title">🚫 Only Corris Rivett Allowed</div>
-                <p><strong>Developer confirmed (May 2024):</strong> "You can only take Corris Rivett for the ice race and rally, because I need to limit it somewhere. You cannot get the Sorbett through the inspection because it misses the safety parts."</p>
-                <p style="margin-top: 0.75rem;">The Sorbett, Kekmet, Gifu - <strong>all banned from racing</strong>. Rivett only!</p>
+                <p><strong>Developer confirmed (May 2024):</strong> "You can only take <a href="/corris-rivett-guide">Corris Rivett</a> for the ice race and rally, because I need to limit it somewhere. You cannot get the Sorbett through the inspection because it misses the safety parts."</p>
+                <p style="margin-top: 0.75rem;">The <a href="/vehicles-guide#sorbett">Sorbett</a>, <a href="/vehicles-guide#kekmet">Kekmet</a>, <a href="/vehicles-guide#gifu">Gifu</a> - <strong>all banned from racing</strong>. Rivett only!</p>
             </div>
 
             <h3>Mandatory Requirements</h3>
-
             <table>
                 <thead>
                     <tr>
@@ -696,14 +332,13 @@
             </table>
 
             <h3>Safety Equipment (Expected List)</h3>
-
             <div class="warning-box">
                 <div class="warning-title">⚠️ EA Version Not Finalized</div>
-                <p>The following safety equipment is <strong>likely required</strong> based on developer statements, but the complete list awaits EA implementation:</p>
+                <p>The following safety equipment is <strong>likely required</strong> based on developer statements, but the complete list awaits EA implementation. Purchase these parts from sources in our <a href="/parts-acquisition-guide">Parts Acquisition Guide</a>:</p>
             </div>
 
             <ul>
-                <li><strong>Roll Cage</strong> - Likely required for crash protection</li>
+                <li><strong>Roll Cage</strong> - Likely required for crash protection (check <a href="/parts-acquisition-guide#fleetari">Fleetari shop</a>)</li>
                 <li><strong>Bucket Seats</strong> - Possible racing seats requirement</li>
                 <li><strong>Safety Harness</strong> - 4-point or 5-point harness expected</li>
                 <li><strong>Fire Extinguisher</strong> - Standard motorsport safety</li>
@@ -716,12 +351,11 @@
             </div>
 
             <h3>Pre-Race Checklist</h3>
-
             <div class="success-box">
                 <div class="success-title">✅ Race Day Preparation</div>
                 <ul>
-                    <li>□ Rivett passed inspection (road legal)</li>
-                    <li>□ All safety equipment installed (check in-game requirements)</li>
+                    <li>□ Rivett passed inspection (road legal - see <a href="/troubleshooting-guide">troubleshooting</a> if issues)</li>
+                    <li>□ All safety equipment installed (check in-game requirements and <a href="/corris-rivett-guide">build guide</a>)</li>
                     <li>□ Fuel tank full</li>
                     <li>□ Spare parts in trunk (at minimum: spare tire, tools)</li>
                     <li>□ Tire pressure adjusted for ice (lower than road pressure)</li>
@@ -733,11 +367,15 @@
 
         <section id="competitors" class="content-section">
             <h2>🏎️ AI Competitors - Know Your Rivals</h2>
-
+            
             <h3>Ice Track Competitors</h3>
+            <div class="info-box" style="margin-bottom: 1.5rem;">
+                <div class="info-title">🚗 Competitor Vehicles</div>
+                <p>These AI cars represent classic Finnish and European models from the 1960s-70s era. For detailed vehicle history and specifications, see our <a href="/vehicles-guide">Complete Vehicles Guide</a>.</p>
+            </div>
 
             <p>Five known AI car models compete in Jokkis folk racing:</p>
-
+            
             <div class="competitor-grid">
                 <div class="competitor-card">
                     <div class="competitor-name">Buple</div>
@@ -767,22 +405,19 @@
             </div>
 
             <h3>Rally Competitors (Expected)</h3>
-
             <p>Based on developer statement, rally AI cars will be:</p>
             <ul>
                 <li><strong>Era:</strong> 1990s models (newer than Ice Track cars)</li>
                 <li><strong>Drivetrain:</strong> Possibly AWD configuration</li>
                 <li><strong>Contrast:</strong> Versus 1970s RWD cars seen in MSC rally</li>
             </ul>
-
             <p>Specific models await EA implementation.</p>
         </section>
 
         <section id="strategies" class="content-section">
             <h2>🎯 Racing Strategies</h2>
-
+            
             <h3>Ice Track Strategy</h3>
-
             <h4>Starting Position</h4>
             <ul>
                 <li><strong>Qualifying Matters:</strong> Saturday qualifying determines Sunday grid. Push hard but don't crash.</li>
@@ -791,6 +426,7 @@
             </ul>
 
             <h4>Ice Driving Techniques</h4>
+            <p style="margin-bottom: 1rem;">If you haven't mastered basic <a href="/beginner-guide#controls">driving controls</a> yet, practice on regular roads first. Ice racing requires advanced skills:</p>
             <ul>
                 <li><strong>Smooth Inputs:</strong> Sudden steering/braking = spin. Be gentle and progressive.</li>
                 <li><strong>Brake Early:</strong> Ice braking distance is 3-4x normal roads.</li>
@@ -807,7 +443,6 @@
             </ul>
 
             <h3>Rally Strategy (General Ice/Snow)</h3>
-
             <h4>Snow Road Techniques</h4>
             <ul>
                 <li><strong>Look Ahead:</strong> Snow obscures road surface. Use tree lines to read upcoming corners.</li>
@@ -826,7 +461,6 @@
 
         <section id="rewards" class="content-section">
             <h2>🏆 Prizes & Rewards</h2>
-
             <div class="warning-box">
                 <div class="warning-title">⚠️ Prize Details Not Yet Confirmed</div>
                 <p><strong>Official status:</strong> "There will be prizes, but it is not known what they will be yet." (Wiki, Jan 2026)</p>
@@ -834,7 +468,6 @@
             </div>
 
             <h3>Why Race Without Known Prizes?</h3>
-
             <ul>
                 <li><strong>Skill Development:</strong> Ice driving skills translate to safer winter road driving</li>
                 <li><strong>Car Testing:</strong> Race conditions reveal Rivett's strengths and weaknesses</li>
@@ -846,62 +479,68 @@
             <div class="info-box">
                 <div class="info-title">💡 Economic Reality Check</div>
                 <p>Even if prize money exists, it likely won't cover the full cost of building a race-spec Rivett. Race for the experience, not profit.</p>
-                <p style="margin-top: 0.75rem;">For money-making, see our <a href="/money-guide">Money Making Guide</a> for more efficient methods.</p>
+                <p style="margin-top: 0.75rem;">For efficient money-making to fund your race build, see our <a href="/money-guide">Money Making Guide</a>. Delivery jobs (400-800mk/run) and office work provide better mk/hour than racing prizes.</p>
             </div>
         </section>
 
         <section class="content-section">
             <h2>🆘 Frequently Asked Questions</h2>
-
             <div class="info-box">
                 <h4>Q: Can I race the Sorbett?</h4>
                 <p><strong>A:</strong> No. Developer confirmed only Corris Rivett is allowed. Sorbett lacks required safety equipment and cannot pass inspection.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: Do I need a separate race car and daily driver?</h4>
                 <p><strong>A:</strong> Not necessarily. Until EA finalizes requirements, build a dual-purpose car. If stripping headlights becomes mandatory, reassess.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: When does Ice Track race happen?</h4>
                 <p><strong>A:</strong> Every other weekend (Friday practice, Saturday qualifying, Sunday finals). Check in-game calendar for exact dates.</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: What if I crash during the race?</h4>
                 <p><strong>A:</strong> Damage mechanics in racing are unconfirmed. Likely: mechanical damage = slower car or DNF. Avoid crashes!</p>
             </div>
-
             <div class="info-box">
                 <h4>Q: How do I register for races?</h4>
                 <p><strong>A:</strong> Registration process awaits EA implementation. Likely: Show up at ice track with legal Rivett during race weekend.</p>
             </div>
-
-            <div class="info-box">
-                <h4>Q: Can I practice on the ice track outside race weekends?</h4>
-                <p><strong>A:</strong> Unknown. Check if ice track is accessible during non-race weeks in your save.</p>
-            </div>
+            <div class="info-box">                <h4>Q: My Rivett isn't ready yet. Can I practice driving skills?</h4>                <p><strong>A:</strong> Yes! Practice ice driving with the <a href="/vehicles-guide#sorbett">Sorbett</a> on regular roads. Master smooth inputs, weight transfer, and momentum control. These skills translate directly to Rivett racing. See our <a href="/beginner-guide">Beginner's Guide</a> for fundamental techniques.</p>            </div>            <div class="info-box">                <h4>Q: Where can I buy racing parts like roll cages?</h4>                <p><strong>A:</strong> Check <a href="/parts-acquisition-guide#fleetari">Fleetari's shop</a> (Loppe, Mon-Fri 08:00-16:00) for performance and safety parts. If out of stock, try <a href="/parts-acquisition-guide#classifieds">Classifieds magazine</a> for used options.</p>            </div>
         </section>
 
         <section class="content-section">
             <h2>🔗 Related Guides</h2>
+            <p class="section-description">Build your race-winning Rivett with our comprehensive guide collection</p>
             <div class="quick-nav">
-                <a href="/vehicles-guide" class="quick-nav-item">
-                    <div class="icon">🚗</div>
-                    <div>Vehicles Guide</div>
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <div><strong>Corris Rivett Build Guide</strong></div>
+                    <p>Essential before racing. Complete 200+ parts assembly, engine tuning, and safety equipment installation. Learn which parts improve race performance.</p>
                 </a>
                 <a href="/parts-acquisition-guide" class="quick-nav-item">
-                    <div class="icon">🔧</div>
-                    <div>Parts Acquisition</div>
+                    <div class="icon">📦</div>
+                    <div><strong>Parts Acquisition Guide</strong></div>
+                    <p>Find racing parts like roll cages, bucket seats, and performance upgrades. Compare Fleetari's tuning parts vs AMIS catalog vs Classifieds.</p>
+                </a>
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon">🎓</div>
+                    <div><strong>Beginner's Guide</strong></div>
+                    <p>Master basic driving controls and ice road techniques before competing. Learn Sorbett handling that translates to Rivett race skills.</p>
+                </a>
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon">🛠️</div>
+                    <div><strong>Troubleshooting Guide</strong></div>
+                    <p>Fix "Rivett won't start" issues before race day. Diagnose engine problems, electrical failures, and pass vehicle inspection requirements.</p>
+                </a>
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <div><strong>Complete Vehicles Guide</strong></div>
+                    <p>Understand why only Rivett qualifies for racing. Compare all 6 vehicles and learn Kekmet towing techniques for transporting damaged race cars.</p>
                 </a>
                 <a href="/money-guide" class="quick-nav-item">
                     <div class="icon">💰</div>
-                    <div>Money Making</div>
-                </a>
-                <a href="/beginner-guide" class="quick-nav-item">
-                    <div class="icon">🎮</div>
-                    <div>Beginner's Guide</div>
+                    <div><strong>Money Making Guide</strong></div>
+                    <p>Fund your race build efficiently. Delivery jobs earn 400-800mk per run, office work provides steady income for expensive racing parts.</p>
                 </a>
             </div>
         </section>
@@ -913,5 +552,6 @@
         <p>All information verified for v.260102-01 (January 2, 2026) | Guide Updated: January 5, 2026</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">⚠️ EA Notice: Racing features partially implemented. Ice Track confirmed | Rally details pending | Safety requirements unfinalized</p>
     </footer>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
