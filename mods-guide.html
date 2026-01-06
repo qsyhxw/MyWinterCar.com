@@ -1,0 +1,995 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Winter Car Complete Modding Guide - BepInEx, Cheat Mods & Save Editors 2026</title>
+    <meta name="description" content="Complete modding guide for My Winter Car. Install BepInEx mod loader, discover 180+ mods on Nexus including CheatBox and quality-of-life improvements. Updated for EA v.260102-01.">
+    <meta name="keywords" content="My Winter Car mods, BepInEx, CheatBox, FL2S BOX, Nexus Mods, mod loader, save editor, MSC Editor, modding guide">
+    <link rel="canonical" href="https://mywintercar.com/mods-guide">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-success: #10b981; --accent-warning: #fbbf24; --accent-danger: #ef4444; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.6; }
+        header { background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%); backdrop-filter: blur(10px); border-bottom: 2px solid var(--accent-blue); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+        .header-content { max-width: 1400px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-ice); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        nav { display: flex; gap: 2rem; align-items: center; }
+        nav a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; font-weight: 500; }
+        nav a:hover { color: var(--accent-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .hero { background: linear-gradient(135deg, #1a1d23 0%, #252931 100%); border-radius: 16px; padding: 3rem 2rem; margin-bottom: 3rem; border: 1px solid var(--border-color); position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(74, 158, 255, 0.05) 0%, transparent 100%); pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent-ice); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
+        .hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 800px; line-height: 1.8; }
+        .version-badge { display: inline-block; background: var(--bg-card); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; margin-top: 1rem; border: 1px solid var(--accent-blue); color: var(--accent-ice); }
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 3rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
+        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; }
+        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
+        .content-section { background: var(--bg-secondary); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; border: 1px solid var(--border-color); }
+        .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
+        h2 { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        h3 { font-size: 1.5rem; color: var(--accent-ice); margin: 2rem 0 1rem; }
+        h4 { font-size: 1.2rem; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .mod-card { background: var(--bg-card); border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem; border-left: 4px solid var(--accent-blue); }
+        .mod-card.cheat { border-left-color: var(--accent-warning); }
+        .mod-card.qol { border-left-color: var(--accent-success); }
+        .mod-title { font-size: 1.3rem; font-weight: 600; color: var(--accent-ice); margin-bottom: 0.75rem; }
+        .mod-author { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+        .mod-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem; margin-bottom: 0.5rem; }
+        .badge-cheat { background: var(--accent-warning); color: #1a1d23; }
+        .badge-qol { background: var(--accent-success); color: #fff; }
+        .badge-utility { background: var(--accent-blue); color: #fff; }
+        .badge-popular { background: var(--accent-warm); color: #fff; }
+        .warning-box { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--accent-warning); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .warning-title { font-weight: 600; color: var(--accent-warning); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .info-box { background: rgba(74, 158, 255, 0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .info-title { font-weight: 600; color: var(--accent-blue); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .success-box { background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-success); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .success-title { font-weight: 600; color: var(--accent-success); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .danger-box { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--accent-danger); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .danger-title { font-weight: 600; color: var(--accent-danger); margin-bottom: 0.75rem; font-size: 1.1rem; }
+        .steps { background: var(--bg-card); border-radius: 8px; padding: 1.5rem; margin: 1rem 0; }
+        .steps ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        .steps li { margin-bottom: 0.75rem; color: var(--text-secondary); padding-left: 0.5rem; }
+        ul, ol { margin-left: 1.5rem; margin-top: 0.5rem; }
+        li { margin-bottom: 0.5rem; color: var(--text-secondary); }
+        strong { color: var(--text-primary); }
+        code { background: var(--bg-card); padding: 0.25rem 0.5rem; border-radius: 4px; font-family: 'Courier New', monospace; color: var(--accent-ice); font-size: 0.9em; }
+        a { color: var(--accent-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-ice); text-decoration: underline; }
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-card); border-radius: 8px; overflow: hidden; }
+        .comparison-table th, .comparison-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        .comparison-table th { background: rgba(74, 158, 255, 0.1); color: var(--accent-blue); font-weight: 600; }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        footer { background: var(--bg-secondary); border-top: 2px solid var(--border-color); padding: 2rem; margin-top: 4rem; text-align: center; color: var(--text-secondary); }
+        @media (max-width: 768px) { h1 { font-size: 2rem; } .hero { padding: 2rem 1rem; } .quick-nav { grid-template-columns: 1fr; } .header-content { flex-direction: column; text-align: center; } nav { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <span>❄️</span>
+                <span>My Winter Car Wiki</span>
+            </a>
+            <nav>
+                <a href="#mod-loaders">Mod Loaders</a>
+                <a href="#cheat-mods">Cheat Mods</a>
+                <a href="#qol-mods">Quality of Life</a>
+                <a href="#save-editors">Save Editors</a>
+                <a href="/guides">All Guides</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>🎮 Complete Modding Guide - My Winter Car</h1>
+                <p>Comprehensive guide to modding My Winter Car. Learn how to install BepInEx mod loader, discover 180+ community mods including cheat menus and quality-of-life improvements, and safely edit your save files.</p>
+                <span class="version-badge">📅 Updated: January 6, 2026 | Game Version: EA v.260102-01</span>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <strong>⚠️ Early Access Modding Notice</strong>
+            <p><strong>Current Status:</strong> My Winter Car launched into Early Access on December 29, 2025. Modding support is <strong>community-driven and unofficial</strong>. The game lacks official modding tools at launch.</p>
+            <p style="margin-top: 0.75rem;"><strong>Important:</strong> Mods may break with game updates. Always backup your saves before installing mods. Use at your own risk - mod-related save corruption is not supported by the developer.</p>
+            <p style="margin-top: 0.75rem;"><strong>Future Plans:</strong> Full official modding tools are expected in Q2 2026 (unconfirmed community report). Current modding uses BepInEx framework.</p>
+        </div>
+
+        <div class="quick-nav">
+            <a href="#is-modding-allowed" class="quick-nav-item">
+                <div class="icon">⚖️</div>
+                <div><strong>Is Modding Allowed?</strong></div>
+                <p>Official stance, safety considerations, and risks of using mods in Early Access</p>
+            </a>
+            <a href="#mod-loaders" class="quick-nav-item">
+                <div class="icon">🔧</div>
+                <div><strong>Mod Loader Setup</strong></div>
+                <p>Install BepInEx framework - step-by-step guide with config editing instructions</p>
+            </a>
+            <a href="#cheat-mods" class="quick-nav-item">
+                <div class="icon">💰</div>
+                <div><strong>Cheat Mods</strong></div>
+                <p>CheatBox, FL2S BOX - infinite money, god mode, noclip, teleportation</p>
+            </a>
+            <a href="#qol-mods" class="quick-nav-item">
+                <div class="icon">✨</div>
+                <div><strong>Quality of Life</strong></div>
+                <p>Save anywhere, bolt size display, backpack system, headlamp improvements</p>
+            </a>
+            <a href="#save-editors" class="quick-nav-item">
+                <div class="icon">💾</div>
+                <div><strong>Save Editors</strong></div>
+                <p>MSC Editor partial compatibility, MWC Editor development status</p>
+            </a>
+            <a href="#nexus-guide" class="quick-nav-item">
+                <div class="icon">📦</div>
+                <div><strong>Nexus Mods</strong></div>
+                <p>Browse 180+ mods, download safely, create free account</p>
+            </a>
+        </div>
+
+        <section id="is-modding-allowed" class="content-section">
+            <h2>⚖️ Is Modding Allowed in My Winter Car?</h2>
+
+            <div class="info-box">
+                <div class="info-title">📋 Official Stance (As of January 2026)</div>
+                <p><strong>Status:</strong> No official modding support or explicit prohibition exists. The developer has not released public statements endorsing or forbidding mods.</p>
+                <p style="margin-top: 0.75rem;"><strong>Community Consensus:</strong> Modding is widely practiced and tolerated. No ban reports or developer actions against modders have been documented.</p>
+                <p style="margin-top: 0.75rem;"><strong>Similar to My Summer Car:</strong> The predecessor game had a thriving mod community using similar tools (MSCLoader), which was accepted by the developer.</p>
+            </div>
+
+            <h3>Is Modding Safe?</h3>
+            <p><strong>From a technical perspective:</strong></p>
+            <ul>
+                <li>✅ <strong>My Winter Car is single-player only</strong> - No anti-cheat system, no multiplayer ban risk</li>
+                <li>✅ <strong>Mods from reputable sources (Nexus Mods) are generally safe</strong> - Community-vetted, virus-free</li>
+                <li>⚠️ <strong>Save file corruption is possible</strong> - Especially with save editors or incompatible mods</li>
+                <li>⚠️ <strong>Game updates may break mods</strong> - EA receives frequent patches that can cause mod conflicts</li>
+            </ul>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Use Mods Responsibly</div>
+                <ul>
+                    <li><strong>First Playthrough:</strong> Consider experiencing the game as intended before modding. The challenge is part of the design.</li>
+                    <li><strong>Backup Saves:</strong> ALWAYS create save backups before installing mods. Save location: <code>C:\Users\[YourName]\AppData\LocalLow\Amistech\My Winter Car</code></li>
+                    <li><strong>Read Mod Descriptions:</strong> Check compatibility, known issues, and installation requirements on each mod's Nexus page</li>
+                    <li><strong>Update Carefully:</strong> When game updates, wait for mod authors to confirm compatibility before updating</li>
+                </ul>
+            </div>
+
+            <h3>What Can Mods Do?</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Mod Type</th>
+                        <th>Examples</th>
+                        <th>Impact on Gameplay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cheat Mods</strong></td>
+                        <td>Infinite money, god mode, noclip</td>
+                        <td>⚠️ Completely removes challenge</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quality of Life</strong></td>
+                        <td>Save anywhere, backpack, bolt size display</td>
+                        <td>✅ Reduces tedium, preserves difficulty</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Visual/Audio</strong></td>
+                        <td>Better headlights, custom textures</td>
+                        <td>✅ Cosmetic only, no gameplay change</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Save Editors</strong></td>
+                        <td>Edit money, stats, vehicle parts</td>
+                        <td>⚠️ Varies - can fix bugs or enable cheating</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="mod-loaders" class="content-section">
+            <h2>🔧 Mod Loader Installation - BepInEx Setup</h2>
+
+            <p>A <strong>mod loader</strong> is required software that allows My Winter Car to recognize and run community-made mods. For MWC, <strong>BepInEx 5</strong> is the primary and most widely supported mod loader.</p>
+
+            <h3>Why BepInEx?</h3>
+            <ul>
+                <li>✅ <strong>Most compatible:</strong> 180+ mods on Nexus require BepInEx</li>
+                <li>✅ <strong>Actively maintained:</strong> Stable version 5.4.23.4 released and tested</li>
+                <li>✅ <strong>Community standard:</strong> Recommended in all official tutorials</li>
+                <li>❌ <strong>MSCLoader does NOT work:</strong> The My Summer Car loader is incompatible with MWC (an updated version 1.4 is reportedly in development but not yet released)</li>
+            </ul>
+
+            <div class="danger-box">
+                <div class="danger-title">🚫 Critical: BepInEx vs MelonLoader Conflict</div>
+                <p><strong>You CANNOT run BepInEx and MelonLoader simultaneously.</strong> Installing both will cause conflicts and break mod functionality.</p>
+                <p style="margin-top: 0.75rem;"><strong>Recommendation:</strong> Use BepInEx only. Most MWC mods are designed for BepInEx, and MelonLoader has limited mod support as of January 2026.</p>
+            </div>
+
+            <h3>BepInEx Installation Guide</h3>
+
+            <div class="steps">
+                <p><strong>Step 1: Download BepInEx</strong></p>
+                <ol>
+                    <li>Visit the <a href="https://github.com/BepInEx/BepInEx/releases" target="_blank" rel="noopener noreferrer">BepInEx GitHub Releases page</a></li>
+                    <li>Scroll to <strong>Assets</strong> section</li>
+                    <li><strong>CRITICAL:</strong> Download <code>BepInEx_x64_5.4.23.4.zip</code> (or latest x64 version)</li>
+                    <li><strong>DO NOT download x86 version</strong> - it will not work with My Winter Car</li>
+                </ol>
+            </div>
+
+            <div class="steps">
+                <p><strong>Step 2: Locate Game Directory</strong></p>
+                <ol>
+                    <li>Open Steam library</li>
+                    <li>Right-click <strong>My Winter Car</strong></li>
+                    <li>Select <strong>Manage → Browse Local Files</strong></li>
+                    <li>This opens your game folder (typically: <code>C:\Program Files\Steam\steamapps\common\My Winter Car</code>)</li>
+                </ol>
+            </div>
+
+            <div class="steps">
+                <p><strong>Step 3: Install BepInEx Files</strong></p>
+                <ol>
+                    <li>Extract the <code>BepInEx_x64_5.4.23.4.zip</code> file</li>
+                    <li>Copy ALL contents (4 files + 1 folder) into your My Winter Car game directory</li>
+                    <li>Files to copy: <code>changelog.txt</code>, <code>doorstop_config.ini</code>, <code>winhttp.dll</code>, plus the <code>BepInEx</code> folder</li>
+                </ol>
+            </div>
+
+            <div class="steps">
+                <p><strong>Step 4: Generate Configuration Files (CRITICAL)</strong></p>
+                <ol>
+                    <li>Launch My Winter Car through Steam</li>
+                    <li><strong>The game will attempt to start but likely crash or close immediately</strong> - This is normal!</li>
+                    <li>This failure is intentional - it forces BepInEx to create necessary folders</li>
+                    <li>Close the game (if it didn't auto-close)</li>
+                    <li>Check your game directory - you should now see a populated <code>BepInEx</code> folder with subfolders including <code>plugins</code></li>
+                </ol>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">🔴 CRITICAL STEP - Config File Edit</div>
+                <p><strong>Without this edit, BepInEx will NOT work!</strong></p>
+            </div>
+
+            <div class="steps">
+                <p><strong>Step 5: Edit BepInEx Configuration (MANDATORY)</strong></p>
+                <ol>
+                    <li>Navigate to your game directory</li>
+                    <li>Open the <code>BepInEx</code> folder</li>
+                    <li>Open the <code>config</code> subfolder</li>
+                    <li>Find <code>BepInEx.cfg</code> file</li>
+                    <li>Right-click → <strong>Open With</strong> → Notepad (or any text editor)</li>
+                    <li>Scroll to the <strong>bottom</strong> of the file</li>
+                    <li>Find the section: <code>[Preloader.Entrypoint]</code></li>
+                    <li>Locate the line: <code>Type = Application</code></li>
+                    <li><strong>Change it to:</strong> <code>Type = MonoBehaviour</code></li>
+                    <li>Save the file and close</li>
+                </ol>
+            </div>
+
+            <div class="success-box">
+                <div class="success-title">✅ Verify BepInEx Installation</div>
+                <p>Launch My Winter Car. If BepInEx is working correctly, you will see:</p>
+                <ul>
+                    <li>A <strong>console/command prompt window</strong> appears alongside the game</li>
+                    <li>Console shows messages like: <code>[Info   :   BepInEx] BepInEx 5.4.23.4 - My Winter Car</code></li>
+                    <li>Messages about "loaded plugins" or "registered keybinds"</li>
+                </ul>
+                <p style="margin-top: 0.75rem;">If you see these, BepInEx is successfully installed!</p>
+            </div>
+
+            <h3>Installing Your First Mod</h3>
+            <div class="steps">
+                <ol>
+                    <li>Download a mod from Nexus Mods (usually a <code>.dll</code> file or a zip containing one)</li>
+                    <li>Extract the mod if it's in a zip file</li>
+                    <li>Navigate to: <code>My Winter Car\BepInEx\plugins\</code></li>
+                    <li>Copy the mod's <code>.dll</code> file into the <code>plugins</code> folder</li>
+                    <li>Launch the game - the mod will load automatically</li>
+                    <li>Most mods use <strong>F1, F5, or K</strong> to open their in-game menu</li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <div class="info-title">💡 Linux / Steam Deck Users</div>
+                <p><strong>BepInEx works on Linux via Proton</strong> with a launch option workaround:</p>
+                <ol>
+                    <li>Right-click My Winter Car in Steam → <strong>Properties</strong></li>
+                    <li>In <strong>Launch Options</strong>, paste: <code>WINEDLLOVERRIDES="winhttp=n,b" %command%</code></li>
+                    <li>Follow normal BepInEx installation steps</li>
+                </ol>
+                <p style="margin-top: 0.75rem;">See <a href="https://docs.bepinex.dev/articles/advanced/proton_wine.html" target="_blank" rel="noopener noreferrer">BepInEx Proton Documentation</a> for details.</p>
+            </div>
+        </section>
+
+        <section id="cheat-mods" class="content-section">
+            <h2>💰 Cheat Mods - God Mode & Infinite Resources</h2>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ Gameplay Impact Warning</div>
+                <p>Cheat mods <strong>fundamentally change the game experience</strong>. My Winter Car is designed to be challenging, with survival mechanics and permadeath as core features.</p>
+                <p style="margin-top: 0.75rem;"><strong>Recommendation:</strong> Experience the game as intended for at least a few hours before using cheat mods. You'll appreciate the survival mechanics more if you understand them first.</p>
+            </div>
+
+            <h3>Popular Cheat Mods</h3>
+
+            <div class="mod-card cheat">
+                <div class="mod-title">MWC CheatBox</div>
+                <div class="mod-author">By kss306 | <a href="https://www.nexusmods.com/mywintercar/mods/" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-cheat">Cheat</span>
+                <span class="mod-badge badge-popular">Most Popular</span>
+
+                <p><strong>Description:</strong> All-in-one cheat menu providing comprehensive control over game mechanics. Inspired by My Summer Car's BetterCheatBox.</p>
+
+                <h4>Features:</h4>
+                <ul>
+                    <li><strong>Money Control:</strong> Add money in customizable increments OR enable infinite money mode</li>
+                    <li><strong>Survival Cheats:</strong> Disable hunger, thirst, fatigue, temperature, Problem Bar</li>
+                    <li><strong>God Mode:</strong> Invincibility, no fall damage, ignore vehicle collisions</li>
+                    <li><strong>Teleportation:</strong> Built-in location presets (PSK, Fleetari's, home, etc.)</li>
+                    <li><strong>Noclip/Fly Mode:</strong> Pass through walls, explore the map freely</li>
+                    <li><strong>Item Spawning:</strong> Spawn tools, parts, consumables instantly</li>
+                    <li><strong>Vehicle Management:</strong> Teleport cars, repair vehicles, refuel instantly</li>
+                    <li><strong>Skip Jail:</strong> Remove jail sentences immediately</li>
+                </ul>
+
+                <h4>Default Keybinds:</h4>
+                <ul>
+                    <li><strong>K:</strong> Open CheatBox menu</li>
+                    <li><strong>V:</strong> Toggle noclip mode</li>
+                    <li><strong>P:</strong> Grab mode (manipulate objects)</li>
+                    <li><em>Note: Keybinds are configurable in mod settings</em></li>
+                </ul>
+
+                <div class="info-box">
+                    <div class="info-title">💡 Recommended Usage</div>
+                    <p><strong>Balanced approach:</strong> Use "Add Money" instead of "Infinite Money" for semi-realistic gameplay. Enable specific cheats only when needed (e.g., disable permadeath for stress-free exploration).</p>
+                </div>
+            </div>
+
+            <div class="mod-card cheat">
+                <div class="mod-title">FL2S BOX</div>
+                <div class="mod-author">By fl333s | <a href="https://www.nexusmods.com/mywintercar/mods/" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-cheat">Cheat</span>
+                <span class="mod-badge badge-popular">Most Powerful</span>
+
+                <p><strong>Description:</strong> Widely considered the "most broken" cheat mod for MWC. Built from scratch for maximum control, designed for players who want to bypass all survival/challenge mechanics.</p>
+
+                <h4>Features:</h4>
+                <ul>
+                    <li><strong>Money Hack:</strong> Unlimited funds, instant wealth</li>
+                    <li><strong>Infinite Stats:</strong> Never need to eat, drink, sleep, or stay warm</li>
+                    <li><strong>God Mode Options:</strong> Complete invincibility, no vehicle damage</li>
+                    <li><strong>Permadeath Toggle:</strong> Disable the death system entirely</li>
+                    <li><strong>Noclip/Fly:</strong> Free-camera exploration mode</li>
+                    <li><strong>Teleport System:</strong> Built-in location presets + custom coordinates</li>
+                    <li><strong>Item Spawning:</strong> Spawn any object instantly</li>
+                    <li><strong>Add Cigarettes:</strong> Manipulate addiction mechanics</li>
+                </ul>
+
+                <h4>Default Keybinds:</h4>
+                <ul>
+                    <li><strong>F5:</strong> Open FL2S BOX menu</li>
+                    <li><strong>V:</strong> Toggle noclip</li>
+                    <li><em>Keybinds editable via: <code>%appdata%\MelonLoader\MelonLoaderUserData\fl2s_box_bindings.txt</code></em></li>
+                </ul>
+
+                <div class="danger-box">
+                    <div class="danger-title">⚠️ "Game-Breaking" Warning</div>
+                    <p><strong>FL2S BOX removes ALL challenge.</strong> Intended for players who:</p>
+                    <ul>
+                        <li>Want to experiment with game mechanics without consequences</li>
+                        <li>Focus only on car building, ignoring survival</li>
+                        <li>Speedrun or test scenarios quickly</li>
+                    </ul>
+                    <p style="margin-top: 0.75rem;"><strong>Not recommended for first playthrough</strong> - you'll miss the core gameplay loop.</p>
+                </div>
+            </div>
+
+            <h3>MWC CheatBox vs FL2S BOX - Which One?</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>MWC CheatBox</th>
+                        <th>FL2S BOX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Control Level</strong></td>
+                        <td>Comprehensive</td>
+                        <td>Maximum (most options)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Interface</strong></td>
+                        <td>Clean, organized menu</td>
+                        <td>Feature-packed, denser UI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Skip Jail Feature</strong></td>
+                        <td>✅ Yes</td>
+                        <td>❓ Unconfirmed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Popularity</strong></td>
+                        <td>High (community standard)</td>
+                        <td>High (known as "most broken")</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compatibility</strong></td>
+                        <td>❌ Conflicts with FL2S BOX</td>
+                        <td>❌ Conflicts with CheatBox</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <div class="info-title">💡 Choosing Between Them</div>
+                <p><strong>Pick one, not both</strong> - using multiple cheat mods causes conflicts.</p>
+                <ul>
+                    <li><strong>Choose MWC CheatBox if:</strong> You want balanced control with cleaner interface</li>
+                    <li><strong>Choose FL2S BOX if:</strong> You want maximum power and don't care about preserving any challenge</li>
+                </ul>
+                <p style="margin-top: 0.75rem;"><strong>Community consensus:</strong> Both are excellent. Try one, and if you don't like it, uninstall and try the other.</p>
+            </div>
+        </section>
+
+        <section id="qol-mods" class="content-section">
+            <h2>✨ Quality of Life Mods - Convenience Without Breaking Gameplay</h2>
+
+            <p>These mods reduce tedium and frustration <strong>without removing the core challenge</strong>. Recommended for players who enjoy the survival mechanics but want to eliminate repetitive tasks.</p>
+
+            <div class="mod-card qol">
+                <div class="mod-title">SAW - Save AnyWhere</div>
+                <div class="mod-author">By NORTCHORT | <a href="https://www.nexusmods.com/mywintercar/mods/" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-qol">Quality of Life</span>
+                <span class="mod-badge badge-popular">Essential</span>
+
+                <p><strong>Description:</strong> Save your game anywhere with a single keypress, no bed required.</p>
+
+                <h4>Why It's Essential:</h4>
+                <ul>
+                    <li>✅ <strong>Prevents frustration:</strong> Lose hours of progress because you forgot to sleep? Never again.</li>
+                    <li>✅ <strong>Respects your time:</strong> Quick save before risky actions (driving on ice, Rivett testing)</li>
+                    <li>✅ <strong>No gameplay impact:</strong> Doesn't make the game easier, just more forgiving</li>
+                    <li>✅ <strong>Lightweight:</strong> Zero performance impact</li>
+                </ul>
+
+                <h4>Usage:</h4>
+                <ul>
+                    <li><strong>F5:</strong> Quick save (default hotkey)</li>
+                    <li>Save appears in normal load game menu</li>
+                    <li>Use strategically: Before long drives, after completing builds, before experimenting</li>
+                </ul>
+
+                <div class="success-box">
+                    <div class="success-title">✅ Highly Recommended</div>
+                    <p>This is arguably the most universally praised mod. Even players who prefer "vanilla" gameplay use SAW because <strong>losing progress to crashes or mistakes isn't fun</strong>.</p>
+                </div>
+            </div>
+
+            <div class="mod-card qol">
+                <div class="mod-title">ShowBoltSize</div>
+                <div class="mod-author">By quurt77 / bassman81 (sources vary) | <a href="https://www.nexusmods.com/mywintercar/mods/" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-qol">Quality of Life</span>
+                <span class="mod-badge badge-utility">Utility</span>
+
+                <p><strong>Description:</strong> Displays required wrench size when aiming at a bolt in bolt mode. Eliminates trial-and-error wrenching.</p>
+
+                <h4>Why It's Useful:</h4>
+                <ul>
+                    <li>✅ Saves time during Rivett assembly (200+ bolts to manage)</li>
+                    <li>✅ Especially helpful for recessed bolts where visual inspection is difficult</li>
+                    <li>✅ Preserves the building challenge - you still have to assemble correctly</li>
+                </ul>
+
+                <h4>Controls:</h4>
+                <ul>
+                    <li><strong>2:</strong> Enable display</li>
+                    <li><strong>1:</strong> Disable display</li>
+                    <li><strong>F5:</strong> Open settings menu</li>
+                    <li>Mouse wheel to adjust text size</li>
+                </ul>
+            </div>
+
+            <div class="mod-card qol">
+                <div class="mod-title">My Winter Backpack</div>
+                <div class="mod-author">By msfteam | <a href="https://www.nexusmods.com/mywintercar/mods/" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-qol">Quality of Life</span>
+                <span class="mod-badge badge-utility">Utility</span>
+
+                <p><strong>Description:</strong> Adds a backpack system allowing you to carry up to <strong>10 items</strong> simultaneously.</p>
+
+                <h4>Features:</h4>
+                <ul>
+                    <li><strong>Capacity:</strong> Hold 10 loose objects (tools, beer bottles, parts)</li>
+                    <li><strong>Visual Inventory:</strong> On-screen display of stored items</li>
+                    <li><strong>Mouse Wheel Navigation:</strong> Scroll through inventory</li>
+                    <li><strong>Configurable Keybinds:</strong> Customize open/close controls</li>
+                    <li><strong>Physics-Compatible:</strong> Works with any grabbable loose object</li>
+                </ul>
+
+                <h4>Why It Matters:</h4>
+                <p>Without this mod, transporting items means countless trips between locations. The backpack <strong>saves massive amounts of time</strong> without trivializing gameplay - you still need to plan your loadout.</p>
+
+                <div class="info-box">
+                    <div class="info-title">💡 Compatible with BepInEx or MelonLoader</div>
+                    <p>This mod works with either framework, making it flexible for different mod setups.</p>
+                </div>
+            </div>
+
+            <div class="mod-card qol">
+                <div class="mod-title">Headlamp</div>
+                <div class="mod-author">By xvilho | <a href="https://www.nexusmods.com/mywintercar/mods/68" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-qol">Quality of Life</span>
+                <span class="mod-badge badge-utility">Visual</span>
+
+                <p><strong>Description:</strong> Adds a toggleable headlamp for better visibility in dark garages and during night work.</p>
+
+                <h4>Controls:</h4>
+                <ul>
+                    <li><strong>G:</strong> Toggle headlamp on/off (default)</li>
+                </ul>
+
+                <p><strong>Why useful:</strong> Working on the Rivett in the garage at night is nearly impossible without this. Essential for nighttime builds.</p>
+            </div>
+
+            <h3>Other Notable QoL Mods</h3>
+            <ul>
+                <li><strong>MWC Advanced Steering:</strong> Mouse steering for vehicles - smoother control on ice</li>
+                <li><strong>Object Grabber:</strong> Enhanced object manipulation (grab, move, rotate with precision)</li>
+                <li><strong>Noclip (Standalone):</strong> Free-fly mode without cheat menu (exploration only)</li>
+                <li><strong>New Optimization Plugin:</strong> FPS boost via LOD optimization, reduced draw distance</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-title">💡 Mod Compatibility</div>
+                <p><strong>Safe Combinations:</strong></p>
+                <ul>
+                    <li>✅ SAW + Advanced Steering + ShowBoltSize</li>
+                    <li>✅ Backpack + Headlamp + Object Grabber</li>
+                </ul>
+                <p style="margin-top: 0.75rem;"><strong>Incompatible:</strong></p>
+                <ul>
+                    <li>❌ Two save mods (choose one)</li>
+                    <li>❌ Multiple cheat mods (FL2S BOX + CheatBox = conflicts)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="save-editors" class="content-section">
+            <h2>💾 Save Editors - Direct Save File Manipulation</h2>
+
+            <p>Save editors allow you to <strong>manually edit your save file data</strong> outside the game. Useful for fixing bugs, recovering from glitches, or enabling specific cheats.</p>
+
+            <div class="warning-box">
+                <div class="warning-title">⚠️ HIGH RISK - Backup Required</div>
+                <p><strong>Save editors can permanently corrupt your save file.</strong> ALWAYS create a backup before editing:</p>
+                <ol>
+                    <li>Navigate to: <code>C:\Users\[YourName]\AppData\LocalLow\Amistech\My Winter Car</code></li>
+                    <li>Copy the <strong>entire folder</strong> to a safe location (Desktop, Documents, etc.)</li>
+                    <li>Create multiple backups with timestamps</li>
+                </ol>
+            </div>
+
+            <h3>Available Save Editors</h3>
+
+            <div class="mod-card">
+                <div class="mod-title">MSC Editor (Partial Compatibility)</div>
+                <div class="mod-author">By durkhaz (original) | <a href="https://www.nexusmods.com/mysummercar/mods/125" target="_blank" rel="noopener noreferrer">Nexus Mods</a></div>
+                <span class="mod-badge badge-utility">Save Editor</span>
+
+                <p><strong>Status:</strong> Designed for My Summer Car but works <strong>partially</strong> with My Winter Car due to similar save file structure.</p>
+
+                <h4>What Works:</h4>
+                <ul>
+                    <li>✅ Player stats (money, hunger, thirst, temperature)</li>
+                    <li>✅ Teleportation (move player to locations)</li>
+                    <li>✅ Some vehicle manipulation (Sorbett, Bachglotz confirmed)</li>
+                    <li>✅ Basic save file repairs</li>
+                </ul>
+
+                <h4>What DOESN'T Work:</h4>
+                <ul>
+                    <li>❌ <strong>Rivett parts editing</strong> - Most Rivett-specific data not recognized</li>
+                    <li>❌ Wiring/electrical system edits</li>
+                    <li>❌ Some MWC-specific mechanics</li>
+                    <li>❌ Weather system control</li>
+                </ul>
+
+                <h4>How to Use with MWC:</h4>
+                <div class="steps">
+                    <ol>
+                        <li>Download MSC Editor from Nexus Mods</li>
+                        <li>Extract and run <code>MSCeditor.exe</code></li>
+                        <li>Click <strong>File → Open</strong></li>
+                        <li><strong>IMPORTANT:</strong> Navigate UP one folder level from default "My Summer Car" folder</li>
+                        <li>Select the <strong>"My Winter Car"</strong> folder</li>
+                        <li>Open <code>savefile.txt</code> (or <code>defaultES2file.txt</code>)</li>
+                        <li>Edit desired values carefully</li>
+                        <li>Save and exit</li>
+                    </ol>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-title">💡 Common Edits</div>
+                    <ul>
+                        <li><strong>Add Money:</strong> Edit "PlayerMoney" value</li>
+                        <li><strong>Remove Alcoholism:</strong> Set "playeralcoholism" to <code>0</code> (turns Problem Bar into normal Thirst)</li>
+                        <li><strong>Reset Jail:</strong> Set jail-related variables to 0</li>
+                        <li><strong>Fix Body Temperature:</strong> Adjust temperature values if stuck in hypothermia loop</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mod-card">
+                <div class="mod-title">MWC Editor (In Development)</div>
+                <div class="mod-author">By Marcinosky | <a href="https://github.com/Marcinosky/MWCEditor" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+                <span class="mod-badge badge-utility">Save Editor</span>
+
+                <p><strong>Status:</strong> Community member Marcinosky is updating MSC Editor specifically for My Winter Car compatibility.</p>
+
+                <h4>Current State (as of January 2026):</h4>
+                <ul>
+                    <li>⚠️ <strong>Alpha/Beta quality</strong> - not all features functional</li>
+                    <li>✅ Most basic functions restored</li>
+                    <li>⚠️ Some texts outdated, warnings may be missing</li>
+                    <li>❌ Wiring system not handled yet</li>
+                    <li>❌ Item spawning not tested, tables not updated</li>
+                </ul>
+
+                <div class="warning-box">
+                    <div class="warning-title">⚠️ Use at Your Own Risk</div>
+                    <p>MWC Editor is a work-in-progress. <strong>Save corruption is possible.</strong> Developer notes: "The application is stable but not all functionalities are updated to fit the new data."</p>
+                    <p style="margin-top: 0.75rem;"><strong>Recommendation:</strong> Use MSC Editor for now unless you need MWC-specific features and accept the risk.</p>
+                </div>
+            </div>
+
+            <h3>When to Use Save Editors</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Save Editor Solution</th>
+                        <th>Risk Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Forgot ATM PIN code</td>
+                        <td>Edit PIN variable in save file</td>
+                        <td>Low (safe edit)</td>
+                    </tr>
+                    <tr>
+                        <td>Stuck in jail unfairly</td>
+                        <td>Reset jail timer to 0</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Lost Rivett part in snow</td>
+                        <td>❌ Cannot spawn with MSC Editor</td>
+                        <td>N/A (use mods instead)</td>
+                    </tr>
+                    <tr>
+                        <td>Want to experiment with car builds</td>
+                        <td>Add money, then buy parts legitimately</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Hypothermia death loop bug</td>
+                        <td>Reset body temperature stat</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="nexus-guide" class="content-section">
+            <h2>📦 Finding Mods on Nexus Mods</h2>
+
+            <p><strong>Nexus Mods</strong> is the primary community hub for My Winter Car mods. As of January 2026, approximately <strong>180-182 mods</strong> are available (count increases daily).</p>
+
+            <h3>Getting Started with Nexus</h3>
+            <div class="steps">
+                <ol>
+                    <li>Visit <a href="https://www.nexusmods.com/mywintercar" target="_blank" rel="noopener noreferrer">Nexus Mods - My Winter Car</a></li>
+                    <li>Create a <strong>free account</strong> (required to download mods)</li>
+                    <li>Browse mods by category, popularity, or recent uploads</li>
+                    <li>Read mod descriptions carefully before downloading</li>
+                    <li>Check <strong>Requirements</strong> tab (some mods depend on others)</li>
+                    <li>Download mod files (usually <code>.dll</code> or <code>.zip</code> containing DLL)</li>
+                    <li>Install according to mod-specific instructions</li>
+                </ol>
+            </div>
+
+            <h3>Mod Categories on Nexus</h3>
+            <ul>
+                <li><strong>Gameplay:</strong> Mechanics changes, balance tweaks</li>
+                <li><strong>Cheats:</strong> CheatBox, FL2S BOX, trainers</li>
+                <li><strong>Utilities:</strong> Save editors, tools, quality of life</li>
+                <li><strong>Visuals:</strong> Graphics improvements, textures</li>
+                <li><strong>Audio:</strong> Custom music, sound replacements</li>
+                <li><strong>Vehicles:</strong> Pre-built cars, vehicle mods</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-title">💡 Using Vortex Mod Manager (Optional)</div>
+                <p>Nexus offers <strong>Vortex</strong>, a mod manager that automates installation. However, for My Winter Car:</p>
+                <ul>
+                    <li>⚠️ Manual installation is often simpler (just copy DLL to plugins folder)</li>
+                    <li>✅ Vortex useful if managing 10+ mods</li>
+                    <li>⚠️ MWC modding is new - Vortex integration may not be fully mature</li>
+                </ul>
+                <p style="margin-top: 0.75rem;"><strong>Recommendation:</strong> Start with manual installation. Learn Vortex later if needed.</p>
+            </div>
+
+            <h3>Evaluating Mod Quality</h3>
+            <p><strong>Before downloading, check:</strong></p>
+            <ul>
+                <li>✅ <strong>Endorsement count:</strong> High endorsements = community-approved</li>
+                <li>✅ <strong>Last update date:</strong> Recently updated = likely compatible with latest game version</li>
+                <li>✅ <strong>Posts tab:</strong> Read user comments for bug reports and compatibility issues</li>
+                <li>✅ <strong>Requirements:</strong> Verify you have all dependencies (e.g., BepInEx version)</li>
+                <li>⚠️ <strong>Bugs section:</strong> Known issues listed by author</li>
+            </ul>
+        </section>
+
+        <section id="troubleshooting" class="content-section">
+            <h2>🔧 Troubleshooting Common Modding Issues</h2>
+
+            <h3>BepInEx Not Loading</h3>
+            <div class="danger-box">
+                <div class="danger-title">Problem: Game launches but no console window appears</div>
+                <p><strong>Solution 1:</strong> Wrong BepInEx version downloaded</p>
+                <ul>
+                    <li>Delete all BepInEx files from game directory</li>
+                    <li>Re-download <strong>x64 version</strong> (NOT x86)</li>
+                    <li>Re-install following instructions above</li>
+                </ul>
+                <p style="margin-top: 0.75rem;"><strong>Solution 2:</strong> Config file not edited</p>
+                <ul>
+                    <li>Verify <code>BepInEx.cfg</code> shows <code>Type = MonoBehaviour</code></li>
+                    <li>Check you edited the file in <code>BepInEx\config\</code>, not the main folder</li>
+                </ul>
+            </div>
+
+            <h3>Mod Not Working After Installation</h3>
+            <div class="info-box">
+                <div class="info-title">Diagnosis Checklist</div>
+                <ol>
+                    <li><strong>Is BepInEx loaded?</strong> Console window should appear on game launch</li>
+                    <li><strong>Correct folder?</strong> Mods must be in <code>BepInEx\plugins\</code>, not root game folder</li>
+                    <li><strong>File type correct?</strong> Should be <code>.dll</code> file, not <code>.zip</code></li>
+                    <li><strong>Mod conflict?</strong> Disable other mods one-by-one to test</li>
+                    <li><strong>Game version mismatch?</strong> Check mod page for compatibility notes</li>
+                    <li><strong>Read console output:</strong> Error messages in console window reveal issues</li>
+                </ol>
+            </div>
+
+            <h3>Game Crashes After Installing Mods</h3>
+            <div class="steps">
+                <p><strong>Step-by-step debugging:</strong></p>
+                <ol>
+                    <li>Remove all mods from <code>plugins</code> folder</li>
+                    <li>Launch game to verify it works without mods</li>
+                    <li>Add mods back ONE AT A TIME</li>
+                    <li>Launch game after each mod</li>
+                    <li>Identify which mod causes the crash</li>
+                    <li>Check that mod's Nexus page for updates or bug reports</li>
+                </ol>
+            </div>
+
+            <h3>Save File Corruption</h3>
+            <div class="danger-box">
+                <div class="danger-title">Symptom: Game won't load save / Error messages</div>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Restore from backup (this is why backups are critical!)</li>
+                    <li>If no backup exists, try loading an autosave</li>
+                    <li>As last resort, use save editor to repair file (risky)</li>
+                </ol>
+            </div>
+
+            <h3>BepInEx and MelonLoader Conflict</h3>
+            <div class="warning-box">
+                <div class="warning-title">Problem: Mods not loading / console errors</div>
+                <p><strong>Cause:</strong> Both frameworks installed simultaneously</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Choose ONE framework (recommend BepInEx for MWC)</li>
+                    <li>Completely remove the other:
+                        <ul>
+                            <li>Delete MelonLoader files (<code>MelonLoader</code> folder, <code>version.dll</code>)</li>
+                            <li>OR delete BepInEx files</li>
+                        </ul>
+                    </li>
+                    <li>Reinstall chosen framework cleanly</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📋 Best Practices & Safety Guidelines</h2>
+
+            <div class="success-box">
+                <div class="success-title">✅ Golden Rules of Modding</div>
+                <ol>
+                    <li><strong>ALWAYS backup saves before modding</strong> - Cannot be overstated</li>
+                    <li><strong>Read mod descriptions completely</strong> - Many issues come from skipping instructions</li>
+                    <li><strong>Use one mod loader only</strong> - BepInEx recommended for MWC</li>
+                    <li><strong>Install mods one at a time</strong> - Makes troubleshooting easier</li>
+                    <li><strong>Check compatibility before updating game</strong> - Updates break mods</li>
+                    <li><strong>Keep mods updated</strong> - Check Nexus after each game patch</li>
+                    <li><strong>Don't use MSC mods in MWC</strong> - Different games, different code</li>
+                    <li><strong>Scan downloads for viruses</strong> - Nexus is safe, but always verify</li>
+                </ol>
+            </div>
+
+            <h3>Recommended First-Time Setup</h3>
+            <p><strong>Conservative modding for new players:</strong></p>
+            <ol>
+                <li>Play vanilla for 2-3 hours to understand mechanics</li>
+                <li>Install only BepInEx (no mods yet)</li>
+                <li>Add <strong>SAW - Save AnyWhere</strong> first (prevents progress loss)</li>
+                <li>Add <strong>ShowBoltSize</strong> when you start Rivett assembly</li>
+                <li>Add <strong>My Winter Backpack</strong> when inventory management becomes tedious</li>
+                <li>Only add cheat mods if truly frustrated (consider if challenge is the point)</li>
+            </ol>
+
+            <div class="info-box">
+                <div class="info-title">💡 Performance Considerations</div>
+                <p><strong>Mods impact on FPS:</strong></p>
+                <ul>
+                    <li>✅ Quality-of-life mods: Negligible impact</li>
+                    <li>⚠️ Visual mods: May reduce FPS slightly</li>
+                    <li>⚠️ Multiple heavy mods: Can cause slowdown</li>
+                    <li>✅ Optimization mods exist: New Optimization Plugin helps FPS</li>
+                </ul>
+                <p style="margin-top: 0.75rem;"><strong>If experiencing FPS issues:</strong> Disable mods one-by-one to identify culprit.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🔗 Related Guides</h2>
+            <p class="section-description">Master every aspect of My Winter Car with our comprehensive guide collection</p>
+            <div class="quick-nav">
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon">🎓</div>
+                    <div><strong>Beginner's Guide</strong></div>
+                    <p>Start your Finnish winter adventure right. Learn essential first 30 minutes, basic controls, and survival mechanics before diving into mods.</p>
+                </a>
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon">🛠️</div>
+                    <div><strong>Troubleshooting Guide</strong></div>
+                    <p>Fix common game issues including Problem Bar confusion, car won't start, and save file corruption. Essential before assuming mods are needed.</p>
+                </a>
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <div><strong>Winter Survival Guide</strong></div>
+                    <p>Master the six survival indicators and death scenarios. Understanding vanilla mechanics helps you decide which mods to use.</p>
+                </a>
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <div><strong>Corris Rivett Build Guide</strong></div>
+                    <p>200+ parts assembly walkthrough. ShowBoltSize and Headlamp mods are essential companions to this guide for efficient building.</p>
+                </a>
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <div><strong>Money Making Guide</strong></div>
+                    <p>Earn legitimate income through delivery jobs and office work. Consider this before using money cheat mods - earning mk is part of the experience.</p>
+                </a>
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">📦</div>
+                    <div><strong>Parts Acquisition Guide</strong></div>
+                    <p>Source Rivett parts from Fleetari and AMIS. My Winter Backpack mod makes parts hauling significantly less tedious.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚠️ Version & Disclaimer Information</h2>
+
+            <div class="warning-box">
+                <div class="warning-title">📅 Content Version Notice</div>
+                <p><strong>This guide is based on:</strong> My Winter Car Early Access v.260102-01 (January 2, 2026)</p>
+                <p><strong>Last Updated:</strong> January 6, 2026</p>
+                <p><strong>Mod Ecosystem Status:</strong> Rapidly evolving - new mods released weekly</p>
+                
+                <p style="margin-top: 1rem;"><strong>Expected Changes:</strong></p>
+                <ul>
+                    <li>MSCLoader 1.4 with MWC support may release (currently in development, unconfirmed timeline)</li>
+                    <li>MWC Editor will receive updates to improve Rivett part editing</li>
+                    <li>Official mod tools potentially in Q2 2026 (unconfirmed)</li>
+                    <li>BepInEx may update to version 6 (currently version 5 is standard)</li>
+                </ul>
+            </div>
+
+            <div class="danger-box">
+                <div class="danger-title">⚠️ Disclaimer</div>
+                <p><strong>This is an unofficial, community-created guide.</strong> Information is provided as-is with no guarantees.</p>
+                <ul>
+                    <li>Modding is done at your own risk</li>
+                    <li>Save file corruption, game instability, or other issues may occur</li>
+                    <li>The developer (Amistech Games) does not officially support mods</li>
+                    <li>Always backup your saves and verify game files if issues occur</li>
+                    <li>Mod compatibility is subject to change with game updates</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>For official support:</strong> Visit <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" rel="noopener noreferrer">My Winter Car Steam Discussions</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><strong>My Winter Car Wiki</strong> - Unofficial Community Modding Guide</p>
+        <p>Game developed by: Amistech Games | Early Access Launch: December 29, 2025</p>
+        <p>Guide information verified against community sources and Nexus Mods | Updated: January 6, 2026</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Not affiliated with Amistech Games or Nexus Mods | Community-driven resource</p>
+    </footer>
+    
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6c5a4e0d8af84d5ebd5c5fecdc639544","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
