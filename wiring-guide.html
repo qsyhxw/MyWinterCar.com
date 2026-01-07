@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Wiring Guide - Battery, Alternator, Starter & Complete Wiring Diagrams | My Winter Car</title>
+    <meta name="description" content="Master electrical wiring in My Winter Car: Complete Rivett wiring diagrams, battery connections, alternator setup, starter motor wiring, fuse box installation, firing order 1-3-4-2, troubleshooting electrical failures, and Sorbett block heater guide.">
+    <link rel="canonical" href="https://mywintercar.com/wiring-guide">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G0QRC4NKKP');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+     crossorigin="anonymous"></script>
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-ice);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .meta-tags {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content-section {
+            margin: 4rem 0;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .content-section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-ice);
+            margin: 2rem 0 1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--accent-danger);
+        }
+
+        .info-box.success {
+            border-left-color: var(--accent-success);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .info-box ul, .info-box ol {
+            margin-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            color: var(--accent-ice);
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: var(--bg-primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+
+        .step-title {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .wiring-diagram {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .wiring-diagram h3 {
+            text-align: center;
+            color: var(--accent-ice);
+            margin-bottom: 2rem;
+        }
+
+        .wire-connection {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: rgba(74, 158, 255, 0.1);
+            border-radius: 6px;
+        }
+
+        .wire-color {
+            display: inline-block;
+            width: 80px;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+        }
+
+        .wire-red { background: rgba(239, 68, 68, 0.3); color: #ef4444; }
+        .wire-black { background: rgba(55, 65, 81, 0.5); color: #9ca3af; }
+        .wire-yellow { background: rgba(251, 191, 36, 0.3); color: #fbbf24; }
+        .wire-blue { background: rgba(74, 158, 255, 0.3); color: #4a9eff; }
+        .wire-green { background: rgba(16, 185, 129, 0.3); color: #10b981; }
+
+        .comparison-table {
+            width: 100%;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .comparison-table th {
+            background: rgba(74, 158, 255, 0.1);
+            color: var(--accent-ice);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(74, 158, 255, 0.05);
+        }
+
+        .comparison-table code {
+            font-family: 'Courier New', monospace;
+            background: rgba(125, 211, 252, 0.1);
+            color: var(--accent-ice);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .internal-link {
+            color: var(--accent-ice);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .internal-link:hover {
+            border-bottom-color: var(--accent-ice);
+        }
+
+        .related-guides {
+            margin: 4rem 0;
+            padding: 3rem 0;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .related-guides h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .guide-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .guide-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .guide-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .guide-card strong {
+            color: var(--accent-ice);
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .wiring-diagram {
+                padding: 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            .wire-connection {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .wire-color {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/vehicles-guide">Vehicles</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>⚡ Electrical Wiring Guide</h1>
+        <p class="hero-subtitle">Complete Wiring Diagrams & Electrical System Mastery</p>
+        <div class="meta-tags">
+            <span>🔌 Battery & Alternator</span>
+            <span>🔧 Firing Order 1-3-4-2</span>
+            <span>⏱️ 10 min read</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="introduction" class="content-section">
+            <h2>Understanding Electrical Systems in My Winter Car</h2>
+            <p>Unlike My Summer Car's complex wiring mini-game, My Winter Car simplifies electrical connections while maintaining realistic functionality. The Rivett's electrical system requires proper installation of all components, but <strong>connections are more straightforward</strong> - focus on completing the circuit rather than memorizing color-coded wire diagrams.</p>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ Good News for Beginners</div>
+                <p>MWC does not feature the frustrating "wire spaghetti" mini-game from MSC. Instead, you'll install electrical components with clear connection points. However, <strong>every connection must still be made</strong> - missing even one wire can prevent your Rivett from starting.</p>
+            </div>
+
+            <p>This guide covers <strong>both Rivett project car wiring</strong> (complex, requires assembly) and <strong>Sorbett daily driver maintenance</strong> (simpler, focus on battery care).</p>
+
+            <div class="card-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <div class="feature-title">Power System</div>
+                    <p>Battery provides 12V power, alternator recharges when engine runs, voltage regulator prevents overcharging</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">Ignition System</div>
+                    <p>Distributor, ignition coil, spark plugs fire in 1-3-4-2 order to ignite fuel-air mixture</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <div class="feature-title">Accessories</div>
+                    <p>Lights, gauges, heater blower all draw power - manage usage to prevent battery drain</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sorbett-electrical" class="content-section">
+            <h2>1. Sorbett Electrical System (Reference)</h2>
+            <p>Your daily driver Sorbett (Talbot 1510-based hatchback) has a <strong>complete working electrical system</strong> that demonstrates how MWC's electrical mechanics function. Understanding Sorbett maintenance teaches essential habits for Rivett operation.</p>
+
+            <h3>Block Heater - Critical Winter Component</h3>
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ BLOCK HEATER PROCEDURE</div>
+                <ol>
+                    <li><strong>ALWAYS plug in when parked overnight</strong> - Keeps engine oil warm, reduces battery strain on cold starts</li>
+                    <li><strong>ALWAYS unplug before starting engine</strong> - Starting with cord attached will rip it out, damaging the system</li>
+                    <li><strong>Location:</strong> Front of vehicle, near grille - cord hangs down when unplugged</li>
+                    <li><strong>Does NOT charge battery</strong> - Only warms engine block</li>
+                </ol>
+            </div>
+
+            <p><strong>Why block heaters matter:</strong> In Finnish winter (-20°C to -50°C temperatures), cold engine oil becomes thick sludge. The battery must work 3-5x harder to crank a cold engine. Plugging in the block heater overnight keeps oil fluid, dramatically reducing starting difficulty.</p>
+
+            <h3>Battery Management</h3>
+            <p>The Sorbett battery is your lifeline - drain it completely and you're stranded until save/reload.</p>
+
+            <div class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Battery Impact</th>
+                        <th>Prevention</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cold cranking (engine off, turning key)</strong></td>
+                        <td>~30 seconds total before dead</td>
+                        <td>Use choke, pump gas 3-5 times, don't crank >5 seconds at once</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Headlights left on overnight</strong></td>
+                        <td>Dead by morning</td>
+                        <td>Always turn off before exiting vehicle</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heater blower running (engine off)</strong></td>
+                        <td>~10 minutes to dead</td>
+                        <td>Turn off all accessories before shutting down</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Window heater active (engine off)</strong></td>
+                        <td>~15 minutes to dead</td>
+                        <td>Only use when engine running</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Extreme cold (-40°C+)</strong></td>
+                        <td>Reduces capacity ~40%</td>
+                        <td>Keep vehicle plugged in, minimize electrical usage</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🚨 If Battery Dies Completely</div>
+                <p><strong>Temporary workaround (EA v.260102):</strong> Save game → Exit to main menu → Reload save. Battery will reset to partial charge.</p>
+                <p style="margin-top: 1rem;"><strong>Permanent solution:</strong> In future updates, you may need to purchase replacement batteries from Teimo's shop (PSK). Currently, the heater cord does NOT recharge a dead battery - only prevents it from dying when parked.</p>
+            </div>
+
+            <h3>Starting Procedure - Maximum Success Rate</h3>
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">1</span> Turn OFF All Electrical Systems</div>
+                <p>Headlights, blower, window heater - everything drains battery during crank. Check dashboard for indicator lights.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">2</span> Pull Choke Fully Out</div>
+                <p>Small knob bottom-left of dashboard. This richens fuel mixture for cold starting.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">3</span> Pump Gas Pedal 3-5 Times</div>
+                <p>Primes carburetor. Don't flood it - 5 pumps maximum.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">4</span> Hold Key + Floor Gas Pedal</div>
+                <p>Turn ignition key (hold left mouse button) while keeping gas pedal fully depressed. Engine should fire within 3-5 seconds.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">5</span> Let Idle, Gradually Push Choke In</div>
+                <p>Once running, let engine warm up 30-60 seconds. Slowly push choke back in as it warms. Rev too early = stall.</p>
+            </div>
+        </section>
+
+        <section id="rivett-electrical" class="content-section">
+            <h2>2. Rivett Electrical System - Complete Assembly</h2>
+            <p>Building the Rivett's electrical system from scratch requires installing <strong>15+ individual components</strong> in the correct sequence. Unlike Sorbett (fully assembled), you must connect every wire yourself.</p>
+
+            <h3>Core Components List</h3>
+            <div class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Function</th>
+                        <th>Installation Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Battery</strong></td>
+                        <td>12V power source for entire system</td>
+                        <td>Install in battery tray, connect ground (-) to engine block, positive (+) to starter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alternator</strong></td>
+                        <td>Recharges battery when engine runs</td>
+                        <td>Mounts on engine block, belt-driven. Connect to battery via wiring harness</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Starter Motor</strong></td>
+                        <td>Cranks engine during ignition</td>
+                        <td>Bolts to engine block. Connect solenoid to ignition switch and battery</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fuse Box</strong></td>
+                        <td>Protects circuits from overload</td>
+                        <td>Mounts under dashboard. All accessory circuits route through here</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ignition Coil</strong></td>
+                        <td>Converts 12V to high voltage for spark plugs</td>
+                        <td>Usually mounts on firewall or fender. Connect to distributor</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Distributor</strong></td>
+                        <td>Routes spark to correct cylinder in firing order</td>
+                        <td>Critical timing component. Set timing marks before installing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spark Plug Wires (4x)</strong></td>
+                        <td>Deliver spark from distributor to plugs</td>
+                        <td><strong>MUST follow 1-3-4-2 firing order</strong> (see diagram below)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spark Plugs (4x)</strong></td>
+                        <td>Ignite fuel-air mixture in cylinders</td>
+                        <td>Torque to 20 Nm. Gap according to spec (usually 0.7-0.9mm)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Voltage Regulator</strong></td>
+                        <td>Prevents alternator from overcharging battery</td>
+                        <td>May be integrated into alternator or separate unit</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Temperature Gauge Sender</strong></td>
+                        <td>Monitors engine coolant temperature</td>
+                        <td>Screws into engine block near thermostat. Wire to dashboard gauge</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oil Pressure Sender</strong></td>
+                        <td>Monitors oil pressure</td>
+                        <td>Screws into engine block oil gallery. Wire to dashboard gauge</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fuel Gauge Sender</strong></td>
+                        <td>Measures fuel tank level</td>
+                        <td>Mounts in fuel tank. Wire through chassis to dashboard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Headlights</strong></td>
+                        <td>Forward illumination</td>
+                        <td>Two connectors per side (high/low beam). Route through fuse box</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taillights</strong></td>
+                        <td>Brake/running lights</td>
+                        <td>Connect to rear wiring harness. Test brake light activation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Turn Indicators</strong></td>
+                        <td>Signal direction changes</td>
+                        <td>Front and rear connectors. Flasher relay usually under dashboard</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heater Blower</strong></td>
+                        <td>Circulates warm air through cabin</td>
+                        <td>Mounts under dashboard. Separate switch controls speed</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Battery Connections</h3>
+            <div class="wiring-diagram">
+                <h3>Battery Terminal Connections</h3>
+                <div class="wire-connection">
+                    <span class="wire-color wire-red">RED (+)</span>
+                    <span>Positive Terminal → Starter Solenoid (main power) → Fuse Box → Alternator Output</span>
+                </div>
+                <div class="wire-connection">
+                    <span class="wire-color wire-black">BLACK (-)</span>
+                    <span>Negative Terminal → Engine Block Ground → Chassis Ground (multiple points)</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">🔧 Ground Connection Importance</div>
+                <p>Poor grounding is the #1 cause of "car won't start" issues. The negative battery cable must make solid metal-to-metal contact with the engine block. Paint or rust creates resistance, preventing proper current flow.</p>
+                <p style="margin-top: 1rem;"><strong>Best practice:</strong> Use wire brush or sandpaper to clean ground connection points before bolting down cables. Shiny metal = good connection.</p>
+            </div>
+
+            <h3>Alternator Wiring</h3>
+            <p>The alternator has typically <strong>2-3 connection points:</strong></p>
+            <ol>
+                <li><strong>Main output terminal:</strong> Heavy gauge wire connects to battery positive (+). This is the charging circuit.</li>
+                <li><strong>Exciter/field wire:</strong> Thinner wire connects to ignition switch (usually through fuse box). Provides initial magnetic field when key turned on.</li>
+                <li><strong>Voltage regulator (if separate):</strong> May require additional connection depending on model.</li>
+            </ol>
+
+            <p>When engine runs, alternator belt spins pulley → generates electricity → recharges battery. <strong>Battery voltage should read ~14V when engine running</strong> (indicates alternator working). If stays at 12V, alternator not charging - check belt tension and wiring.</p>
+
+            <h3>Starter Motor Wiring</h3>
+            <div class="wiring-diagram">
+                <h3>Starter Circuit Connections</h3>
+                <div class="wire-connection">
+                    <span class="wire-color wire-red">RED</span>
+                    <span>Battery (+) → Starter Solenoid Main Terminal (always hot, direct connection)</span>
+                </div>
+                <div class="wire-connection">
+                    <span class="wire-color wire-yellow">YELLOW</span>
+                    <span>Ignition Switch → Starter Solenoid Trigger Terminal (activates solenoid when key turned)</span>
+                </div>
+                <div class="wire-connection">
+                    <span class="wire-color wire-black">BLACK</span>
+                    <span>Starter Motor Body → Engine Block Ground (completes circuit)</span>
+                </div>
+            </div>
+
+            <p><strong>How it works:</strong> Turning ignition key sends signal through yellow wire → activates solenoid → solenoid connects battery power to starter motor → motor spins flywheel → engine cranks.</p>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Starter Troubleshooting</div>
+                <ul>
+                    <li><strong>Click but no crank:</strong> Solenoid working but starter motor failing. Check main power wire connection.</li>
+                    <li><strong>No sound at all:</strong> Solenoid not activating. Check ignition switch wire (yellow) and fuse.</li>
+                    <li><strong>Grinding noise:</strong> Starter gear not engaging flywheel properly. Check starter mounting bolts.</li>
+                </ul>
+            </div>
+
+            <h3>Fuse Box Installation</h3>
+            <p>The fuse box protects all accessory circuits (lights, gauges, heater) from electrical overload. Typically mounts under dashboard on driver's side.</p>
+
+            <p><strong>Fused circuits typically include:</strong></p>
+            <ul style="margin-left: 2rem; color: var(--text-secondary);">
+                <li>Headlights (separate fuses for high/low beam)</li>
+                <li>Taillights and brake lights</li>
+                <li>Turn indicators (may share fuse with hazards)</li>
+                <li>Dashboard gauges and warning lights</li>
+                <li>Heater blower motor</li>
+                <li>Radio/accessories (if equipped)</li>
+            </ul>
+
+            <p>Each fuse is rated for specific amperage (5A, 10A, 15A, 20A common). Using wrong amp fuse can cause electrical fires or leave you without protection.</p>
+        </section>
+
+        <section id="firing-order" class="content-section">
+            <h2>3. Spark Plug Wiring & Firing Order</h2>
+            <p>The Rivett's 2.0L inline-4 engine uses a <strong>1-3-4-2 firing order</strong> - this is the sequence in which cylinders fire during the 4-stroke cycle. Connecting spark plug wires incorrectly will prevent the engine from starting or cause severe misfires.</p>
+
+            <h3>Cylinder Numbering</h3>
+            <p>Looking at the engine from the <strong>front of the car</strong> (where radiator goes):</p>
+            <pre style="background: var(--bg-card); padding: 1.5rem; border-radius: 8px; color: var(--accent-ice); margin: 2rem 0;">
+ FRONT OF CAR
+    ↓
+[1][2][3][4]  ← Cylinders (left to right)
+ ▲
+ Cylinder #1 (closest to timing belt/pulleys)
+            </pre>
+
+            <h3>Firing Order: 1 - 3 - 4 - 2</h3>
+            <div class="info-box">
+                <div class="info-box-title">📐 Why This Order Matters</div>
+                <p>The firing order is engineered to balance crankshaft forces and minimize vibration. Each cylinder fires at a specific crankshaft angle:</p>
+                <ul>
+                    <li><strong>Cylinder 1 fires:</strong> 0° crankshaft rotation</li>
+                    <li><strong>Cylinder 3 fires:</strong> 180° rotation (half turn)</li>
+                    <li><strong>Cylinder 4 fires:</strong> 360° rotation (full turn)</li>
+                    <li><strong>Cylinder 2 fires:</strong> 540° rotation (1.5 turns)</li>
+                    <li><strong>Cycle repeats:</strong> Every 720° (2 full crankshaft rotations)</li>
+                </ul>
+                <p style="margin-top: 1rem;">Connecting wires wrong delivers spark to cylinder at wrong time → fuel ignites during wrong stroke → engine won't run properly or at all.</p>
+            </div>
+
+            <h3>Distributor Cap Connection Sequence</h3>
+            <p>The distributor cap has <strong>4 numbered terminals</strong> arranged in a circle. The rotor inside spins <strong>clockwise</strong> (when viewed from above).</p>
+
+            <div class="wiring-diagram">
+                <h3>Spark Plug Wire Routing</h3>
+                <div class="step-card">
+                    <div class="step-title"><span class="step-number">1</span> Find Terminal #1 on Distributor Cap</div>
+                    <p>Usually marked with "1" or small notch. This is where the rotor points when cylinder #1 is at TDC (top dead center) compression stroke.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-title"><span class="step-number">2</span> Connect Wires Following Rotor Rotation</div>
+                    <p style="margin-bottom: 1rem;">Rotor spins <strong>clockwise</strong>. Connect wires in this sequence:</p>
+                    <div class="wire-connection">
+                        <span class="wire-color wire-red">Cap #1</span>
+                        <span>→ Spark Plug on Cylinder #1 (front, left-most)</span>
+                    </div>
+                    <div class="wire-connection">
+                        <span class="wire-color wire-yellow">Cap #2</span>
+                        <span>→ Spark Plug on Cylinder #3 (third from front)</span>
+                    </div>
+                    <div class="wire-connection">
+                        <span class="wire-color wire-green">Cap #3</span>
+                        <span>→ Spark Plug on Cylinder #4 (fourth from front, right-most)</span>
+                    </div>
+                    <div class="wire-connection">
+                        <span class="wire-color wire-blue">Cap #4</span>
+                        <span>→ Spark Plug on Cylinder #2 (second from front)</span>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-title"><span class="step-number">3</span> Verify Wire Routing</div>
+                    <p>Use varying wire lengths to prevent cross-routing. Keep wires separated to avoid cross-fire (electromagnetic interference between wires causing misfires).</p>
+                </div>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🚨 Common Firing Order Mistakes</div>
+                <ul>
+                    <li><strong>Swapping cylinders 2 and 3:</strong> Most common error. Car will crank but not start, or run extremely rough.</li>
+                    <li><strong>Connecting all wires 1-2-3-4 sequentially:</strong> Ignores firing order - engine won't run.</li>
+                    <li><strong>Wrong distributor rotor direction:</strong> If assuming counter-clockwise instead of clockwise, entire sequence is backwards.</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Symptom of wrong firing order:</strong> Engine cranks strong (battery OK), fuel present, but won't fire or fires briefly then dies. Backfiring through intake/exhaust common. See <a href="/troubleshooting-guide" class="internal-link">troubleshooting guide</a> for complete diagnosis.</p>
+            </div>
+        </section>
+
+        <section id="lights-gauges" class="content-section">
+            <h2>4. Lights & Gauge Circuits</h2>
+            <p>Headlights, taillights, indicators, and dashboard gauges each require separate wiring connections routed through the fuse box.</p>
+
+            <h3>Headlight Wiring</h3>
+            <p>Headlights typically use <strong>3-wire connectors per side:</strong></p>
+            <ol>
+                <li><strong>Ground wire (black):</strong> Connects to chassis ground</li>
+                <li><strong>Low beam power (white or yellow):</strong> Controlled by headlight switch</li>
+                <li><strong>High beam power (blue):</strong> Activated by high-beam stalk</li>
+            </ol>
+
+            <p>Both beams route through fuse box. Low beam typically 15A fuse, high beam 20A fuse. Blown fuse = no lights on that circuit.</p>
+
+            <h3>Taillight & Brake Light Wiring</h3>
+            <p>Taillights combine <strong>running lights + brake lights</strong> in single housing using dual-filament bulbs:</p>
+            <ul style="margin-left: 2rem; color: var(--text-secondary);">
+                <li><strong>Running light circuit:</strong> Low-intensity filament, on when headlights on</li>
+                <li><strong>Brake light circuit:</strong> High-intensity filament, activates when brake pedal pressed</li>
+                <li><strong>Ground wire:</strong> Completes circuit back to battery</li>
+            </ul>
+
+            <p>Brake light switch usually mounts on brake pedal assembly - sends power to rear lights when pedal depressed.</p>
+
+            <h3>Dashboard Gauge Wiring</h3>
+            <p>Each gauge requires a <strong>sender unit</strong> installed in engine:</p>
+
+            <div class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Gauge</th>
+                        <th>Sender Location</th>
+                        <th>How It Works</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Temperature Gauge</strong></td>
+                        <td>Engine block near thermostat housing</td>
+                        <td>Variable resistance changes with coolant temp. Hotter = lower resistance = gauge needle moves right</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oil Pressure Gauge</strong></td>
+                        <td>Engine block oil gallery (side of engine)</td>
+                        <td>Oil pressure compresses diaphragm in sender, changes resistance. More pressure = needle moves right</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fuel Gauge</strong></td>
+                        <td>Inside fuel tank (float mechanism)</td>
+                        <td>Float rises/falls with fuel level. Changes resistance via rheostat. Full tank = needle right, empty = needle left</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Each sender has <strong>2 wires: signal wire + ground</strong>. Signal wire connects to corresponding gauge on dashboard (routes through fuse box). Ground completes circuit.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Gauge Troubleshooting</div>
+                <ul>
+                    <li><strong>Gauge reads zero constantly:</strong> Sender wire disconnected or sender unit failed</li>
+                    <li><strong>Gauge reads maximum constantly:</strong> Sender wire grounded (touching chassis), sender failed internally</li>
+                    <li><strong>Gauge fluctuates wildly:</strong> Loose connection, corroded terminals, bad ground</li>
+                </ul>
+                <p style="margin-top: 1rem;">Always test with known-good sender before replacing gauge itself - senders fail more often than gauges.</p>
+            </div>
+        </section>
+
+        <section id="common-mistakes" class="content-section">
+            <h2>5. Common Wiring Mistakes & Troubleshooting</h2>
+            <p>Even experienced players make these electrical errors. Learn from others' mistakes to save hours of frustration.</p>
+
+            <h3>Top 10 Wiring Mistakes</h3>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">1</span> Forgetting Ground Connections</div>
+                <p><strong>Symptom:</strong> Car cranks but won't start, or electrical components don't work.</p>
+                <p><strong>Fix:</strong> Battery negative (-) MUST connect to engine block. Many components also need chassis ground. Use wire brush to clean contact points.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">2</span> Wrong Spark Plug Wire Order</div>
+                <p><strong>Symptom:</strong> Engine cranks strong but won't fire, or runs extremely rough with backfiring.</p>
+                <p><strong>Fix:</strong> Verify 1-3-4-2 firing order. Trace each wire from distributor cap to correct cylinder number. See wiring diagram above.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">3</span> Loose Starter Connections</div>
+                <p><strong>Symptom:</strong> Click sound when turning key, but starter doesn't spin.</p>
+                <p><strong>Fix:</strong> Check both main power wire (battery to solenoid) and trigger wire (ignition to solenoid). Tighten all connections with wrench.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">4</span> Alternator Not Connected</div>
+                <p><strong>Symptom:</strong> Car starts fine when battery fresh, but battery drains over time. Battery voltage stays at 12V when engine running (should be ~14V).</p>
+                <p><strong>Fix:</strong> Connect alternator output wire to battery positive. Check alternator belt tension - loose belt can't spin alternator properly.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">5</span> Missing Fuse Box Connections</div>
+                <p><strong>Symptom:</strong> Engine starts but no lights, gauges, or accessories work.</p>
+                <p><strong>Fix:</strong> Fuse box needs power input from battery and output wires to each accessory circuit. Verify all connections made.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">6</span> Gauge Senders Not Installed</div>
+                <p><strong>Symptom:</strong> Temperature, oil pressure, or fuel gauge reads zero or maximum constantly.</p>
+                <p><strong>Fix:</strong> Install sender units in engine/tank, connect wires to dashboard gauges. Without sender, gauge has no data to display.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">7</span> Reversed Battery Polarity</div>
+                <p><strong>Symptom:</strong> Electrical smoke, blown fuses, damaged components. SEVERE.</p>
+                <p><strong>Fix:</strong> Red (+) to positive terminal, Black (-) to negative terminal. Markings on battery clearly indicate polarity. NEVER reverse.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">8</span> Forgetting to Install Ignition Coil</div>
+                <p><strong>Symptom:</strong> Engine cranks, fuel present, but absolutely no spark at plugs.</p>
+                <p><strong>Fix:</strong> Coil converts 12V battery power to high voltage needed for spark. Without it, no spark possible. Mount coil, connect to distributor.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">9</span> Distributor Timing Not Set</div>
+                <p><strong>Symptom:</strong> Wiring correct but engine won't start. Timing marks misaligned.</p>
+                <p><strong>Fix:</strong> Distributor must be installed with rotor pointing at #1 terminal when cylinder #1 at TDC compression. See engine build guide for timing procedure.</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-title"><span class="step-number">10</span> Accessories Left On, Battery Drained</div>
+                <p><strong>Symptom:</strong> Car worked yesterday, now won't start. Battery dead.</p>
+                <p><strong>Fix:</strong> ALWAYS turn off lights, blower, heater before exiting. Cold weather accelerates drain. Save/reload to reset battery temporarily.</p>
+            </div>
+
+            <h3>Electrical Diagnosis Flowchart</h3>
+            <div class="info-box">
+                <div class="info-box-title">🔍 "Car Won't Start" - Electrical Checklist</div>
+                <ol>
+                    <li><strong>Does starter crank engine?</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>YES → Starter OK, check ignition/fuel</li>
+                            <li>NO → Battery weak, starter wiring issue, or starter failed</li>
+                        </ul>
+                    </li>
+                    <li><strong>Do dashboard lights come on with key?</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>YES → Battery has some charge, check starter circuit</li>
+                            <li>NO → Battery completely dead, or main power wire disconnected</li>
+                        </ul>
+                    </li>
+                    <li><strong>Does engine crank but not fire?</strong>
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Check spark: Remove plug, ground against engine, crank. Should see blue spark</li>
+                            <li>Check fuel: Verify carburetor has fuel, prime pump, check fuel line</li>
+                            <li>Check timing: Verify distributor installed correctly, timing marks aligned</li>
+                            <li>Check firing order: Trace spark plug wires, verify 1-3-4-2 sequence</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p style="margin-top: 1.5rem;">For complete diagnostic procedures, see <a href="/troubleshooting-guide" class="internal-link">Troubleshooting Guide - Car Won't Start Section</a>.</p>
+            </div>
+        </section>
+
+        <section id="testing" class="content-section">
+            <h2>6. Testing Electrical Systems</h2>
+            <p>Before attempting first start, systematically test each electrical circuit to identify issues early.</p>
+
+            <h3>Pre-Start Electrical Tests</h3>
+
+            <div class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Procedure</th>
+                        <th>Expected Result</th>
+                        <th>If Failed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Battery Voltage</strong></td>
+                        <td>Turn key to ON position (not START)</td>
+                        <td>Dashboard lights illuminate, gauges move</td>
+                        <td>Check battery terminals, charge battery</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Starter Function</strong></td>
+                        <td>Turn key to START position</td>
+                        <td>Starter motor cranks engine audibly</td>
+                        <td>Check starter wiring, battery charge, grounds</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spark Test</strong></td>
+                        <td>Remove spark plug, ground against engine, crank</td>
+                        <td>Blue spark visible at plug gap</td>
+                        <td>Check coil, distributor, plug wires</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Headlights</strong></td>
+                        <td>Turn headlight switch ON</td>
+                        <td>Both headlights illuminate (low beam)</td>
+                        <td>Check fuse, headlight connectors, ground</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taillights</strong></td>
+                        <td>Turn headlights ON, walk to rear of car</td>
+                        <td>Both taillights lit (dim)</td>
+                        <td>Check taillight connectors, fuse, bulbs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Brake Lights</strong></td>
+                        <td>Press brake pedal (engine off OK)</td>
+                        <td>Brake lights illuminate (bright)</td>
+                        <td>Check brake light switch, fuse, wiring</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Turn Signals</strong></td>
+                        <td>Activate turn signal stalk</td>
+                        <td>Front/rear indicators flash, clicking sound</td>
+                        <td>Check flasher relay, indicator bulbs, fuse</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Temperature Gauge</strong></td>
+                        <td>Turn key ON, engine cold</td>
+                        <td>Gauge reads low/cold end of scale</td>
+                        <td>Check sender connection, gauge wiring</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oil Pressure Gauge</strong></td>
+                        <td>Turn key ON, engine off</td>
+                        <td>Gauge reads zero (no oil pressure when not running)</td>
+                        <td>If reads high, sender wire grounded</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fuel Gauge</strong></td>
+                        <td>Turn key ON, tank full</td>
+                        <td>Gauge reads near "F" (full)</td>
+                        <td>Check fuel sender in tank, wiring</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Heater Blower</strong></td>
+                        <td>Turn blower switch (engine off OK)</td>
+                        <td>Fan spins, air flows from vents</td>
+                        <td>Check blower motor connection, fuse</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Testing Safety Notes</div>
+                <ul>
+                    <li><strong>Disconnect battery before working on wiring</strong> - Prevents accidental shorts and sparks</li>
+                    <li><strong>Don't crank engine for >5 seconds continuously</strong> - Overheats starter motor, drains battery</li>
+                    <li><strong>Keep hands clear of belts/pulleys when testing with engine running</strong> - Severe injury risk</li>
+                    <li><strong>Use proper gap when testing spark</strong> - Too close to engine ground can damage coil</li>
+                </ul>
+            </div>
+
+            <h3>Post-Start Electrical Verification</h3>
+            <p>Once engine starts and runs, verify charging system and accessories:</p>
+
+            <ol style="margin-left: 2rem; color: var(--text-secondary);">
+                <li><strong>Check alternator charging:</strong> Dashboard voltage should show ~14V with engine running, ~12V with engine off. If stays at 12V, alternator not charging - check belt and wiring.</li>
+                <li><strong>Test all lights with engine running:</strong> Headlights, taillights, brake lights, indicators - verify no dimming when engine at idle (indicates alternator providing enough power).</li>
+                <li><strong>Verify gauge accuracy:</strong> Temperature gauge should rise as engine warms. Oil pressure gauge should read normal range (usually middle of scale). Fuel gauge should match known fuel level.</li>
+                <li><strong>Test heater system:</strong> Blower on max, heat selector to hot, direct to windshield. Warm air should blow within 5 minutes of engine starting.</li>
+            </ol>
+        </section>
+
+        <div class="related-guides">
+            <h2>📚 Related Guides</h2>
+            <p class="section-description">Essential resources for Rivett electrical troubleshooting and assembly</p>
+            <div class="guides-grid">
+                <a href="/troubleshooting-guide" class="guide-card">
+                    <span class="guide-icon">🔍</span>
+                    <strong>Troubleshooting Guide</strong>
+                    <p>Complete "Car Won't Start" diagnosis flowchart, electrical failure causes, starter problems, dead battery recovery, and engine timing issues.</p>
+                </a>
+                <a href="/vehicles-guide" class="guide-card">
+                    <span class="guide-icon">🚗</span>
+                    <strong>Vehicles Guide</strong>
+                    <p>Full Rivett and Sorbett mechanical specifications, engine details, electrical system overviews, and maintenance requirements for all 6 driveable vehicles.</p>
+                </a>
+                <a href="/parts-acquisition-guide" class="guide-card">
+                    <span class="guide-icon">🔧</span>
+                    <strong>Parts Acquisition Guide</strong>
+                    <p>Where to buy electrical components: Alternators, starters, batteries, spark plugs, wiring harnesses. Fleetari's shop vs classifieds magazine pricing comparison.</p>
+                </a>
+                <a href="/beginner-guide" class="guide-card">
+                    <span class="guide-icon">🎓</span>
+                    <strong>Beginner's Tutorial</strong>
+                    <p>First 30 minutes gameplay: Sorbett block heater usage, battery management basics, cold starting procedure, and introduction to Rivett project.</p>
+                </a>
+                <a href="/money-guide" class="guide-card">
+                    <span class="guide-icon">💰</span>
+                    <strong>Money Making Guide</strong>
+                    <p>Fund your electrical system rebuild. Complete Rivett wiring costs 1,500-2,500 mk including all components. Jobs guide and hourly rates included.</p>
+                </a>
+                <a href="/vin-decoder" class="guide-card">
+                    <span class="guide-icon">🔍</span>
+                    <strong>VIN Decoder Guide</strong>
+                    <p>Decode factory electrical specifications: Which alternator, starter, and voltage regulator your Rivett trim originally came with. Match for historical registration.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>❄️ My Winter Car Wiki</strong></p>
+        <p>Game Version: <strong>Early Access v.260102</strong> | Updated: <strong>January 7, 2026</strong></p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            This wiring guide is based on player experience and community testing. My Winter Car is in active Early Access development - electrical mechanics may change in future updates.<br>
+            My Winter Car developed by <strong>Amistech Games</strong>. All game content © Amistech Games.
+        </p>
+        <p style="margin-top: 1rem;">
+            <a href="/about">About This Wiki</a> | <a href="/guides">All Guides</a>
+        </p>
+    </footer>
+</body>
+</html>
