@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Patch Notes Archive - All Updates & Fixes | My Winter Car 2026</title>
+    <meta name="description" content="Complete archive of all My Winter Car patch notes, updates, bug fixes, and known issues from Early Access launch (Dec 2025) through January 2026. Track every change with developer notes.">
+    <link rel="canonical" href="https://mywintercar.com/patch-notes">
+
+
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="My Winter Car Patch Notes Archive - Complete Update History">
+    <meta property="og:description" content="Track every patch, bug fix, and update for My Winter Car. From EA launch to latest 2026 patches.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mywintercar.com/patch-notes">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Winter Car Patch Notes Archive">
+    <meta name="twitter:description" content="Complete archive of all MWC updates, bug fixes, and known issues.">
+
+    <style>
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-success: #10b981;
+            --accent-warning: #fbbf24;
+            --accent-danger: #ef4444;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--accent-ice);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: 4rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-ice);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-meta {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item .icon {
+            font-size: 1.5rem;
+        }
+
+        /* Quick Navigation */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin: 3rem 0;
+            padding: 2rem 0;
+        }
+
+        .content-section h2 {
+            font-size: 2rem;
+            color: var(--accent-ice);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .content-section h3 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin: 2rem 0 1rem 0;
+        }
+
+        /* Patch Cards */
+        .patch-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .patch-card.latest {
+            border-color: var(--accent-success);
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, var(--bg-card) 100%);
+        }
+
+        .patch-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .patch-version {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-ice);
+        }
+
+        .patch-date {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .patch-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .badge-latest {
+            background: var(--accent-success);
+            color: white;
+        }
+
+        .badge-important {
+            background: var(--accent-warning);
+            color: var(--bg-primary);
+        }
+
+        .patch-changes {
+            list-style: none;
+            padding: 0;
+        }
+
+        .patch-changes li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .patch-changes li:last-child {
+            border-bottom: none;
+        }
+
+        .patch-changes li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-success);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .change-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .type-fix {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-success);
+        }
+
+        .type-improvement {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .type-temporary {
+            background: rgba(251, 191, 36, 0.2);
+            color: var(--accent-warning);
+        }
+
+        .type-added {
+            background: rgba(124, 211, 252, 0.2);
+            color: var(--accent-ice);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            background: rgba(251, 191, 36, 0.1);
+            border-left-color: var(--accent-warning);
+        }
+
+        .info-box.success {
+            background: rgba(16, 185, 129, 0.1);
+            border-left-color: var(--accent-success);
+        }
+
+        .info-box-title {
+            font-weight: bold;
+            color: var(--accent-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .info-box.warning .info-box-title {
+            color: var(--accent-warning);
+        }
+
+        .info-box.success .info-box-title {
+            color: var(--accent-success);
+        }
+
+        .info-box ul, .info-box ol {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-box li {
+            margin: 0.5rem 0;
+        }
+
+        /* Known Issues Section */
+        .issue-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .issue-title {
+            font-size: 1.1rem;
+            color: var(--accent-ice);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .issue-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .status-planned {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .status-not-implemented {
+            background: rgba(156, 163, 175, 0.2);
+            color: var(--text-secondary);
+        }
+
+        /* How to Access Section */
+        .access-method {
+            background: var(--bg-card);
+            border: 2px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .method-title {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .method-title .icon {
+            font-size: 1.5rem;
+        }
+
+        .code-block {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-ice);
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 2px solid var(--bg-primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 2px solid var(--border-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .patch-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .timeline {
+                padding-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">🏔️ My Winter Car Wiki</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/guides">All Guides</a></li>
+                    <li><a href="/troubleshooting-guide">Troubleshooting</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>🔄 Complete Patch Notes Archive</h1>
+            <p>Comprehensive history of every My Winter Car update, bug fix, and improvement from Early Access launch through January 2026. Stay informed about the latest changes from developer Toplessgun (Amistech Games).</p>
+            
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <span class="icon">📅</span>
+                    <span><strong>EA Launch:</strong> December 29, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="icon">🔧</span>
+                    <span><strong>Latest Patch:</strong> v.260102-01</span>
+                </div>
+                <div class="meta-item">
+                    <span class="icon">✅</span>
+                    <span><strong>Total Patches:</strong> 3 major updates</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Quick Navigation -->
+        <div class="quick-nav">
+            <a href="#latest" class="quick-nav-item">
+                <div class="icon">🆕</div>
+                <div><strong>Latest Patch</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">v.260102-01 (Jan 2026)</div>
+            </a>
+            <a href="#recent" class="quick-nav-item">
+                <div class="icon">📋</div>
+                <div><strong>Recent Patches</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">All January updates</div>
+            </a>
+            <a href="#ea-launch" class="quick-nav-item">
+                <div class="icon">🚀</div>
+                <div><strong>EA Launch Notes</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Known issues & features</div>
+            </a>
+            <a href="#how-to-access" class="quick-nav-item">
+                <div class="icon">💡</div>
+                <div><strong>How to Access</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Find patch notes yourself</div>
+            </a>
+            <a href="#timeline" class="quick-nav-item">
+                <div class="icon">⏱️</div>
+                <div><strong>Update Timeline</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Visual patch history</div>
+            </a>
+            <a href="#known-issues" class="quick-nav-item">
+                <div class="icon">⚠️</div>
+                <div><strong>Known Issues</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Features still in progress</div>
+            </a>
+        </div>
+
+        <!-- Developer Note -->
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Important: How Toplessgun Releases Updates</div>
+            <p><strong>During Early Access stability phase, the developer posts minimal patch notes to avoid spamming.</strong> Developer quote: <em>"I will start to put out update notes when I can get back to more normal update cycle. Because the game is just released, it is important to try to get it as stable as possible until the actual development can continue."</em></p>
+            <p style="margin-top: 0.75rem;">Right now, most updates are focused on bug fixes and stability improvements. Once the game stabilizes, more detailed feature updates will be announced.</p>
+        </div>
+
+        <!-- Latest Patch Section -->
+        <section id="latest" class="content-section">
+            <h2>🆕 Latest Patch - v.260102-01</h2>
+            
+            <div class="patch-card latest">
+                <div class="patch-header">
+                    <div>
+                        <div class="patch-version">v.260102-01</div>
+                        <div class="patch-date">📅 January 2, 2026</div>
+                    </div>
+                    <span class="patch-badge badge-latest">LATEST PATCH</span>
+                </div>
+
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">Latest stability update focusing on Sorbett vehicle fixes and save data corrections.</p>
+
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-improvement">IMPROVEMENT</span>
+                        <strong>Additional attempt to fix Sorbett issues</strong> — Continued stability work on the Sorbett vehicle to reduce crashes and physics glitches
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed save data for some items/tools</strong> — Corrected save file corruption for certain items. <span style="color: var(--accent-warning);">⚠️ Warning: Item locations may have reset after this update</span>
+                    </li>
+                </ul>
+
+                <div class="info-box" style="margin-top: 1.5rem;">
+                    <div class="info-box-title">💡 If You're Still Experiencing Sorbett Issues</div>
+                    <ol>
+                        <li>Update to the latest patch (v.260102-01 or newer)</li>
+                        <li>Verify game files on Steam (Right-click My Winter Car → Properties → Local Files → Verify Integrity)</li>
+                        <li>Check <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" style="color: var(--accent-ice);">Steam Discussions</a> for community workarounds</li>
+                        <li>Report persistent issues with your save file on Steam forums</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Patches Section -->
+        <section id="recent" class="content-section">
+            <h2>📋 Recent Patches - January 2026</h2>
+
+            <!-- Patch v.260101-01 -->
+            <div class="patch-card">
+                <div class="patch-header">
+                    <div>
+                        <div class="patch-version">v.260101-01</div>
+                        <div class="patch-date">📅 January 1, 2026</div>
+                    </div>
+                    <span class="patch-badge badge-important">IMPORTANT</span>
+                </div>
+
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">New Year's Day patch addressing vehicle engine issues and missing order items.</p>
+
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed issues with Sorbett and Tractor engine shutoff / restart procedure</strong> — Vehicles now shut off and restart properly using correct procedures
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Subwoofers and Antennas order not delivering both pieces</strong> — When ordering these parts, you now correctly receive both items in the pair
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Passenger Race Seat not included in orders</strong> — Race seat now properly included when ordering from catalogs
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed CD audio not having sound in Taxi and Sorbett</strong> — CD player audio now works properly in both vehicles (if you imported CDs from My Summer Car, they should now work)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Patch v.251230-04 -->
+            <div class="patch-card">
+                <div class="patch-header">
+                    <div>
+                        <div class="patch-version">v.251230-04</div>
+                        <div class="patch-date">📅 December 30, 2025</div>
+                    </div>
+                    <span class="patch-badge badge-important">CRITICAL FIXES</span>
+                </div>
+
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">First major patch after EA launch, addressing the PSK crash bug and numerous gameplay issues.</p>
+
+                <h4 style="color: var(--accent-warning); margin-top: 1.5rem; margin-bottom: 1rem;">⚠️ Temporary Changes</h4>
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-temporary">TEMPORARY</span>
+                        <strong>Burger and Ala Carte sellers disabled temporarily</strong> — Food vendors at PSK gas station temporarily removed to investigate crash-on-purchase bug. Will be re-enabled once root cause is found
+                    </li>
+                </ul>
+
+                <h4 style="color: var(--accent-success); margin-top: 1.5rem; margin-bottom: 1rem;">✅ Vehicle & Physics Fixes</h4>
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-improvement">IMPROVEMENT</span>
+                        <strong>Improved some Sorbett colliders</strong> — Reduced the possibility of physics glitching and vehicle freakouts
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Wood Cutter breaking if attached to Tractor</strong> — Wood Cutter attachment no longer breaks when player travels too far from it
+                    </li>
+                </ul>
+
+                <h4 style="color: var(--accent-success); margin-top: 1.5rem; margin-bottom: 1rem;">✅ Corris Rivett Assembly Fixes</h4>
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Ignition hole being available without Steering Column</strong> — You can no longer access ignition without first installing the steering column
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Glovebox being available without Dashboard</strong> — Glovebox now requires dashboard installation first
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Corris having Rear Window Heater when VIN stated M</strong> — VIN plate now correctly reflects whether car has rear window heater
+                    </li>
+                </ul>
+
+                <h4 style="color: var(--accent-success); margin-top: 1.5rem; margin-bottom: 1rem;">✅ Building & Location Fixes</h4>
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Car Shed doors getting stuck if closed</strong> — Garage doors now open and close properly without getting jammed
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Cottage Sauna stove not heating up the Sauna room</strong> — Sauna at cottage now heats properly when stove is fired up
+                    </li>
+                </ul>
+
+                <h4 style="color: var(--accent-success); margin-top: 1.5rem; margin-bottom: 1rem;">✅ Game Systems Fixes</h4>
+                <ul class="patch-changes">
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed Permadeath not deleting save files</strong> — When you die in Permadeath mode, save files are now properly deleted
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed House and Apartment Fuses cross referencing</strong> — Electrical fuses now work independently for house and apartment
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed CD music being heard from long distances</strong> — CD player audio now properly attenuates with distance
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Fixed floating Radio</strong> — Radio object now properly placed/attached
+                    </li>
+                    <li>
+                        <span class="change-type type-added">ADDED</span>
+                        <strong>Added small delay to the Advert pile spawn</strong> — Newspaper advertisements now spawn with slight delay to prevent conflicts
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EA Launch Section -->
+        <section id="ea-launch" class="content-section">
+            <h2>🚀 Early Access Launch - December 29, 2025</h2>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ Successfully Launched</div>
+                <p><strong>My Winter Car entered Steam Early Access on December 29, 2025</strong> at $14.99 USD (€14.99 EUR). The game launched with 80-90% of core gameplay mechanics complete, including full car building, tuning, winter survival, and ice racing systems.</p>
+                <ul>
+                    <li><strong>Developer:</strong> Johannes Rojola (Toplessgun) / Amistech Games</li>
+                    <li><strong>Platform:</strong> Steam (Windows PC)</li>
+                    <li><strong>Price:</strong> $14.99 USD / €14.99 EUR</li>
+                    <li><strong>Discount:</strong> 10% bundle discount for My Summer Car owners</li>
+                    <li><strong>Save Import:</strong> Limited save import from My Summer Car supported</li>
+                </ul>
+            </div>
+
+            <h3>Known Issues at EA Launch</h3>
+            <p style="margin-bottom: 1rem; color: var(--text-secondary);">From the official <a href="https://steamcommunity.com/app/4164420/discussions/0/694248493352678508/" target="_blank" style="color: var(--accent-ice);">Early Access Release Notes</a>, here's what was explicitly mentioned as incomplete or not yet implemented:</p>
+
+            <div class="issue-card">
+                <div class="issue-title">1. Historical Vehicle Inspection</div>
+                <span class="issue-status status-planned">PLANNED IMPROVEMENT</span>
+                <p>Not yet as accurate and detailed as it will be. You might pass too easily or get caught by minor things that shouldn't fail you. Full accuracy coming in future updates.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">2. Ice Race Rewards</div>
+                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
+                <p>Ice races do not have trophies or prize money yet. If you win a race, you are not awarded anything. Racing works, but rewards system not implemented.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">3. Death Screen Statistics</div>
+                <span class="issue-status status-not-implemented">NOT WORKING</span>
+                <p>Death screen statistics are not yet working correctly, or just display random broken stats. Don't rely on these numbers.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">4. Engine Tuning Combinations</div>
+                <span class="issue-status status-planned">TESTING IN PROGRESS</span>
+                <p>Not every possible engine tuning combination is properly tested. If you tune your engine for higher performance, use the Dyno whenever you can and take notes to help identify issues.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">5. Imported CD Issues</div>
+                <span class="issue-status status-planned">KNOWN ISSUES</span>
+                <p>Some imported custom CDs from My Summer Car may have issues playing. <strong>Fixed in v.260101-01 for Taxi and Sorbett.</strong></p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">11. No Intro or Ending</div>
+                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
+                <p>Game does not have intro cutscene or ending sequence. It also doesn't have any sort of ending condition, except dying in Permadeath mode.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">12. Missing Textures</div>
+                <span class="issue-status status-planned">WORK IN PROGRESS</span>
+                <p>Some texture work is missing. Visual polish ongoing throughout Early Access.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">13. Custom Paintjobs</div>
+                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
+                <p>Importing custom paintjob for Corris is not yet implemented. Coming in future update.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">14. Part Re-spraying</div>
+                <span class="issue-status status-not-implemented">LIMITED</span>
+                <p>Some engine / car parts can't be re-sprayed yet. Full respray system coming later.</p>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-title">15. Simplified Weather</div>
+                <span class="issue-status status-planned">TEMPORARY SYSTEM</span>
+                <p>Weather is simplified at this point. Once developer implements the full weather system, it can be forecasted for up to one week and harsh conditions will be rarer. Current simplified weather is for testing what difficulties harsh weather might cause.</p>
+            </div>
+
+            <div class="info-box warning" style="margin-top: 2rem;">
+                <div class="info-box-title">⚠️ Developer's EA Philosophy</div>
+                <p><strong>From the official EA notes:</strong> <em>"After the release, the idea is to fix at least the worst issues and bugs. Then it is time to start adding more content that I have already in mind, and finish/polish those things listed above."</em></p>
+                <p style="margin-top: 0.75rem;"><strong>Translation:</strong> Focus is on stability and bug fixes first, then new content and polish.</p>
+            </div>
+        </section>
+
+        <!-- How to Access Patch Notes -->
+        <section id="how-to-access" class="content-section">
+            <h2>💡 How to Access Patch Notes Yourself</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Want to stay up-to-date with the latest patches? Here are three official ways to find patch notes:</p>
+
+            <!-- Method 1: Steam Discussions -->
+            <div class="access-method">
+                <div class="method-title">
+                    <span class="icon">💬</span>
+                    <span>Method 1: Steam Community Discussions</span>
+                </div>
+                <p><strong>Most Reliable Method:</strong> Developer Toplessgun posts official patch notes in Steam Discussions, usually pinned to the top.</p>
+                <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                    <li>Go to <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" style="color: var(--accent-ice);">My Winter Car Steam Discussions</a></li>
+                    <li>Look for pinned posts titled "UPDATE v.XXXXXX-XX"</li>
+                    <li>Recent patches are usually at the top, older ones may fall into the forums</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">💡 Tip: Bookmark the discussions page for quick access. Developer posts there immediately after releasing updates.</p>
+            </div>
+
+            <!-- Method 2: Local Changelog.txt -->
+            <div class="access-method">
+                <div class="method-title">
+                    <span class="icon">📄</span>
+                    <span>Method 2: Local Changelog.txt File</span>
+                </div>
+                <p><strong>Direct Access:</strong> Developer also maintains a Changelog.txt file in your game installation folder.</p>
+                
+                <div class="code-block">
+Right-click My Winter Car in Steam Library<br>
+→ Manage<br>
+→ Browse Local Files<br>
+→ Open "Changelog.txt"
+                </div>
+
+                <p style="margin-top: 1rem;"><strong>Typical location:</strong></p>
+                <div class="code-block">
+C:\Program Files (x86)\Steam\steamapps\common\My Winter Car\Changelog.txt
+                </div>
+
+                <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">💡 Tip: This file is updated with most patches and provides a quick offline reference.</p>
+            </div>
+
+            <!-- Method 3: SteamDB -->
+            <div class="access-method">
+                <div class="method-title">
+                    <span class="icon">📊</span>
+                    <span>Method 3: SteamDB Patch Tracking</span>
+                </div>
+                <p><strong>For Technical Users:</strong> Track all updates including silent patches and depot changes.</p>
+                <p style="margin-top: 1rem;">Visit: <a href="https://steamdb.info/app/4164420/patchnotes/" target="_blank" style="color: var(--accent-ice);">SteamDB - My Winter Car</a></p>
+                <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.95rem;">⚠️ Note: SteamDB shows when updates are pushed but doesn't always include developer notes. Use Steam Discussions for detailed patch notes.</p>
+            </div>
+        </section>
+
+        <!-- Update Timeline -->
+        <section id="timeline" class="content-section">
+            <h2>⏱️ Complete Update Timeline</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Visual history of all My Winter Car updates from EA launch to present:</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-success);">January 2, 2026 - v.260102-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Latest stability patch</p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Sorbett stability improvements (ongoing)</li>
+                        <li>Save data fixes for items/tools</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">January 1, 2026 - v.260101-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">New Year's Day patch</p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Engine shutoff/restart fixes (Sorbett & Tractor)</li>
+                        <li>Fixed missing order items (Subwoofers, Antennas, Race Seat)</li>
+                        <li>CD audio fixes for Taxi and Sorbett</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">December 30, 2025 - v.251230-04</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">First major post-launch patch</p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Disabled PSK food vendors (crash investigation)</li>
+                        <li>Sorbett physics improvements</li>
+                        <li>13 bug fixes (Permadeath, building issues, Rivett assembly, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-warning);">December 29, 2025 - Early Access Launch</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Initial public release</p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Full car building & tuning system</li>
+                        <li>Winter survival mechanics</li>
+                        <li>Ice racing (no rewards yet)</li>
+                        <li>15+ known issues documented</li>
+                        <li>80-90% of core gameplay complete</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Known Issues Section -->
+        <section id="known-issues" class="content-section">
+            <h2>⚠️ Ongoing Known Issues (As of January 2026)</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">These issues are acknowledged by the developer and planned for future updates:</p>
+
+            <div class="info-box warning">
+                <div class="info-box-title">🔧 Still Being Worked On</div>
+                <ul>
+                    <li><strong>Ice Race Rewards:</strong> Trophies and prize money system not implemented</li>
+                    <li><strong>Custom Paintjobs:</strong> Can't import custom Corris paintjobs yet</li>
+                    <li><strong>Weather System:</strong> Current weather is simplified; full forecast system coming</li>
+                    <li><strong>Death Statistics:</strong> Death screen shows incorrect/random stats</li>
+                    <li><strong>Some Texture Work:</strong> Visual polish ongoing</li>
+                    <li><strong>Historical Inspection:</strong> Not yet fully accurate (may pass/fail incorrectly)</li>
+                    <li><strong>Part Respraying:</strong> Some engine/car parts can't be resprayed yet</li>
+                    <li><strong>Intro/Ending:</strong> No cutscenes or ending sequence</li>
+                </ul>
+            </div>
+
+            <div class="info-box success" style="margin-top: 1.5rem;">
+                <div class="info-box-title">✅ Recently Fixed</div>
+                <ul>
+                    <li><strong>Permadeath Save Deletion:</strong> Now properly deletes saves on death (v.251230-04)</li>
+                    <li><strong>CD Audio:</strong> Works in Taxi and Sorbett now (v.260101-01)</li>
+                    <li><strong>Missing Order Items:</strong> Subwoofers, Antennas, Race Seat fixed (v.260101-01)</li>
+                    <li><strong>Car Shed Doors:</strong> No longer get stuck (v.251230-04)</li>
+                    <li><strong>Sorbett Physics:</strong> Significantly improved stability (v.251230-04, v.260102-01)</li>
+                </ul>
+            </div>
+
+            <div class="info-box" style="margin-top: 1.5rem;">
+                <div class="info-box-title">💬 How to Report New Issues</div>
+                <ol>
+                    <li>Check if already reported on <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" style="color: var(--accent-ice);">Steam Discussions</a></li>
+                    <li>Update to latest patch first (some issues may already be fixed)</li>
+                    <li>Verify game files: Steam Library → Properties → Local Files → Verify Integrity</li>
+                    <li>Create detailed bug report with: game version, what you were doing, reproducible steps</li>
+                    <li>Attach save file if requested by developer</li>
+                    <li>Be patient — solo developer is rapidly fixing issues based on community feedback</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="content-section" style="border-top: 2px solid var(--border-color); padding-top: 3rem;">
+            <h2 style="text-align: center; margin-bottom: 1rem;">🔗 Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">Explore other comprehensive guides for My Winter Car</p>
+            
+            <div class="quick-nav">
+                <a href="/troubleshooting-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">🔧</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Troubleshooting Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Fix crashes, bugs, and common problems. Complete solutions for every known issue.</p>
+                </a>
+
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">🎓</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Beginner's Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">First 30 minutes walkthrough. Survive your first day in Finnish winter.</p>
+                </a>
+
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">🚗</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Complete Vehicles Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">All 6 vehicles compared. Specs, performance, and best uses for each car.</p>
+                </a>
+
+                <a href="/mods-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">🛠️</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Modding Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Install BepInEx, find mods, and enhance your game safely.</p>
+                </a>
+
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">🔩</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Corris Rivett Build Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Complete 200+ part assembly guide. From rust bucket to road-ready machine.</p>
+                </a>
+
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon" style="font-size: 2.5rem;">❄️</div>
+                    <h3 style="color: var(--accent-ice); margin: 0.75rem 0 0.5rem 0;">Winter Survival Guide</h3>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary); margin: 0;">Master all 6 survival stats. Stay alive in harsh Finnish winter conditions.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>My Winter Car Wiki</strong> - Community-driven patch notes archive</p>
+            <p><strong>Current Version Reference:</strong> v.260102-01 (January 2, 2026) | Early Access</p>
+            <p style="margin-top: 1rem;">Game developed by <strong>Johannes Rojola (Toplessgun)</strong> / Amistech Games</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://store.steampowered.com/app/4164420/My_Winter_Car/" target="_blank">Buy My Winter Car on Steam</a> | 
+                <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank">Official Steam Discussions</a> | 
+                <a href="https://my-winter-car.fandom.com" target="_blank">Community Wiki</a>
+            </p>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">
+                ⚠️ <strong>Early Access Warning:</strong> Game is in active development. Features, mechanics, and content are subject to change. Patch information current as of January 7, 2026.
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Not affiliated with Amistech Games | All patch notes sourced from official Steam announcements</p>
+        </div>
+    </footer>
+</body>
+</html>
