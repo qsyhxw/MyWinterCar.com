@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifu Truck Guide — Location, Controls & Septic Job Tips | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Complete guide to the Gifu septic truck in My Winter Car. Find the truck location, learn how to start and drive it, and master the septic pumping job to earn 1200 MK per tank.">
+    <link rel="canonical" href="https://mywintercar.com/gifu-guide">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(255, 140, 66, 0.15), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-warm), var(--accent-warning));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 140, 66, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Step by Step */
+        .step {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .step.warning-step {
+            border-left-color: var(--accent-warning);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 700;
+            margin-right: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .money {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success-green);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Key Binding */
+        kbd {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 0.2rem 0.5rem;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/vehicles-guide">Vehicles</a> / Gifu Truck Guide
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Gifu Truck Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Master Finland's Hardest Working Septic Truck</p>
+        <div class="hero-meta">
+            <div class="meta-item">🚛 Type: Septic Tank Truck</div>
+            <div class="meta-item">💰 Pay: 1,200 MK per Job</div>
+            <div class="meta-item">⏱️ Read Time: 15 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. What is the Gifu?</a></li>
+                <li><a href="#location">2. Finding the Gifu Location</a></li>
+                <li><a href="#starting">3. How to Start the Gifu</a></li>
+                <li><a href="#driving">4. Driving Controls & Tips</a></li>
+                <li><a href="#septic-job">5. Septic Pumping Job Guide</a></li>
+                <li><a href="#money">6. Maximizing Your Earnings</a></li>
+                <li><a href="#troubleshooting">7. Troubleshooting Common Issues</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Some mechanics or payment rates may
+                change in future updates.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. What is the Gifu?</h2>
+
+            <p>The <span class="highlight">Gifu</span> is a heavy-duty septic tank truck available in My Winter Car.
+                It's one of several vehicles you can use to earn money through the septic pumping job, making it an
+                essential tool for players looking to fund their Corris Rivett build.</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Specification</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Vehicle Type</strong></td>
+                    <td>Septic Tank Pump Truck</td>
+                </tr>
+                <tr>
+                    <td><strong>Engine</strong></td>
+                    <td>Diesel (requires glow plug warm-up)</td>
+                </tr>
+                <tr>
+                    <td><strong>Transmission</strong></td>
+                    <td>12-Speed Manual (6 Low + 6 High)</td>
+                </tr>
+                <tr>
+                    <td><strong>Brakes</strong></td>
+                    <td>Air Brakes (requires pressure build-up)</td>
+                </tr>
+                <tr>
+                    <td><strong>Tank Capacity</strong></td>
+                    <td>10,000 Liters (~4 septic tanks)</td>
+                </tr>
+                <tr>
+                    <td><strong>Job Payment</strong></td>
+                    <td><span class="money">1,200 MK</span> per septic tank</td>
+                </tr>
+            </table>
+
+            <div class="info-box success">
+                <div class="info-box-title">🔑 Good News: You Already Have the Keys!</div>
+                <p>Unlike some vehicles, you <strong>already have the Gifu keys by default</strong> when starting the
+                    game. No need to find or purchase them!</p>
+            </div>
+        </section>
+
+        <section id="location" class="content-section">
+            <h2>2. Finding the Gifu Location</h2>
+
+            <p>The Gifu is parked at the <span class="highlight">Wastewater Treatment Plant</span> in Peräjärvi. This is
+                also where you'll return to empty the tank after completing jobs.</p>
+
+            <div class="step">
+                <div class="step-title">📍 Wastewater Treatment Plant Location</div>
+                <ul>
+                    <li>Located in the <strong>Peräjärvi</strong> area</li>
+                    <li>Check your in-game map (found at parents' house above the telephone)</li>
+                    <li>The truck is parked in the facility grounds</li>
+                    <li>This is also where you'll dump collected sewage</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">🏚️ Abandoned Gifu Variant</div>
+                <p>There's also an <strong>abandoned Gifu</strong> located next to <strong>Toivo's house in
+                        Kesselinperä</strong>. This variant may have different uses or conditions.</p>
+            </div>
+        </section>
+
+        <section id="starting" class="content-section">
+            <h2>3. How to Start the Gifu</h2>
+
+            <p>The Gifu uses a <strong>diesel engine</strong> and <strong>air brake system</strong>, requiring a
+                specific startup procedure. Follow these steps carefully:</p>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">1</span>Check Transmission is in Neutral</div>
+                <p>Before starting, ensure the truck is in <strong>neutral gear</strong>. This prevents the truck from
+                    lurching forward when the engine starts.</p>
+            </div>
+
+            <div class="step warning-step">
+                <div class="step-title"><span class="step-number">2</span>Wait for Glow Plug Light</div>
+                <p>Turn the ignition key and look for the <strong>red glow plug indicator light</strong> (coil symbol)
+                    on the dashboard.</p>
+                <ul>
+                    <li><strong>Wait until this light turns OFF</strong> before cranking</li>
+                    <li>This takes approximately <strong>20-30 seconds</strong></li>
+                    <li>First startup after loading the game takes longer</li>
+                </ul>
+                <div class="info-box warning" style="margin-top: 1rem; margin-bottom: 0;">
+                    <p><strong>Important:</strong> Cranking before the glow plug is ready will make starting much harder
+                        or impossible in cold weather!</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">3</span>Crank the Engine</div>
+                <p>Once the glow plug light is off, crank the engine until it starts. If it struggles, try
+                    <strong>pumping the accelerator</strong> while cranking.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">4</span>Pull Out the Hand Throttle</div>
+                <p>Pull the <strong>hand throttle knob</strong> partially or fully out. This serves two purposes:</p>
+                <ul>
+                    <li>Helps keep the engine running smoothly after cold start</li>
+                    <li>Speeds up air pressure build-up for the brakes</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title"><span class="step-number">5</span>Build Air Pressure</div>
+                <p>The Gifu uses <strong>air brakes</strong> which won't work without sufficient pressure.</p>
+                <ul>
+                    <li>A <strong>red warning light + loud buzzer</strong> indicates low air pressure</li>
+                    <li>A <strong>safety brake</strong> is automatically applied to prevent movement</li>
+                    <li>Rev the engine or use hand throttle to build pressure faster</li>
+                    <li>Wait <strong>15-30 seconds</strong> until the buzzer stops and light turns off</li>
+                </ul>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🚨 Don't Drive Without Air Pressure!</div>
+                <p>If you release the handbrake before air pressure is built, the safety brake will prevent movement.
+                    Wait for the buzzer to stop before attempting to drive.</p>
+            </div>
+        </section>
+
+        <section id="driving" class="content-section">
+            <h2>4. Driving Controls & Tips</h2>
+
+            <p>The Gifu has unique driving characteristics due to its size, 12-speed transmission, and air brake system.
+            </p>
+
+            <h3>Key Controls</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>Action</th>
+                    <th>Default Key</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Switch High/Low Range</td>
+                    <td><kbd>R</kbd></td>
+                    <td>Toggle between 1L-6L and 1H-6H</td>
+                </tr>
+                <tr>
+                    <td>Lights</td>
+                    <td><kbd>L</kbd></td>
+                    <td>Toggle headlights</td>
+                </tr>
+                <tr>
+                    <td>Push Truck (if stuck)</td>
+                    <td><kbd>J</kbd></td>
+                    <td>Useful when stuck in snow</td>
+                </tr>
+                <tr>
+                    <td>Turn Signals</td>
+                    <td>Arrow Keys</td>
+                    <td>Left/Right blinkers</td>
+                </tr>
+            </table>
+
+            <h3>12-Speed Transmission Guide</h3>
+            <div class="step">
+                <div class="step-title">⚙️ Understanding the Gear System</div>
+                <ul>
+                    <li><strong>Low Range (L):</strong> Gears 1L through 6L — for starting, heavy loads, and hills</li>
+                    <li><strong>High Range (H):</strong> Gears 1H through 6H — for highway speeds</li>
+                    <li>Press <kbd>R</kbd> to switch between High and Low range</li>
+                    <li><strong>Recommended Starting Gear:</strong> 2L or 3L</li>
+                    <li><strong>Fuel Efficiency Tip:</strong> Some players shift from 2L directly to 2H</li>
+                </ul>
+            </div>
+
+            <h3>Special Features</h3>
+
+            <div class="step">
+                <div class="step-title">🔼 Rear Axle Lift</div>
+                <p>The Gifu has a <strong>liftable rear axle</strong> controlled by a switch.</p>
+                <ul>
+                    <li><strong>Axle Raised (Yellow Light ON):</strong> Use when truck is empty — saves fuel and
+                        improves handling</li>
+                    <li><strong>Axle Lowered (Yellow Light OFF):</strong> Use when hauling sewage — provides stability
+                        and traction</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🔒 Differential Lock</div>
+                <ul>
+                    <li>Forces both drive wheels to spin at the same rate</li>
+                    <li><strong>Use for:</strong> Off-road driving, getting unstuck</li>
+                    <li><strong>Avoid on roads:</strong> Hinders turning, increases fuel consumption</li>
+                </ul>
+            </div>
+
+            <h3>Handbrake Operation</h3>
+            <ul>
+                <li><strong>Lever UP:</strong> Handbrake disengaged (released)</li>
+                <li><strong>Lever DOWN:</strong> Handbrake engaged (locked)</li>
+                <li>Releasing handbrake causes temporary air pressure drop (buzzer may sound)</li>
+                <li>Rev engine to quickly replenish air pressure</li>
+            </ul>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Air Brake Warning</div>
+                <p>Frequent or excessive braking can <strong>deplete air pressure</strong>. If you hear the buzzer while
+                    driving, ease off the brakes and let the compressor catch up. Avoid using the handbrake repeatedly.
+                </p>
+            </div>
+        </section>
+
+        <section id="septic-job" class="content-section">
+            <h2>5. Septic Pumping Job Guide</h2>
+
+            <p>The septic pumping job is one of the best ways to earn money in My Winter Car. Each completed job pays
+                <span class="money">1,200 MK</span>!</p>
+
+            <h3>Step 1: Receive a Job Call</h3>
+            <div class="step">
+                <div class="step-title">📞 Answering the Phone</div>
+                <ul>
+                    <li>Jobs come as <strong>random phone calls</strong> from homeowners</li>
+                    <li>Answer the phone at your apartment or parents' house</li>
+                    <li><strong>CRITICAL:</strong> Listen to the <strong>entire message</strong> — do NOT hang up early!
+                    </li>
+                    <li>After the call ends, a new location marker appears on your map</li>
+                </ul>
+                <div class="info-box danger" style="margin-top: 1rem; margin-bottom: 0;">
+                    <p><strong>Common Mistake:</strong> Hanging up before the NPC finishes speaking will cancel the job.
+                        Wait until they hang up!</p>
+                </div>
+            </div>
+
+            <h3>Step 2: Drive to the Location</h3>
+            <div class="step">
+                <div class="step-title">🚛 Getting the Gifu</div>
+                <ol>
+                    <li>Go to the <strong>Wastewater Treatment Plant</strong></li>
+                    <li>Get in the Gifu (you have the keys by default)</li>
+                    <li>Start the truck following the procedure in Section 3</li>
+                    <li>Drive to the <strong>marked location</strong> on your map</li>
+                    <li>Park approximately <strong>3-4 feet</strong> from the septic tank</li>
+                </ol>
+            </div>
+
+            <h3>Step 3: Pump the Septic Tank</h3>
+            <div class="step">
+                <div class="step-title">🔧 Operating the Pump</div>
+                <ol>
+                    <li><strong>Remove the septic tank lid</strong> (square cover on the ground)</li>
+                    <li>Go to the <strong>rear of the Gifu</strong></li>
+                    <li><strong>Click on the hose</strong> to pick it up</li>
+                    <li><strong>Place the hose end INTO the septic tank</strong> (ensure it goes in fully)</li>
+                    <li>Return to the <strong>Gifu cabin</strong></li>
+                    <li>Find the <strong>hydraulic pump switch</strong> on the dashboard and turn it ON</li>
+                    <li>Use the <strong>hand throttle</strong> to rev the engine and start pumping</li>
+                </ol>
+                <div class="info-box success" style="margin-top: 1rem; margin-bottom: 0;">
+                    <p><strong>How to Know It's Working:</strong> Your character will start <strong>coughing</strong> —
+                        this indicates the pumping has begun successfully! The hand throttle also increases pumping
+                        speed.</p>
+                </div>
+            </div>
+
+            <h3>Step 4: Get Paid</h3>
+            <div class="step">
+                <div class="step-title">💰 Collecting Payment</div>
+                <ul>
+                    <li>Continue pumping until the tank is empty</li>
+                    <li>The homeowner NPC will say something like <strong>"Job done, here's money"</strong></li>
+                    <li>You receive <span class="money">1,200 MK</span> per completed job</li>
+                    <li><strong>Remove the hose</strong> from the septic tank</li>
+                    <li><strong>Reattach the hose</strong> to the rear of the Gifu</li>
+                </ul>
+            </div>
+
+            <h3>Step 5: Empty the Gifu Tank</h3>
+            <div class="step">
+                <div class="step-title">🏭 Dumping at Treatment Plant</div>
+                <ul>
+                    <li>The Gifu holds <strong>10,000 liters</strong> (approximately 4 septic tanks worth)</li>
+                    <li>When full, return to the <strong>Wastewater Treatment Plant</strong></li>
+                    <li>Dumping costs approximately <strong>1 MK per 6 liters</strong></li>
+                </ul>
+                <div class="info-box danger" style="margin-top: 1rem; margin-bottom: 0;">
+                    <p><strong>Warning:</strong> Illegally dumping waste (anywhere other than the treatment plant) will
+                        result in a <strong>fine</strong>!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="money" class="content-section">
+            <h2>6. Maximizing Your Earnings</h2>
+
+            <p>Here's how to make the most money from the septic pumping job:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Factor</th>
+                    <th>Details</th>
+                    <th>Tip</th>
+                </tr>
+                <tr>
+                    <td><strong>Payment per Job</strong></td>
+                    <td><span class="money">1,200 MK</span></td>
+                    <td>Fixed rate per septic tank</td>
+                </tr>
+                <tr>
+                    <td><strong>Tank Capacity</strong></td>
+                    <td>10,000 L (~4 tanks)</td>
+                    <td>Do 4 jobs before returning to dump</td>
+                </tr>
+                <tr>
+                    <td><strong>Dump Cost</strong></td>
+                    <td>~1 MK / 6 liters</td>
+                    <td>~1,667 MK to dump a full tank</td>
+                </tr>
+                <tr>
+                    <td><strong>Net Profit (4 jobs)</strong></td>
+                    <td>~3,133 MK</td>
+                    <td>(4 × 1,200) - 1,667 = 3,133</td>
+                </tr>
+            </table>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Efficiency Tips</div>
+                <ul>
+                    <li><strong>Complete multiple jobs</strong> before returning to dump — saves fuel and time</li>
+                    <li><strong>Wait by the phone</strong> for job calls, or bring a mobile phone</li>
+                    <li><strong>Plan your route</strong> to minimize driving distance between jobs</li>
+                    <li><strong>Raise the rear axle</strong> when empty for better fuel economy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="content-section">
+            <h2>7. Troubleshooting Common Issues</h2>
+
+            <h3>Gifu Won't Start</h3>
+            <div class="step">
+                <div class="step-title">🔴 Engine Won't Crank or Start</div>
+                <ul>
+                    <li><strong>Did you wait for glow plug light?</strong> — Wait for red coil symbol to turn off</li>
+                    <li><strong>Is it in neutral?</strong> — Check transmission is not in gear</li>
+                    <li><strong>Try pumping accelerator</strong> while cranking</li>
+                    <li><strong>Cold weather:</strong> May take longer; use hand throttle after starting</li>
+                </ul>
+            </div>
+
+            <h3>Gifu Won't Move</h3>
+            <div class="step">
+                <div class="step-title">🔴 Truck Started But Won't Drive</div>
+                <ul>
+                    <li><strong>Check air pressure</strong> — Is the buzzer still sounding?</li>
+                    <li><strong>Wait for air pressure to build</strong> — Rev engine or use hand throttle</li>
+                    <li><strong>Release handbrake</strong> — Lever should be UP</li>
+                    <li><strong>Check you're in gear</strong> — Try 2L or 3L</li>
+                </ul>
+            </div>
+
+            <h3>Pump Not Working</h3>
+            <div class="step">
+                <div class="step-title">🔴 Hose In Tank But Nothing Happening</div>
+                <ul>
+                    <li><strong>Is hydraulic pump switch ON?</strong> — Check dashboard</li>
+                    <li><strong>Are you using hand throttle?</strong> — Rev engine to power pump</li>
+                    <li><strong>Is hose fully inserted?</strong> — The end must be completely in the tank</li>
+                    <li><strong>Character coughing?</strong> — This means it's working; wait for tank to empty</li>
+                </ul>
+            </div>
+
+            <h3>No Job Registered</h3>
+            <div class="step">
+                <div class="step-title">🔴 Phone Call But No Map Marker</div>
+                <ul>
+                    <li><strong>Did you hang up early?</strong> — Must listen to ENTIRE call</li>
+                    <li><strong>Wait for NPC to finish talking</strong> — They will hang up when done</li>
+                    <li><strong>Check map after call ends</strong> — New marker should appear</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more vehicles and money-making
+                strategies:</p>
+            <div class="quick-nav">
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <strong>Vehicles Guide</strong>
+                    <p>Overview of all vehicles including Kekmet, Sorbett, and more.</p>
+                </a>
+                <a href="/money-guide" class="quick-nav-item">
+                    <div class="icon">💰</div>
+                    <strong>Money Guide</strong>
+                    <p>All the best ways to earn money in My Winter Car.</p>
+                </a>
+                <a href="/jobs-guide" class="quick-nav-item">
+                    <div class="icon">💼</div>
+                    <strong>Jobs Guide</strong>
+                    <p>Complete list of available jobs and how to do them.</p>
+                </a>
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <strong>Corris Rivett Guide</strong>
+                    <p>Build your project car with the money you earn!</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
