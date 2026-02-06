@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Location Guide — Finding & Using the School | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Find the school in My Winter Car! Located in the center of Peräjärvi village. Complete guide to the school building, its location on the map, and nearby points of interest.">
+    <link rel="canonical" href="https://mywintercar.com/school-guide">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-school: #f59e0b;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-school), var(--accent-ice));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(245, 158, 11, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.school {
+            border-left-color: var(--accent-school);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Location Card */
+        .location-highlight {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(74, 158, 255, 0.1));
+            border: 2px solid var(--accent-school);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .location-highlight .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .location-highlight h3 {
+            color: var(--accent-school);
+            margin: 0 0 0.5rem;
+        }
+
+        .location-highlight p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* POI Grid */
+        .poi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .poi-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .poi-card.highlight {
+            border-color: var(--accent-school);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .poi-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .poi-card h4 {
+            margin: 0.5rem 0;
+            color: var(--accent-ice);
+        }
+
+        .poi-card.highlight h4 {
+            color: var(--accent-school);
+        }
+
+        .poi-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Directions */
+        .direction-step {
+            display: flex;
+            gap: 1.5rem;
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: var(--accent-school);
+            color: #1f2937;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            margin: 0 0 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .step-content p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Map Visual */
+        .map-visual {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .map-visual h4 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--accent-ice);
+        }
+
+        .map-diagram {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .map-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .map-item {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .map-item.road {
+            background: #374151;
+            color: var(--text-secondary);
+            min-width: 120px;
+        }
+
+        .map-item.poi {
+            background: rgba(74, 158, 255, 0.2);
+            border: 1px solid var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .map-item.school {
+            background: rgba(245, 158, 11, 0.3);
+            border: 2px solid var(--accent-school);
+            color: var(--accent-school);
+            font-weight: 700;
+        }
+
+        .map-item.player {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid var(--success-green);
+            color: var(--success-green);
+        }
+
+        .map-arrow {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .school-text {
+            color: var(--accent-school);
+            font-weight: 700;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-school);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .direction-step {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/locations">Locations</a> / School
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>🏫 School Location Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Find the School in Peräjärvi</p>
+        <div class="hero-meta">
+            <div class="meta-item">📍 Central Peräjärvi</div>
+            <div class="meta-item">🗺️ Map Location</div>
+            <div class="meta-item">⏱️ Read Time: 5 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. School Overview</a></li>
+                <li><a href="#location">2. Exact Location</a></li>
+                <li><a href="#directions">3. How to Get There</a></li>
+                <li><a href="#nearby">4. Nearby Points of Interest</a></li>
+                <li><a href="#map">5. Using the In-Game Map</a></li>
+                <li><a href="#perajarvi">6. Peräjärvi Village Guide</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). The school's interactive features and
+                activities may be expanded in future updates.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. School Overview</h2>
+
+            <p>The <span class="school-text">school</span> (Finnish: <em>koulu</em>) is a notable building located in
+                the heart of Peräjärvi village. As one of the key landmarks in <strong>My Winter Car</strong>, it serves
+                as a reference point for navigation and may play a larger role in future updates.</p>
+
+            <div class="location-highlight">
+                <div class="icon">🏫</div>
+                <h3>Peräjärvi School</h3>
+                <p>Located in the <strong>center of Peräjärvi village</strong>, the school is one of the main landmarks
+                    you'll encounter while exploring the town.</p>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Detail</th>
+                    <th>Information</th>
+                </tr>
+                <tr>
+                    <td><strong>Location</strong></td>
+                    <td>Central Peräjärvi</td>
+                </tr>
+                <tr>
+                    <td><strong>Building Type</strong></td>
+                    <td>Public Building / Landmark</td>
+                </tr>
+                <tr>
+                    <td><strong>Game Region</strong></td>
+                    <td>Alivieska (around Lake Peräjärvi)</td>
+                </tr>
+                <tr>
+                    <td><strong>MSC Reference</strong></td>
+                    <td>Similar location exists in My Summer Car</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="location" class="content-section">
+            <h2>2. Exact Location</h2>
+
+            <p>The school is situated in the <span class="highlight">center of Peräjärvi village</span>, the main
+                populated area in My Winter Car. The game world is set in the fictional <strong>Alivieska</strong>
+                region of Finland, surrounding the iconic <strong>Lake Peräjärvi</strong>.</p>
+
+            <div class="info-box school">
+                <div class="info-box-title">📍 Location Summary</div>
+                <ul>
+                    <li><strong>Village:</strong> Peräjärvi (main town)</li>
+                    <li><strong>Position:</strong> Central area, near other public buildings</li>
+                    <li><strong>From Your Apartment:</strong> Head towards the village center</li>
+                    <li><strong>Visible on:</strong> In-game wall map</li>
+                </ul>
+            </div>
+
+            <h3>Game World Geography</h3>
+            <p>My Winter Car is set in a fictional Finnish countryside area:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Geographic Element</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Region Name</strong></td>
+                    <td>Alivieska (fictional)</td>
+                </tr>
+                <tr>
+                    <td><strong>Central Lake</strong></td>
+                    <td>Lake Peräjärvi (frozen in winter, driveable!)</td>
+                </tr>
+                <tr>
+                    <td><strong>Main Village</strong></td>
+                    <td>Peräjärvi</td>
+                </tr>
+                <tr>
+                    <td><strong>Player Starting Point</strong></td>
+                    <td>Apartment A6 in apartment block</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="directions" class="content-section">
+            <h2>3. How to Get There</h2>
+
+            <p>Here's how to find the school from your starting apartment:</p>
+
+            <div class="direction-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Leave Your Apartment (A6)</h4>
+                    <p>Exit your apartment in the apartment block. This is your starting location in My Winter Car.</p>
+                </div>
+            </div>
+
+            <div class="direction-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Check the Wall Map</h4>
+                    <p>Before heading out, look at the in-game map on your apartment wall. This shows all major
+                        locations including the school.</p>
+                </div>
+            </div>
+
+            <div class="direction-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Head to the Village Center</h4>
+                    <p>Drive or walk towards the center of Peräjärvi village. The school is located in the central area,
+                        near other public buildings like the pub and cemetery.</p>
+                </div>
+            </div>
+
+            <div class="direction-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Look for the School Building</h4>
+                    <p>The school is a distinct building in the village center. You'll recognize it as a larger public
+                        building compared to residential houses.</p>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Navigation Tip</div>
+                <p>The village center is fairly compact. Once you're in the main area of Peräjärvi with the pub and
+                    other businesses, the school is nearby. Use the in-game map as your primary navigation tool!</p>
+            </div>
+        </section>
+
+        <section id="nearby" class="content-section">
+            <h2>4. Nearby Points of Interest</h2>
+
+            <p>The school is located in the busiest part of Peräjärvi. Here are the notable locations nearby:</p>
+
+            <div class="poi-grid">
+                <div class="poi-card highlight">
+                    <div class="poi-icon">🏫</div>
+                    <h4>School</h4>
+                    <p>Central village landmark</p>
+                </div>
+                <div class="poi-card">
+                    <div class="poi-icon">🍺</div>
+                    <h4>Pub</h4>
+                    <p>Local bar in village center</p>
+                </div>
+                <div class="poi-card">
+                    <div class="poi-icon">⛪</div>
+                    <h4>Cemetery</h4>
+                    <p>Village cemetery grounds</p>
+                </div>
+                <div class="poi-card">
+                    <div class="poi-icon">🚗</div>
+                    <h4>Vehicle Inspection</h4>
+                    <p>Katsastus (inspection office)</p>
+                </div>
+                <div class="poi-card">
+                    <div class="poi-icon">🔧</div>
+                    <h4>Fleetari's Garage</h4>
+                    <p>Car repair and parts shop</p>
+                </div>
+                <div class="poi-card">
+                    <div class="poi-icon">📱</div>
+                    <h4>Futufon Office</h4>
+                    <p>Phone/telecommunications</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">📝 Note on Teimo's Shop</div>
+                <p>Unlike My Summer Car, <strong>Teimo's shop has been removed</strong> in My Winter Car. The village
+                    has been updated with new businesses and some changes from the predecessor.</p>
+            </div>
+        </section>
+
+        <section id="map" class="content-section">
+            <h2>5. Using the In-Game Map</h2>
+
+            <p>My Winter Car includes an in-game map to help you navigate the world:</p>
+
+            <div class="map-visual">
+                <h4>📍 Simple Village Layout</h4>
+                <div class="map-diagram">
+                    <div class="map-row">
+                        <div class="map-item poi">Lake Peräjärvi (Frozen)</div>
+                    </div>
+                    <div class="map-arrow">↓</div>
+                    <div class="map-row">
+                        <div class="map-item road">Main Road</div>
+                    </div>
+                    <div class="map-arrow">↓</div>
+                    <div class="map-row">
+                        <div class="map-item poi">Pub</div>
+                        <div class="map-item school">🏫 SCHOOL</div>
+                        <div class="map-item poi">Cemetery</div>
+                    </div>
+                    <div class="map-arrow">↓</div>
+                    <div class="map-row">
+                        <div class="map-item road">Village Road</div>
+                    </div>
+                    <div class="map-arrow">↓</div>
+                    <div class="map-row">
+                        <div class="map-item player">🏠 Your Apartment (A6)</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Where to Find the Map</h3>
+            <ul>
+                <li><strong>Location:</strong> Inside your apartment (A6)</li>
+                <li><strong>Position:</strong> Mounted on the wall</li>
+                <li><strong>Shows:</strong> All major locations, roads, and points of interest</li>
+                <li><strong>Tip:</strong> Study the map before long trips!</li>
+            </ul>
+
+            <div class="info-box school">
+                <div class="info-box-title">🧊 Frozen Lake Navigation</div>
+                <p>In My Winter Car, <strong>Lake Peräjärvi is frozen</strong> and can be driven across! This opens up
+                    shortcuts across the map. Just be careful with your speed on the ice.</p>
+            </div>
+        </section>
+
+        <section id="perajarvi" class="content-section">
+            <h2>6. Peräjärvi Village Guide</h2>
+
+            <p>Peräjärvi is the main village in My Winter Car. Here's what you need to know:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Village Name</strong></td>
+                    <td>Peräjärvi</td>
+                </tr>
+                <tr>
+                    <td><strong>Based On</strong></td>
+                    <td>Similar to My Summer Car layout</td>
+                </tr>
+                <tr>
+                    <td><strong>Changes from MSC</strong></td>
+                    <td>New businesses added, Teimo's shop removed</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Landmarks</strong></td>
+                    <td>School, Pub, Cemetery, Inspection Office</td>
+                </tr>
+                <tr>
+                    <td><strong>Businesses</strong></td>
+                    <td>Fleetari's Garage, Futufon Office, and more</td>
+                </tr>
+            </table>
+
+            <h3>Village vs. Countryside</h3>
+            <p>The game world extends beyond Peräjärvi village:</p>
+            <ul>
+                <li><strong>Village Center:</strong> School, pub, shops, public services</li>
+                <li><strong>Residential Areas:</strong> Your apartment block, other housing</li>
+                <li><strong>Industrial:</strong> Wastewater treatment plant (Gifu location)</li>
+                <li><strong>Recreation:</strong> Lake Peräjärvi, racing events</li>
+                <li><strong>Your Parents' Home:</strong> Located elsewhere on the map</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more locations and features:</p>
+            <div class="quick-nav">
+                <a href="/locations-guide" class="quick-nav-item">
+                    <div class="icon">🗺️</div>
+                    <strong>Complete Locations Guide</strong>
+                    <p>All points of interest on the map.</p>
+                </a>
+                <a href="/gifu-guide" class="quick-nav-item">
+                    <div class="icon">🚛</div>
+                    <strong>Gifu Truck Guide</strong>
+                    <p>Find and operate the septic truck.</p>
+                </a>
+                <a href="/ice-race-track-guide" class="quick-nav-item">
+                    <div class="icon">🏁</div>
+                    <strong>Ice Race Track Guide</strong>
+                    <p>Racing events on Lake Peräjärvi.</p>
+                </a>
+                <a href="/start-here" class="quick-nav-item">
+                    <div class="icon">🎮</div>
+                    <strong>Beginner's Guide</strong>
+                    <p>Getting started in My Winter Car.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
