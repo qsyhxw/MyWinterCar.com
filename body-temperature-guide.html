@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Temperature Guide — Hypothermia Prevention & Warmth Tips | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Master body temperature management in My Winter Car. Learn to read the temperature meter, prevent hypothermia, use heating sources effectively, and survive Finland's brutal -50°C winters.">
+    <link rel="canonical" href="https://mywintercar.com/body-temperature-guide">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-cold: #60a5fa;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+            --temp-blue: #3b82f6;
+            --temp-violet: #8b5cf6;
+            --temp-purple: #a855f7;
+            --temp-pink: #ec4899;
+            --temp-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(239, 68, 68, 0.2), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-cold), var(--accent-ice), var(--accent-warm));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(96, 165, 250, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box.cold {
+            border-left-color: var(--accent-cold);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Temperature Meter Visual */
+        .temp-meter {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .temp-level {
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            min-width: 120px;
+        }
+
+        .temp-level.blue {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        }
+
+        .temp-level.violet {
+            background: linear-gradient(135deg, #5b21b6, #8b5cf6);
+        }
+
+        .temp-level.purple {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+        }
+
+        .temp-level.pink {
+            background: linear-gradient(135deg, #be185d, #ec4899);
+        }
+
+        .temp-level.red {
+            background: linear-gradient(135deg, #b91c1c, #ef4444);
+        }
+
+        .temp-level small {
+            display: block;
+            margin-top: 0.25rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* Factors Cards */
+        .factors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .factor-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .factor-card.negative {
+            border-color: var(--temp-blue);
+        }
+
+        .factor-card.positive {
+            border-color: var(--success-green);
+        }
+
+        .factor-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .factor-card h4 {
+            margin-top: 0;
+        }
+
+        .factor-card.negative h4 {
+            color: var(--temp-blue);
+        }
+
+        .factor-card.positive h4 {
+            color: var(--success-green);
+        }
+
+        /* Heat Sources */
+        .heat-source-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .heat-source {
+            background: var(--bg-card);
+            padding: 1.25rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-warm);
+        }
+
+        .heat-source h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--accent-warm);
+        }
+
+        /* Step by Step */
+        .step {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .step.warning-step {
+            border-left-color: var(--accent-warning);
+        }
+
+        .step.danger-step {
+            border-left-color: var(--danger-red);
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .cold-text {
+            color: var(--temp-blue);
+            font-weight: 700;
+        }
+
+        .warm-text {
+            color: var(--accent-warm);
+            font-weight: 700;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .temp-meter {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/survival-guide">Survival</a> / Body Temperature Guide
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Body Temperature Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Survive Finland's Brutal -50°C Winters</p>
+        <div class="hero-meta">
+            <div class="meta-item">🌡️ Temperature Meter System</div>
+            <div class="meta-item">❄️ Temps down to -50°C</div>
+            <div class="meta-item">⏱️ Read Time: 12 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. Understanding Body Temperature</a></li>
+                <li><a href="#meter">2. Reading the Temperature Meter</a></li>
+                <li><a href="#factors">3. Factors That Affect Temperature</a></li>
+                <li><a href="#hypothermia">4. Hypothermia: Symptoms & Death</a></li>
+                <li><a href="#heating">5. Heat Sources & Warming Up</a></li>
+                <li><a href="#clothing">6. Clothing & Layering System</a></li>
+                <li><a href="#tips">7. Survival Tips & Best Practices</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Temperature mechanics may be adjusted
+                in future updates.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. Understanding Body Temperature</h2>
+
+            <p>In My Winter Car, <span class="highlight">body temperature</span> is one of the most critical survival
+                mechanics. Unlike many survival games, the Finnish winter is genuinely unforgiving — temperatures can
+                plummet to <span class="cold-text">-50°C</span>, and without proper preparation, <strong>death by
+                    hypothermia can occur in as little as 10-15 minutes</strong> of real-world time.</p>
+
+            <div class="info-box cold">
+                <div class="info-box-title">🌡️ What the Meter Measures</div>
+                <p>The temperature meter doesn't show a specific degree reading. Instead, it displays your <strong>"body
+                        temperature in storage"</strong> — essentially how much warmth your body has accumulated. Think
+                    of it like a buffer: the fuller it is, the longer you can survive cold exposure.</p>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Mechanic</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Display</strong></td>
+                    <td>Color-coded meter (not degrees)</td>
+                </tr>
+                <tr>
+                    <td><strong>Game Temperatures</strong></td>
+                    <td>Can reach as low as -50°C</td>
+                </tr>
+                <tr>
+                    <td><strong>Time to Death</strong></td>
+                    <td>10-15 minutes at critical low temperature</td>
+                </tr>
+                <tr>
+                    <td><strong>Recovery</strong></td>
+                    <td>Heat sources, sauna, hot shower, coffee</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="meter" class="content-section">
+            <h2>2. Reading the Temperature Meter</h2>
+
+            <p>The temperature meter uses a <strong>color gradient system</strong> to show your current body heat level:
+            </p>
+
+            <div class="temp-meter">
+                <div class="temp-level blue">
+                    🥶 BLUE
+                    <small>Very Cold</small>
+                </div>
+                <div class="temp-level violet">
+                    💜 VIOLET
+                    <small>Moderately Cold</small>
+                </div>
+                <div class="temp-level purple">
+                    🔮 PURPLE
+                    <small>Somewhat Cold</small>
+                </div>
+                <div class="temp-level pink">
+                    💗 PINK
+                    <small>Somewhat Warm</small>
+                </div>
+                <div class="temp-level red">
+                    🔥 RED
+                    <small>Warm</small>
+                </div>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Color</th>
+                    <th>Status</th>
+                    <th>Action Needed</th>
+                </tr>
+                <tr>
+                    <td style="color: var(--temp-blue);">■ Blue</td>
+                    <td><strong>Critical — Very Cold</strong></td>
+                    <td>Seek heat IMMEDIATELY or die</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--temp-violet);">■ Violet</td>
+                    <td>Danger — Moderately Cold</td>
+                    <td>Find warmth soon</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--temp-purple);">■ Purple</td>
+                    <td>Warning — Somewhat Cold</td>
+                    <td>Monitor and plan for heating</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--temp-pink);">■ Pink</td>
+                    <td>Comfortable — Somewhat Warm</td>
+                    <td>Safe, maintain if possible</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--temp-red);">■ Red</td>
+                    <td><strong>Optimal — Warm</strong></td>
+                    <td>Ideal, watch for overheating/sweat</td>
+                </tr>
+            </table>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Pro Tip: Heat Banking</div>
+                <p>Before going outside, spend time in a warm location to <strong>fill your temperature meter to
+                        red</strong>. This gives you maximum "stored heat" to survive longer cold exposure.</p>
+            </div>
+        </section>
+
+        <section id="factors" class="content-section">
+            <h2>3. Factors That Affect Temperature</h2>
+
+            <p>Multiple factors influence how quickly your body temperature rises or falls:</p>
+
+            <h3>❄️ Factors That DECREASE Temperature</h3>
+            <div class="factors-grid">
+                <div class="factor-card negative">
+                    <div class="factor-icon">🏔️</div>
+                    <h4>Being Outdoors</h4>
+                    <p>Your temperature drops <strong>rapidly</strong> when outside, especially in extreme cold (-35°C
+                        and below).</p>
+                </div>
+                <div class="factor-card negative">
+                    <div class="factor-icon">💧</div>
+                    <h4>Wet Clothing</h4>
+                    <p>If your clothes get wet (rain, snow, water), temperature drops <strong>much faster</strong>. Dry
+                        off ASAP.</p>
+                </div>
+                <div class="factor-card negative">
+                    <div class="factor-icon">🧍</div>
+                    <h4>Standing Still</h4>
+                    <p>Not moving causes slow, steady heat loss. Movement generates some body heat.</p>
+                </div>
+                <div class="factor-card negative">
+                    <div class="factor-icon">💦</div>
+                    <h4>High Sweat Levels</h4>
+                    <p>Sweating from over-dressing or activity makes you vulnerable when exposed to cold.</p>
+                </div>
+                <div class="factor-card negative">
+                    <div class="factor-icon">😴</div>
+                    <h4>Fatigue</h4>
+                    <p>Being tired makes it harder to cope with cold temperatures.</p>
+                </div>
+            </div>
+
+            <h3>🔥 Factors That INCREASE Temperature</h3>
+            <div class="factors-grid">
+                <div class="factor-card positive">
+                    <div class="factor-icon">🏠</div>
+                    <h4>Heated Buildings</h4>
+                    <p>Houses with radiators, the sauna, and other heated structures keep you warm.</p>
+                </div>
+                <div class="factor-card positive">
+                    <div class="factor-icon">🚗</div>
+                    <h4>Car Heater</h4>
+                    <p>Running your car's heater warms the cabin. Note: uses battery power.</p>
+                </div>
+                <div class="factor-card positive">
+                    <div class="factor-icon">🏃</div>
+                    <h4>Physical Activity</h4>
+                    <p>Movement and work generate body heat, slowing temperature loss.</p>
+                </div>
+                <div class="factor-card positive">
+                    <div class="factor-icon">🧥</div>
+                    <h4>Warm Clothing</h4>
+                    <p>Winter jackets and coveralls reduce heat loss significantly.</p>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ The Sweat Trap</div>
+                <p>Wearing too much clothing indoors or during strenuous activity causes <strong>sweating</strong>. When
+                    you then go outside, the sweat accelerates cooling dramatically. Manage your layers to avoid this!
+                </p>
+            </div>
+        </section>
+
+        <section id="hypothermia" class="content-section">
+            <h2>4. Hypothermia: Symptoms & Death</h2>
+
+            <p>When your temperature meter drops into the blue zone, you're experiencing <span
+                    class="cold-text">hypothermia</span>. Without intervention, death follows.</p>
+
+            <h3>Hypothermia Symptoms</h3>
+            <div class="step danger-step">
+                <div class="step-title">🥶 Warning Signs</div>
+                <ul>
+                    <li><strong>Blurred Vision:</strong> Screen effects indicate dangerous cold</li>
+                    <li><strong>Slower Movement:</strong> Your character moves more sluggishly</li>
+                    <li><strong>Shivering:</strong> Visible shaking animation</li>
+                    <li><strong>Progressive Worsening:</strong> Symptoms intensify as temperature drops</li>
+                </ul>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">💀 Death Timer: 10-15 Minutes</div>
+                <p>If your body temperature remains critically low (deep blue), you will <strong>die from hypothermia
+                        within 10-15 minutes of real-world time</strong>. The game does NOT pause this timer. Act fast!
+                </p>
+            </div>
+
+            <h3>Extreme Cold Conditions</h3>
+            <p>At temperatures of <span class="cold-text">-35°C or lower</span> (which can reach <span
+                    class="cold-text">-50°C</span> in the game), even the best available clothing cannot fully prevent
+                body temperature loss. In these conditions:</p>
+            <ul>
+                <li>Limit outdoor exposure to the absolute minimum</li>
+                <li>Always have a heating destination planned</li>
+                <li>Use vehicles for travel, not walking</li>
+                <li>Keep the car heater running during transit</li>
+            </ul>
+        </section>
+
+        <section id="heating" class="content-section">
+            <h2>5. Heat Sources & Warming Up</h2>
+
+            <p>When your temperature drops, you need to actively warm up using heat sources:</p>
+
+            <h3>🔥 Available Heat Sources</h3>
+            <div class="heat-source-grid">
+                <div class="heat-source">
+                    <h4>🧖 Sauna</h4>
+                    <p>One of the <strong>fastest</strong> ways to warm up. Find the sauna and spend time inside.</p>
+                </div>
+                <div class="heat-source">
+                    <h4>🚿 Hot Shower</h4>
+                    <p>Taking a hot shower raises body temperature effectively.</p>
+                </div>
+                <div class="heat-source">
+                    <h4>☕ Hot Coffee</h4>
+                    <p>Drinking hot coffee provides a quick <strong>warmth boost</strong>.</p>
+                </div>
+                <div class="heat-source">
+                    <h4>🏠 Radiators</h4>
+                    <p>Indoor radiators heat rooms. Stay near them to warm up.</p>
+                </div>
+                <div class="heat-source">
+                    <h4>🚗 Car Heater</h4>
+                    <p>Turn on car blowers and drive to stay warm. <strong>Uses battery power.</strong></p>
+                </div>
+                <div class="heat-source">
+                    <h4>🔥 Firewood Stove</h4>
+                    <p>Light a fire in available stoves for radiant heat.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">🚗 Car Heater Battery Warning</div>
+                <p>The car's heater system draws power from the battery. If you run the heater for extended periods
+                    without the engine running, you may drain the battery. Keep the engine on or monitor battery levels.
+                </p>
+            </div>
+
+            <h3>Warming Strategy</h3>
+            <div class="step">
+                <div class="step-title">📋 Recovery Protocol</div>
+                <ol>
+                    <li><strong>Get indoors</strong> or into a heated vehicle immediately</li>
+                    <li><strong>Remove wet clothing</strong> if applicable</li>
+                    <li><strong>Use active heat source</strong> (sauna, shower, radiator)</li>
+                    <li><strong>Drink hot coffee</strong> for additional warmth</li>
+                    <li><strong>Wait until meter reaches pink/red</strong> before going back outside</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="clothing" class="content-section">
+            <h2>6. Clothing & Layering System</h2>
+
+            <p>Proper clothing is your first line of defense against the cold. The game features <span
+                    class="highlight">winter clothing items</span> that reduce heat loss:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Clothing Type</th>
+                    <th>Function</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td><strong>Winter Jacket</strong></td>
+                    <td>Primary cold protection</td>
+                    <td>Essential for outdoor survival</td>
+                </tr>
+                <tr>
+                    <td><strong>Coveralls</strong></td>
+                    <td>Full-body protection</td>
+                    <td>Good for extended outdoor work</td>
+                </tr>
+                <tr>
+                    <td><strong>Warm Boots</strong></td>
+                    <td>Foot insulation</td>
+                    <td>Prevents heat loss through feet</td>
+                </tr>
+                <tr>
+                    <td><strong>Gloves</strong></td>
+                    <td>Hand protection</td>
+                    <td>Extremities lose heat quickly</td>
+                </tr>
+                <tr>
+                    <td><strong>Hat/Beanie</strong></td>
+                    <td>Head insulation</td>
+                    <td>Significant heat loss prevention</td>
+                </tr>
+            </table>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Clothing Limitations at Extreme Cold</div>
+                <p>Even with the <strong>best available clothing</strong>, you cannot fully prevent temperature loss
+                    when temperatures drop to <strong>-35°C or colder</strong>. Clothing only slows the rate of heat
+                    loss — it doesn't stop it completely.</p>
+            </div>
+
+            <h3>Layering Tips</h3>
+            <ul>
+                <li><strong>Don't overdress indoors</strong> — you'll sweat, making outdoor cold worse</li>
+                <li><strong>Add layers before going out</strong> — preparation is key</li>
+                <li><strong>Dry wet clothing</strong> as soon as possible</li>
+                <li><strong>Plan trips</strong> so you know when you'll reach warmth</li>
+            </ul>
+        </section>
+
+        <section id="tips" class="content-section">
+            <h2>7. Survival Tips & Best Practices</h2>
+
+            <div class="step">
+                <div class="step-title">🏠 Before Going Outside</div>
+                <ul>
+                    <li><strong>Warm up first</strong> — get your temperature meter to red</li>
+                    <li><strong>Equip proper clothing</strong> — jacket, boots, gloves, hat</li>
+                    <li><strong>Check the weather</strong> — avoid going out in extreme cold if possible</li>
+                    <li><strong>Plan your destination</strong> — know where you'll warm up</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🚗 Vehicle Travel</div>
+                <ul>
+                    <li><strong>Run the car heater</strong> to stay warm during travel</li>
+                    <li><strong>Keep the engine running</strong> to avoid draining battery</li>
+                    <li><strong>Use vehicles for long distances</strong> — don't walk in extreme cold</li>
+                    <li><strong>Warm the car before driving</strong> if possible</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">📋 Emergency Scenarios</div>
+                <ul>
+                    <li><strong>Car broke down?</strong> Find the nearest building immediately</li>
+                    <li><strong>Temperature dropping fast?</strong> Don't try to finish your task — warm up first</li>
+                    <li><strong>Caught in blizzard?</strong> Visibility low + extreme cold = high danger</li>
+                    <li><strong>Always carry coffee</strong> for emergency warming</li>
+                </ul>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Golden Rule</div>
+                <p>When in doubt, <strong>prioritize warmth over everything else</strong>. No task is worth dying for.
+                    If your temperature is dropping, stop what you're doing and find heat. You can always return to your
+                    task later — you can't return from death by hypothermia.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Master survival in My Winter Car:</p>
+            <div class="quick-nav">
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <strong>Survival Guide</strong>
+                    <p>Complete survival overview including hunger, thirst, and fatigue.</p>
+                </a>
+                <a href="/beginner-guide" class="quick-nav-item">
+                    <div class="icon">🎮</div>
+                    <strong>Beginner Guide</strong>
+                    <p>Start your Finnish winter adventure the right way.</p>
+                </a>
+                <a href="/vehicles-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <strong>Vehicles Guide</strong>
+                    <p>Learn about all vehicles and their heater systems.</p>
+                </a>
+                <a href="/map-guide" class="quick-nav-item">
+                    <div class="icon">🗺️</div>
+                    <strong>Map Guide</strong>
+                    <p>Find heated locations and plan your routes.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
