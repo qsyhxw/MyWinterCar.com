@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Heater Guide — How to Use the Engine Preheater | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Learn how to use the block heater in My Winter Car! Complete guide to engine preheating, connecting the cable, warming your car before cold starts, and avoiding common mistakes.">
+    <link rel="canonical" href="https://mywintercar.com/block-heater-guide">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-electric: #f59e0b;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(255, 140, 66, 0.15), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-electric), var(--accent-warm));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(245, 158, 11, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.electric {
+            border-left-color: var(--accent-electric);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Heater Highlight */
+        .heater-highlight {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(255, 140, 66, 0.1));
+            border: 2px solid var(--accent-electric);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .heater-highlight .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .heater-highlight h3 {
+            color: var(--accent-electric);
+            margin: 0 0 0.5rem;
+        }
+
+        .heater-highlight p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Step Guide */
+        .step-guide {
+            margin: 2rem 0;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+            background: var(--bg-card);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: var(--accent-electric);
+            color: #1f2937;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            margin: 0 0 0.5rem;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+        }
+
+        .step-content p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-card h4 {
+            margin: 0.5rem 0;
+            color: var(--accent-ice);
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(251, 191, 36, 0.1));
+            border: 2px solid var(--danger-red);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box h3 {
+            color: var(--danger-red);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0 0 1rem;
+        }
+
+        .warning-box p {
+            margin: 0;
+        }
+
+        /* Checklist */
+        .checklist {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .checklist h4 {
+            margin: 0 0 1rem;
+            color: var(--accent-ice);
+        }
+
+        .checklist-item {
+            display: flex;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+            align-items: center;
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: var(--success-green);
+            font-size: 1.2rem;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .electric-text {
+            color: var(--accent-electric);
+            font-weight: 700;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-electric);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .step {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/mechanics">Mechanics</a> / Block Heater
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>🔌 Block Heater Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Engine Preheating for Cold Starts</p>
+        <div class="hero-meta">
+            <div class="meta-item">⚡ Electric Powered</div>
+            <div class="meta-item">🔥 Warms Engine</div>
+            <div class="meta-item">⏱️ Read Time: 6 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. What is a Block Heater?</a></li>
+                <li><a href="#how-to-use">2. How to Use the Block Heater</a></li>
+                <li><a href="#benefits">3. Benefits of Preheating</a></li>
+                <li><a href="#warnings">4. Important Warnings</a></li>
+                <li><a href="#locations">5. Power Outlet Locations</a></li>
+                <li><a href="#tips">6. Pro Tips</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Block heater mechanics may be updated
+                in future patches.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. What is a Block Heater?</h2>
+
+            <p>A <span class="electric-text">block heater</span> (also known as an engine preheater) is an essential
+                device for cold weather driving in Finland. It keeps your engine warm when parked, making cold starts
+                much easier and protecting your engine from extreme cold damage.</p>
+
+            <div class="heater-highlight">
+                <div class="icon">🔌</div>
+                <h3>Engine Block Heater</h3>
+                <p>Warms the engine block and coolant using external electrical power. Essential for reliable cold
+                    starts in Finnish winters!</p>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Power Source</strong></td>
+                    <td>External electrical outlet</td>
+                </tr>
+                <tr>
+                    <td><strong>What It Heats</strong></td>
+                    <td>Engine block and coolant</td>
+                </tr>
+                <tr>
+                    <td><strong>Engine State</strong></td>
+                    <td>Works with engine OFF</td>
+                </tr>
+                <tr>
+                    <td><strong>Cable Location</strong></td>
+                    <td>Front of the car</td>
+                </tr>
+            </table>
+
+            <div class="info-box electric">
+                <div class="info-box-title">🔋 How It Works</div>
+                <p>The block heater is powered by <strong>external electricity</strong>, not your car battery. This
+                    means you can leave it plugged in overnight without draining your battery. The heating element warms
+                    the engine block and coolant, keeping everything at an optimal temperature for starting.</p>
+            </div>
+        </section>
+
+        <section id="how-to-use" class="content-section">
+            <h2>2. How to Use the Block Heater</h2>
+
+            <p>Using the block heater is straightforward, but following the correct steps is crucial:</p>
+
+            <div class="step-guide">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Park Near an Electrical Outlet</h4>
+                        <p>Drive your car close enough to an electrical outlet so the block heater cable can reach. Make
+                            sure there's enough space to access both the cable and the outlet.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Locate the Block Heater Cable</h4>
+                        <p>Find the block heater cable at the <strong>front of your car</strong>. It should have a plug
+                            that's accessible from the engine bay area or grille.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Connect the Cable to the Outlet</h4>
+                        <p>Grab the cable plug and connect it to the electrical socket. The heater will start working
+                            immediately.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Turn Off the Engine</h4>
+                        <p>The block heater works while the engine is OFF. You can leave it plugged in while you sleep
+                            or do other activities in the game.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Unplug BEFORE Driving!</h4>
+                        <p><strong>CRITICAL:</strong> Always disconnect the cable before trying to start or drive your
+                            car. Forgetting this step will cause problems!</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Start Your Car</h4>
+                        <p>With the cable disconnected, turn the ignition. The preheated engine should start almost
+                            immediately, even in extreme cold!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ Quick Summary</div>
+                <p><strong>Park → Connect cable → Wait → Disconnect → Start!</strong> It's that simple, but don't forget
+                    step 5!</p>
+            </div>
+        </section>
+
+        <section id="benefits" class="content-section">
+            <h2>3. Benefits of Preheating</h2>
+
+            <p>Using the block heater provides several key advantages:</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚗</div>
+                    <h4>Instant Cold Starts</h4>
+                    <p>Engine starts immediately without struggling or cranking.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔥</div>
+                    <h4>Faster Cabin Heat</h4>
+                    <p>Car heater works better when engine is pre-warmed.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h4>Engine Protection</h4>
+                    <p>Reduces cold-start wear on engine components.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏰</div>
+                    <h4>Time Saving</h4>
+                    <p>No waiting for engine to warm up before driving.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">🌡️ Cold Start Problems Without Preheating</div>
+                <p>In extreme cold, your engine oil becomes thick and sluggish. Without preheating, your car may:</p>
+                <ul>
+                    <li>Struggle to start or fail to start entirely</li>
+                    <li>Take a long time to warm up</li>
+                    <li>Have weak cabin heating initially</li>
+                    <li>Experience increased engine wear</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="warnings" class="content-section">
+            <h2>4. Important Warnings</h2>
+
+            <div class="warning-box">
+                <h3>🚨 NEVER Forget to Unplug!</h3>
+                <p>You <strong>MUST</strong> disconnect the block heater cable before attempting to drive. If you
+                    forget:</p>
+                <ul>
+                    <li>Your car will not start or move correctly</li>
+                    <li>You may damage the cable or outlet</li>
+                    <li>The cable could get tangled or ripped off</li>
+                </ul>
+            </div>
+
+            <div class="checklist">
+                <h4>✅ Pre-Drive Checklist</h4>
+                <div class="checklist-item">
+                    <span class="check-icon">☑️</span>
+                    <span>Block heater cable is UNPLUGGED</span>
+                </div>
+                <div class="checklist-item">
+                    <span class="check-icon">☑️</span>
+                    <span>Cable is stowed properly (not dragging)</span>
+                </div>
+                <div class="checklist-item">
+                    <span class="check-icon">☑️</span>
+                    <span>Engine starts smoothly</span>
+                </div>
+                <div class="checklist-item">
+                    <span class="check-icon">☑️</span>
+                    <span>Good to drive!</span>
+                </div>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">❌ Common Mistakes</div>
+                <ul>
+                    <li>Forgetting to unplug before driving</li>
+                    <li>Parking too far from the outlet</li>
+                    <li>Not allowing enough time for the engine to warm</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="locations" class="content-section">
+            <h2>5. Power Outlet Locations</h2>
+
+            <p>You'll find electrical outlets at various locations around the game world. Common spots include:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Location</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td><strong>Your Apartment</strong></td>
+                    <td>Parking area near apartment block</td>
+                </tr>
+                <tr>
+                    <td><strong>Parents' House</strong></td>
+                    <td>Garage or exterior</td>
+                </tr>
+                <tr>
+                    <td><strong>Fleetari's Garage</strong></td>
+                    <td>Workshop area</td>
+                </tr>
+                <tr>
+                    <td><strong>Various Buildings</strong></td>
+                    <td>Look for outlets on building exteriors</td>
+                </tr>
+            </table>
+
+            <div class="info-box electric">
+                <div class="info-box-title">💡 Finnish Reality</div>
+                <p>In real-life Finland, block heater outlets are extremely common! Many parking lots, especially at
+                    apartment buildings and workplaces, have dedicated posts with electrical outlets for car heaters.
+                    This is a necessity in a country where winter temperatures can drop to -30°C or lower!</p>
+            </div>
+        </section>
+
+        <section id="tips" class="content-section">
+            <h2>6. Pro Tips</h2>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Best Practices</div>
+                <ul>
+                    <li><strong>Plug in before sleeping:</strong> Let the heater work while you rest</li>
+                    <li><strong>Park strategically:</strong> Always consider outlet access when parking</li>
+                    <li><strong>Make unplugging a habit:</strong> Always check before starting the engine</li>
+                    <li><strong>Combine with other warmth:</strong> Use car heater for cabin warmth after starting</li>
+                </ul>
+            </div>
+
+            <h3>Real-World Context</h3>
+            <p>In real Finnish winters, block heaters are typically used when temperatures drop below <strong>-15°C
+                    (5°F)</strong>. About 3-4 hours of preheating is usually sufficient to warm the engine adequately.
+            </p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Scenario</th>
+                    <th>Recommendation</th>
+                </tr>
+                <tr>
+                    <td><strong>Overnight parking</strong></td>
+                    <td>Plug in before bed, unplug in morning</td>
+                </tr>
+                <tr>
+                    <td><strong>Short stop</strong></td>
+                    <td>Engine may still be warm, check if needed</td>
+                </tr>
+                <tr>
+                    <td><strong>Extreme cold (-30°C+)</strong></td>
+                    <td>Always use the block heater</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more car mechanics and survival tips:
+            </p>
+            <div class="quick-nav">
+                <a href="/engine-build-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <strong>Engine Build Guide</strong>
+                    <p>Complete engine assembly instructions.</p>
+                </a>
+                <a href="/body-temperature-guide" class="quick-nav-item">
+                    <div class="icon">🌡️</div>
+                    <strong>Body Temperature Guide</strong>
+                    <p>Stay warm in Finnish winters.</p>
+                </a>
+                <a href="/apartment-guide" class="quick-nav-item">
+                    <div class="icon">🏠</div>
+                    <strong>Apartment Guide</strong>
+                    <p>Your home base with nearby parking.</p>
+                </a>
+                <a href="/start-here" class="quick-nav-item">
+                    <div class="icon">🎮</div>
+                    <strong>Beginner's Guide</strong>
+                    <p>Getting started in My Winter Car.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
