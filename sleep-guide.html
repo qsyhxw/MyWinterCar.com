@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Winter Car Sleep & Fatigue Guide - How to Sleep, Fix Can't Sleep Bug & Manage Fatigue | 2026</title>
-    <meta name="description" content="Complete sleep system guide for My Winter Car. Learn how to sleep, fix 'can't sleep' bug, manage fatigue blackouts, use alarm clock, and avoid death from exhaustion. Verified for EA v.260102-01.">
-    <meta name="keywords" content="My Winter Car sleep, can't sleep bug, fatigue system, sleep guide, alarm clock, coffee addiction, how to sleep">
-    
+    <title>Can't Sleep? Complete Sleep Guide — Fix Sleep Issues | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Can't sleep in My Winter Car? Complete troubleshooting guide for sleep issues. Fix 'can't sleep' problems, learn temperature requirements, all sleep locations, fatigue system, and coffee tips.">
     <link rel="canonical" href="https://mywintercar.com/sleep-guide">
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- FAQ Schema for Google Featured Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Why can't I sleep in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The most common reason you can't sleep is that the room is too cold. The room temperature must be at least 25-30°C for you to fall asleep. Turn on radiators and wait for the room to heat up. Other reasons include: not being tired enough, not being in a proper bed, or having too much caffeine in your system."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I sleep at my parents house in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Go to your old bedroom at your parents' house. Make sure the room is heated (25-30°C minimum). Walk up to the bed and look at it until you see the sleep prompt. Press the interaction key (F by default) to go to sleep. The parents' house is already heated so you should be able to sleep immediately."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I sleep in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can sleep at: 1) Your apartment bed (requires heating), 2) Parents' house bedroom (pre-heated), 3) Gifu truck cabin (emergency only), 4) Various benches (very poor sleep, emergency only). The apartment and parents' house provide the best quality sleep."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What temperature do I need to sleep in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You need the room to be at least 25-30°C to fall asleep. Turn on radiators in your apartment and wait approximately 2 hours for the room to heat up. The parents' house is already heated. If the temperature is too low, you'll see a message or simply won't be able to interact with the bed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long can I stay awake before dying in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You need to sleep approximately every 10-12 hours of in-game time. If your fatigue meter fills completely, you'll start experiencing blackouts. Repeated blackouts or ignoring fatigue can lead to death. Monitor your fatigue gauge and sleep before it gets critical."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does coffee help with fatigue in My Winter Car?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, coffee temporarily reduces fatigue and helps you stay awake longer. However, excessive coffee consumption can cause caffeine addiction, making you dependent on it. Use coffee sparingly as an emergency measure, not as a regular fatigue substitute."
+                }
+            }
+        ]
+    }
+    </script>
 
-  gtag('config', 'G-G0QRC4NKKP');
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
-     crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
 
     <style>
         * {
@@ -36,124 +91,210 @@
             --accent-blue: #4a9eff;
             --accent-ice: #7dd3fc;
             --accent-warm: #ff8c42;
-            --accent-success: #10b981;
             --accent-warning: #fbbf24;
-            --accent-danger: #ef4444;
+            --accent-sleep: #8b5cf6;
             --text-primary: #e5e7eb;
             --text-secondary: #9ca3af;
             --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background-color: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
-            background: linear-gradient(135deg, rgba(26, 29, 35, 0.98) 0%, rgba(37, 41, 49, 0.95) 100%);
+            background: rgba(26, 29, 35, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--accent-blue);
+            border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 1000;
             padding: 1rem 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .header-content {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.25rem;
+            font-weight: 700;
             color: var(--accent-ice);
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
-        nav {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
         }
 
-        nav a {
-            color: var(--text-primary);
+        .breadcrumb a {
+            color: var(--accent-blue);
             text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--accent-ice);
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
         }
 
         .hero {
-            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(74, 158, 255, 0.15), rgba(26, 29, 35, 0.95));
             padding: 4rem 2rem;
-            margin-bottom: 3rem;
-            border-bottom: 2px solid var(--accent-ice);
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
         }
 
-        .hero-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2.5rem;
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
             margin-bottom: 1rem;
-            color: var(--accent-ice);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 900px;
+            background: linear-gradient(135deg, var(--accent-sleep), var(--accent-ice));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero-meta {
             display: flex;
             gap: 2rem;
-            margin-top: 1.5rem;
+            justify-content: center;
             flex-wrap: wrap;
+            margin-top: 1.5rem;
         }
 
         .meta-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--text-secondary);
+            background: rgba(139, 92, 246, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
         }
 
-        .version-notice {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent-warning);
-            padding: 1.5rem;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Troubleshooting Highlight */
+        .troubleshoot-highlight {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(251, 191, 36, 0.1));
+            border: 2px solid var(--danger-red);
+            border-radius: 16px;
+            padding: 2rem;
             margin-bottom: 3rem;
-            border-radius: 4px;
+            text-align: center;
         }
 
-        .version-notice strong {
-            color: var(--accent-warning);
+        .troubleshoot-highlight h2 {
+            color: var(--danger-red);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .troubleshoot-highlight p {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        /* Troubleshooting Checklist */
+        .troubleshoot-checklist {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .troubleshoot-checklist h3 {
+            color: var(--accent-ice);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            align-items: flex-start;
+        }
+
+        .check-box {
+            width: 28px;
+            height: 28px;
+            border: 2px solid var(--accent-sleep);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem;
+            color: var(--success-green);
+        }
+
+        .check-content {
+            flex: 1;
+        }
+
+        .check-content strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .check-content span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
         }
 
         .content-section {
@@ -163,54 +304,215 @@
         h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
-            color: var(--accent-blue);
-            border-bottom: 2px solid var(--border-color);
+            color: var(--accent-ice);
             padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
         }
 
         h3 {
             font-size: 1.5rem;
             margin: 2rem 0 1rem;
-            color: var(--accent-ice);
+            color: var(--text-primary);
         }
 
         h4 {
             font-size: 1.2rem;
-            margin: 1.5rem 0 1rem;
-            color: var(--text-primary);
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
         }
 
         p {
             margin-bottom: 1rem;
+            font-size: 1.05rem;
         }
 
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.sleep {
+            border-left-color: var(--accent-sleep);
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* FAQ Accordion */
+        .faq-section {
+            margin: 2rem 0;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .faq-question h4 {
+            margin: 0;
+            color: var(--accent-ice);
+            font-size: 1.1rem;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--accent-sleep);
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Location Cards */
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .location-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .location-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-card h4 {
+            color: var(--accent-ice);
+            margin: 0.5rem 0;
+        }
+
+        .location-card .quality {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .quality-best {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success-green);
+        }
+
+        .quality-good {
+            background: rgba(74, 158, 255, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .quality-poor {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--danger-red);
+        }
+
+        .location-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin: 0.5rem 0;
         }
 
         .quick-nav {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
+            gap: 1rem;
+            margin-top: 2rem;
         }
 
         .quick-nav-item {
             background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
             padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
             text-decoration: none;
             color: var(--text-primary);
-            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
         }
 
         .quick-nav-item:hover {
@@ -221,459 +523,478 @@
 
         .quick-nav-item .icon {
             font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
 
-        .requirement-card {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent-blue);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
         }
 
-        .requirement-title {
-            font-size: 1.2rem;
-            color: var(--accent-ice);
-            margin-bottom: 0.75rem;
-            font-weight: 600;
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
         }
 
-        .checklist {
-            display: grid;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .checklist-item {
-            background: var(--bg-card);
-            padding: 1rem;
-            border-left: 3px solid var(--accent-success);
-            border-radius: 4px;
-        }
-
-        .checklist-item::before {
-            content: "✓ ";
-            color: var(--accent-success);
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .step-card {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent-blue);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-            position: relative;
-            padding-left: 5rem;
-        }
-
-        .step-number {
-            position: absolute;
-            left: 1.5rem;
-            top: 1.5rem;
-            width: 2.5rem;
-            height: 2.5rem;
-            background: var(--accent-blue);
-            color: var(--bg-primary);
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-sleep);
+            color: white;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .step-title {
-            font-size: 1.2rem;
-            color: var(--accent-ice);
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        .info-box {
-            background: rgba(74, 158, 255, 0.1);
-            border-left: 4px solid var(--accent-blue);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box-title {
-            font-weight: 600;
-            color: var(--accent-ice);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .warning-box {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 4px solid var(--accent-warning);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .warning-box-title {
-            font-weight: 600;
-            color: var(--accent-warning);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .danger-box {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid var(--accent-danger);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .danger-box-title {
-            font-weight: 600;
-            color: var(--accent-danger);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.1);
-            border-left: 4px solid var(--accent-success);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .success-box-title {
-            font-weight: 600;
-            color: var(--accent-success);
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        .location-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .location-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .location-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-        }
-
-        .location-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .location-title {
-            font-size: 1.2rem;
-            color: var(--accent-ice);
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        .location-quality {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
-        .quality-best {
-            background: rgba(16, 185, 129, 0.2);
-            color: var(--accent-success);
-        }
-
-        .quality-good {
-            background: rgba(74, 158, 255, 0.2);
-            color: var(--accent-blue);
-        }
-
-        .quality-poor {
-            background: rgba(251, 191, 36, 0.2);
-            color: var(--accent-warning);
-        }
-
-        .quality-emergency {
-            background: rgba(239, 68, 68, 0.2);
-            color: var(--accent-danger);
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .comparison-table th {
-            background: rgba(74, 158, 255, 0.1);
-            color: var(--accent-blue);
-            font-weight: 600;
-        }
-
-        .comparison-table tr:hover {
-            background: rgba(74, 158, 255, 0.05);
-        }
-
-        code {
-            background: rgba(125, 211, 252, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-        }
-
-        kbd {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            padding: 0.25rem 0.5rem;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-ice);
-            font-size: 0.9em;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .internal-link {
-            color: var(--accent-ice);
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.3s;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+            transition: all 0.3s;
         }
 
-        .internal-link:hover {
-            border-bottom-color: var(--accent-ice);
-        }
-
-        .related-guides {
-            margin: 4rem 0;
-            padding: 3rem 0;
-            border-top: 2px solid var(--border-color);
-        }
-
-        .related-guides h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .related-guides-desc {
-            text-align: center;
-            color: var(--text-secondary);
-            margin-bottom: 3rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .guides-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .guide-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-            display: block;
-        }
-
-        .guide-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
-        }
-
-        .guide-card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .guide-card h3 {
-            margin: 0 0 0.5rem 0;
-            color: var(--accent-ice);
-            font-size: 1.3rem;
-        }
-
-        .guide-card p {
-            color: var(--text-secondary);
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        footer {
-            background: var(--bg-secondary);
-            border-top: 2px solid var(--border-color);
-            padding: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-        }
-
-        footer a {
-            color: var(--accent-ice);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        .back-to-top:hover {
+            transform: translateY(-5px);
         }
 
         @media (max-width: 768px) {
-            h1 {
+            .hero h1 {
                 font-size: 2rem;
             }
 
-            .hero {
-                padding: 2rem 1rem;
-            }
-
-            .quick-nav {
-                grid-template-columns: 1fr;
-            }
-
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav {
+            .hero-meta {
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .location-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .step-card {
-                padding-left: 1.5rem;
-            }
-
-            .step-number {
-                position: relative;
-                left: 0;
-                top: 0;
-                margin-bottom: 1rem;
+            .container {
+                padding: 2rem 1rem;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-content">
-            <a href="/" class="logo">
-                <span>❄️</span>
-                <span>My Winter Car Wiki</span>
-            </a>
-            <nav>
-                <a href="/">Home</a>
-                <a href="/guides">All Guides</a>
-                <a href="/survival-guide">Survival</a>
-                <a href="/troubleshooting-guide">Troubleshooting</a>
-                <a href="/about">About</a>
-            </nav>
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/survival">Survival</a> / Sleep Guide
+            </div>
         </div>
     </header>
 
+    <div class="hero">
+        <h1>😴 Can't Sleep? Complete Sleep Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Fix Sleep Issues & Master the Fatigue System</p>
+        <div class="hero-meta">
+            <div class="meta-item">🌡️ Room: 25-30°C Required</div>
+            <div class="meta-item">⏰ Sleep Every 10-12 Hours</div>
+            <div class="meta-item">⏱️ Read Time: 8 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="hero">
-            <div class="hero-content">
-                <h1>😴 Sleep & Fatigue System Complete Guide</h1>
-                <p>Master My Winter Car's sleep and fatigue mechanics. Learn how to sleep properly, fix the "can't sleep" bug, manage blackout-inducing exhaustion, use the alarm clock, and avoid coffee addiction. This comprehensive guide covers all sleep locations, temperature requirements, and fatigue management strategies. Verified for Early Access v.260102-01.</p>
-                
-                <div class="hero-meta">
-                    <div class="meta-item">
-                        <span>💀</span>
-                        <span>Blackouts are Fatal</span>
-                    </div>
-                    <div class="meta-item">
-                        <span>🌡️</span>
-                        <span>Room Must Be 30°C+</span>
-                    </div>
-                    <div class="meta-item">
-                        <span>⏱️</span>
-                        <span>Need Sleep Every 10-12 Hours</span>
-                    </div>
+        <!-- Troubleshooting Highlight Box -->
+        <div class="troubleshoot-highlight">
+            <h2>🔧 Can't Sleep? Quick Fix Checklist</h2>
+            <p>If you can't interact with the bed or the sleep option isn't appearing, check these items first:</p>
+        </div>
+
+        <!-- Troubleshooting Checklist -->
+        <div class="troubleshoot-checklist">
+            <h3>✅ Sleep Troubleshooting Checklist</h3>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>1. Is the room warm enough? (25-30°C minimum)</strong>
+                    <span>Turn on radiators and wait ~2 hours for apartment to heat. Parents' house is
+                        pre-heated.</span>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>2. Are you actually tired?</strong>
+                    <span>Check your fatigue meter. You can't sleep if you're not tired enough.</span>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>3. Are you at a proper bed?</strong>
+                    <span>Use the apartment bed or parents' house bedroom. Not all surfaces work.</span>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>4. Did you drink too much coffee?</strong>
+                    <span>Caffeine can prevent sleep. Wait for it to wear off.</span>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>5. Are you looking directly at the bed?</strong>
+                    <span>Stand close to the bed and look directly at the pillow area for the prompt.</span>
+                </div>
+            </div>
+
+            <div class="checklist-item">
+                <div class="check-box">☐</div>
+                <div class="check-content">
+                    <strong>6. Try the parents' house instead</strong>
+                    <span>If apartment won't work, drive to parents' house — it's always warm and ready.</span>
                 </div>
             </div>
         </div>
 
-        <div class="version-notice">
-            <strong>⚠️ Early Access Version Notice</strong>
-            <p>My Winter Car is in Early Access development (launched December 29, 2025). Sleep mechanics, fatigue rates, temperature requirements, and bugs may change with patch updates. This guide is based on v.260102-01 (January 2, 2026) and includes critical changes from My Summer Car where relevant.</p>
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#faq">1. Sleep FAQ (Common Questions)</a></li>
+                <li><a href="#how-to-sleep">2. How to Sleep</a></li>
+                <li><a href="#locations">3. Sleep Locations</a></li>
+                <li><a href="#temperature">4. Temperature Requirements</a></li>
+                <li><a href="#fatigue">5. Fatigue System</a></li>
+                <li><a href="#coffee">6. Coffee & Caffeine</a></li>
+            </ul>
         </div>
 
-        <div class="quick-nav">
-            <a href="#how-it-works" class="quick-nav-item">
-                <div class="icon">💤</div>
-                <div>How Sleep Works</div>
-            </a>
-            <a href="#locations" class="quick-nav-item">
-                <div class="icon">🛏️</div>
-                <div>Sleep Locations</div>
-            </a>
-            <a href="#troubleshooting" class="quick-nav-item">
-                <div class="icon">🔧</div>
-                <div>Can't Sleep Fix</div>
-            </a>
-            <a href="#fatigue" class="quick-nav-item">
-                <div class="icon">😵</div>
-                <div>Fatigue System</div>
-            </a>
-            <a href="#caffeine" class="quick-nav-item">
-                <div class="icon">☕</div>
-                <div>Coffee & Energy</div>
-            </a>
-            <a href="#alarm" class="quick-nav-item">
-                <div class="icon">⏰</div>
-                <div>Alarm Clock</div>
-            </a>
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Sleep mechanics may be updated in
+                future patches.</p>
         </div>
 
-[... REST OF HTML CONTENT FROM PREVIOUS RESPONSE - TOO LONG TO FIT IN MESSAGE ...]
+        <section id="faq" class="content-section">
+            <h2>1. Sleep FAQ</h2>
 
+            <p>Quick answers to the most common sleep questions:</p>
+
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ Why can't I sleep in My Winter Car?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The most common reason is that <strong>the room is too cold</strong>. You need the room
+                            temperature to be at least <strong>25-30°C</strong> to fall asleep. Turn on radiators and
+                            wait for the room to heat up (about 2 hours in the apartment).</p>
+                        <p>Other possible reasons:</p>
+                        <ul>
+                            <li>You're not tired enough (check fatigue meter)</li>
+                            <li>You're not at a proper bed</li>
+                            <li>Too much caffeine in your system</li>
+                            <li>Not looking directly at the bed for the prompt</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ How do I sleep at my parents' house?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Go to your old bedroom at your parents' house. The house is already heated, so you don't need
+                            to wait. Walk up to the bed and look at the pillow area until you see the sleep prompt.
+                            Press <strong>F</strong> (default) to sleep.</p>
+                        <p><strong>Pro tip:</strong> Parents' house is the most reliable sleep location because it's
+                            always warm!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ Where can I sleep in My Winter Car?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Main sleep locations:</p>
+                        <ul>
+                            <li><strong>Apartment bed</strong> — Your home, requires heating (best)</li>
+                            <li><strong>Parents' house bedroom</strong> — Pre-heated, very reliable (best)</li>
+                            <li><strong>Gifu truck cabin</strong> — Emergency only, poor quality</li>
+                            <li><strong>Benches</strong> — Very poor sleep, emergency only</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ What temperature do I need to sleep?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You need the room to be at least <strong>25-30°C</strong> to fall asleep. In your apartment,
+                            turn on radiators and wait approximately 2 hours. The parents' house is already heated.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ How long can I stay awake?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You need to sleep approximately every <strong>10-12 hours</strong> of in-game time. If your
+                            fatigue meter fills completely, you'll experience blackouts. Ignoring fatigue can lead to
+                            death!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>❓ Does coffee help with fatigue?</h4>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, coffee temporarily reduces fatigue. However, excessive coffee consumption can cause
+                            <strong>caffeine addiction</strong>, making you dependent on it. Use sparingly as an
+                            emergency measure!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-sleep" class="content-section">
+            <h2>2. How to Sleep</h2>
+
+            <p>Follow these steps to sleep successfully:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Step</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Go to a sleep location (apartment bed or parents' house)</td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Make sure the room is heated (25-30°C minimum)</td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Walk close to the bed and look at the pillow area</td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Wait for the sleep prompt to appear</td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Press F (default key) to go to sleep</td>
+                </tr>
+            </table>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Quick Tip</div>
+                <p>If the apartment fails, <strong>always try the parents' house</strong>. It's pre-heated and works
+                    reliably every time!</p>
+            </div>
+        </section>
+
+        <section id="locations" class="content-section">
+            <h2>3. Sleep Locations</h2>
+
+            <div class="location-grid">
+                <div class="location-card">
+                    <div class="icon">🏠</div>
+                    <h4>Apartment Bed</h4>
+                    <span class="quality quality-best">Best Quality</span>
+                    <p>Your home base. Requires heating the room first (~2 hours with radiators). Best sleep quality
+                        when heated properly.</p>
+                </div>
+                <div class="location-card">
+                    <div class="icon">👨‍👩‍👦</div>
+                    <h4>Parents' House</h4>
+                    <span class="quality quality-best">Best Quality</span>
+                    <p>Always heated and ready. Most reliable option. Great backup when apartment is too cold.</p>
+                </div>
+                <div class="location-card">
+                    <div class="icon">🚛</div>
+                    <h4>Gifu Truck Cabin</h4>
+                    <span class="quality quality-poor">Emergency Only</span>
+                    <p>Can sleep in the cabin if desperate. Poor sleep quality. Use only in emergencies.</p>
+                </div>
+                <div class="location-card">
+                    <div class="icon">🪑</div>
+                    <h4>Various Benches</h4>
+                    <span class="quality quality-poor">Emergency Only</span>
+                    <p>Some benches allow sleeping. Very poor quality. Risk of hypothermia. Last resort only.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="temperature" class="content-section">
+            <h2>4. Temperature Requirements</h2>
+
+            <div class="info-box sleep">
+                <div class="info-box-title">🌡️ Key Temperature: 25-30°C</div>
+                <p>The room must be at least <strong>25-30°C</strong> for you to fall asleep. This is the #1 reason
+                    players can't sleep!</p>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Location</th>
+                    <th>Heating Status</th>
+                    <th>Wait Time</th>
+                </tr>
+                <tr>
+                    <td><strong>Apartment</strong></td>
+                    <td>Needs radiators turned on</td>
+                    <td>~2 hours</td>
+                </tr>
+                <tr>
+                    <td><strong>Parents' House</strong></td>
+                    <td>Pre-heated</td>
+                    <td>None (instant)</td>
+                </tr>
+                <tr>
+                    <td><strong>Gifu Truck</strong></td>
+                    <td>Engine heater</td>
+                    <td>Varies</td>
+                </tr>
+            </table>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Apartment Heating Tips</div>
+                <ul>
+                    <li>Turn on ALL radiators for faster heating</li>
+                    <li>Close doors to contain heat</li>
+                    <li>Plan ahead — start heating when you arrive home</li>
+                    <li>Keep radiators on even when leaving to maintain temperature</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fatigue" class="content-section">
+            <h2>5. Fatigue System</h2>
+
+            <p>Understanding the fatigue meter is crucial for survival:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Fatigue Level</th>
+                    <th>Symptoms</th>
+                    <th>Action Required</th>
+                </tr>
+                <tr>
+                    <td><strong>Low (0-30%)</strong></td>
+                    <td>Normal gameplay</td>
+                    <td>Continue playing</td>
+                </tr>
+                <tr>
+                    <td><strong>Medium (30-60%)</strong></td>
+                    <td>Slight effects</td>
+                    <td>Consider sleeping soon</td>
+                </tr>
+                <tr>
+                    <td><strong>High (60-90%)</strong></td>
+                    <td>Vision effects, slower movement</td>
+                    <td>Find a bed immediately</td>
+                </tr>
+                <tr>
+                    <td><strong>Critical (90-100%)</strong></td>
+                    <td>Blackouts, danger of death</td>
+                    <td>Emergency! Sleep or die</td>
+                </tr>
+            </table>
+
+            <div class="info-box danger">
+                <div class="info-box-title">💀 Blackouts Can Kill You!</div>
+                <p>When fatigued to the extreme, you'll start experiencing blackouts (momentary loss of control). If you
+                    blackout while driving or in a dangerous situation, you can die. <strong>Never ignore the fatigue
+                        meter!</strong></p>
+            </div>
+        </section>
+
+        <section id="coffee" class="content-section">
+            <h2>6. Coffee & Caffeine</h2>
+
+            <p>Coffee can help manage fatigue, but use it carefully:</p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Aspect</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Effect</strong></td>
+                    <td>Temporarily reduces fatigue</td>
+                </tr>
+                <tr>
+                    <td><strong>Duration</strong></td>
+                    <td>Short-term boost only</td>
+                </tr>
+                <tr>
+                    <td><strong>Risk</strong></td>
+                    <td>Caffeine addiction with overuse</td>
+                </tr>
+                <tr>
+                    <td><strong>Side Effect</strong></td>
+                    <td>May prevent sleep if consumed recently</td>
+                </tr>
+            </table>
+
+            <div class="info-box warning">
+                <div class="info-box-title">☕ Coffee Addiction Warning</div>
+                <p>Drinking too much coffee can lead to <strong>caffeine addiction</strong>. Once addicted, you'll need
+                    coffee regularly or suffer withdrawal effects. Use coffee as an emergency measure, not a regular
+                    fatigue substitute!</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more survival guides:</p>
+            <div class="quick-nav">
+                <a href="/fatigue-guide" class="quick-nav-item">
+                    <div class="icon">😴</div>
+                    <strong>Fatigue Guide</strong>
+                    <p>Detailed fatigue mechanics and management.</p>
+                </a>
+                <a href="/body-temperature-guide" class="quick-nav-item">
+                    <div class="icon">🌡️</div>
+                    <strong>Body Temperature Guide</strong>
+                    <p>Stay warm and prevent hypothermia.</p>
+                </a>
+                <a href="/apartment-guide" class="quick-nav-item">
+                    <div class="icon">🏠</div>
+                    <strong>Apartment Guide</strong>
+                    <p>Your home base with heating system.</p>
+                </a>
+                <a href="/jacket-vs-coverall" class="quick-nav-item">
+                    <div class="icon">🧥</div>
+                    <strong>Jacket vs Coverall</strong>
+                    <p>Clothing comparison for warmth.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
     </div>
 
-    <footer>
-        <p><strong>Early Access v.260102-01</strong> | Updated: January 7, 2026</p>
-        <p style="margin-top: 0.5rem;">My Winter Car is in active Early Access development. Sleep mechanics, fatigue rates, and bugs may change with updates.</p>
-        <p style="margin-top: 1rem;">
-            <a href="/">Home</a> · 
-            <a href="/guides">All Guides</a> · 
-            <a href="/about">About</a> · 
-            <a href="/contact">Contact</a>
-        </p>
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: #6b7280;">
-            All game content © 2024-2026 Amistech Games. This wiki is a fan-created resource and is not affiliated with the developer.
-        </p>
-    </footer>
+    <a href="#" class="back-to-top">↑</a>
 </body>
+
 </html>
