@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacket vs Coverall — Which to Wear? | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Compare winter jacket vs coverall in My Winter Car! Learn which clothing provides better warmth, when to switch outfits, sweating mechanics, and how to survive Finnish winter temperatures.">
+    <link rel="canonical" href="https://mywintercar.com/jacket-vs-coverall">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-jacket: #22c55e;
+            --accent-coverall: #8b5cf6;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(139, 92, 246, 0.15), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-jacket), var(--accent-coverall));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(139, 92, 246, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Quick Answer */
+        .quick-answer {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(139, 92, 246, 0.1));
+            border: 2px solid var(--accent-ice);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .quick-answer h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .quick-answer p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Comparison Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .clothing-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid;
+        }
+
+        .clothing-card.jacket {
+            border-color: var(--accent-jacket);
+        }
+
+        .clothing-card.coverall {
+            border-color: var(--accent-coverall);
+        }
+
+        .clothing-card .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .clothing-card h3 {
+            margin: 0 0 1rem;
+        }
+
+        .clothing-card.jacket h3 {
+            color: var(--accent-jacket);
+        }
+
+        .clothing-card.coverall h3 {
+            color: var(--accent-coverall);
+        }
+
+        .clothing-card .temp-range {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+
+        .clothing-card.jacket .temp-range {
+            color: var(--accent-jacket);
+        }
+
+        .clothing-card.coverall .temp-range {
+            color: var(--accent-coverall);
+        }
+
+        .clothing-card .description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .jacket-color {
+            color: var(--accent-jacket);
+        }
+
+        .coverall-color {
+            color: var(--accent-coverall);
+        }
+
+        /* Temperature Scale */
+        .temp-scale {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .temp-scale h4 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+        }
+
+        .scale-bar {
+            display: flex;
+            gap: 0;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .scale-segment {
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .warm-zone {
+            background: var(--accent-jacket);
+            color: white;
+        }
+
+        .cold-zone {
+            background: var(--accent-coverall);
+            color: white;
+        }
+
+        .extreme-zone {
+            background: var(--danger-red);
+            color: white;
+        }
+
+        .scale-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-item h4 {
+            margin: 0 0 0.75rem;
+            color: var(--accent-ice);
+            font-size: 1.1rem;
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Pros Cons */
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .pros,
+        .cons {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .pros {
+            border-left: 4px solid var(--success-green);
+        }
+
+        .cons {
+            border-left: 4px solid var(--danger-red);
+        }
+
+        .pros h5,
+        .cons h5 {
+            margin: 0 0 1rem;
+            font-size: 1rem;
+        }
+
+        .pros h5 {
+            color: var(--success-green);
+        }
+
+        .cons h5 {
+            color: var(--danger-red);
+        }
+
+        .pros ul,
+        .cons ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .pros li,
+        .cons li {
+            margin: 0.25rem 0;
+            font-size: 0.95rem;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-coverall);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/faq">FAQ</a> / Jacket vs Coverall
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>🧥 Jacket vs Coverall</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Which Clothing Should You Wear?</p>
+        <div class="hero-meta">
+            <div class="meta-item">🌡️ Temperature Guide</div>
+            <div class="meta-item">💧 Sweating Mechanics</div>
+            <div class="meta-item">⏱️ Read Time: 5 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="quick-answer">
+            <h2>⚡ Quick Answer</h2>
+            <p><strong class="jacket-color">Winter Jacket</strong> — Good for mild cold (~0°C to -5°C)</p>
+            <p><strong class="coverall-color">Winter Coverall</strong> — Essential for extreme cold (-10°C and below)
+            </p>
+            <p style="color: var(--text-secondary); margin-top: 1rem;">The coverall provides superior warmth but causes
+                sweating in milder conditions!</p>
+        </div>
+
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#comparison">1. Side-by-Side Comparison</a></li>
+                <li><a href="#temperature">2. Temperature Guide</a></li>
+                <li><a href="#sweating">3. Sweating Mechanics</a></li>
+                <li><a href="#when-to-wear">4. When to Wear Each</a></li>
+                <li><a href="#faq">5. FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>Temperature ranges are approximate based on community testing. Values may be adjusted in future updates.
+            </p>
+        </div>
+
+        <section id="comparison" class="content-section">
+            <h2>1. Side-by-Side Comparison</h2>
+
+            <div class="comparison-grid">
+                <div class="clothing-card jacket">
+                    <div class="icon">🧥</div>
+                    <h3>Winter Jacket</h3>
+                    <div class="temp-range">~-5°C</div>
+                    <p class="description">Standard winter outerwear. Good for mild cold and short outdoor trips. Less
+                        bulky, won't cause sweating indoors.</p>
+                </div>
+                <div class="clothing-card coverall">
+                    <div class="icon">👷</div>
+                    <h3>Winter Coverall</h3>
+                    <div class="temp-range">~-25°C</div>
+                    <p class="description">Heavy-duty insulated workwear. Essential for extreme cold. Provides maximum
+                        protection but causes sweating in warmth.</p>
+                </div>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Feature</th>
+                    <th class="jacket-color">Winter Jacket</th>
+                    <th class="coverall-color">Winter Coverall</th>
+                </tr>
+                <tr>
+                    <td><strong>Warmth Level</strong></td>
+                    <td>Medium</td>
+                    <td>Maximum</td>
+                </tr>
+                <tr>
+                    <td><strong>Effective Range</strong></td>
+                    <td>0°C to ~-5°C</td>
+                    <td>-10°C to ~-25°C</td>
+                </tr>
+                <tr>
+                    <td><strong>Sweating Risk</strong></td>
+                    <td>Low</td>
+                    <td>High (in mild temps)</td>
+                </tr>
+                <tr>
+                    <td><strong>Indoor Use</strong></td>
+                    <td>Comfortable</td>
+                    <td>Causes sweating</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>Daily activities, short trips</td>
+                    <td>Extended outdoor work, extreme cold</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="temperature" class="content-section">
+            <h2>2. Temperature Guide</h2>
+
+            <p>Choose your clothing based on the current temperature:</p>
+
+            <div class="temp-scale">
+                <h4>Temperature → Clothing Recommendation</h4>
+                <div class="scale-bar">
+                    <div class="scale-segment warm-zone">0°C to -5°C<br>🧥 Jacket</div>
+                    <div class="scale-segment cold-zone">-10°C to -25°C<br>👷 Coverall</div>
+                    <div class="scale-segment extreme-zone">Below -25°C<br>⚠️ Danger Zone</div>
+                </div>
+                <div class="scale-labels">
+                    <span>Mild Cold</span>
+                    <span>Severe Cold</span>
+                    <span>Extreme Cold</span>
+                </div>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">🥶 Extreme Cold Warning</div>
+                <p>At temperatures below -25°C, even the coverall may struggle to keep you warm. Limit outdoor exposure
+                    and use heated buildings or vehicles to warm up regularly. Hypothermia can occur in <strong>10-15
+                        minutes</strong> at extreme temperatures!</p>
+            </div>
+        </section>
+
+        <section id="sweating" class="content-section">
+            <h2>3. Sweating Mechanics</h2>
+
+            <p>Sweating is a key mechanic that affects your survival. Here's how it works:</p>
+
+            <div class="info-box">
+                <div class="info-box-title">💧 What Causes Sweating?</div>
+                <ul>
+                    <li>Wearing coverall in <strong>mild temperatures</strong> (above -10°C)</li>
+                    <li>Being in <strong>heated indoor spaces</strong> with heavy clothing</li>
+                    <li><strong>Physical activity</strong> while overdressed</li>
+                    <li>Sitting in a <strong>heated car</strong> for long periods</li>
+                </ul>
+            </div>
+
+            <h3>Why Sweating Matters</h3>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Effect</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><strong>Faster Cooling</strong></td>
+                    <td>Wet clothing loses insulation, causing rapid heat loss when exposed to cold</td>
+                </tr>
+                <tr>
+                    <td><strong>Window Fogging</strong></td>
+                    <td>Heavy sweating can fog up car windows, reducing visibility</td>
+                </tr>
+                <tr>
+                    <td><strong>Hypothermia Risk</strong></td>
+                    <td>If you sweat and then go outside, you'll get cold much faster</td>
+                </tr>
+            </table>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ The Sweat Trap</div>
+                <p>Wearing a coverall indoors → Sweating → Going outside → Rapid heat loss → Hypothermia! <strong>Take
+                        off heavy clothing when indoors!</strong></p>
+            </div>
+        </section>
+
+        <section id="when-to-wear" class="content-section">
+            <h2>4. When to Wear Each</h2>
+
+            <h3 class="jacket-color">🧥 Winter Jacket</h3>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h5>✅ Best For</h5>
+                    <ul>
+                        <li>Mild winter days (0°C to -5°C)</li>
+                        <li>Quick outdoor trips</li>
+                        <li>Driving with car heater</li>
+                        <li>Indoor-to-outdoor transitions</li>
+                        <li>When you need flexibility</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h5>❌ Avoid When</h5>
+                    <ul>
+                        <li>Temperature drops below -10°C</li>
+                        <li>Extended outdoor work planned</li>
+                        <li>Extreme weather warnings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="coverall-color">👷 Winter Coverall</h3>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h5>✅ Best For</h5>
+                    <ul>
+                        <li>Extreme cold (-10°C to -25°C)</li>
+                        <li>Extended outdoor work</li>
+                        <li>Working on your car outside</li>
+                        <li>Ice racing preparation</li>
+                        <li>Emergency situations</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h5>❌ Avoid When</h5>
+                    <ul>
+                        <li>Temperature is above -5°C</li>
+                        <li>Spending time indoors</li>
+                        <li>In heated vehicles for long periods</li>
+                        <li>Short outdoor trips</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Pro Tip: The Early Access Winter</div>
+                <p>The current Early Access build tends to be quite cold overall. The <strong>coverall is generally the
+                        safer choice</strong> for most outdoor activities, but remember to take it off when indoors!</p>
+            </div>
+        </section>
+
+        <section id="faq" class="content-section">
+            <h2>5. FAQ</h2>
+
+            <div class="faq-item">
+                <h4>Q: Can I survive the entire game with just the jacket?</h4>
+                <p>A: In milder conditions, yes. But when temperatures drop below -10°C, you'll need the coverall or
+                    risk hypothermia during any extended outdoor activity.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Where do I get these clothing items?</h4>
+                <p>A: Both items should be available at your apartment or can be purchased from stores. Check your
+                    wardrobe first.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Should I take off the coverall when driving?</h4>
+                <p>A: It depends. If your car heater is working well and you're driving for a while, you may sweat. For
+                    short trips, you can keep it on.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: What if I'm sweating and need to go outside?</h4>
+                <p>A: Try to cool down first and let the sweating stop. Going from sweaty to cold outdoor temperatures
+                    will cause rapid heat loss.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Is layering possible in the game?</h4>
+                <p>A: The game has a simplified clothing system. Choose either jacket OR coverall based on conditions
+                    rather than layering multiple items.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more survival guides:</p>
+            <div class="quick-nav">
+                <a href="/body-temperature-guide" class="quick-nav-item">
+                    <div class="icon">🌡️</div>
+                    <strong>Body Temperature Guide</strong>
+                    <p>Full temperature management system.</p>
+                </a>
+                <a href="/fatigue-guide" class="quick-nav-item">
+                    <div class="icon">😴</div>
+                    <strong>Fatigue Guide</strong>
+                    <p>Managing sleep and rest.</p>
+                </a>
+                <a href="/apartment-guide" class="quick-nav-item">
+                    <div class="icon">🏠</div>
+                    <strong>Apartment Guide</strong>
+                    <p>Your warm starting base.</p>
+                </a>
+                <a href="/block-heater-guide" class="quick-nav-item">
+                    <div class="icon">🔌</div>
+                    <strong>Block Heater Guide</strong>
+                    <p>Engine preheating for cold starts.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
