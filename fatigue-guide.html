@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatigue & Rest Guide — Sleep Mechanics & Recovery Tips | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Complete guide to managing fatigue in My Winter Car. Learn where to sleep, temperature requirements, how to recover from blackouts, and alternative methods like caffeine and high-speed driving.">
+    <link rel="canonical" href="https://mywintercar.com/fatigue-guide">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-sleep: #a78bfa;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-sleep), var(--accent-ice));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(167, 139, 250, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.danger {
+            border-left-color: var(--danger-red);
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        .info-box.sleep {
+            border-left-color: var(--accent-sleep);
+            background: rgba(167, 139, 250, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Fatigue Meter Visual */
+        .fatigue-meter {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .meter-segment {
+            height: 40px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .meter-segment.empty {
+            background: var(--bg-card);
+            width: 100px;
+            border: 2px dashed var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .meter-segment.white {
+            background: linear-gradient(135deg, #d1d5db, #f3f4f6);
+            width: 150px;
+            color: #1f2937;
+        }
+
+        .meter-segment.warning-zone {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            width: 80px;
+            color: #1f2937;
+        }
+
+        .meter-segment.critical {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            width: 80px;
+            color: white;
+        }
+
+        /* Location Cards */
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .location-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .location-card.primary {
+            border-color: var(--accent-sleep);
+            background: rgba(167, 139, 250, 0.1);
+        }
+
+        .location-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-card h4 {
+            margin: 0.5rem 0;
+            color: var(--accent-ice);
+        }
+
+        .location-card.primary h4 {
+            color: var(--accent-sleep);
+        }
+
+        /* Method Cards */
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .method-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .method-card.recommended {
+            border-color: var(--success-green);
+        }
+
+        .method-card.caution {
+            border-color: var(--accent-warning);
+        }
+
+        .method-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .method-card h4 {
+            margin-top: 0;
+        }
+
+        .method-card.recommended h4 {
+            color: var(--success-green);
+        }
+
+        .method-card.caution h4 {
+            color: var(--accent-warning);
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .specs-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Step by Step */
+        .step {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .step.sleep-step {
+            border-left-color: var(--accent-sleep);
+        }
+
+        .step.danger-step {
+            border-left-color: var(--danger-red);
+        }
+
+        .step-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .sleep-text {
+            color: var(--accent-sleep);
+            font-weight: 700;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-sleep);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(167, 139, 250, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .fatigue-meter {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/survival-guide">Survival</a> / Fatigue & Rest Guide
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Fatigue & Rest Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Master Sleep Mechanics & Avoid Deadly Blackouts</p>
+        <div class="hero-meta">
+            <div class="meta-item">😴 Sleep Locations</div>
+            <div class="meta-item">🌡️ Temperature Requirements</div>
+            <div class="meta-item">⏱️ Read Time: 10 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. Understanding Fatigue</a></li>
+                <li><a href="#meter">2. Reading the Fatigue Meter</a></li>
+                <li><a href="#blackouts">3. Blackouts & Recovery</a></li>
+                <li><a href="#sleep">4. How to Sleep</a></li>
+                <li><a href="#locations">5. Sleep Locations</a></li>
+                <li><a href="#alternatives">6. Alternative Fatigue Reducers</a></li>
+                <li><a href="#tips">7. Fatigue Management Tips</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Fatigue mechanics may be adjusted in
+                future updates.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. Understanding Fatigue</h2>
+
+            <p>Fatigue is one of the core survival mechanics in My Winter Car. Your character gets tired over time, and
+                failing to manage fatigue leads to dangerous <span class="highlight">blackouts</span> that can cause
+                accidents — especially while driving.</p>
+
+            <div class="info-box sleep">
+                <div class="info-box-title">😴 Why Fatigue Matters</div>
+                <ul>
+                    <li>Affects your ability to control the character</li>
+                    <li>Causes blackouts that can lead to crashes</li>
+                    <li>Increases stress levels when left unmanaged</li>
+                    <li>Can indirectly cause death (driving off road, freezing during blackout)</li>
+                </ul>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Mechanic</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Meter Location</strong></td>
+                    <td>Top left corner of screen</td>
+                </tr>
+                <tr>
+                    <td><strong>Increases</strong></td>
+                    <td>Continuously over time</td>
+                </tr>
+                <tr>
+                    <td><strong>Primary Recovery</strong></td>
+                    <td>Sleeping in a warm location</td>
+                </tr>
+                <tr>
+                    <td><strong>Critical Effect</strong></td>
+                    <td>Blackouts (loss of control)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="meter" class="content-section">
+            <h2>2. Reading the Fatigue Meter</h2>
+
+            <p>The fatigue meter uses a <strong>color progression system</strong> to indicate how tired you are:</p>
+
+            <div class="fatigue-meter">
+                <div class="meter-segment empty">Empty (Rested)</div>
+                <div class="meter-segment white">White (Building)</div>
+                <div class="meter-segment warning-zone">Yellow (Warning)</div>
+                <div class="meter-segment critical">Red (Critical!)</div>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Color</th>
+                    <th>Status</th>
+                    <th>Action Needed</th>
+                </tr>
+                <tr>
+                    <td><strong>Empty</strong></td>
+                    <td>Fully Rested</td>
+                    <td>None — you're good to go</td>
+                </tr>
+                <tr>
+                    <td><strong>White</strong></td>
+                    <td>Fatigue Building</td>
+                    <td>Monitor, plan for rest</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--accent-warning);"><strong>Yellow/Orange</strong></td>
+                    <td>Getting Tired</td>
+                    <td>Find rest soon</td>
+                </tr>
+                <tr>
+                    <td style="color: var(--danger-red);"><strong>Red</strong></td>
+                    <td>Critical — Blackouts Imminent</td>
+                    <td>STOP and sleep immediately</td>
+                </tr>
+            </table>
+
+            <div class="info-box danger">
+                <div class="info-box-title">⚠️ Red Meter = Danger Zone</div>
+                <p>When your fatigue meter turns red, you're at risk of random blackouts. <strong>Do NOT drive</strong>
+                    in this state — you could crash and die or damage your car.</p>
+            </div>
+        </section>
+
+        <section id="blackouts" class="content-section">
+            <h2>3. Blackouts & Recovery</h2>
+
+            <p>When fatigue reaches critical levels, your character experiences <span class="highlight">blackouts</span>
+                — sudden losses of control that can be deadly:</p>
+
+            <div class="step danger-step">
+                <div class="step-title">💫 Blackout Symptoms</div>
+                <ul>
+                    <li><strong>Screen shaking:</strong> Your view becomes unstable and blurry</li>
+                    <li><strong>Loss of control:</strong> Character movement becomes erratic</li>
+                    <li><strong>Temporary blindness:</strong> Screen may go dark momentarily</li>
+                    <li><strong>Driving danger:</strong> Extremely dangerous if behind the wheel</li>
+                </ul>
+            </div>
+
+            <div class="step sleep-step">
+                <div class="step-title">🖱️ How to Recover from a Blackout</div>
+                <p>When you experience a blackout, you can recover by:</p>
+                <ol>
+                    <li><strong>Shake your mouse vigorously</strong> — move it rapidly back and forth</li>
+                    <li>This simulates your character "waking up" and regaining control</li>
+                    <li>The blackout will end, but fatigue remains high</li>
+                    <li><strong>Find sleep immediately</strong> after recovering — another blackout will come soon</li>
+                </ol>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚡ Stress Connection</div>
+                <p>High fatigue levels also <strong>increase your stress meter</strong>. Managing fatigue helps keep
+                    stress in check as well.</p>
+            </div>
+        </section>
+
+        <section id="sleep" class="content-section">
+            <h2>4. How to Sleep</h2>
+
+            <p>Sleeping is the <strong>primary and most effective</strong> way to recover from fatigue. However, it has
+                specific requirements:</p>
+
+            <div class="step sleep-step">
+                <div class="step-title">🛏️ Sleep Process</div>
+                <ol>
+                    <li>Find a valid sleep location (bed, sofa, bench)</li>
+                    <li>Ensure the area is <strong>warm enough</strong> (body temp in pink zone)</li>
+                    <li>Stand near the sleeping spot and <strong>hold the F key</strong></li>
+                    <li>Wait for the "Going to Sleep" message</li>
+                    <li>Screen fades — you'll sleep until fully rested</li>
+                </ol>
+            </div>
+
+            <h3>🌡️ Temperature Requirement</h3>
+            <p>You <strong>cannot sleep if you're too cold</strong>. Your character needs to be warm before sleeping:
+            </p>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Requirement</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Body Temperature</strong></td>
+                    <td>Must be in the pink/warm zone</td>
+                </tr>
+                <tr>
+                    <td><strong>Room Temperature</strong></td>
+                    <td>Set radiators to 25-30°C</td>
+                </tr>
+                <tr>
+                    <td><strong>Heating Time</strong></td>
+                    <td>Rooms take time to warm up</td>
+                </tr>
+                <tr>
+                    <td><strong>Alternative</strong></td>
+                    <td>Light fireplace if pipes are frozen</td>
+                </tr>
+            </table>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Pro Tip: Fireplace Method</div>
+                <p>If heating doesn't work (frozen pipes), light the <strong>fireplace</strong> in your house. You can
+                    even move the sofa in front of the fireplace for warmth while sleeping!</p>
+            </div>
+        </section>
+
+        <section id="locations" class="content-section">
+            <h2>5. Sleep Locations</h2>
+
+            <p>There are several places where you can sleep in My Winter Car:</p>
+
+            <div class="location-grid">
+                <div class="location-card primary">
+                    <div class="location-icon">🏠</div>
+                    <h4>Your Apartment Bed</h4>
+                    <p>Primary sleep location. Make sure the room is heated before attempting to sleep.</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">👨‍👩‍👦</div>
+                    <h4>Parents' Home</h4>
+                    <p>Alternative location. Visit your parents and sleep there if needed.</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">🛋️</div>
+                    <h4>Indoor Benches/Sofas</h4>
+                    <p>Any indoor bench or sofa can be used for sleeping, as long as the room is warm.</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">🚛</div>
+                    <h4>Gifu Truck (Back)</h4>
+                    <p>You can sleep in the back of the Gifu septic truck — useful for long work sessions!</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">📍 Location Requirements</div>
+                <ul>
+                    <li>All sleep locations must be <strong>indoors</strong> (you can't sleep outside)</li>
+                    <li>The location must be <strong>warm enough</strong></li>
+                    <li>You must be standing near the bed/sofa/bench</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="alternatives" class="content-section">
+            <h2>6. Alternative Fatigue Reducers</h2>
+
+            <p>Besides sleeping, there are other ways to reduce or temporarily combat fatigue:</p>
+
+            <div class="method-grid">
+                <div class="method-card caution">
+                    <div class="method-icon">☕</div>
+                    <h4>Caffeine (Coffee)</h4>
+                    <p><strong>Effect:</strong> Reduces fatigue temporarily</p>
+                    <p><strong>Risk:</strong> Frequent consumption causes <span
+                            style="color: var(--danger-red);">ADDICTION</span></p>
+                    <p><strong>Addiction Effect:</strong> Fatigue meter fills faster when addicted!</p>
+                </div>
+                <div class="method-card recommended">
+                    <div class="method-icon">🚗</div>
+                    <h4>High-Speed Driving</h4>
+                    <p><strong>Effect:</strong> Slightly decreases fatigue</p>
+                    <p><strong>Requirement:</strong> Drive over 120 km/h</p>
+                    <p><strong>Risk:</strong> Dangerous on icy roads — not recommended as primary method</p>
+                </div>
+                <div class="method-card caution">
+                    <div class="method-icon">🚬</div>
+                    <h4>Smoking</h4>
+                    <p><strong>Effect:</strong> Marginally decreases fatigue</p>
+                    <p><strong>Note:</strong> Very small effect, not a reliable solution</p>
+                </div>
+            </div>
+
+            <div class="info-box danger">
+                <div class="info-box-title">☕ Caffeine Addiction Warning</div>
+                <p>Drinking coffee/caffeine too frequently causes <strong>addiction</strong>. Once addicted, your
+                    fatigue meter will fill up <strong>faster than normal</strong>, making the problem worse over time.
+                    Use caffeine sparingly!</p>
+            </div>
+
+            <table class="specs-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Effectiveness</th>
+                    <th>Side Effects</th>
+                </tr>
+                <tr>
+                    <td><strong>Sleep</strong></td>
+                    <td>⭐⭐⭐⭐⭐ (Best)</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td><strong>Caffeine</strong></td>
+                    <td>⭐⭐⭐ (Good)</td>
+                    <td>Addiction risk</td>
+                </tr>
+                <tr>
+                    <td><strong>120+ km/h Driving</strong></td>
+                    <td>⭐⭐ (Slight)</td>
+                    <td>Crash risk on ice</td>
+                </tr>
+                <tr>
+                    <td><strong>Smoking</strong></td>
+                    <td>⭐ (Marginal)</td>
+                    <td>Minimal effect</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="tips" class="content-section">
+            <h2>7. Fatigue Management Tips</h2>
+
+            <div class="step sleep-step">
+                <div class="step-title">🌙 Daily Routine</div>
+                <ul>
+                    <li><strong>Sleep regularly</strong> — don't push until red zone</li>
+                    <li><strong>Pre-heat your room</strong> before you need to sleep</li>
+                    <li><strong>Keep radiators on</strong> in frequently used areas</li>
+                    <li><strong>Plan activities</strong> around rest opportunities</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">🚗 Driving Safety</div>
+                <ul>
+                    <li><strong>Never drive in red zone</strong> — blackouts cause crashes</li>
+                    <li><strong>Monitor fatigue on long trips</strong> — plan rest stops</li>
+                    <li><strong>Keep coffee for emergencies</strong> — not regular use</li>
+                    <li><strong>Pull over if you feel blackout coming</strong></li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <div class="step-title">📋 Emergency Protocol</div>
+                <ul>
+                    <li>If blackout happens: <strong>shake mouse vigorously</strong></li>
+                    <li>After recovery: <strong>stop and find sleep immediately</strong></li>
+                    <li>If driving: <strong>pull over safely first</strong></li>
+                    <li>Keep a backup sleep location in mind during travels</li>
+                </ul>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 Golden Rule</div>
+                <p>Treat fatigue like fuel — don't wait until the tank is empty. <strong>Sleep before you reach the red
+                        zone</strong>, and you'll avoid the dangerous blackout mechanic entirely.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Master all survival mechanics:</p>
+            <div class="quick-nav">
+                <a href="/body-temperature-guide" class="quick-nav-item">
+                    <div class="icon">🌡️</div>
+                    <strong>Body Temperature Guide</strong>
+                    <p>Stay warm and avoid hypothermia.</p>
+                </a>
+                <a href="/hunger-thirst-guide" class="quick-nav-item">
+                    <div class="icon">🍔</div>
+                    <strong>Hunger & Thirst Guide</strong>
+                    <p>Food and water management tips.</p>
+                </a>
+                <a href="/stress-guide" class="quick-nav-item">
+                    <div class="icon">😰</div>
+                    <strong>Stress Guide</strong>
+                    <p>Keep your stress levels in check.</p>
+                </a>
+                <a href="/survival-guide" class="quick-nav-item">
+                    <div class="icon">❄️</div>
+                    <strong>Complete Survival Guide</strong>
+                    <p>Overview of all survival mechanics.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
