@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corris Rivett Facelift Guide — Pre-Facelift vs Facelift Differences | My Winter Car Wiki</title>
+    <meta name="description"
+        content="Complete comparison of pre-facelift (1971-1973) and facelift (1974-1976) Corris Rivett models in My Winter Car. Discover the visual differences in grille, bumpers, mirrors, and trim-specific features.">
+    <link rel="canonical" href="https://mywintercar.com/corris-rivett-facelift">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --accent-pre: #a78bfa;
+            --accent-post: #34d399;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+        }
+
+        .breadcrumb {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(52, 211, 153, 0.2), rgba(26, 29, 35, 0.95));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-pre), var(--accent-post));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .version-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .version-badge {
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .version-badge.pre {
+            background: rgba(167, 139, 250, 0.2);
+            border: 2px solid var(--accent-pre);
+            color: var(--accent-pre);
+        }
+
+        .version-badge.post {
+            background: rgba(52, 211, 153, 0.2);
+            border: 2px solid var(--accent-post);
+            color: var(--accent-post);
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(74, 158, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            color: var(--accent-ice);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: none;
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-ice);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--accent-ice);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box.warning {
+            border-left-color: var(--accent-warning);
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .info-box.success {
+            border-left-color: var(--success-green);
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .info-box.pre {
+            border-left-color: var(--accent-pre);
+            background: rgba(167, 139, 250, 0.1);
+        }
+
+        .info-box.post {
+            border-left-color: var(--accent-post);
+            background: rgba(52, 211, 153, 0.1);
+        }
+
+        .info-box-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background: var(--bg-card);
+            color: var(--accent-ice);
+            font-weight: 600;
+        }
+
+        .comparison-table th.pre-col {
+            background: rgba(167, 139, 250, 0.2);
+            color: var(--accent-pre);
+        }
+
+        .comparison-table th.post-col {
+            background: rgba(52, 211, 153, 0.2);
+            color: var(--accent-post);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .feature-name {
+            font-weight: 500;
+        }
+
+        .comparison-table td.pre-col {
+            background: rgba(167, 139, 250, 0.05);
+        }
+
+        .comparison-table td.post-col {
+            background: rgba(52, 211, 153, 0.05);
+        }
+
+        /* Year Cards */
+        .year-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .year-card {
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .year-card.pre {
+            background: rgba(167, 139, 250, 0.15);
+            border: 2px solid var(--accent-pre);
+            color: var(--accent-pre);
+        }
+
+        .year-card.post {
+            background: rgba(52, 211, 153, 0.15);
+            border: 2px solid var(--accent-post);
+            color: var(--accent-post);
+        }
+
+        .year-card small {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 400;
+            margin-top: 0.25rem;
+            opacity: 0.8;
+        }
+
+        /* Feature Cards */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card.pre {
+            border-color: var(--accent-pre);
+        }
+
+        .feature-card.post {
+            border-color: var(--accent-post);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card h4 {
+            margin-top: 0;
+        }
+
+        .feature-card.pre h4 {
+            color: var(--accent-pre);
+        }
+
+        .feature-card.post h4 {
+            color: var(--accent-post);
+        }
+
+        /* Side by Side */
+        .side-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .side-box {
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .side-box.pre {
+            background: rgba(167, 139, 250, 0.1);
+            border: 2px solid var(--accent-pre);
+        }
+
+        .side-box.post {
+            background: rgba(52, 211, 153, 0.1);
+            border: 2px solid var(--accent-post);
+        }
+
+        .side-box h4 {
+            margin-top: 0;
+        }
+
+        .side-box.pre h4 {
+            color: var(--accent-pre);
+        }
+
+        .side-box.post h4 {
+            color: var(--accent-post);
+        }
+
+        /* Lists */
+        ul,
+        ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Highlight */
+        .highlight {
+            background: rgba(74, 158, 255, 0.15);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .pre-text {
+            color: var(--accent-pre);
+            font-weight: 700;
+        }
+
+        .post-text {
+            color: var(--accent-post);
+            font-weight: 700;
+        }
+
+        /* Related Guides */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-nav-item {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .quick-nav-item:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
+        }
+
+        .quick-nav-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-nav-item p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+
+        .quick-nav-item strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+            transition: all 0.3s;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .side-by-side {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
+            <div class="breadcrumb">
+                <a href="/">Home</a> / <a href="/corris-rivett-guide">Corris Rivett</a> / Facelift Comparison
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="version-badges">
+            <span class="version-badge pre">Pre-Facelift 1971-1973</span>
+            <span class="version-badge post">Facelift 1974-1976</span>
+        </div>
+        <h1>Corris Rivett Facelift Guide</h1>
+        <p style="font-size: 1.2rem; margin-top: 1rem;">Spot the Differences Between Model Years</p>
+        <div class="hero-meta">
+            <div class="meta-item">📅 6 Model Years</div>
+            <div class="meta-item">🔍 Visual Comparison</div>
+            <div class="meta-item">⏱️ Read Time: 10 min</div>
+            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h2>📖 Table of Contents</h2>
+            <ul>
+                <li><a href="#overview">1. What is a Facelift?</a></li>
+                <li><a href="#years">2. Model Years Breakdown</a></li>
+                <li><a href="#comparison">3. Complete Visual Comparison</a></li>
+                <li><a href="#grille">4. Grille Differences</a></li>
+                <li><a href="#bumpers">5. Bumper Differences</a></li>
+                <li><a href="#details">6. Exterior Detail Differences</a></li>
+                <li><a href="#gt">7. GT-Specific Facelift Features</a></li>
+                <li><a href="#history">8. Real-World History</a></li>
+            </ul>
+        </div>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Early Access Notice</div>
+            <p>This guide is based on My Winter Car Early Access (December 2025). Visual elements and parts availability
+                may change in future updates.</p>
+        </div>
+
+        <section id="overview" class="content-section">
+            <h2>1. What is a Facelift?</h2>
+
+            <p>In automotive terminology, a <span class="highlight">"facelift"</span> (also called a "refresh" or
+                "mid-cycle update") refers to design changes made to a car model partway through its production run.
+                Rather than a completely new generation, a facelift updates the visual styling and sometimes adds new
+                features while keeping the core platform unchanged.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">🚗 Why Manufacturers Do Facelifts</div>
+                <ul>
+                    <li>Keep the design fresh and competitive in the market</li>
+                    <li>Address early production issues</li>
+                    <li>Incorporate new safety or comfort features</li>
+                    <li>Reduce costs with updated manufacturing processes</li>
+                </ul>
+            </div>
+
+            <p>In My Winter Car, the Corris Rivett comes in both <span class="pre-text">pre-facelift</span> and <span
+                    class="post-text">facelift</span> versions, determined by its in-game manufacturing year. This
+                affects the visual appearance of your build!</p>
+        </section>
+
+        <section id="years" class="content-section">
+            <h2>2. Model Years Breakdown</h2>
+
+            <p>The Corris Rivett spans six model years, split between the two design generations:</p>
+
+            <h3 class="pre-text">Pre-Facelift Years</h3>
+            <div class="year-grid">
+                <div class="year-card pre">1971<small>Launch Year</small></div>
+                <div class="year-card pre">1972<small>Year 2</small></div>
+                <div class="year-card pre">1973<small>Final Pre-FL</small></div>
+            </div>
+
+            <h3 class="post-text">Facelift Years</h3>
+            <div class="year-grid">
+                <div class="year-card post">1974<small>Facelift Launch</small></div>
+                <div class="year-card post">1975<small>Year 2</small></div>
+                <div class="year-card post">1976<small>Final Year</small></div>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">💡 How to Check Your Model Year</div>
+                <p>Check the manufacturing year when purchasing or examining your Corris Rivett. This determines which
+                    exterior parts are compatible and what visual style your car will have.</p>
+            </div>
+        </section>
+
+        <section id="comparison" class="content-section">
+            <h2>3. Complete Visual Comparison</h2>
+
+            <p>Here's a comprehensive side-by-side comparison of all major differences:</p>
+
+            <table class="comparison-table">
+                <tr>
+                    <th class="feature-name">Feature</th>
+                    <th class="pre-col">Pre-Facelift (1971-1973)</th>
+                    <th class="post-col">Facelift (1974-1976)</th>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Front Grille</strong></td>
+                    <td class="pre-col">Chrome grille with Corris badge</td>
+                    <td class="post-col">Plastic grille, body color, no badge</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Grille Style</strong></td>
+                    <td class="pre-col">Traditional upright design</td>
+                    <td class="post-col">Forward-sloping, single piece</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Front Bumper</strong></td>
+                    <td class="pre-col">Smooth, fully chrome</td>
+                    <td class="post-col">Square shape with plastic strip</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Side Mirrors</strong></td>
+                    <td class="pre-col">Chrome mirrors</td>
+                    <td class="post-col">Plastic mirrors</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Passenger Mirror</strong></td>
+                    <td class="pre-col">None (driver side only)</td>
+                    <td class="post-col">Available on both sides</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Door Handles</strong></td>
+                    <td class="pre-col">Chrome handles</td>
+                    <td class="post-col">Plastic handles</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Window Trim</strong></td>
+                    <td class="pre-col">Chrome trim on windows</td>
+                    <td class="post-col">Simplified/reduced trim</td>
+                </tr>
+                <tr>
+                    <td class="feature-name"><strong>Overall Look</strong></td>
+                    <td class="pre-col">More chrome, classic 70s</td>
+                    <td class="post-col">More plastic, modern look</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="grille" class="content-section">
+            <h2>4. Grille Differences</h2>
+
+            <p>The front grille is one of the most visually distinctive differences between the two generations:</p>
+
+            <div class="side-by-side">
+                <div class="side-box pre">
+                    <h4>Pre-Facelift Grille (1971-1973)</h4>
+                    <ul>
+                        <li><strong>Material:</strong> Chrome/chrome-black options</li>
+                        <li><strong>Design:</strong> Traditional upright style</li>
+                        <li><strong>Badge:</strong> Corris badge present</li>
+                        <li><strong>Trim Options:</strong> Multiple grille options by trim</li>
+                        <li><strong>Feel:</strong> Classic, premium chrome look</li>
+                    </ul>
+                </div>
+                <div class="side-box post">
+                    <h4>Facelift Grille (1974-1976)</h4>
+                    <ul>
+                        <li><strong>Material:</strong> Single-piece plastic</li>
+                        <li><strong>Design:</strong> Forward-sloping, aggressive</li>
+                        <li><strong>Badge:</strong> No Corris badge (only grill without it)</li>
+                        <li><strong>Color:</strong> Body color, paintable</li>
+                        <li><strong>Feel:</strong> Modern, sporty appearance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box post">
+                <div class="info-box-title">🎨 Facelift Grille is Paintable</div>
+                <p>The facelift plastic grille can be painted to match your body color, allowing for a cohesive,
+                    integrated front-end look. This is a unique customization option not available on pre-facelift
+                    models.</p>
+            </div>
+        </section>
+
+        <section id="bumpers" class="content-section">
+            <h2>5. Bumper Differences</h2>
+
+            <p>The bumper design evolved significantly between generations:</p>
+
+            <div class="side-by-side">
+                <div class="side-box pre">
+                    <h4>Pre-Facelift Bumpers</h4>
+                    <ul>
+                        <li><strong>Material:</strong> Full chrome steel</li>
+                        <li><strong>Shape:</strong> Smooth, rounded edges</li>
+                        <li><strong>Style:</strong> Classic 1970s chrome era</li>
+                        <li><strong>Finish:</strong> Polished chrome</li>
+                    </ul>
+                </div>
+                <div class="side-box post">
+                    <h4>Facelift Bumpers</h4>
+                    <ul>
+                        <li><strong>Material:</strong> Chrome with plastic elements</li>
+                        <li><strong>Shape:</strong> More square, angular</li>
+                        <li><strong>Style:</strong> Transitioning to modern plastic</li>
+                        <li><strong>Feature:</strong> Includes plastic strip insert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Parts Compatibility</div>
+                <p>Pre-facelift and facelift bumpers are <strong>NOT interchangeable</strong>. Make sure to acquire the
+                    correct bumper for your model year when sourcing parts.</p>
+            </div>
+        </section>
+
+        <section id="details" class="content-section">
+            <h2>6. Exterior Detail Differences</h2>
+
+            <p>Beyond the major components, several smaller details distinguish the two generations:</p>
+
+            <div class="feature-grid">
+                <div class="feature-card pre">
+                    <div class="feature-icon">🪞</div>
+                    <h4>Pre-Facelift Mirrors</h4>
+                    <p>Chrome mirrors, <strong>driver side only</strong>. The passenger door lacks a mirror —
+                        period-accurate for early 1970s cars.</p>
+                </div>
+                <div class="feature-card post">
+                    <div class="feature-icon">🪞</div>
+                    <h4>Facelift Mirrors</h4>
+                    <p>Plastic mirrors, <strong>both sides available</strong>. The facelift introduced passenger-side
+                        mirrors as standard equipment.</p>
+                </div>
+                <div class="feature-card pre">
+                    <div class="feature-icon">🚪</div>
+                    <h4>Pre-Facelift Door Handles</h4>
+                    <p>Chrome door handles matching the overall chrome aesthetic of the era.</p>
+                </div>
+                <div class="feature-card post">
+                    <div class="feature-icon">🚪</div>
+                    <h4>Facelift Door Handles</h4>
+                    <p>Plastic door handles in the shift toward plastic exterior components.</p>
+                </div>
+            </div>
+
+            <h3>Window Trim</h3>
+            <p>Pre-facelift models feature <span class="pre-text">chrome trim around the windows</span>, adding to the
+                premium appearance typical of early 1970s design. Facelift models generally have simplified or reduced
+                chrome trim.</p>
+        </section>
+
+        <section id="gt" class="content-section">
+            <h2>7. GT-Specific Facelift Features</h2>
+
+            <p>The GT trim has <strong>exclusive facelift features</strong> not found on other trims:</p>
+
+            <div class="feature-grid">
+                <div class="feature-card post">
+                    <div class="feature-icon">🛡️</div>
+                    <h4>GT Front Bumper + Air Dam</h4>
+                    <p>The facelift GT exclusively features a <strong>modernized plastic bumper with integrated air
+                            dam</strong>. This aggressive, aerodynamic design is only available on 1974-1976 GT
+                        variants.</p>
+                </div>
+                <div class="feature-card post">
+                    <div class="feature-icon">🪶</div>
+                    <h4>GT Boot Spoiler</h4>
+                    <p>The facelift GT bootlid comes with a <strong>black stripe and integrated spoiler</strong>, giving
+                        it a distinctive sports car silhouette.</p>
+                </div>
+            </div>
+
+            <div class="info-box post">
+                <div class="info-box-title">🏁 Why Choose a Facelift GT?</div>
+                <p>If you're building the most visually aggressive Corris Rivett possible, the 1974-1976 GT offers the
+                    complete package: plastic front air dam, unique grille compatibility, and boot spoiler. It's the
+                    sportiest factory configuration available.</p>
+            </div>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>GT Feature</th>
+                    <th class="pre-col">Pre-Facelift GT</th>
+                    <th class="post-col">Facelift GT</th>
+                </tr>
+                <tr>
+                    <td class="feature-name">Front Bumper</td>
+                    <td class="pre-col">Chrome bumper (standard)</td>
+                    <td class="post-col">Plastic bumper + air dam</td>
+                </tr>
+                <tr>
+                    <td class="feature-name">Grille Compatibility</td>
+                    <td class="pre-col">Chrome grille options</td>
+                    <td class="post-col">Plastic grille (best match with air dam)</td>
+                </tr>
+                <tr>
+                    <td class="feature-name">Boot/Trunk</td>
+                    <td class="pre-col">Standard bootlid</td>
+                    <td class="post-col">Bootlid with black stripe + spoiler</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="history" class="content-section">
+            <h2>8. Real-World History</h2>
+
+            <p>The Corris Rivett is based on the <span class="highlight">Ford Taunus TC1</span>. The real-world facelift
+                occurred in <strong>September 1973</strong>:</p>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Aspect</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Real-World Model</strong></td>
+                    <td>Ford Taunus TC1 (1970-1976)</td>
+                </tr>
+                <tr>
+                    <td><strong>Facelift Date</strong></td>
+                    <td>September 1973 (for 1974 model year)</td>
+                </tr>
+                <tr>
+                    <td><strong>Key Changes</strong></td>
+                    <td>Rectangular headlamps (previously only on XL+), new grilles, revised dashboard</td>
+                </tr>
+                <tr>
+                    <td><strong>Interior</strong></td>
+                    <td>More angular, ergonomically improved dashboard</td>
+                </tr>
+                <tr>
+                    <td><strong>Chassis</strong></td>
+                    <td>Added front and rear stabilizer bars</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <div class="info-box-title">📜 Historical Context</div>
+                <p>The early 1970s saw a gradual shift in automotive design from heavy chrome to plastic exterior
+                    elements. This was driven by cost reduction, weight savings, and changing aesthetic preferences. The
+                    Ford Taunus TC1 facelift reflects this transition perfectly — a trend that My Winter Car accurately
+                    recreates.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Related Guides</h2>
+            <p style="text-align: center; color: var(--text-secondary);">Explore more about the Corris Rivett:</p>
+            <div class="quick-nav">
+                <a href="/corris-rivett-guide" class="quick-nav-item">
+                    <div class="icon">🚗</div>
+                    <strong>Corris Rivett Complete Guide</strong>
+                    <p>Full build guide covering all trims, parts, and assembly.</p>
+                </a>
+                <a href="/corris-rivett-gt" class="quick-nav-item">
+                    <div class="icon">🏎️</div>
+                    <strong>Corris Rivett GT Guide</strong>
+                    <p>Deep dive into the rare performance variant.</p>
+                </a>
+                <a href="/engine-build-guide" class="quick-nav-item">
+                    <div class="icon">🔧</div>
+                    <strong>Engine Build Guide</strong>
+                    <p>Step-by-step engine assembly instructions.</p>
+                </a>
+                <a href="/parts-acquisition-guide" class="quick-nav-item">
+                    <div class="icon">📦</div>
+                    <strong>Parts Acquisition Guide</strong>
+                    <p>Where to find all the parts you need.</p>
+                </a>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
+            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
+                (December 2025 release)</p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-top">↑</a>
+</body>
+
+</html>
