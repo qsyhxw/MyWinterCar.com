@@ -1,12 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Survival Guide | How to Survive Your First Days - mywintercar.com</title>
-    <meta name="description" content="Master My Winter Car survival mechanics: body temperature, hypothermia prevention, hunger management, permadeath strategies, and essential first-day tips for 1999 Finnish winter.">
+    <title>My Winter Car Survival Guide – Body Temperature (−35 °C Limit), Stress & Permadeath | mywintercar.com</title>
+    <meta name="description" content="MWC survival guide: body temperature drops fatal in 10–15 min below −25 °C. Learn clothing strategy, stress management, permadeath tips & how to stop hypothermia in My Winter Car.">
+
     <link rel="canonical" href="https://mywintercar.com/survival-guide">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mywintercar.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://mywintercar.com/guides" },
+        { "@type": "ListItem", "position": 3, "name": "Winter Survival Guide", "item": "https://mywintercar.com/survival-guide" }
+      ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How quickly does body temperature drop in My Winter Car (MWC)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In worst-case conditions (below −25 °C with inadequate clothing), your body temperature can drop to fatal levels in 10–15 real-time minutes. Below −35 °C, even the best clothing cannot fully prevent temperature loss outdoors. Always monitor the temperature bar and seek shelter immediately when it turns blue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What causes sweating in MWC and why is it dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sweating occurs when you wear heavy clothing (coverall) in heated indoor spaces, or while doing physical activity. Wet clothing loses nearly all its insulation value. If you go outside in a sweat-soaked coverall, your body temperature will drop much faster than normal — this is the #1 cause of unexpected death. Fix: remove heavy clothing before entering heated buildings, and take a shower or change clothes to reduce sweat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce stress (MWC stress mechanic)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stress in My Winter Car can be reduced by: (1) Taking a sauna — most effective safe method. (2) Driving fast (120+ km/h) — works but is risky on icy roads. (3) Chopping firewood — productive and lowers stress. (4) Smoking cigarettes — fast but increases long-term stress rate, use sparingly. (5) Drinking alcohol — lowers stress but raises Problem Bar. (6) Eating grilled meat and drinking coffee. (7) Winning at card games (Ventti) or passing car inspection. Stress causes heart attack/breakdown if it reaches maximum."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What temperature should I set the radiator to for sleeping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set the radiator to 30 °C (maximum) before sleeping. If the room is too cold, you cannot sleep even when fatigued. Allow 5–10 minutes for the room to warm after adjusting the radiator. Sleep in indoor clothing only — never try to sleep in a coverall as you will sweat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What clothes should I wear in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "My Winter Car has three clothing types: (1) Indoor/Light clothing — use only inside heated buildings. (2) Jacket (medium) — best for most outdoor activities and car work, good sweat management, suitable for −5 °C to −20 °C. (3) Coverall (heavy) — maximum insulation for extreme cold below −25 °C when standing still, but causes rapid sweating during any activity. The jacket is recommended for most situations as the best balance of warmth and sweat control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does MWC have permadeath?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, My Winter Car has permadeath — when enabled, any death permanently deletes your save file. Permadeath is optional and can be toggled off in settings. The game auto-saves when you sleep (skips 1 hour of game time). Beginners are recommended to disable permadeath until they master survival mechanics."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
@@ -605,30 +676,83 @@
         </section>
 
         <section id="temperature" class="content-section">
-            <h2>2. Body Temperature System</h2>
+            <h2>2. Body Temperature System – MWC Body Temp Guide</h2>
             
-            <p>The temperature system is MWC's most complex and deadly mechanic. Understanding it is essential for survival.</p>
+            <p>The body temperature system is MWC's most complex and deadly mechanic. Outdoor temperatures can plunge to <strong>−50 °C</strong>; at <strong>−25 °C</strong> clothing alone often fails to prevent heat loss, and at <strong>−35 °C</strong> it is impossible to stop temperature loss outdoors even in the best gear. Understanding every stage is essential for survival.</p>
+
+            <h3>Body Temperature States – Reference Table</h3>
+            <table class="specs-table">
+                <tr>
+                    <th>State</th>
+                    <th>Bar Level</th>
+                    <th>Bar Color</th>
+                    <th>Symptoms</th>
+                    <th>Action Required</th>
+                </tr>
+                <tr>
+                    <td><strong style="color:#10b981;">Overheating / Sweating</strong></td>
+                    <td>100% (full)</td>
+                    <td>Red</td>
+                    <td>Sweating begins; clothing wet = lost insulation</td>
+                    <td>Remove a clothing layer immediately; take a shower</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:#7dd3fc;">Warm / Optimal</strong></td>
+                    <td>~60–80%</td>
+                    <td>Purple→Red</td>
+                    <td>No symptoms; safe to work outdoors</td>
+                    <td>Monitor; switch to appropriate clothing</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:#a78bfa;">Neutral</strong></td>
+                    <td>~40–60%</td>
+                    <td>Purple</td>
+                    <td>Stable body heat; no immediate risk</td>
+                    <td>None – ideal range</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:#60a5fa;">Getting Cold</strong></td>
+                    <td>~20–40%</td>
+                    <td>Blue/Purple</td>
+                    <td>Shivering begins; teeth chattering audio cue</td>
+                    <td>Add clothing layer or find heat source within 5 min</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:#ef4444;">Hypothermia Stage 1</strong></td>
+                    <td>~10–20%</td>
+                    <td>Blue</td>
+                    <td>Movement slows; stamina drains rapidly; vision blurs</td>
+                    <td>Emergency – reach heated building or vehicle heater NOW</td>
+                </tr>
+                <tr>
+                    <td><strong style="color:#dc2626;">Hypothermia Fatal</strong></td>
+                    <td>0%</td>
+                    <td>Deep Blue</td>
+                    <td>Vision blackens; character collapses</td>
+                    <td>Death – permadeath save deleted if enabled</td>
+                </tr>
+            </table>
+
+            <div class="info-box danger">
+                <div class="info-box-title">💀 MWC Body Temp Death Timer</div>
+                <p><strong>Community-Verified:</strong> In worst-case conditions (below −25 °C with inadequate or wet clothing), you will die from hypothermia in approximately <span class="highlight">10–15 real-time minutes</span> once the temperature bar starts falling fast.</p>
+                <p style="margin-top:0.5rem;">Below <strong>−35 °C</strong>: heat loss is unavoidable outdoors even in full coverall — you <em>must</em> work in a heated garage or take frequent indoor breaks.</p>
+            </div>
 
             <h3>Temperature Bar Explained</h3>
             <div class="temp-bar">
-                <span class="temp-label cold">BLUE = Cold (-30°C)</span>
+                <span class="temp-label cold">BLUE = Cold (−35 °C+)</span>
                 <span class="temp-label neutral">PURPLE = Neutral</span>
-                <span class="temp-label hot">RED = Warm (+15°C)</span>
+                <span class="temp-label hot">RED = Warm / Sweating</span>
             </div>
 
-            <p><strong>Color Meaning:</strong> The bar's color represents <em>environmental temperature</em> you're currently in, NOT your body temperature.</p>
-            <p><strong>Bar Fullness:</strong> How full the bar is shows your body temperature "reserve":</p>
+            <p><strong>Color Meaning:</strong> The bar's color represents the <em>environmental temperature</em> you're currently in, NOT your absolute body temperature value.</p>
+            <p><strong>Bar Fullness:</strong> Shows your body temperature "reserve":</p>
             <ul>
-                <li><strong>Full bar:</strong> You start sweating (dangerous!)</li>
-                <li><strong>Half bar:</strong> Optimal temperature</li>
-                <li><strong>Empty bar:</strong> Cold shivers begin, hypothermia imminent</li>
+                <li><strong>Full bar:</strong> Sweating starts — dangerous if you go outside</li>
+                <li><strong>Half bar:</strong> Optimal — stable and safe</li>
+                <li><strong>Empty bar:</strong> Hypothermia imminent — seek heat immediately</li>
             </ul>
-
-            <div class="info-box danger">
-                <div class="info-box-title">💀 Hypothermia Death Timer</div>
-                <p><strong>Developer Confirmed:</strong> In worst-case scenario (freezing weather + inadequate clothing), you will die from hypothermia in <span class="highlight">10-15 real-time minutes</span>.</p>
-                <p>This is FAST. Always monitor your temperature bar outdoors.</p>
-            </div>
 
             <h3>Temperature Factors</h3>
             <table class="specs-table">
@@ -1091,6 +1215,78 @@
                     <li>Don't let stress accumulate to red zone</li>
                 </ul>
             </div>
+
+            <!-- MWC Stress Management Table -->
+            <h3 id="stress">MWC Stress Mechanic – How to Reduce Stress</h3>
+            <p>Stress kills if it hits maximum. It builds from failures, neglect, and bad luck. Here are all confirmed methods to lower it, ranked by effectiveness and safety:</p>
+            <table class="specs-table">
+                <tr>
+                    <th>Method</th>
+                    <th>Stress Reduction</th>
+                    <th>Side Effects</th>
+                    <th>Recommended?</th>
+                </tr>
+                <tr>
+                    <td>🛁 <strong>Sauna</strong></td>
+                    <td>High</td>
+                    <td>None</td>
+                    <td style="color:#10b981;">✅ Best option</td>
+                </tr>
+                <tr>
+                    <td>🪓 <strong>Chop firewood</strong></td>
+                    <td>Medium–High</td>
+                    <td>None (earns money too)</td>
+                    <td style="color:#10b981;">✅ Excellent</td>
+                </tr>
+                <tr>
+                    <td>🚗 <strong>Drive 120+ km/h</strong></td>
+                    <td>Medium</td>
+                    <td>Crash risk on icy roads</td>
+                    <td style="color:#fbbf24;">⚠️ Situational</td>
+                </tr>
+                <tr>
+                    <td>☕ <strong>Coffee + grilled meat</strong></td>
+                    <td>Low–Medium</td>
+                    <td>Coffee addiction increases fatigue rate</td>
+                    <td style="color:#fbbf24;">⚠️ Use sparingly</td>
+                </tr>
+                <tr>
+                    <td>🗣️ <strong>Swear (press N)</strong></td>
+                    <td>Low</td>
+                    <td>None</td>
+                    <td style="color:#10b981;">✅ Free emergency relief</td>
+                </tr>
+                <tr>
+                    <td>🍺 <strong>Alcohol</strong></td>
+                    <td>Medium</td>
+                    <td>Raises Problem Bar; drunkenness</td>
+                    <td style="color:#ef4444;">❌ Avoid if possible</td>
+                </tr>
+                <tr>
+                    <td>🚬 <strong>Smoking</strong></td>
+                    <td>High (instant)</td>
+                    <td>Increases base stress rate over time</td>
+                    <td style="color:#ef4444;">❌ Long-term harmful</td>
+                </tr>
+                <tr>
+                    <td>🏆 <strong>Pass inspection / win Ventti</strong></td>
+                    <td>High</td>
+                    <td>None</td>
+                    <td style="color:#10b981;">✅ Situation reward</td>
+                </tr>
+            </table>
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ What Increases Stress</div>
+                <ul>
+                    <li>Failing vehicle inspection or getting traffic tickets</li>
+                    <li>Getting stuck in snow or crashing</li>
+                    <li>Ignoring hunger, Problem Bar, or a full bladder</li>
+                    <li>Losing at Ventti card games</li>
+                    <li>Smoking frequently (raises baseline stress rate)</li>
+                    <li>Suffering a hangover</li>
+                </ul>
+                <p style="margin-top:0.5rem;"><strong>Warning sign:</strong> When stress turns red, your character begins shaking and swearing automatically — address it immediately.</p>
+            </div>
         </section>
 
         <section id="housing" class="content-section">
@@ -1336,7 +1532,7 @@
         <div class="info-box warning" style="margin-top: 3rem;">
             <div class="info-box-title">📌 Content Version Notice</div>
             <p><strong>This guide is based on:</strong> My Winter Car Early Access (Released December 29, 2025)</p>
-            <p><strong>Last Updated:</strong> January 5, 2026</p>
+            <p><strong>Last Updated:</strong> April 2026</p>
             <p><strong>Verified Information:</strong> All temperature mechanics, clothing systems, and survival stats confirmed through developer comments (Toplessgun) and Early Access player testing.</p>
             <p>Game is in active development. Survival mechanics may be rebalanced in future patches. Always verify critical information against current gameplay.</p>
         </div>
