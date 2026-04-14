@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuning Guide — Engine & Rocker Arm Adjustment | My Winter Car Wiki</title>
+    <title>My Winter Car Tuning Guide: Engine, Suspension & Performance</title>
     <meta name="description"
-        content="Complete tuning guide for My Winter Car! Learn rocker arm adjustment, Fleetari's tuning services, AFR settings, performance parts, and how to optimize your Corris Rivett engine.">
+        content="Complete My Winter Car tuning guide for the Corris Rivett. Learn engine timing alignment, carburetor AFR tuning, valve clearances, and suspension setups.">
     <link rel="canonical" href="https://mywintercar.com/tuning-guide">
 
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-G0QRC4NKKP');
     </script>
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
         crossorigin="anonymous"></script>
+
 
     <style>
         * {
@@ -34,19 +38,16 @@
             --accent-ice: #7dd3fc;
             --accent-warm: #ff8c42;
             --accent-warning: #fbbf24;
-            --accent-tune: #ef4444;
             --text-primary: #e5e7eb;
             --text-secondary: #9ca3af;
             --border-color: #374151;
-            --success-green: #10b981;
-            --danger-red: #ef4444;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background-color: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
         /* Header */
@@ -61,509 +62,182 @@
         }
 
         .header-content {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .logo {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--accent-ice);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .breadcrumb {
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
             color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .breadcrumb a {
-            color: var(--accent-blue);
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
         }
 
-        /* Hero */
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        .discord-btn {
+            background: #5865F2;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(255, 140, 66, 0.15), rgba(26, 29, 35, 0.95));
+            position: relative;
             padding: 4rem 2rem;
             text-align: center;
+            background: linear-gradient(rgba(26, 29, 35, 0.8), rgba(26, 29, 35, 0.95)),
+                url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600&q=80') center/cover;
             border-bottom: 1px solid var(--border-color);
         }
 
         .hero h1 {
-            font-size: 2.75rem;
+            font-size: 3rem;
             font-weight: 800;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--accent-tune), var(--accent-warm));
+            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .hero-meta {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(239, 68, 68, 0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Container */
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
 
-        /* Table of Contents */
-        .toc {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .toc h2 {
-            color: var(--accent-ice);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            border-bottom: none;
-        }
-
-        .toc ul {
-            list-style: none;
-        }
-
-        .toc li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .toc li:last-child {
-            border-bottom: none;
-        }
-
-        .toc a {
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .toc a:hover {
-            color: var(--accent-blue);
-        }
-
-        /* Content Sections */
-        .content-section {
+        section {
             margin-bottom: 4rem;
         }
 
         h2 {
             font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 1.5rem;
             color: var(--accent-ice);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-blue);
         }
-
+        
         h3 {
             font-size: 1.5rem;
+            font-weight: 600;
             margin: 2rem 0 1rem;
-            color: var(--text-primary);
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            margin: 1.5rem 0 0.75rem;
-            color: var(--accent-ice);
+            color: var(--accent-blue);
         }
 
         p {
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
         }
 
-        /* Info Boxes */
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
         .info-box {
-            background: var(--bg-card);
+            background: rgba(74, 158, 255, 0.1);
             border-left: 4px solid var(--accent-blue);
             padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 8px;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .info-box strong {
+            color: var(--text-primary);
         }
 
-        .info-box.warning {
-            border-left-color: var(--accent-warning);
+        .warning-box {
             background: rgba(251, 191, 36, 0.1);
+            border-left: 4px solid var(--accent-warning);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
         }
 
-        .info-box.danger {
-            border-left-color: var(--danger-red);
-            background: rgba(239, 68, 68, 0.1);
-        }
-
-        .info-box.success {
-            border-left-color: var(--success-green);
-            background: rgba(16, 185, 129, 0.1);
-        }
-
-        .info-box.tune {
-            border-left-color: var(--accent-tune);
-            background: rgba(239, 68, 68, 0.1);
-        }
-
-        .info-box-title {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Specs Table */
-        .specs-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-secondary);
+            margin: 2rem 0;
+            background: var(--bg-card);
             border-radius: 8px;
             overflow: hidden;
         }
 
-        .specs-table th,
-        .specs-table td {
+        th, td {
             padding: 1rem;
             text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .specs-table th {
-            background: var(--bg-card);
+        th {
+            background: var(--bg-secondary);
             color: var(--accent-ice);
             font-weight: 600;
         }
 
-        .specs-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        /* Step Guide */
-        .step-guide {
-            margin: 2rem 0;
-        }
-
-        .step {
-            display: flex;
-            gap: 1.5rem;
-            background: var(--bg-card);
-            padding: 1.5rem;
-            margin: 1rem 0;
-            border-radius: 12px;
-            align-items: flex-start;
-        }
-
-        .step-number {
-            background: var(--accent-tune);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.4rem;
-            flex-shrink: 0;
-        }
-
-        .step-content h4 {
-            margin: 0 0 0.5rem;
-            color: var(--text-primary);
-            font-size: 1.2rem;
-        }
-
-        .step-content p {
-            margin: 0;
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0;
+            text-align: center;
             color: var(--text-secondary);
         }
 
-        /* AFR Gauge */
-        .afr-gauge {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .afr-gauge h4 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--accent-ice);
-        }
-
-        .afr-scale {
-            display: flex;
-            gap: 0;
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .afr-segment {
-            flex: 1;
-            padding: 1rem;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .afr-rich {
-            background: linear-gradient(to right, #ef4444, #f97316);
-            color: white;
-        }
-
-        .afr-optimal {
-            background: linear-gradient(to right, #f97316, #22c55e);
-            color: white;
-        }
-
-        .afr-lean {
-            background: linear-gradient(to right, #22c55e, #3b82f6);
-            color: white;
-        }
-
-        .afr-labels {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-
-        /* Parts Grid */
-        .parts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .part-card {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .part-card h4 {
-            margin: 0 0 0.5rem;
-            color: var(--accent-tune);
-        }
-
-        .part-card ul {
-            margin: 0.5rem 0 0;
-            padding-left: 1.5rem;
-        }
-
-        .part-card li {
-            font-size: 0.95rem;
-            margin: 0.25rem 0;
-        }
-
-        /* Service Cards */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .service-card {
-            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), var(--bg-card));
-            border: 2px solid var(--accent-tune);
-            border-radius: 16px;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .service-card .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h4 {
-            color: var(--accent-tune);
-            margin: 0 0 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .service-card .afr {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--accent-warm);
-            margin: 0.5rem 0;
-        }
-
-        .service-card p {
-            color: var(--text-secondary);
-            margin: 0;
-        }
-
-        /* Source Cards */
-        .source-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .source-card {
-            background: var(--bg-card);
-            padding: 1.25rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            text-align: center;
-        }
-
-        .source-card .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .source-card h5 {
-            margin: 0.5rem 0 0.25rem;
-            color: var(--accent-ice);
-        }
-
-        .source-card p {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-
-        /* Lists */
-        ul,
-        ol {
-            margin: 1rem 0 1rem 2rem;
-        }
-
-        li {
-            margin: 0.5rem 0;
-        }
-
-        /* Highlight */
-        .highlight {
-            background: rgba(74, 158, 255, 0.15);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
-        .tune-text {
-            color: var(--accent-tune);
-            font-weight: 700;
-        }
-
-        /* Related Guides */
-        .quick-nav {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .quick-nav-item {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s;
-        }
-
-        .quick-nav-item:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-blue);
-            box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2);
-        }
-
-        .quick-nav-item .icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .quick-nav-item p {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-top: 0.5rem;
-            text-align: left;
-        }
-
-        .quick-nav-item strong {
-            color: var(--text-primary);
-            font-size: 1.1rem;
-        }
-
-        /* Back to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--accent-tune);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
-            transition: all 0.3s;
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero-meta {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .step {
-                flex-direction: column;
-            }
-
-            .afr-scale {
-                flex-direction: column;
-            }
+            .hero h1 { font-size: 2.25rem; }
+            .nav-links { display: none; }
         }
     </style>
 </head>
@@ -572,372 +246,123 @@
     <header>
         <div class="header-content">
             <a href="/" class="logo">❄️ My Winter Car Wiki</a>
-            <div class="breadcrumb">
-                <a href="/">Home</a> / <a href="/mechanics">Mechanics</a> / Tuning
-            </div>
+            <nav class="nav-links">
+                <a href="/wiki">Wiki</a>
+                <a href="/guides">Guides</a>
+                <a href="/vehicles-guide">Vehicles</a>
+                <a href="/parts-acquisition-guide">Parts</a>
+                <a href="https://discord.gg/mywintercar" class="discord-btn">Join Discord</a>
+            </nav>
         </div>
     </header>
 
-    <div class="hero">
-        <h1>🔧 Engine Tuning Guide</h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem;">Optimize Your Corris Rivett for Maximum Performance</p>
-        <div class="hero-meta">
-            <div class="meta-item">⚙️ Rocker Arms</div>
-            <div class="meta-item">📊 AFR Tuning</div>
-            <div class="meta-item">⏱️ Read Time: 10 min</div>
-            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
-        </div>
-    </div>
+    <section class="hero">
+        <h1>My Winter Car Tuning Guide</h1>
+        <p>Master the Corris Rivett's performance with complete guides on engine timing, valve clearances, carburetor AFR, and suspension alignment.</p>
+    </section>
 
     <div class="container">
-        <div class="toc">
-            <h2>📖 Table of Contents</h2>
+        <section>
+            <p>Tuning the <strong>Corris Rivett</strong> in My Winter Car requires precision. An untuned engine may refuse to start, stall frequently, or suffer catastrophic failure under load. This guide covers the essential mechanical tuning required for the Ford Pinto TL20H engine and chassis setup.</p>
+        </section>
+
+        <section id="engine-timing">
+            <h2>1. Engine Timing (Camshaft & Crankshaft)</h2>
+            <p>Timing the engine incorrectly will immediately bend the valves upon the first start attempt. You must properly align the gears before installing the timing belt.</p>
+            
+            <h3>Alignment Procedure</h3>
             <ul>
-                <li><a href="#overview">1. Tuning Overview</a></li>
-                <li><a href="#rocker">2. Rocker Arm Adjustment</a></li>
-                <li><a href="#fleetari">3. Fleetari's Tuning Services</a></li>
-                <li><a href="#afr">4. Air-Fuel Ratio (AFR)</a></li>
-                <li><a href="#parts">5. Performance Parts</a></li>
-                <li><a href="#sources">6. Where to Get Parts</a></li>
+                <li><strong>Camshaft Gear:</strong> Rotate the top gear so the indicator arrow points directly to the mark on the cylinder head (the <strong>6 o'clock</strong> position).</li>
+                <li><strong>Crankshaft Gear:</strong> Rotate the bottom gear so the notch aligns with the mark on the engine block (approximately the <strong>10 o'clock</strong> position).</li>
             </ul>
-        </div>
-
-        <div class="info-box danger">
-            <div class="info-box-title">⚠️ Warning: Tuning Risks</div>
-            <p><strong>Incorrect tuning can damage your engine!</strong> Make sure you understand the process before
-                making adjustments. When in doubt, use Fleetari's professional services.</p>
-        </div>
-
-        <section id="overview" class="content-section">
-            <h2>1. Tuning Overview</h2>
-
-            <p>Engine tuning in My Winter Car allows you to optimize your <span class="tune-text">Corris Rivett</span>
-                for better performance. There are two main approaches: <strong>manual tuning</strong> (DIY) and
-                <strong>professional services</strong> at Fleetari's garage.</p>
-
-            <table class="specs-table">
-                <tr>
-                    <th>Tuning Type</th>
-                    <th>What It Does</th>
-                    <th>Difficulty</th>
-                </tr>
-                <tr>
-                    <td><strong>Rocker Arm Adjustment</strong></td>
-                    <td>Adjusts valve timing and reduces noise</td>
-                    <td>Medium</td>
-                </tr>
-                <tr>
-                    <td><strong>Carburetor Tuning</strong></td>
-                    <td>Controls air-fuel ratio (AFR)</td>
-                    <td>Medium-Hard</td>
-                </tr>
-                <tr>
-                    <td><strong>Idle Adjustment</strong></td>
-                    <td>Sets engine idle speed</td>
-                    <td>Easy</td>
-                </tr>
-                <tr>
-                    <td><strong>Performance Parts</strong></td>
-                    <td>Upgrades for more power</td>
-                    <td>Varies</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="rocker" class="content-section">
-            <h2>2. Rocker Arm Adjustment</h2>
-
-            <p>Proper rocker arm adjustment is essential for a smooth-running engine. Here's the correct method:</p>
-
-            <div class="info-box tune">
-                <div class="info-box-title">🔧 Required Tools</div>
-                <ul>
-                    <li><strong>Screwdriver</strong> — for turning the adjustment screw</li>
-                    <li><strong>12mm Wrench or Socket</strong> — for holding the locknut</li>
-                </ul>
-            </div>
-
-            <div class="step-guide">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4>Start the Engine</h4>
-                        <p><strong>IMPORTANT:</strong> Rocker arm adjustment must be done with the engine RUNNING. Do
-                            not attempt to adjust with the engine off!</p>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4>Access the Rocker Arms</h4>
-                        <p>Open the hood and locate the rocker arm cover on top of the engine. You may need to remove
-                            the cover to access the adjustment screws.</p>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h4>Tighten Until Noise</h4>
-                        <p>Using the screwdriver and wrench, tighten each rocker arm adjustment screw until you hear a
-                            ticking/tapping noise from that valve.</p>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4>Back Off Slightly</h4>
-                        <p>Once you hear the noise, back off the adjustment by just "a tick" (a small amount). The noise
-                            should disappear.</p>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h4>Repeat for All Valves</h4>
-                        <p>Repeat this process for each rocker arm. Listen carefully to ensure all valves are properly
-                            adjusted.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-box warning">
-                <div class="info-box-title">⚠️ Common Mistakes</div>
-                <ul>
-                    <li><strong>Don't adjust with engine off</strong> — You need to hear the valves</li>
-                    <li><strong>Don't count clicks</strong> — Listen to the engine, don't rely on counting</li>
-                    <li><strong>Don't overtighten</strong> — This can damage valve components</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="fleetari" class="content-section">
-            <h2>3. Fleetari's Tuning Services</h2>
-
-            <p>If manual tuning seems too risky, Fleetari offers professional tuning services at his garage:</p>
-
-            <div class="service-grid">
-                <div class="service-card">
-                    <div class="icon">⚙️</div>
-                    <h4>Engine Adjustment</h4>
-                    <div class="afr">AFR 14.7</div>
-                    <p>Standard tune. Sets carburetor and valves to basic values. Stoichiometric ratio for balanced
-                        performance and fuel economy.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🏎️</div>
-                    <h4>Motor Tuning</h4>
-                    <div class="afr">AFR 13.1</div>
-                    <p>Performance tune. Richer mixture for more power. Best for racing and high-performance driving.
-                    </p>
-                </div>
-            </div>
-
-            <div class="info-box success">
-                <div class="info-box-title">💡 Pro Tip</div>
-                <p>Both services require your car to be at <strong>optimal operating temperature</strong> for accurate
-                    adjustment. Drive around for a few minutes before bringing it to Fleetari.</p>
-            </div>
-
-            <table class="specs-table">
-                <tr>
-                    <th>Service</th>
-                    <th>AFR Setting</th>
-                    <th>Best For</th>
-                </tr>
-                <tr>
-                    <td><strong>Engine Adjustment</strong></td>
-                    <td>14.7 (Stoichiometric)</td>
-                    <td>Daily driving, fuel economy</td>
-                </tr>
-                <tr>
-                    <td><strong>Motor Tuning</strong></td>
-                    <td>13.1 (Rich)</td>
-                    <td>Racing, maximum power</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="afr" class="content-section">
-            <h2>4. Air-Fuel Ratio (AFR)</h2>
-
-            <p>The <strong>Air-Fuel Ratio (AFR)</strong> is crucial for engine performance. Here's what the numbers
-                mean:</p>
-
-            <div class="afr-gauge">
-                <h4>AFR Scale</h4>
-                <div class="afr-scale">
-                    <div class="afr-segment afr-rich">RICH<br>12.0-13.0</div>
-                    <div class="afr-segment afr-optimal">OPTIMAL<br>13.1-14.7</div>
-                    <div class="afr-segment afr-lean">LEAN<br>15.0+</div>
-                </div>
-                <div class="afr-labels">
-                    <span>More Power / Less Economy</span>
-                    <span>More Economy / Risk of Damage</span>
-                </div>
-            </div>
-
-            <table class="specs-table">
-                <tr>
-                    <th>AFR Range</th>
-                    <th>Description</th>
-                    <th>Use Case</th>
-                </tr>
-                <tr>
-                    <td><strong>12.0</strong></td>
-                    <td>Very Rich (with nitrous)</td>
-                    <td>Extreme performance, short engine life</td>
-                </tr>
-                <tr>
-                    <td><strong>13.1</strong></td>
-                    <td>Rich (Performance)</td>
-                    <td>Racing, maximum power</td>
-                </tr>
-                <tr>
-                    <td><strong>14.0-14.5</strong></td>
-                    <td>Slightly Rich</td>
-                    <td>Normal driving, good balance</td>
-                </tr>
-                <tr>
-                    <td><strong>14.7</strong></td>
-                    <td>Stoichiometric</td>
-                    <td>Best fuel economy, emissions</td>
-                </tr>
-                <tr>
-                    <td><strong>15.0+</strong></td>
-                    <td>Lean</td>
-                    <td>Risk of engine damage, avoid!</td>
-                </tr>
-            </table>
-
-            <div class="info-box danger">
-                <div class="info-box-title">🔥 Lean = Danger!</div>
-                <p>Running too lean (high AFR) can cause overheating and engine damage. Always err on the side of
-                    slightly rich (lower AFR) if unsure.</p>
-            </div>
-        </section>
-
-        <section id="parts" class="content-section">
-            <h2>5. Performance Parts</h2>
-
-            <p>Upgrade your Corris Rivett with these performance parts:</p>
-
-            <div class="parts-grid">
-                <div class="part-card">
-                    <h4>🔧 Carburetors</h4>
-                    <ul>
-                        <li>2-Barrel Carburetor</li>
-                        <li>4-Barrel Carburetor (more power)</li>
-                    </ul>
-                </div>
-                <div class="part-card">
-                    <h4>⚙️ Camshafts</h4>
-                    <ul>
-                        <li>Fast Road Camshaft</li>
-                        <li>Race Camshaft</li>
-                        <li>Rally Camshaft</li>
-                        <li>Road Shift Camshaft</li>
-                    </ul>
-                </div>
-                <div class="part-card">
-                    <h4>💨 Exhaust</h4>
-                    <ul>
-                        <li>Racing Exhaust</li>
-                        <li>Steel Headers</li>
-                        <li>Racing Muffler</li>
-                    </ul>
-                </div>
-                <div class="part-card">
-                    <h4>🌡️ Cooling</h4>
-                    <ul>
-                        <li>Racing Radiator</li>
-                    </ul>
-                </div>
-                <div class="part-card">
-                    <h4>⚡ Electrical</h4>
-                    <ul>
-                        <li>High-Performance Alternator</li>
-                        <li>High-Performance Fuel Pump</li>
-                    </ul>
-                </div>
-                <div class="part-card">
-                    <h4>🔩 Drivetrain</h4>
-                    <ul>
-                        <li>8.2kg Flywheel</li>
-                        <li>7kg Flywheel (lighter)</li>
-                        <li>Safety Fuel Tank</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="sources" class="content-section">
-            <h2>6. Where to Get Parts</h2>
-
-            <p>Parts can be acquired from several sources in the game:</p>
-
-            <div class="source-grid">
-                <div class="source-card">
-                    <div class="icon">🔧</div>
-                    <h5>Fleetari's Garage</h5>
-                    <p>Standard parts, high-performance carbs, camshafts, alternator, fuel pump</p>
-                </div>
-                <div class="source-card">
-                    <div class="icon">📖</div>
-                    <h5>AMIS Catalogue</h5>
-                    <p>Racing exhaust, headers, mufflers, radiators, flywheels. Found in parents' garage.</p>
-                </div>
-                <div class="source-card">
-                    <div class="icon">📰</div>
-                    <h5>Classifieds Magazine</h5>
-                    <p>Second-hand parts. Buy at PSK Fuel Station.</p>
-                </div>
-            </div>
-
+            
             <div class="info-box">
-                <div class="info-box-title">📍 AMIS Catalogue Location</div>
-                <p>The AMIS Aftermarket & Tuning Catalogue is located in your <strong>parents' garage</strong>. Browse
-                    through it to order racing parts that aren't available at Fleetari's.</p>
+                <strong>💡 Pro Tip:</strong> You must have the crankshaft pulley temporarily installed to see the timing mark correctly. Once both gears are aligned, remove the pulley to install the timing belt, then reinstall the pulley.
             </div>
         </section>
 
-        <section class="content-section">
-            <h2>Related Guides</h2>
-            <p style="text-align: center; color: var(--text-secondary);">Explore more engine and car guides:</p>
-            <div class="quick-nav">
-                <a href="/engine-build-guide" class="quick-nav-item">
-                    <div class="icon">🔧</div>
-                    <strong>Engine Build Guide</strong>
-                    <p>Complete engine assembly instructions.</p>
-                </a>
-                <a href="/corris-rivett-gt" class="quick-nav-item">
-                    <div class="icon">🏎️</div>
-                    <strong>Corris Rivett GT</strong>
-                    <p>The performance variant vehicle.</p>
-                </a>
-                <a href="/sorbett-guide" class="quick-nav-item">
-                    <div class="icon">🚗</div>
-                    <strong>Sorbett Guide</strong>
-                    <p>Your starting daily driver.</p>
-                </a>
-                <a href="/block-heater-guide" class="quick-nav-item">
-                    <div class="icon">🔌</div>
-                    <strong>Block Heater Guide</strong>
-                    <p>Engine preheating for cold starts.</p>
-                </a>
+        <section id="valve-tuning">
+            <h2>2. Valve Adjustment (Rocker Shaft)</h2>
+            <p>The valves regulate the intake of air/fuel and exhaust gases. Incorrect valve lash causes loud metallic clicking, power loss, or stalling.</p>
+            
+            <h3>How to Tune Rockers (Using a 12mm Wrench)</h3>
+            <p>The "Click Count" baseline method for the standard camshaft:</p>
+            <ol style="color: var(--text-secondary); margin-left: 2rem; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                <li>Scroll upwards (tighten) on each adjusting nut until it completely stops moving.</li>
+                <li>From the fully tightened position, scroll backwards (loosen) precisely <strong>58 to 60 clicks</strong>.</li>
+            </ol>
+            
+            <p>Alternatively, the auditory method is highly recommended: With the engine running, tighten each nut until you hear a sharp ticking noise, then slowly back it off just until the noise vanishes.</p>
+        </section>
+
+        <section id="ignition-timing">
+            <h2>3. Distributor Ignition Timing</h2>
+            <p>Ignition timing dictates when the spark plug fires. Advanced timing increases power but can cause engine knock, while retarded timing causes overheating and sluggishness.</p>
+            
+            <h3>Tuning the Distributor</h3>
+            <ul>
+                <li>Start the engine and wait for it to reach operating temperature.</li>
+                <li>Slightly loosen the distributor hold-down screw.</li>
+                <li>Use your scroll wheel to adjust the distributor housing until you hear a faint <strong>chirping</strong> sound (this means it is too advanced).</li>
+                <li>Scroll backwards until the chirping stops entirely, then scroll back exactly 1 click.</li>
+                <li>Tighten the screw. A widely accepted safe AFR/timing sync yields optimal performance at around a <strong>14.75</strong> value.</li>
+            </ul>
+        </section>
+
+        <section id="carburetor-afr">
+            <h2>4. Carburetor AFR Optimization</h2>
+            <p>The Air-Fuel Ratio (AFR) mix determines how rich or lean your engine runs. An aftermarket AFR gauge is highly recommended.</p>
+            
+            <h3>Baseline Tuning Clicks</h3>
+            <p>To establish a functional baseline, scroll the mixture screw downwards (tighten) until it stops moving (60+ clicks). Then, back it off (loosen) by:</p>
+            <table>
+                <tr>
+                    <th>Carburetor Type</th>
+                    <th>Clicks Out (Loosen)</th>
+                    <th>Target Idle AFR</th>
+                </tr>
+                <tr>
+                    <td>Standard Carburetor</td>
+                    <td>~23 Clicks</td>
+                    <td>14.5 - 14.7</td>
+                </tr>
+                <tr>
+                    <td>Twin/2-Barrel Carburetor</td>
+                    <td>~24 Clicks</td>
+                    <td>14.0 - 14.5</td>
+                </tr>
+                <tr>
+                    <td>Racing 4-Barrel Carburetor</td>
+                    <td>~23-24 Clicks (All 4 Screws)</td>
+                    <td>13.1 - 13.8 (Rich for power)</td>
+                </tr>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Cold Weather Warning:</strong> My Winter Car introduces freezing temperatures. An AFR of 14.7 might cause stalling during a cold start without the choke. Pull the choke fully out when starting under -10°C, and gradually push it in as the engine warms.
             </div>
         </section>
 
-        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
-            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access
-                (December 2025 release)</p>
-        </div>
+        <section id="suspension">
+            <h2>5. Suspension & Wheel Alignment</h2>
+            <p>A poorly aligned chassis will pull the car violently to one side and wear out tires prematurely.</p>
+            
+            <h3>Neutral Steering Alignment</h3>
+            <ul>
+                <li>Locate the steering tie rods on the front suspension assembly.</li>
+                <li>Using a wrench, turn the rod adjustment to its absolute maximum limit in one direction.</li>
+                <li>Scroll backwards exactly <strong>100 clicks</strong>.</li>
+                <li>Repeat for the other side. This results in perfect neutral alignment.</li>
+            </ul>
+            <p>For rally builds using adjustable performance struts, players often prefer a slightly stiffer rear setup (Bump Max - 10 / Rebound Max - 4) to encourage oversteer on snowy tracks.</p>
+        </section>
     </div>
 
-    <a href="#" class="back-to-top">↑</a>
+    <footer>
+        <div class="container">
+            <p>© 2026 My Winter Car Wiki. Unofficial guide hub.</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">My Winter Car is a trademark of Amistech Games.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
