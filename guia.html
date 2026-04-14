@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía My Winter Car: Tutorial Completo y Poradnik en Español</title>
+    <meta name="description"
+        content="La mejor guía de My Winter Car en español. Aprende a comprar y construir el Corris Rivett, sobrevivir al frío extremo, hacer cableado, ganar dinero y solucionar problemas.">
+    <link rel="canonical" href="https://mywintercar.com/guia">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-G0QRC4NKKP');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-ice);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-ice);
+        }
+
+        .discord-btn {
+            background: #5865F2;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+
+        .discord-btn:hover {
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(rgba(26, 29, 35, 0.8), rgba(26, 29, 35, 0.95)), url('img/guia-hero.jpg') center/cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Hub */
+        .content-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .guide-article {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .guide-article h2 {
+            font-size: 2rem;
+            color: var(--accent-ice);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .guide-article h3 {
+            font-size: 1.4rem;
+            color: var(--accent-blue);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .guide-article p {
+            margin-bottom: 1.2rem;
+            color: var(--text-primary);
+            font-size: 1.05rem;
+        }
+
+        .guide-article ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .guide-article li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .guide-article strong {
+            color: var(--accent-warm);
+        }
+        
+        .alert-box {
+            background: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid var(--accent-blue);
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .guide-article {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="https://mywintercar.com" class="logo">
+                ❄️ My Winter Car Wiki
+            </a>
+            <nav class="nav-links">
+                <a href="/wiki">Wiki</a>
+                <a href="/guides">Guides</a>
+                <a href="/guia">Guía (ES)</a>
+                <a href="https://discord.gg/mywintercar" class="discord-btn">Join Discord</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Guía My Winter Car</h1>
+        <p>Tu <em>poradnik</em> o manual definitivo en español para sobrevivir, reparar vehículos y dominar el duro invierno en Finlandia.</p>
+    </section>
+
+    <div class="content-container">
+        <article class="guide-article">
+            <p>Bienvenido a la <strong>Guía Completa de My Winter Car en Español</strong>. Este juego de supervivencia y mecánica, secuela del famoso My Summer Car, nos lleva al implacable invierno finlandés. Aquí repasaremos todo lo necesario para empezar con buen pie, desde cómo obtener tu primer coche de proyecto hasta cómo no morir congelado.</p>
+
+            <h2>1. Cómo Comprar el Corris Rivett</h2>
+            <p>A diferencia de su predecesor, en My Winter Car no empiezas el juego con el coche del proyecto en tu garaje. Tendrás que buscarlo y comprarlo. El vehículo principal es el <strong>Corris Rivett</strong>.</p>
+            <ul>
+                <li><strong>El número de teléfono:</strong> Localiza el tablón de anuncios en la gasolinera PSK. Encontrarás un anuncio de venta con el número <strong>08 609 553</strong>.</li>
+                <li><strong>Llama al vendedor:</strong> Ve al teléfono fijo de tu apartamento y marca el número. Es vital que escuches toda la conversación; si cuelgas antes de que el vendedor termine de hablar, el coche no aparecerá en el mapa.</li>
+                <li><strong>Ubicación y Precio:</strong> Después de la llamada, verás un icono de compra en el mapa (en la antigua casa de Reijo Livaloinen). Necesitarás <strong>500 mk</strong> para comprarle la carrocería (el chasis y unas 10-12 piezas sueltas).</li>
+            </ul>
+
+            <div class="alert-box">
+                <strong>Consejo Pro:</strong> Puedes usar el tractor para remolcar la carrocería del Corris Rivett de vuelta a tu garaje y empezar a trabajar de manera más cómoda.
+            </div>
+
+            <h2>2. Construcción del Motor y Cableado</h2>
+            <p>El Rivett funciona con un motor <strong>Ford Pinto TL20H</strong>. Deberás ensamblar más de 200 piezas, incluyendo cigüeñal, pistones, y la correa de distribución (timing belt).</p>
+            <h3>Sistema Eléctrico (Wiring)</h3>
+            <p>El sistema eléctrico es más complejo ahora. Debes conectar la batería al motor de arranque, alternador, caja de fusibles, faros y los mandos del salpicadero. Un consejo vital para el frío: asegúrate de instalar el <strong>bloque calentador (block heater)</strong> y enchufarlo a la pared de tu garaje por las noches, o el coche no arrancará a -15°C.</p>
+
+            <h2>3. Supervivencia y Estadísticas del Personaje</h2>
+            <p>En el invierno, el entorno es tu mayor enemigo. Debes vigilar 6 estadísticas principales:</p>
+            <ul>
+                <li><strong>Temperatura corporal:</strong> El medidor más letal. Si se vacía, morirás por hipotermia en <strong>10 a 15 minutos</strong>. Abrígate bien, enciende la calefacción del coche o refúgiate dentro de lugares con la temperatura por encima de 30°C.</li>
+                <li><strong>Hambre, Fatiga y Estrés:</strong> Come frecuentemente, duerme las horas necesarias y fuma si la barra de estrés sube mucho.</li>
+                <li><strong>Barra de Problemas (Problem Bar):</strong> Representa tu dependencia al alcohol (no confunfir con sed estándar). Tomar agua casi no la baja. Beber cerveza reduce la barra temporalmente.</li>
+            </ul>
+
+            <h2>4. Cómo Ganar Dinero Fácil (Jobs)</h2>
+            <p>Necesitarás mucho dinero (marcas finlandesas o mk) para comprar recambios en la tienda de Fleetari o en el mercadillo (Flea Market). La mejor forma inicial de ganar ingresos es:</p>
+            <ul>
+                <li><strong>Reparto de Leña (Firewood Jobs):</strong> Corta leña y entrégala a los clientes. Cada trabajo completado rinde entre <strong>400 y 800 mk</strong>.</li>
+                <li><strong>Trabajos de Oficina:</strong> Útiles para ingresos estables si tienes paciencia para los minijuegos.</li>
+            </ul>
+
+            <h2>5. Solución Rápida al Alcoholismo (Problem Bar Cure)</h2>
+            <p>Muchos jugadores nuevos mueren intentando bajar la barra de "Problem" bebiendo en exceso o deshidratándose. El método comprobado para curarse (Mega Sobering) es:</p>
+            <ol>
+                <li>Deja que la barra de "Problem" llegue al 100%.</li>
+                <li>Espera exactamente <strong>38 minutos en la vida real</strong>.</li>
+                <li>Bebe agua directamente del grifo.</li>
+                <li>Repite el proceso 4 o 5 veces hasta que la palabra "Problem" cambie finalmente a "Thirst" (Sed normal).</li>
+            </ol>
+            <p>Siguiendo estos pasos, estarás mucho más preparado para triunfar y dominar todo lo que My Winter Car tiene para ofrecer. ¡Buena suerte ensamblando tu Rivett en la nieve!</p>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>My Winter Car Wiki</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                    The most comprehensive community resource for My Winter Car mechanics, guides, and troubleshooting.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Popular Guides</h4>
+                <ul>
+                    <li><a href="/corris-rivett-guide">Corris Rivett Build</a></li>
+                    <li><a href="/wiring-guide">Wiring Diagram</a></li>
+                    <li><a href="/survival-guide">Winter Survival</a></li>
+                    <li><a href="/troubleshooting-guide">Bug Fixes</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Language / Idiomas</h4>
+                <ul>
+                    <li><a href="/">English</a></li>
+                    <li><a href="/guia">Español (Guía)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MyWinterCar.com - Unofficial Fan Wiki. Game by Amistech Games.</p>
+        </div>
+    </footer>
+</body>
+</html>
