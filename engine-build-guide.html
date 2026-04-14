@@ -3,550 +3,910 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engine Build Guide — Complete Assembly Tutorial | My Winter Car Wiki</title>
-    <meta name="description" content="Learn how to build the Corris Rivett engine in My Winter Car. Complete step-by-step assembly guide covering all engine parts, timing belt alignment, cold start procedure, and troubleshooting tips.">
+    <title>My Winter Car Engine Build &amp; Timing Guide &ndash; Complete Corris Rivett Assembly</title>
+    <meta name="description" content="Complete My Winter Car engine build guide: step-by-step Corris Rivett engine assembly, timing belt alignment, distributor tuning, fan belt tensioning, and gearbox installation. All steps verified for Early Access 2025.">
     <link rel="canonical" href="https://mywintercar.com/engine-build-guide">
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-G0QRC4NKKP');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-G0QRC4NKKP');
     </script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920" crossorigin="anonymous"></script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mywintercar.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://mywintercar.com/guides" },
+        { "@type": "ListItem", "position": 3, "name": "Engine Build Guide", "item": "https://mywintercar.com/engine-build-guide" }
+      ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Build the Corris Rivett Engine in My Winter Car",
+      "description": "Complete step-by-step engine assembly guide for My Winter Car, covering bottom end, cylinder head, timing belt, distributor tuning, fan belt tensioning, and gearbox installation.",
+      "totalTime": "PT8H",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Build the bottom end", "text": "Install crankshaft, main bearings, connecting rods, pistons, oil pump, and oil pan onto the engine block." },
+        { "@type": "HowToStep", "position": 2, "name": "Install cylinder head", "text": "Place head gasket, install cylinder head, attach camshaft, rocker arms, and rocker cover." },
+        { "@type": "HowToStep", "position": 3, "name": "Install timing belt", "text": "Install auxiliary shaft, sprockets, route timing belt, reinstall water pump and crankshaft pulley, attach timing belt cover." },
+        { "@type": "HowToStep", "position": 4, "name": "Install fuel and ignition", "text": "Mount fuel pump, carburetor, air filter, distributor, and spark plugs with ignition leads." },
+        { "@type": "HowToStep", "position": 5, "name": "Install fan belt and alternator", "text": "Mount alternator, loosen adjustment screw, route fan belt over alternator/water pump/crankshaft pulleys, tension by moving alternator, tighten screw." },
+        { "@type": "HowToStep", "position": 6, "name": "Install starter motor and clutch", "text": "Mount starter motor, rear plate, flywheel, clutch disk, cover plate, and pressure plate." },
+        { "@type": "HowToStep", "position": 7, "name": "Install gearbox", "text": "Align gearbox to rear of engine, secure with 6x 11mm bolts, install gear lever, reinstall crossmember, attach driveshaft." },
+        { "@type": "HowToStep", "position": 8, "name": "Tune the distributor", "text": "With engine running and warm, loosen distributor screw, use mouse scroll wheel to adjust until chirping noise disappears, retighten." }
+      ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What order do you build the engine in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The recommended order is: (1) Engine block bottom end -- crankshaft, pistons, oil pump, oil pan. (2) Cylinder head -- head gasket, head, camshaft, rockers. (3) Timing belt system -- auxiliary shaft, sprockets, belt, water pump, covers. (4) Fuel and ignition -- fuel pump, carburetor, distributor, spark plugs. (5) Fan belt and alternator. (6) Clutch and flywheel. (7) Gearbox. Build fully on the workbench first, then install into the car using the motor hoist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you install the timing belt in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install the auxiliary shaft and both sprockets first. Then remove the crankshaft pulley and water pump pulley to create access. Route the timing belt over the crankshaft sprocket, auxiliary shaft sprocket, and camshaft sprocket. Reinstall the water pump and crankshaft pulley, then attach the timing belt cover with 2x 6mm bolts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you tension the fan belt in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fan belt is tensioned via the alternator position. Use a screwdriver to loosen the alternator adjustment screw. Move the alternator toward the water pump to create slack, route the belt, then move the alternator away to tension it. Tighten the screw when tension is correct -- it should be snug but not overly tight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you tune the distributor in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The distributor controls ignition timing. It is attached to the engine block with a single screw. Once the engine is running and warm, loosen the screw slightly, then use the mouse scroll wheel to rotate the distributor until the chirping or rattling noise disappears. Retighten the screw. Incorrect distributor timing causes the engine to stall, idle poorly, or rev slowly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many bolts does the gearbox use in My Winter Car?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The gearbox is attached to the rear of the engine block using 6x 11mm bolts. Make sure the clutch assembly (disk, cover plate, pressure plate) is fully installed on the flywheel before attempting to mount the gearbox."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --bg-primary: #1a1d23; --bg-secondary: #252931; --bg-card: #2d3139; --accent-blue: #4a9eff; --accent-ice: #7dd3fc; --accent-warm: #ff8c42; --accent-warning: #fbbf24; --text-primary: #e5e7eb; --text-secondary: #9ca3af; --border-color: #374151; --success-green: #10b981; --danger-red: #ef4444; }
+        :root {
+            --bg-primary: #1a1d23;
+            --bg-secondary: #252931;
+            --bg-card: #2d3139;
+            --accent-blue: #4a9eff;
+            --accent-ice: #7dd3fc;
+            --accent-warm: #ff8c42;
+            --accent-warning: #fbbf24;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --border-color: #374151;
+            --success-green: #10b981;
+            --danger-red: #ef4444;
+        }
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background-color: var(--bg-primary); color: var(--text-primary); line-height: 1.7; }
-        
+
         /* Header */
-        header { background: rgba(26, 29, 35, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; }
+        header { background: rgba(26,29,35,0.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; padding: 1rem 0; }
         .header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.25rem; font-weight: 700; color: var(--accent-ice); text-decoration: none; }
         .breadcrumb { color: var(--text-secondary); font-size: 0.9rem; }
-        .breadcrumb a { color: var(--accent-blue); text-decoration: none; }
-        
+        .breadcrumb a { color: var(--accent-blue); text-decoration: none; transition: color 0.2s; }
+        .breadcrumb a:hover { color: var(--accent-ice); }
+
         /* Hero */
-        .hero { background: linear-gradient(135deg, rgba(74, 158, 255, 0.15), rgba(26, 29, 35, 0.95)); padding: 4rem 2rem; text-align: center; border-bottom: 1px solid var(--border-color); }
-        .hero h1 { font-size: 2.75rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-        .hero-meta { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
-        .meta-item { display: flex; align-items: center; gap: 0.5rem; background: rgba(74, 158, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; }
-        
+        .hero {
+            background: linear-gradient(135deg, rgba(26,29,35,0.85), rgba(74,158,255,0.2)),
+                url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1400&q=80') center/cover;
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 60%, rgba(74,158,255,0.1) 0%, transparent 70%); }
+        .hero-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; animation: fadeInUp 0.7s ease-out; }
+        .hero-badge { display: inline-block; background: rgba(74,158,255,0.2); border: 1px solid rgba(74,158,255,0.45); color: var(--accent-ice); padding: 0.35rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.2rem; }
+        .hero h1 { font-size: 2.85rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, var(--accent-ice), var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1.2; }
+        .hero p { font-size: 1.1rem; color: var(--text-primary); opacity: 0.92; margin-bottom: 2rem; }
+        .hero-meta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); padding: 0.45rem 1rem; border-radius: 20px; font-size: 0.875rem; }
+
         /* Container */
         .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
-        
-        /* Table of Contents */
-        .toc { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 2rem; margin-bottom: 3rem; }
-        .toc h2 { color: var(--accent-ice); margin-bottom: 1rem; font-size: 1.5rem; border-bottom: none; }
-        .toc ul { list-style: none; }
-        .toc li { padding: 0.5rem 0; border-bottom: 1px solid var(--border-color); }
-        .toc li:last-child { border-bottom: none; }
-        .toc a { color: var(--text-primary); text-decoration: none; transition: color 0.3s; }
-        .toc a:hover { color: var(--accent-blue); }
-        
-        /* Content Sections */
-        .content-section { margin-bottom: 4rem; }
-        h2 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent-ice); padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-blue); }
-        h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--text-primary); }
-        h4 { font-size: 1.2rem; margin: 1.5rem 0 0.75rem; color: var(--accent-ice); }
+
+        /* Jump Nav */
+        .jump-nav { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.75rem 2rem; margin-bottom: 2.5rem; }
+        .jump-nav h2 { color: var(--accent-ice); margin-bottom: 1rem; font-size: 1.35rem; border: none; padding: 0; }
+        .jump-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+        .jump-nav ul { list-style: none; }
+        .jump-nav li { padding: 0.4rem 0; border-bottom: 1px solid rgba(55,65,81,0.5); }
+        .jump-nav li:last-child { border-bottom: none; }
+        .jump-nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+        .jump-nav a:hover { color: var(--accent-blue); }
+        .jump-num { color: var(--accent-blue); font-weight: 700; margin-right: 0.4rem; }
+
+        /* Sections */
+        .content-section { margin-bottom: 4.5rem; }
+        h2 { font-size: 1.9rem; margin-bottom: 1.5rem; color: var(--accent-ice); padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-blue); }
+        h3 { font-size: 1.35rem; margin: 2rem 0 0.9rem; color: var(--text-primary); }
         p { margin-bottom: 1rem; font-size: 1.05rem; }
-        
-        /* Info Boxes */
-        .info-box { background: var(--bg-card); border-left: 4px solid var(--accent-blue); padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
-        .info-box.warning { border-left-color: var(--accent-warning); background: rgba(251, 191, 36, 0.1); }
-        .info-box.success { border-left-color: var(--success-green); background: rgba(16, 185, 129, 0.1); }
-        .info-box.danger { border-left-color: var(--danger-red); background: rgba(239, 68, 68, 0.1); }
-        .info-box-title { font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
-        
-        /* Specs Table */
-        .specs-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-secondary); border-radius: 8px; overflow: hidden; }
-        .specs-table th, .specs-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        ul, ol { margin: 0.75rem 0 0.75rem 2rem; }
+        li { margin: 0.45rem 0; font-size: 1rem; }
+
+        /* Info boxes */
+        .info-box { background: var(--bg-card); border-left: 4px solid var(--accent-blue); padding: 1.4rem 1.5rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0; }
+        .info-box.warning { border-left-color: var(--accent-warning); background: rgba(251,191,36,0.08); }
+        .info-box.success { border-left-color: var(--success-green); background: rgba(16,185,129,0.08); }
+        .info-box.danger { border-left-color: var(--danger-red); background: rgba(239,68,68,0.08); }
+        .info-box-title { font-weight: 700; margin-bottom: 0.5rem; font-size: 1rem; }
+
+        /* Phase header */
+        .phase-header { background: linear-gradient(90deg, rgba(74,158,255,0.18), rgba(74,158,255,0.04)); padding: 1rem 1.5rem; border-radius: 8px; margin: 2.5rem 0 0.75rem; border: 1px solid rgba(74,158,255,0.3); display: flex; align-items: center; gap: 0.9rem; }
+        .phase-badge { background: var(--accent-blue); color: #fff; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1rem; flex-shrink: 0; }
+        .phase-header h3 { margin: 0; color: var(--accent-ice); font-size: 1.2rem; }
+
+        /* Step cards */
+        .step { background: var(--bg-card); padding: 2rem; margin: 1.2rem 0; border-radius: 12px; border-left: 4px solid var(--accent-blue); }
+        .step.danger-step { border-left-color: var(--danger-red); }
+        .step.success-step { border-left-color: var(--success-green); }
+        .step.warning-step { border-left-color: var(--accent-warning); }
+        .step-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .step-num { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-blue); color: #fff; width: 32px; height: 32px; border-radius: 50%; font-weight: 800; font-size: 0.9rem; flex-shrink: 0; }
+
+        /* Specs / bolt table */
+        .specs-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; background: var(--bg-secondary); border-radius: 10px; overflow: hidden; }
+        .specs-table th, .specs-table td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--border-color); font-size: 0.95rem; }
         .specs-table th { background: var(--bg-card); color: var(--accent-ice); font-weight: 600; }
         .specs-table tr:last-child td { border-bottom: none; }
-        
-        /* Step by Step */
-        .step { background: var(--bg-card); padding: 2rem; margin: 1.5rem 0; border-radius: 12px; border-left: 4px solid var(--accent-blue); }
-        .step-number { display: inline-block; background: var(--accent-blue); color: white; width: 35px; height: 35px; border-radius: 50%; text-align: center; line-height: 35px; font-weight: 700; margin-right: 1rem; }
-        .step-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem; }
-        
-        /* Lists */
-        ul, ol { margin: 1rem 0 1rem 2rem; }
-        li { margin: 0.5rem 0; }
-        
-        /* Highlight */
-        .highlight { background: rgba(74, 158, 255, 0.15); padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600; }
-        
+        .specs-table tr:hover td { background: rgba(74,158,255,0.04); }
+
+        .bolt-size { background: rgba(74,158,255,0.15); color: var(--accent-blue); padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 700; font-size: 0.85rem; font-family: 'Consolas', monospace; }
+
         /* Checklist */
         .checklist { list-style: none; margin-left: 0; }
-        .checklist li { padding: 0.5rem 0; padding-left: 2rem; position: relative; }
-        .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--accent-blue); font-size: 1.2rem; }
-        
-        /* Code */
-        code { background: var(--bg-card); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'Consolas', monospace; color: var(--accent-warm); }
-        
-        /* Phase Header */
-        .phase-header { background: linear-gradient(135deg, rgba(74, 158, 255, 0.2), rgba(74, 158, 255, 0.05)); padding: 1rem 1.5rem; border-radius: 8px; margin: 2rem 0 1rem; border: 1px solid var(--accent-blue); }
-        .phase-header h4 { margin: 0; color: var(--accent-ice); }
-        
-        /* Related Guides */
-        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem; }
-        .quick-nav-item { background: var(--bg-card); padding: 1.5rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; }
-        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 16px rgba(74, 158, 255, 0.2); }
-        .quick-nav-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
-        .quick-nav-item p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem; text-align: left; }
-        .quick-nav-item strong { color: var(--text-primary); font-size: 1.1rem; }
-        
-        /* Back to Top */
-        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--accent-blue); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4); transition: all 0.3s; }
-        .back-to-top:hover { transform: translateY(-5px); }
-        
-        /* Responsive */
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-meta { flex-direction: column; gap: 1rem; } .container { padding: 2rem 1rem; } }
+        .checklist li { padding: 0.45rem 0; padding-left: 2rem; position: relative; font-size: 1rem; border-bottom: 1px solid rgba(55,65,81,0.4); }
+        .checklist li:last-child { border-bottom: none; }
+        .checklist li::before { content: "&#9633;"; position: absolute; left: 0; color: var(--accent-blue); font-size: 1.1rem; }
+
+        /* Highlight / code */
+        .highlight { background: rgba(74,158,255,0.14); padding: 0.1rem 0.45rem; border-radius: 4px; font-weight: 600; }
+        code { background: var(--bg-card); padding: 0.15rem 0.45rem; border-radius: 4px; font-family: 'Consolas', monospace; color: var(--accent-warm); font-size: 0.9em; }
+
+        /* Key insight callout */
+        .key-insight { background: linear-gradient(135deg, rgba(74,158,255,0.12), rgba(125,211,252,0.06)); border: 1px solid rgba(74,158,255,0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .key-insight h4 { color: var(--accent-ice); margin-bottom: 0.6rem; font-size: 1rem; }
+
+        /* Two-col grid */
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1.5rem 0; }
+        .two-col-item { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.25rem; }
+        .two-col-item h4 { color: var(--accent-ice); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .two-col-item ul { margin: 0; list-style: none; padding: 0; }
+        .two-col-item li { font-size: 0.88rem; color: var(--text-secondary); padding: 0.25rem 0; border-bottom: 1px solid rgba(55,65,81,0.35); }
+        .two-col-item li:last-child { border-bottom: none; }
+        .two-col-item li::before { content: '&#183; '; color: var(--accent-blue); font-weight: 700; }
+
+        /* Related guides */
+        .quick-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+        .quick-nav-item { background: var(--bg-card); padding: 1.4rem; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); border: 1px solid var(--border-color); transition: all 0.3s; position: relative; overflow: hidden; }
+        .quick-nav-item::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-ice)); transform: scaleX(0); transition: transform 0.3s; }
+        .quick-nav-item:hover::before { transform: scaleX(1); }
+        .quick-nav-item:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 8px 20px rgba(74,158,255,0.18); }
+        .quick-nav-item .nav-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .quick-nav-item strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+        .quick-nav-item p { font-size: 0.88rem; color: var(--text-secondary); text-align: left; margin: 0; }
+
+        /* Divider */
+        .section-divider { border: none; border-top: 1px solid var(--border-color); margin: 3rem 0; }
+
+        a { color: var(--accent-blue); }
+        a:hover { color: var(--accent-ice); }
+
+        /* Back to top */
+        .back-to-top { position: fixed; bottom: 2rem; right: 2rem; background: var(--accent-blue); color: white; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.2rem; box-shadow: 0 4px 15px rgba(74,158,255,0.4); transition: all 0.3s; z-index: 999; opacity: 0; }
+        .back-to-top:hover { transform: translateY(-5px); color: white; }
+
+        /* Footer */
+        footer { background: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 3rem 0 2rem; margin-top: 4rem; }
+        .footer-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .footer-section h4 { margin-bottom: 1rem; color: var(--accent-ice); }
+        .footer-section ul { list-style: none; margin: 0; }
+        .footer-section a { color: var(--text-secondary); text-decoration: none; display: block; padding: 0.25rem 0; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-section a:hover { color: var(--accent-ice); }
+        .footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.875rem; max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-meta { flex-direction: column; gap: 0.75rem; }
+            .container { padding: 2rem 1rem; }
+            .jump-grid { grid-template-columns: 1fr; }
+            .two-col { grid-template-columns: 1fr; }
+        }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <a href="/" class="logo">❄️ My Winter Car Wiki</a>
-            <div class="breadcrumb">
-                <a href="/">Home</a> / <a href="/guides">Guides</a> / Engine Build Guide
-            </div>
-        </div>
-    </header>
 
-    <div class="hero">
-        <h1>Engine Build Guide</h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem;">Complete Step-by-Step Assembly Tutorial for the Corris Rivett Engine</p>
+<header>
+    <div class="header-content">
+        <a href="/" class="logo">&#10052;&#65039; My Winter Car Wiki</a>
+        <div class="breadcrumb">
+            <a href="/">Home</a> / <a href="/guides">Guides</a> / Engine Build &amp; Timing Guide
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="hero-badge">&#9881;&#65039; Engine Assembly Deep-Dive</div>
+        <h1>My Winter Car Engine Build &amp; Timing Guide</h1>
+        <p>Complete Corris Rivett engine assembly &mdash; bottom end, cylinder head, timing belt,<br>distributor tuning, fan belt tensioning &amp; gearbox installation</p>
         <div class="hero-meta">
-            <div class="meta-item">🔧 Engine: 2.0L Inline-4</div>
-            <div class="meta-item">⚡ Stock Power: ~98 HP</div>
-            <div class="meta-item">⏱️ Read Time: 25 min</div>
-            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+            <div class="meta-item">&#128295; 2.0L SOHC Inline-4</div>
+            <div class="meta-item">&#9889; ~98 HP Stock</div>
+            <div class="meta-item">&#9200; 30 min Read</div>
+            <div class="meta-item">&#127918; Early Access Dec 2025</div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- Jump Nav -->
+    <div class="jump-nav">
+        <h2>&#128218; Table of Contents</h2>
+        <div class="jump-grid">
+            <ul>
+                <li><a href="#overview"><span class="jump-num">1.</span>Engine Overview &amp; Specifications</a></li>
+                <li><a href="#parts-sourcing"><span class="jump-num">2.</span>Parts Sourcing &amp; Checklist</a></li>
+                <li><a href="#bottom-end"><span class="jump-num">3.</span>Phase 1 &mdash; Bottom End Assembly</a></li>
+                <li><a href="#cylinder-head"><span class="jump-num">4.</span>Phase 2 &mdash; Cylinder Head</a></li>
+                <li><a href="#timing"><span class="jump-num">5.</span>Phase 3 &mdash; Timing Belt System</a></li>
+            </ul>
+            <ul>
+                <li><a href="#fuel-ignition"><span class="jump-num">6.</span>Phase 4 &mdash; Fuel &amp; Ignition</a></li>
+                <li><a href="#fan-belt"><span class="jump-num">7.</span>Phase 5 &mdash; Fan Belt &amp; Alternator</a></li>
+                <li><a href="#gearbox"><span class="jump-num">8.</span>Phase 6 &mdash; Gearbox Installation</a></li>
+                <li><a href="#distributor"><span class="jump-num">9.</span>Distributor Tuning</a></li>
+                <li><a href="#troubleshooting"><span class="jump-num">10.</span>Won't Start? Troubleshooting</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="container">
-        <div class="toc">
-            <h2>📖 Table of Contents</h2>
-            <ul>
-                <li><a href="#overview">1. Quick Overview & Specifications</a></li>
-                <li><a href="#getting-parts">2. Getting Started: Acquiring Parts</a></li>
-                <li><a href="#parts-checklist">3. Complete Engine Parts Checklist</a></li>
-                <li><a href="#assembly">4. Step-by-Step Engine Assembly</a></li>
-                <li><a href="#timing">5. Timing Belt Installation</a></li>
-                <li><a href="#pre-start">6. Pre-Start Checklist</a></li>
-                <li><a href="#cold-start">7. Cold Starting Procedure</a></li>
-                <li><a href="#troubleshooting">8. Troubleshooting: Engine Won't Start</a></li>
-            </ul>
-        </div>
-
-        <div class="info-box warning">
-            <div class="info-box-title">⚠️ Important Notice</div>
-            <p>This guide is based on My Winter Car Early Access (December 29, 2025 release). The game is actively being developed, and some mechanics may change in future updates. Always verify part compatibility with current game version.</p>
-        </div>
-
-        <section id="overview" class="content-section">
-            <h2>1. Quick Overview & Specifications</h2>
-            
-            <p>Building the engine for your <span class="highlight">Corris Rivett</span> is one of the most rewarding challenges in My Winter Car. This guide walks you through every step of the engine assembly process, from acquiring parts to your first successful cold start.</p>
-
-            <table class="specs-table">
-                <tr>
-                    <th>Specification</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td><strong>Engine Type</strong></td>
-                    <td>2.0L SOHC Inline 4-Cylinder</td>
-                </tr>
-                <tr>
-                    <td><strong>Power Output (Stock)</strong></td>
-                    <td>Approximately 98 HP</td>
-                </tr>
-                <tr>
-                    <td><strong>Fuel System</strong></td>
-                    <td>Carburetor with mechanical fuel pump</td>
-                </tr>
-                <tr>
-                    <td><strong>Project Car</strong></td>
-                    <td>Corris Rivett (based on Ford Taunus TC)</td>
-                </tr>
-                <tr>
-                    <td><strong>Total Car Parts</strong></td>
-                    <td>Nearly 200 unique parts</td>
-                </tr>
-            </table>
-
-            <div class="info-box">
-                <div class="info-box-title">💡 Before You Start</div>
-                <p>Make sure you have <strong>purchased the Corris Rivett</strong> first. Call <code>08609553</code> from your in-game phone to contact the seller (Reijo Livaloinen) and pay <strong>500 MK</strong> for the bare shell. See our <a href="/corris-rivett-guide">Corris Rivett Guide</a> for complete purchase instructions.</p>
-            </div>
-        </section>
-
-        <section id="getting-parts" class="content-section">
-            <h2>2. Getting Started: Acquiring Parts</h2>
-            
-            <p>Parts for your engine can be acquired from multiple sources. Plan your purchases carefully to minimize trips and waiting time.</p>
-
-            <h3>Classifieds Magazine (Used Parts)</h3>
-            <div class="step">
-                <div class="step-title">📰 How to Order from Classifieds Magazine</div>
-                <ol>
-                    <li>Buy the <strong>Classifieds Magazine</strong> from the grocery rack at <strong>PSK Gas Station</strong> for <strong>15 MK</strong></li>
-                    <li>Return to your apartment and use the phone</li>
-                    <li>Open the magazine and dial the phone numbers for desired parts using the <strong>numpad</strong></li>
-                    <li><strong>Important:</strong> Type the number correctly and <strong>do not hang up</strong> until the NPC ends the call</li>
-                    <li>After approximately <strong>2 days</strong>, you'll receive a post-order notice in your mailbox</li>
-                    <li>Pick up your order at PSK Gas Station <strong>after 10:00 PM</strong> and pay the cashier</li>
-                </ol>
-                <div class="info-box" style="margin-top: 1rem; margin-bottom: 0;">
-                    <p><strong>Note:</strong> The Classifieds Magazine resets weekly, so new parts become available regularly. Parts are in <strong>used condition</strong> — quality varies.</p>
-                </div>
-            </div>
-
-            <h3>Fleetari's Repair Shop</h3>
-            <p><strong>Fleetari</strong> also sells replacement parts and offers repair services. Visit his shop in Loppe for both new parts and maintenance work. NOS (New Old Stock) parts are more expensive but guaranteed quality.</p>
-
-            <p>For complete details on all parts sources, see our <a href="/parts-acquisition-guide">Parts Acquisition Guide</a>.</p>
-        </section>
-
-        <section id="parts-checklist" class="content-section">
-            <h2>3. Complete Engine Parts Checklist</h2>
-            
-            <p>The engine assembly requires numerous components. Here's a complete checklist organized by system:</p>
-
-            <h3>Core Engine Block Components</h3>
-            <ul>
-                <li>Engine Block</li>
-                <li>Crankshaft</li>
-                <li>Main Bearings</li>
-                <li>Connecting Rods</li>
-                <li>Pistons</li>
-                <li>Oil Pump</li>
-                <li>Oil Pan</li>
-                <li>Oil Filter</li>
-            </ul>
-
-            <h3>Cylinder Head Assembly</h3>
-            <ul>
-                <li>Head Gasket</li>
-                <li>Cylinder Head</li>
-                <li>Rocker Arms</li>
-                <li>Camshaft</li>
-                <li>Rocker Cover</li>
-            </ul>
-
-            <h3>Timing System</h3>
-            <ul>
-                <li>Auxiliary Shaft</li>
-                <li>Auxiliary Shaft Sprocket</li>
-                <li>Camshaft Sprocket</li>
-                <li>Timing Belt</li>
-                <li>Timing Belt Cover</li>
-                <li>Crankshaft Pulley</li>
-            </ul>
-
-            <h3>Fuel & Ignition</h3>
-            <ul>
-                <li>Carburetor</li>
-                <li>Fuel Pump (Mechanical)</li>
-                <li>Spark Plugs</li>
-                <li>Distributor</li>
-            </ul>
-
-            <h3>Cooling & Electrical</h3>
-            <ul>
-                <li>Thermostat</li>
-                <li>Water Pump</li>
-                <li>Water Pump Pulley</li>
-                <li>Fan</li>
-                <li>Alternator</li>
-                <li>Fan Belt</li>
-                <li>Starter Motor</li>
-            </ul>
-
-            <h3>Transmission Connection</h3>
-            <ul>
-                <li>Rear Plate</li>
-                <li>Flywheel (or Flexplate for automatic)</li>
-                <li>Clutch Disk</li>
-                <li>Clutch Cover Plate</li>
-                <li>Clutch Pressure Plate</li>
-            </ul>
-
-            <div class="info-box success">
-                <div class="info-box-title">💰 Budget Tip</div>
-                <p>Engine parts typically cost <strong>3,000-6,000 MK</strong> total depending on condition. Need money fast? Check our <a href="/money-guide">Money Making Guide</a> for the best jobs.</p>
-            </div>
-        </section>
-
-        <section id="assembly" class="content-section">
-            <h2>4. Step-by-Step Engine Assembly</h2>
-            
-            <p>Follow this sequence for successful engine assembly. While some flexibility exists, maintaining this general order helps avoid common mistakes.</p>
-
-            <div class="phase-header">
-                <h4>Phase 1: Engine Block Foundation</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">1</span>Build the Engine Block</div>
-                <ol>
-                    <li><strong>Start with the engine block</strong> mounted on the engine stand</li>
-                    <li><strong>Install the crankshaft</strong> into the block</li>
-                    <li><strong>Install main bearings</strong> (if required separately)</li>
-                    <li><strong>Attach connecting rods</strong></li>
-                    <li><strong>Install pistons</strong> onto the connecting rods</li>
-                    <li><strong>Mount the oil pump</strong></li>
-                    <li><strong>Attach the oil pan</strong></li>
-                </ol>
-            </div>
-
-            <div class="phase-header">
-                <h4>Phase 2: Cylinder Head Installation</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">2</span>Install the Cylinder Head</div>
-                <ol>
-                    <li><strong>Place the head gasket</strong> on the engine block</li>
-                    <li><strong>Lower the cylinder head</strong> onto the block</li>
-                    <li><strong>Install the camshaft</strong></li>
-                    <li><strong>Attach rocker arms</strong></li>
-                    <li><strong>Install the rocker cover</strong> (after valve adjustment, if needed)</li>
-                </ol>
-            </div>
-
-            <div class="phase-header">
-                <h4>Phase 3: Fuel & Ignition System</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">3</span>Install Fuel and Ignition Components</div>
-                <ol>
-                    <li><strong>Install the fuel pump</strong> (mechanical type)</li>
-                    <li><strong>Mount the carburetor</strong></li>
-                    <li><strong>Install spark plugs</strong></li>
-                    <li><strong>Attach the distributor</strong></li>
-                </ol>
-            </div>
-
-            <div class="phase-header">
-                <h4>Phase 4: Cooling System</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">4</span>Install Cooling Components</div>
-                <ol>
-                    <li><strong>Install the thermostat</strong></li>
-                    <li><strong>Mount the water pump</strong> (if not done during timing setup)</li>
-                    <li><strong>Attach the fan</strong></li>
-                </ol>
-            </div>
-
-            <div class="phase-header">
-                <h4>Phase 5: Electrical Components</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">5</span>Install Electrical System</div>
-                <ol>
-                    <li><strong>Install the alternator</strong></li>
-                    <li><strong>Attach the fan belt</strong></li>
-                    <li><strong>Mount the starter motor</strong></li>
-                </ol>
-            </div>
-
-            <div class="phase-header">
-                <h4>Phase 6: Transmission Connection</h4>
-            </div>
-            <div class="step">
-                <div class="step-title"><span class="step-number">6</span>Connect to Transmission</div>
-                <ol>
-                    <li><strong>Attach the rear plate</strong></li>
-                    <li><strong>Install the flywheel</strong> (or flexplate for automatic)</li>
-                    <li><strong>Install clutch components</strong> in order:
-                        <ul>
-                            <li>Clutch Disk</li>
-                            <li>Clutch Cover Plate</li>
-                            <li>Clutch Pressure Plate</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="info-box danger">
-                <div class="info-box-title">🚨 No Rev Limiter Warning</div>
-                <p>The Corris Rivett has <strong>no electronic rev limiter</strong>. Over-revving will cause catastrophic engine damage. Always watch your tachometer!</p>
-            </div>
-        </section>
-
-        <section id="timing" class="content-section">
-            <h2>5. Timing Belt Installation</h2>
-            
-            <p>The timing belt system is <strong>critical</strong> — incorrect timing will prevent the engine from running. Pay close attention to this section.</p>
-
-            <div class="step">
-                <div class="step-title">⚙️ Timing Belt Assembly Sequence</div>
-                <ol>
-                    <li><strong>Install the auxiliary shaft</strong></li>
-                    <li><strong>Attach the auxiliary shaft sprocket</strong></li>
-                    <li><strong>Install the camshaft sprocket</strong></li>
-                    <li><strong>Important:</strong> Before installing the timing belt, <strong>remove</strong>:
-                        <ul>
-                            <li>Crankshaft Pulley</li>
-                            <li>Water Pump / Water Pump Pulley</li>
-                        </ul>
-                    </li>
-                    <li><strong>Install the timing belt</strong> over:
-                        <ul>
-                            <li>Crankshaft</li>
-                            <li>Auxiliary Shaft Sprocket</li>
-                            <li>Camshaft Sprocket</li>
-                        </ul>
-                    </li>
-                    <li><strong>Reinstall the water pump and pulley</strong></li>
-                    <li><strong>Reinstall the crankshaft pulley</strong></li>
-                    <li><strong>Attach the timing belt cover</strong> (uses 2x 6mm bolts to cylinder head)</li>
-                </ol>
-            </div>
-
-            <div class="info-box danger">
-                <div class="info-box-title">⚠️ Critical: Timing Alignment</div>
-                <p>Proper timing belt alignment is crucial. The timing belt synchronizes the crankshaft, auxiliary shaft, and camshaft. If the engine cranks but won't start, timing may be off — double-check that all sprockets are correctly positioned.</p>
-            </div>
-        </section>
-
-        <section id="pre-start" class="content-section">
-            <h2>6. Pre-Start Checklist</h2>
-            
-            <p>Before attempting to start the engine for the first time, verify all of the following:</p>
-
-            <ul class="checklist">
-                <li>All bolts are properly tightened</li>
-                <li>Engine oil is filled to correct level</li>
-                <li>Coolant is filled</li>
-                <li>Brake fluid is topped up</li>
-                <li>Fuel tank has gasoline</li>
-                <li>Battery is fully charged</li>
-                <li>All electrical connections (battery, alternator, starter) are correct</li>
-                <li>Wiring is properly connected (see <a href="/wiring-guide">Wiring Guide</a>)</li>
-            </ul>
-
-            <div class="info-box">
-                <div class="info-box-title">💡 Pro Tip</div>
-                <p>If building in the garage at the parents' house, use the <strong>motor hoist</strong> to make engine installation much easier. The apartment does not have this equipment.</p>
-            </div>
-        </section>
-
-        <section id="cold-start" class="content-section">
-            <h2>7. Cold Starting Procedure</h2>
-            
-            <p>The Corris Rivett uses a <strong>mechanical fuel pump</strong> and <strong>carburetor</strong>, requiring a specific cold start procedure:</p>
-
-            <div class="step">
-                <div class="step-title">❄️ Cold Start Steps</div>
-                <ol>
-                    <li><strong>Engage the choke fully</strong> (pull the choke knob all the way out)</li>
-                    <li><strong>Crank the engine for approximately 10 seconds</strong> (real-time)</li>
-                    <li><strong>Disengage the choke</strong> (push the knob back in)</li>
-                    <li><strong>Wait 10-15 seconds</strong></li>
-                    <li><strong>Try starting again</strong> while giving it some gas</li>
-                    <li>Once running, you can <strong>re-engage the choke</strong> to warm up the engine</li>
-                    <li><strong>Remove the choke</strong> when driving</li>
-                </ol>
-            </div>
-
-            <div class="info-box">
-                <div class="info-box-title">🔧 Why This Works</div>
-                <p>The mechanical fuel pump needs to build sufficient fuel line pressure, which takes a few cranks. The choke enriches the fuel-air mixture, which is necessary because cold fuel vaporizes less efficiently.</p>
-            </div>
-
-            <div class="info-box warning">
-                <div class="info-box-title">⚠️ Winter Warning</div>
-                <p>In extreme cold (below -15°C), the battery may be too weak to crank. Consider using a <strong>block heater</strong> to warm the engine, or bring the battery indoors to warm up before starting.</p>
-            </div>
-        </section>
-
-        <section id="troubleshooting" class="content-section">
-            <h2>8. Troubleshooting: Engine Won't Start</h2>
-            
-            <p>If your engine won't start after assembly, check these common issues:</p>
-
-            <h3>Timing Problems</h3>
-            <div class="step">
-                <div class="step-title">🔴 Engine Cranks But Won't Fire</div>
-                <p><strong>Symptom:</strong> Engine turns over but never catches</p>
-                <p><strong>Likely Cause:</strong> Incorrect timing belt alignment</p>
-                <p><strong>Solution:</strong></p>
-                <ul>
-                    <li>Verify timing belt is properly installed over all three sprockets</li>
-                    <li>Check that sprockets are correctly positioned</li>
-                    <li>Remove timing belt cover and visually inspect alignment</li>
-                </ul>
-            </div>
-
-            <h3>Fuel System Issues</h3>
-            <div class="step">
-                <div class="step-title">🔴 No Fuel Reaching Carburetor</div>
-                <p><strong>Symptom:</strong> Engine cranks, no fuel smell</p>
-                <p><strong>Solution:</strong></p>
-                <ul>
-                    <li>Verify fuel pump is installed correctly</li>
-                    <li>Check fuel line connections</li>
-                    <li>Ensure fuel tank has gasoline</li>
-                    <li>Try extended cranking with choke engaged (builds fuel pressure)</li>
-                </ul>
-            </div>
-
-            <h3>Electrical Faults</h3>
-            <div class="step">
-                <div class="step-title">🔴 No Cranking or Clicking Sounds</div>
-                <p><strong>Symptom:</strong> Nothing happens when turning key</p>
-                <p><strong>Solution:</strong></p>
-                <ul>
-                    <li>Check battery charge and terminal connections</li>
-                    <li>Verify starter motor wiring</li>
-                    <li>Check alternator connections</li>
-                    <li>Inspect ground cables for corrosion</li>
-                </ul>
-            </div>
-
-            <div class="info-box">
-                <div class="info-box-title">📚 Need More Help?</div>
-                <p>For comprehensive troubleshooting including vehicle-specific issues, see our complete <a href="/troubleshooting-guide">Troubleshooting Guide</a>.</p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>Related Guides</h2>
-            <p style="text-align: center; color: var(--text-secondary);">Continue building your Corris Rivett with these related guides:</p>
-            <div class="quick-nav">
-                <a href="/corris-rivett-guide" class="quick-nav-item">
-                    <div class="icon">🚗</div>
-                    <strong>Corris Rivett Guide</strong>
-                    <p>Complete build guide for the entire car — chassis, suspension, body, and more.</p>
-                </a>
-                <a href="/wiring-guide" class="quick-nav-item">
-                    <div class="icon">🔌</div>
-                    <strong>Wiring Guide</strong>
-                    <p>Connect all electrical systems correctly — battery, alternator, lights, and fuses.</p>
-                </a>
-                <a href="/troubleshooting-guide" class="quick-nav-item">
-                    <div class="icon">🔧</div>
-                    <strong>Troubleshooting Guide</strong>
-                    <p>Comprehensive solutions for car won't start, overheating, and other common issues.</p>
-                </a>
-                <a href="/parts-acquisition-guide" class="quick-nav-item">
-                    <div class="icon">📦</div>
-                    <strong>Parts Acquisition Guide</strong>
-                    <p>Where to find every part — Classifieds Magazine, Fleetari, and Flea Market.</p>
-                </a>
-            </div>
-        </section>
-
-        <div style="text-align: center; padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 3rem;">
-            <p style="color: var(--text-secondary);">Last updated: February 2026 | Based on My Winter Car Early Access (December 2025 release)</p>
-        </div>
+    <div class="info-box warning">
+        <div class="info-box-title">&#9888;&#65039; Early Access Notice</div>
+        <p>This guide is based on <strong>My Winter Car Early Access (December 29, 2025 release)</strong>. Mechanics, bolt sizes, and part names may change in future updates. Cross-reference with the Steam community guides or Fandom wiki if something doesn't match.</p>
     </div>
 
-    <a href="#" class="back-to-top">↑</a>
+    <!-- SECTION 1: OVERVIEW -->
+    <section id="overview" class="content-section">
+        <h2>1. Engine Overview &amp; Specifications</h2>
+        <p>The <span class="highlight">Corris Rivett</span> is powered by a <strong>2.0L SOHC Inline-4</strong> engine modeled on the real-world <strong>Ford Pinto TL20H</strong>. Unlike modern engines, it uses a <strong>mechanical fuel pump</strong>, a <strong>carburetor</strong>, and a <strong>timing belt</strong> (not a chain). There is no electronic rev limiter &mdash; every part of the engine must be built correctly for it to run at all.</p>
+
+        <table class="specs-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td><strong>Engine Type</strong></td><td>2.0L SOHC Inline 4-Cylinder</td></tr>
+            <tr><td><strong>Real-World Basis</strong></td><td>Ford Pinto TL20H (approx. 1971&ndash;1976)</td></tr>
+            <tr><td><strong>Stock Power Output</strong></td><td>~98 HP @ 5,500 RPM</td></tr>
+            <tr><td><strong>Fuel System</strong></td><td>Carburetor + Mechanical Fuel Pump</td></tr>
+            <tr><td><strong>Ignition System</strong></td><td>Points-type Distributor</td></tr>
+            <tr><td><strong>Timing System</strong></td><td>Timing Belt (3-sprocket: crank, aux shaft, cam)</td></tr>
+            <tr><td><strong>Rev Limiter</strong></td><td><strong>None</strong> &mdash; over-revving = engine damage</td></tr>
+            <tr><td><strong>Gearbox (stock)</strong></td><td>4-speed manual (L/LX trim) &mdash; 6&times; 11mm bolts</td></tr>
+        </table>
+
+        <div class="key-insight">
+            <h4>&#128161; Key Difference from My Summer Car</h4>
+            <p>The Rivett engine uses a <strong>timing belt + auxiliary shaft</strong> system (3 sprockets total), whereas the Satsuma used a simpler chain. The distributor also requires active tuning once the engine is running &mdash; not just installation. These two steps are where most players get stuck.</p>
+        </div>
+
+        <div class="info-box danger">
+            <div class="info-box-title">&#128680; No Rev Limiter &mdash; Critical Warning</div>
+            <p>The Corris Rivett has <strong>no electronic rev limiter</strong>. Over-revving at high RPM will cause catastrophic and permanent engine damage. Always watch the tachometer during first-start and tuning runs. <strong>Avoid "money shifting"</strong> (accidentally downshifting at high RPM).</p>
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-title">&#9881;&#65039; Build Location Recommendation</div>
+            <p>Always build the complete engine on the <strong>workbench at the parents' house garage</strong> before installing it in the car. The garage has a <strong>motor hoist</strong> essential for engine bay installation. The apartment has no hoist and no space. See our <a href="/car-build-guide">Complete Build Guide</a> for the full vehicle assembly order.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PARTS -->
+    <section id="parts-sourcing" class="content-section">
+        <h2>2. Parts Sourcing &amp; Complete Checklist</h2>
+        <p>Engine parts cost approximately <strong>3,000&ndash;6,000 mk</strong> total depending on whether you buy used (Classifieds Magazine) or NOS (Fleetari). Order from the Classifieds first &mdash; orders arrive in ~2 in-game days, so batch everything together. See the <a href="/parts-acquisition-guide">Parts Acquisition Guide</a> for sourcing strategy.</p>
+
+        <div class="two-col">
+            <div class="two-col-item">
+                <h4>&#9881;&#65039; Bottom End</h4>
+                <ul>
+                    <li>Engine Block</li>
+                    <li>Crankshaft</li>
+                    <li>Main Bearings</li>
+                    <li>Connecting Rods (&times;4)</li>
+                    <li>Pistons (&times;4)</li>
+                    <li>Oil Pump</li>
+                    <li>Oil Pan</li>
+                    <li>Oil Filter</li>
+                </ul>
+            </div>
+            <div class="two-col-item">
+                <h4>&#128285; Cylinder Head</h4>
+                <ul>
+                    <li>Head Gasket</li>
+                    <li>Cylinder Head</li>
+                    <li>Camshaft</li>
+                    <li>Rocker Arms / Followers</li>
+                    <li>Rocker Cover</li>
+                </ul>
+            </div>
+            <div class="two-col-item">
+                <h4>&#9203; Timing System</h4>
+                <ul>
+                    <li>Auxiliary Shaft</li>
+                    <li>Auxiliary Shaft Sprocket</li>
+                    <li>Camshaft Sprocket</li>
+                    <li>Timing Belt</li>
+                    <li>Timing Belt Cover</li>
+                    <li>Crankshaft Pulley</li>
+                </ul>
+            </div>
+            <div class="two-col-item">
+                <h4>&#128293; Fuel &amp; Ignition</h4>
+                <ul>
+                    <li>Carburetor (1- or 2-barrel, VIN-dependent)</li>
+                    <li>Air Filter</li>
+                    <li>Fuel Pump (Mechanical)</li>
+                    <li>Distributor</li>
+                    <li>Spark Plugs (&times;4)</li>
+                    <li>Ignition Leads (&times;4)</li>
+                </ul>
+            </div>
+            <div class="two-col-item">
+                <h4>&#10052;&#65039; Cooling &amp; Fan Belt</h4>
+                <ul>
+                    <li>Thermostat</li>
+                    <li>Water Pump</li>
+                    <li>Water Pump Pulley</li>
+                    <li>Fan</li>
+                    <li>Fan Belt</li>
+                    <li>Alternator</li>
+                </ul>
+            </div>
+            <div class="two-col-item">
+                <h4>&#128297; Clutch &amp; Starter</h4>
+                <ul>
+                    <li>Starter Motor</li>
+                    <li>Rear Plate</li>
+                    <li>Flywheel</li>
+                    <li>Clutch Disk</li>
+                    <li>Clutch Cover Plate</li>
+                    <li>Clutch Pressure Plate</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-title">&#128161; Ordering Strategy</div>
+            <p>Order the <strong>full bottom end and cylinder head parts</strong> first &mdash; they take 2 days. While waiting, earn money with firewood deliveries (400&ndash;800 mk/run). Buy critical internals (crankshaft, pistons, camshaft) from <strong>Fleetari as NOS</strong> if budget allows &mdash; these won't wear prematurely. Buy exterior pieces (timing belt cover, air filter) from Classifieds to save cash. See our <a href="/money-guide">Money Guide</a> if funds are tight.</p>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- PHASE 1: BOTTOM END -->
+    <section id="bottom-end" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">1</div>
+            <h3>Phase 1 &mdash; Bottom End Assembly</h3>
+        </div>
+        <p>Start with the engine block on the workbench. All bottom end work happens before the cylinder head goes on.</p>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Crankshaft &amp; Main Bearings</div>
+            <ol>
+                <li>Place the <strong>engine block</strong> on the workbench</li>
+                <li>Lower the <strong>crankshaft</strong> into the main bearing saddles</li>
+                <li>Install <strong>main bearings</strong> and torque all cap bolts</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Connecting Rods &amp; Pistons</div>
+            <ol>
+                <li>Attach <strong>connecting rods</strong> to the crankshaft journals</li>
+                <li>Install <strong>4 pistons</strong> onto the connecting rods</li>
+                <li>Flip the block if needed to access lower components</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">3</span> Oil System</div>
+            <ol>
+                <li>Mount the <strong>oil pump</strong> to the block</li>
+                <li>Attach the <strong>oil pan</strong> underneath</li>
+                <li>Install the <strong>oil filter</strong> (hand-tighten &mdash; do not overtighten)</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PHASE 2: CYLINDER HEAD -->
+    <section id="cylinder-head" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">2</div>
+            <h3>Phase 2 &mdash; Cylinder Head Installation</h3>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Head Gasket &amp; Cylinder Head</div>
+            <ol>
+                <li>Lay the <strong>head gasket</strong> flat on top of the engine block</li>
+                <li>Lower the <strong>cylinder head</strong> carefully onto the block</li>
+                <li>Torque all head bolts in the correct cross-pattern sequence</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Camshaft &amp; Valve Train</div>
+            <ol>
+                <li>Slide the <strong>camshaft</strong> into the cylinder head</li>
+                <li>Install <strong>rocker arms / cam followers</strong> over each valve</li>
+                <li>Fit the <strong>rocker cover</strong> to seal the head</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- PHASE 3: TIMING -->
+    <section id="timing" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">3</div>
+            <h3>Phase 3 &mdash; Timing Belt System</h3>
+        </div>
+
+        <p>This is the most <strong>critical and most-failed</strong> step in the entire build. An incorrectly timed engine will crank but never fire. Read every step before proceeding.</p>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Install Auxiliary Shaft &amp; Sprockets</div>
+            <ol>
+                <li>Insert the <strong>auxiliary shaft</strong> into the engine block</li>
+                <li>Attach the <strong>auxiliary shaft sprocket</strong> to the auxiliary shaft</li>
+                <li>Attach the <strong>camshaft sprocket</strong> to the camshaft</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Prepare for Belt Routing</div>
+            <ol>
+                <li><strong>Remove the crankshaft pulley</strong> &mdash; it blocks belt access</li>
+                <li><strong>Remove the water pump and water pump pulley</strong> &mdash; these are reinstalled after the belt</li>
+            </ol>
+            <div class="info-box warning" style="margin-top:1rem;">
+                <div class="info-box-title">&#9888;&#65039; Removal Order Matters</div>
+                <p>Forgetting to remove the crankshaft pulley and water pump pulley before routing the belt is the single most common mistake. The belt physically cannot be installed correctly with them in place.</p>
+            </div>
+        </div>
+
+        <div class="step danger-step">
+            <div class="step-title"><span class="step-num">3</span> Route the Timing Belt &mdash; Alignment Critical</div>
+            <ol>
+                <li>Route the <strong>timing belt</strong> over all three sprockets in this order:<br>
+                    <strong>Crankshaft sprocket &rarr; Auxiliary shaft sprocket &rarr; Camshaft sprocket</strong></li>
+                <li>Ensure the belt sits flat and centered on every sprocket with no twists</li>
+                <li>Verify timing marks:<br>
+                    &bull; <strong>Camshaft sprocket arrow</strong> must align with the reference mark on the cylinder head<br>
+                    &bull; <strong>Crankshaft alignment mark</strong> must align with the reference mark on the engine block<br>
+                    &bull; <strong>Auxiliary shaft mark</strong> must align with its reference</li>
+            </ol>
+            <div class="info-box danger" style="margin-top:1rem;">
+                <div class="info-box-title">&#128680; If Any Mark is Wrong &mdash; Stop</div>
+                <p>Do <strong>not</strong> proceed if any timing mark is misaligned. An engine with incorrect valve timing will crank but never start. Remove the belt, rotate the appropriate sprocket by one tooth, and recheck before reinstalling. This is the #1 reason a fully-assembled engine fails to start.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">4</span> Reinstall Water Pump &amp; Cover</div>
+            <ol>
+                <li>Reinstall the <strong>water pump</strong> onto the engine block</li>
+                <li>Reinstall the <strong>water pump pulley</strong></li>
+                <li>Reinstall the <strong>crankshaft pulley</strong></li>
+                <li>Install the <strong>timing belt cover</strong> using <span class="bolt-size">2&times; 6mm</span> bolts into the cylinder head</li>
+            </ol>
+        </div>
+
+        <div class="info-box success">
+            <div class="info-box-title">&#10003; Timing System Complete</div>
+            <p>With the cover on, the core engine architecture is complete. If you've verified all three timing marks, the engine is internally correct. Proceed to fuel and ignition components.</p>
+        </div>
+    </section>
+
+    <!-- PHASE 4: FUEL & IGNITION -->
+    <section id="fuel-ignition" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">4</div>
+            <h3>Phase 4 &mdash; Fuel &amp; Ignition System</h3>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Fuel Pump &amp; Carburetor</div>
+            <ol>
+                <li>Mount the <strong>fuel pump</strong> (mechanical type) to the side of the engine block</li>
+                <li>Bolt the <strong>carburetor</strong> to the intake manifold</li>
+                <li>Attach the <strong>air filter</strong> to the carburetor inlet</li>
+            </ol>
+            <div class="info-box" style="margin-top:1rem;">
+                <div class="info-box-title">&#128161; Carburetor Type Depends on VIN</div>
+                <p>Your trim level (readable from the VIN plate) determines whether you have a <strong>single-barrel</strong> (L, LX trim) or <strong>twin-barrel</strong> carburetor (GT trim). Make sure you order the correct one. See our <a href="/vin-decoder-guide">VIN Decoder Guide</a> for trim identification.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Distributor &amp; Spark Plugs</div>
+            <ol>
+                <li>Slot the <strong>distributor</strong> into its housing on the engine block and secure with its <strong>single screw</strong> &mdash; leave it slightly loose for tuning later</li>
+                <li>Install all <strong>4 spark plugs</strong> into the cylinder head</li>
+                <li>Connect the <strong>4 ignition leads</strong> from distributor cap to spark plugs in firing order: <strong>1&ndash;3&ndash;4&ndash;2</strong></li>
+            </ol>
+            <div class="info-box" style="margin-top:1rem;">
+                <div class="info-box-title">&#128161; Install, Then Tune Later</div>
+                <p>The distributor needs to be <strong>tuned while the engine is running</strong> &mdash; not during assembly. Install it for now, leave the screw slightly loose, and proceed. Full distributor tuning is covered in <a href="#distributor">Section 9</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHASE 5: FAN BELT -->
+    <section id="fan-belt" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">5</div>
+            <h3>Phase 5 &mdash; Fan Belt &amp; Alternator</h3>
+        </div>
+
+        <p>The fan belt (also called the drive belt or serpentine belt) connects the <strong>alternator, water pump pulley, and crankshaft pulley</strong>. Tension is set via the alternator's position &mdash; there is no separate tensioner pulley.</p>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Assemble Fan on Water Pump</div>
+            <ol>
+                <li>Install the <strong>thermostat</strong> in the coolant outlet housing</li>
+                <li>Attach the <strong>fan</strong> to the water pump hub</li>
+                <li>Confirm the water pump pulley is already installed from Phase 3</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Install Alternator</div>
+            <ol>
+                <li>Mount the <strong>alternator</strong> in its bracket on the engine block</li>
+                <li>Use a <strong>screwdriver</strong> to loosen the alternator pivot/adjustment screw</li>
+                <li>Push the alternator <strong>toward the water pump</strong> to create slack &mdash; this is done with your mouse</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">3</span> Route &amp; Tension Fan Belt</div>
+            <ol>
+                <li>Route the <strong>fan belt</strong> over:<br>
+                    &bull; <strong>Crankshaft pulley</strong> (bottom)<br>
+                    &bull; <strong>Water pump pulley</strong> (middle)<br>
+                    &bull; <strong>Alternator pulley</strong> (top)</li>
+                <li>Slowly move the alternator <strong>away from the water pump</strong> to take up slack and tension the belt</li>
+                <li>Target tension: the belt should feel taut and <strong>deflect no more than ~1cm</strong> at moderate thumb pressure &mdash; listen for squealing (too loose) or snapping risk (too tight)</li>
+                <li>Once tension is correct, <strong>tighten the alternator adjustment screw</strong> with the screwdriver to lock position</li>
+            </ol>
+            <div class="info-box warning" style="margin-top:1rem;">
+                <div class="info-box-title">&#9888;&#65039; Squealing Fan Belt</div>
+                <p>A squealing sound from the engine bay after first start almost always means the fan belt is <strong>too loose</strong>. Stop the engine, loosen the alternator screw, move the alternator outward to add tension, and retighten. A properly tensioned belt runs silently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHASE 6: GEARBOX -->
+    <section id="gearbox" class="content-section">
+        <div class="phase-header">
+            <div class="phase-badge">6</div>
+            <h3>Phase 6 &mdash; Clutch Assembly &amp; Gearbox</h3>
+        </div>
+
+        <p>The gearbox cannot be installed until the <strong>full clutch assembly</strong> is mounted on the flywheel. Attempting to install the gearbox before the clutch is complete will fail.</p>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">1</span> Starter Motor &amp; Rear Plate</div>
+            <ol>
+                <li>Mount the <strong>starter motor</strong> on the engine block</li>
+                <li>Bolt the <strong>rear plate</strong> to the back of the engine block &mdash; this is the gearbox mating surface</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">2</span> Flywheel &amp; Clutch Assembly</div>
+            <ol>
+                <li>Install the <strong>flywheel</strong> onto the crankshaft flange</li>
+                <li>Install clutch components in strict order:<br>
+                    &bull; <strong>Clutch Disk</strong> (aligned to flywheel center)<br>
+                    &bull; <strong>Clutch Cover Plate</strong><br>
+                    &bull; <strong>Clutch Pressure Plate</strong></li>
+            </ol>
+            <div class="info-box" style="margin-top:1rem;">
+                <div class="info-box-title">&#128161; Order Cannot Be Changed</div>
+                <p>The clutch disk must be installed before the cover and pressure plate. The game enforces this sequence &mdash; attempting to install out of order will not work. For automatic transmission builds, install the <strong>flexplate</strong> instead of flywheel + clutch components.</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-title"><span class="step-num">3</span> Mount the Gearbox</div>
+            <ol>
+                <li>Align the gearbox input shaft to the clutch disk center</li>
+                <li>Slide the gearbox toward the engine and mate it to the rear plate</li>
+                <li>Secure with <span class="bolt-size">6&times; 11mm</span> bolts &mdash; tighten all bolts evenly to avoid distortion</li>
+                <li>Install the correct <strong>gear lever</strong> for your gearbox type:<br>
+                    &bull; 4-speed manual &rarr; 4-speed gear lever<br>
+                    &bull; 5-speed manual &rarr; 5-speed gear lever<br>
+                    &bull; 3-speed automatic &rarr; selector lever</li>
+                <li>Reinstall the <strong>gearbox crossmember</strong></li>
+                <li>Connect the <strong>driveshaft</strong> from gearbox output to rear differential</li>
+            </ol>
+        </div>
+
+        <table class="specs-table">
+            <tr><th>Gearbox Type</th><th>Bolts</th><th>Lever</th><th>Trim</th></tr>
+            <tr><td>4-speed manual</td><td><span class="bolt-size">6&times; 11mm</span></td><td>4-speed gear lever</td><td>L, LX (standard)</td></tr>
+            <tr><td>5-speed manual</td><td><span class="bolt-size">6&times; 11mm</span></td><td>5-speed gear lever</td><td>Aftermarket/Classifieds</td></tr>
+            <tr><td>3-speed automatic</td><td><span class="bolt-size">6&times; 11mm</span></td><td>Selector lever</td><td>Optional trim</td></tr>
+        </table>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- DISTRIBUTOR TUNING -->
+    <section id="distributor" class="content-section">
+        <h2>9. Distributor Tuning &mdash; How to Set Ignition Timing</h2>
+
+        <p>The <strong>distributor</strong> controls when each spark plug fires relative to piston position. If it is even slightly misaligned, the engine will idle roughly, stall under load, or rev very slowly. This adjustment must be made with the <strong>engine running and warm</strong>.</p>
+
+        <div class="key-insight">
+            <h4>&#9888;&#65039; Signs of Incorrect Distributor Timing</h4>
+            <p>&#128308; Engine starts but immediately stalls &nbsp;|&nbsp; &#128308; Very slow, labored revving &nbsp;|&nbsp; &#128308; Faint chirping or rattling sound from the engine bay &nbsp;|&nbsp; &#128308; Engine surges or hunts at idle</p>
+        </div>
+
+        <div class="step">
+            <div class="step-title">&#128295; Distributor Tuning Procedure</div>
+            <ol>
+                <li>Start the engine and let it reach <strong>operating temperature</strong> (temperature gauge needle moving into normal range)</li>
+                <li>Listen carefully &mdash; if you hear a faint <strong>chirping or ticking noise</strong> from the engine, that is a sign of incorrect ignition timing</li>
+                <li>With the engine running, use your screwdriver to <strong>slightly loosen the distributor screw</strong> (just enough to allow rotation &mdash; do not fully remove)</li>
+                <li>Use the <strong>mouse scroll wheel</strong> to <strong>slowly rotate the distributor</strong> in small increments &mdash; both directions are valid</li>
+                <li>Continue adjusting until the <strong>chirping noise completely disappears</strong> and the engine sounds smooth and even</li>
+                <li><strong>Tighten the distributor screw</strong> to lock it in position &mdash; do not disturb it after this</li>
+                <li>Rev the engine gently to confirm it responds cleanly without stalling or surging</li>
+            </ol>
+            <div class="info-box success" style="margin-top:1rem;">
+                <div class="info-box-title">&#10003; Correct Distributor Setting</div>
+                <p>A correctly timed engine idles smoothly and quietly, revs freely without hesitation, and does not stall when blipping the throttle. If the engine still won't run properly after distributor tuning, proceed to carburetor adjustment &mdash; see our <a href="/tuning-guide">Tuning Guide</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TROUBLESHOOTING -->
+    <section id="troubleshooting" class="content-section">
+        <h2>10. Engine Won't Start &mdash; Troubleshooting</h2>
+        <p>If your fully-assembled engine cranks but won't start, work through this checklist in order:</p>
+
+        <div class="step danger-step">
+            <div class="step-title">&#128308; Engine Cranks But Won't Fire</div>
+            <p><strong>Most likely cause: Incorrect timing belt alignment</strong></p>
+            <ol>
+                <li>Remove the timing belt cover (2&times; 6mm bolts)</li>
+                <li>Visually check all three timing marks &mdash; camshaft arrow, crankshaft mark, auxiliary shaft mark</li>
+                <li>If any mark is off by one tooth, remove the belt, reposition, and reinstall</li>
+                <li>Also check: are all 4 spark plug leads connected and correct?</li>
+                <li>Also check: is the lower dash cover installed? (Required for choke access)</li>
+            </ol>
+        </div>
+
+        <div class="step warning-step">
+            <div class="step-title">&#128993; Engine Starts Then Immediately Stalls</div>
+            <ol>
+                <li><strong>Distributor misaligned</strong> &mdash; loosen screw, use scroll wheel to adjust until chirp disappears</li>
+                <li><strong>Flooded carburetor</strong> &mdash; push choke fully IN, press throttle to floor, crank 10 seconds, wait 5 min</li>
+                <li><strong>Lean fuel mixture</strong> &mdash; carburetor mixture screw needs adjustment. See <a href="/tuning-guide">Tuning Guide</a></li>
+            </ol>
+        </div>
+
+        <div class="step warning-step">
+            <div class="step-title">&#128993; Nothing Happens When Turning Key</div>
+            <ol>
+                <li>Check <strong>battery</strong> is installed and terminals are <strong>tight</strong> (positive first)</li>
+                <li>Check <strong>starter motor wiring</strong> is connected to battery positive</li>
+                <li>Check <strong>fuse box</strong> is installed and all fuses present</li>
+                <li>Check <strong>ignition switch</strong> wiring &mdash; see <a href="/wiring-guide">Wiring Guide</a></li>
+            </ol>
+        </div>
+
+        <div class="step warning-step">
+            <div class="step-title">&#128993; Engine Starts But Runs Rough / Underpowered</div>
+            <ol>
+                <li>Distributor timing off &mdash; tune with scroll wheel as above</li>
+                <li>Carburetor mixture too rich or lean &mdash; check AFR gauge (aim for 13.5&ndash;14.0)</li>
+                <li>Fan belt too loose &mdash; alternator not charging properly; retension</li>
+                <li>Spark plug lead incorrectly routed &mdash; verify firing order 1-3-4-2</li>
+            </ol>
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-title">&#128218; Cold Start &mdash; Procedure Summary</div>
+            <p>In temperatures below &minus;15&deg;C: plug in the block heater overnight first. Then: <strong>dry crank 5 seconds (no choke)</strong> &rarr; pull choke fully out &rarr; crank 5&ndash;10 seconds &rarr; if caught, idle 2&ndash;3 min with choke partially in &rarr; push choke in as temperature rises. See our full <a href="/corris-rivett-guide">Corris Rivett Guide</a> for detailed cold start steps.</p>
+        </div>
+
+        <div class="info-box">
+            <div class="info-box-title">&#128295; Need More Help?</div>
+            <p>For vehicle-level issues beyond the engine (wiring, brakes, inspection failure), see our <a href="/troubleshooting-guide">Complete Troubleshooting Guide</a> covering 20+ common problems.</p>
+        </div>
+    </section>
+
+    <!-- PRE-START CHECKLIST -->
+    <section class="content-section">
+        <h2>Pre-Start Checklist</h2>
+        <p>Before cranking for the first time, verify every item below:</p>
+        <div class="step success-step">
+            <div class="step-title">&#10003; Engine Pre-Start Checklist</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 2rem;">
+                <ul class="checklist">
+                    <li>All engine bolts tightened &mdash; nothing loose</li>
+                    <li>Timing belt cover installed (2&times; 6mm bolts)</li>
+                    <li>Oil filter fitted (hand-tight)</li>
+                    <li>Engine oil filled to dipstick level</li>
+                    <li>Coolant filled in radiator</li>
+                    <li>Fuel tank has fuel (minimum half tank)</li>
+                    <li>Brake fluid in master cylinder</li>
+                </ul>
+                <ul class="checklist">
+                    <li>Battery charged, terminals tight (+ first)</li>
+                    <li>Starter motor wired correctly</li>
+                    <li>All 4 spark plug leads connected</li>
+                    <li>Distributor screw slightly loose (for first tune)</li>
+                    <li>Fan belt tensioned correctly (snug, no squeal)</li>
+                    <li>Lower dash cover installed (choke access)</li>
+                    <li>Block heater plugged in if below &minus;15&deg;C</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED GUIDES -->
+    <section class="content-section">
+        <h2>Related Guides</h2>
+        <div class="quick-nav">
+            <a href="/car-build-guide" class="quick-nav-item">
+                <div class="nav-icon">&#128663;</div>
+                <strong>Complete Build Guide</strong>
+                <p>Full Corris Rivett assembly &mdash; chassis, suspension, wiring, body &amp; first start.</p>
+            </a>
+            <a href="/corris-rivett-guide" class="quick-nav-item">
+                <div class="nav-icon">&#128295;</div>
+                <strong>Corris Rivett Guide</strong>
+                <p>Buying the shell, VIN system, trim levels, cold start &amp; block heater usage.</p>
+            </a>
+            <a href="/wiring-guide" class="quick-nav-item">
+                <div class="nav-icon">&#9889;</div>
+                <strong>Wiring Guide</strong>
+                <p>Battery, alternator, fuse box, ignition switch &amp; all light connections.</p>
+            </a>
+            <a href="/tuning-guide" class="quick-nav-item">
+                <div class="nav-icon">&#127937;</div>
+                <strong>Tuning Guide</strong>
+                <p>Carburetor AFR tuning, rocker arm adjustment &amp; performance upgrades.</p>
+            </a>
+            <a href="/parts-acquisition-guide" class="quick-nav-item">
+                <div class="nav-icon">&#128230;</div>
+                <strong>Parts Acquisition Guide</strong>
+                <p>Classifieds Magazine ordering, Fleetari shop &amp; Flea Market strategy.</p>
+            </a>
+            <a href="/troubleshooting-guide" class="quick-nav-item">
+                <div class="nav-icon">&#128308;</div>
+                <strong>Troubleshooting Guide</strong>
+                <p>Car won't start, overheating, coolant leaks &amp; all common game bugs.</p>
+            </a>
+        </div>
+    </section>
+
+    <div style="text-align:center; padding:2rem 0; border-top:1px solid var(--border-color); margin-top:1rem;">
+        <p style="color:var(--text-secondary);">Last updated: April 2026 &nbsp;|&nbsp; Based on My Winter Car Early Access (December 2025 release) &nbsp;|&nbsp; Unofficial community wiki</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>&#10052;&#65039; My Winter Car Wiki</h4>
+            <p style="color:var(--text-secondary); font-size:0.9rem;">Unofficial community guide hub covering 40+ pages of builds, survival, vehicles &amp; more.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Build Guides</h4>
+            <ul>
+                <li><a href="/car-build-guide">Complete Build Guide</a></li>
+                <li><a href="/engine-build-guide">Engine Build Guide</a></li>
+                <li><a href="/corris-rivett-guide">Corris Rivett Guide</a></li>
+                <li><a href="/wiring-guide">Wiring Guide</a></li>
+                <li><a href="/tuning-guide">Tuning Guide</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Gameplay Guides</h4>
+            <ul>
+                <li><a href="/beginner-guide">Beginner's Guide</a></li>
+                <li><a href="/survival-guide">Winter Survival Guide</a></li>
+                <li><a href="/money-guide">Jobs &amp; Money Guide</a></li>
+                <li><a href="/parts-acquisition-guide">Parts Acquisition</a></li>
+                <li><a href="/troubleshooting-guide">Troubleshooting</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>More</h4>
+            <ul>
+                <li><a href="/wiki">Full Wiki Database</a></li>
+                <li><a href="/vehicles-guide">Vehicles Guide</a></li>
+                <li><a href="/vin-decoder-guide">VIN Decoder</a></li>
+                <li><a href="/patch-notes">Patch Notes</a></li>
+                <li><a href="https://store.steampowered.com/app/4164420/My_Winter_Car/" target="_blank" rel="noopener noreferrer">Steam Page &#8599;</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>mywintercar.com is an unofficial fan-made wiki. Not affiliated with Amistech Games. My Winter Car is a trademark of Amistech Games.</p>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</a>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+var btn = document.getElementById('backToTop');
+window.addEventListener('scroll', function() {
+    btn.style.opacity = window.scrollY > 400 ? '1' : '0';
+    btn.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
+});
+btn.style.transition = 'opacity 0.3s, transform 0.3s';
+</script>
 </body>
 </html>
