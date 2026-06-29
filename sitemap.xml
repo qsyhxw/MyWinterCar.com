@@ -86,6 +86,13 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mywintercar.com/fleetari-guide</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://mywintercar.com/gifu-guide</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -117,7 +124,7 @@
   </url>
   <url>
     <loc>https://mywintercar.com/map-guide</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -175,6 +182,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://mywintercar.com/release-date</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://mywintercar.com/racing-guide</loc>
     <lastmod>2026-04-14</lastmod>
@@ -242,6 +256,13 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mywintercar.com/wheel-alignment-guide</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://mywintercar.com/wiring-guide</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -259,6 +280,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://mywintercar.com/console-commands</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://mywintercar.com/contact</loc>
     <lastmod>2026-04-14</lastmod>
