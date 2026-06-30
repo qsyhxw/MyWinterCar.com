@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Winter Car Troubleshooting – Ignition Not Working, Car Won't Start & Fixes</title>
-    <meta name="description" content="Fix every My Winter Car issue: ignition not working, Corris Rivett car won't start, not receiving calls, can't sleep, and permadeath save bugs.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-192x192.png" type="image/png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <title>My Winter Car Troubleshooting - Corris Rivett Not Starting, Crank No Start & Ignition Fixes</title>
+    <meta name="description" content="Fix My Winter Car issues including Corris Rivett not starting, crank no start, ignition not working, wiring faults, no phone calls, sleep bugs, and save issues.">
     <link rel="canonical" href="https://mywintercar.com/troubleshooting-guide">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"></script>
@@ -85,10 +90,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Why is my ignition not working and my Corris Rivett car won't start?",
+          "name": "Why is my Corris Rivett not starting?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "If the ignition is completely dead (no crank, no click), you have a wiring issue. Make sure the Ignition Coil is wired to the distributor and main harness, and the Starter Motor is tightly bolted with terminal connections. If the engine cranks but won't fire, check your camshaft timing, AFR mixture, and make sure you aren't flooding the carburetor by pressing the gas too much."
+            "text": "If the Corris Rivett is not starting, separate the problem first: no crank means battery, starter, ground, ignition switch, or wiring. Crank no start means timing, spark, fuel, choke, flooding, or missing engine parts. Ignition not working usually points to wiring, fuse box, ignition coil, starter trigger wire, or battery terminals."
           }
         },
         {
@@ -135,7 +140,7 @@
                 <span>My Winter Car Wiki</span>
             </a>
             <nav>
-                <a href="#bug-ignition-not-working">Ignition Bug</a>
+                <a href="#corris-rivett-not-starting">Rivett Not Starting</a>
                 <a href="#bug-not-receiving-calls">No Phone Calls</a>
                 <a href="#bug-problem-bar">Problem Bar</a>
                 <a href="/vehicles-guide">Vehicles Guide</a>
@@ -147,7 +152,7 @@
         <div class="hero">
             <div class="hero-content">
                 <h1>🔧 Troubleshooting Guide - My Winter Car</h1>
-                <p>Fast and reliable fixes for the most common bugs in My Winter Car. Whether your ignition isn't working, your car won't start, or your phone isn't receiving calls, we have the answer.</p>
+                <p>Fast and reliable fixes for My Winter Car problems, including Corris Rivett not starting, crank no start, ignition not working, wiring faults, phone issues, sleep bugs, and save problems.</p>
             </div>
         </div>
 
@@ -159,7 +164,9 @@
         <div class="toc-container">
             <h2>Table of Contents - Common Bugs & Fixes</h2>
             <ul class="toc-list">
-                <li><a href="#bug-ignition-not-working">Ignition Not Working (Corris Rivett)</a></li>
+                <li><a href="#corris-rivett-not-starting">Corris Rivett Not Starting</a></li>
+                <li><a href="#crank-no-start">Crank No Start</a></li>
+                <li><a href="#ignition-not-working">Ignition Not Working</a></li>
                 <li><a href="#bug-not-receiving-calls">Not Receiving Calls / Phone Dead</a></li>
                 <li><a href="#bug-car-start-sorbett">Car Won't Start (Sorbett)</a></li>
                 <li><a href="#bug-problem-bar">The Problem Bar / Alcoholism</a></li>
@@ -178,6 +185,70 @@
                 <li><a href="#bug-physics">Physics Glitches / Flying Car</a></li>
             </ul>
         </div>
+
+        <!-- Precise Rivett Startup Diagnosis -->
+
+        <section class="content-section">
+            <h2 class="bug-title" id="corris-rivett-not-starting">Corris Rivett Not Starting</h2>
+            <div class="problem-card">
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-critical">Critical</span>
+                <p><strong>Start by separating the symptom.</strong> A Corris Rivett not starting is usually one of three problems: no crank, crank no start, or ignition not working.</p>
+                <div class="steps">
+                    <ol>
+                        <li><strong>No crank:</strong> check battery charge, battery terminals, ground, starter motor wiring, starter bolts, ignition switch wire, and fuse box.</li>
+                        <li><strong>Crank no start:</strong> check timing marks, spark plug leads, distributor, fuel, choke position, AFR mixture, and carb flooding.</li>
+                        <li><strong>Starts then dies:</strong> check choke warm-up, carb tuning, distributor timing, vacuum leaks, fuel supply, and loose engine parts.</li>
+                    </ol>
+                </div>
+                <div class="info-box">
+                    <div class="info-title">Related build checks</div>
+                    <p>If the car has never run after assembly, cross-check the <a href="/engine-build-guide#first-start">engine build first-start checklist</a>, the <a href="/wiring-guide#diagnostics">wiring diagnostics</a>, and the <a href="/corris-rivett-guide#why-wont-start">Rivett not starting checklist</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="bug-title" id="crank-no-start">Crank No Start</h2>
+            <div class="problem-card">
+                <span class="category-badge badge-vehicle">Vehicle</span>
+                <span class="severity severity-high">High Priority</span>
+                <p><strong>Crank no start</strong> means the starter turns the engine, but combustion never catches. The battery and starter are probably doing something, so move to spark, fuel, timing, and flooding.</p>
+                <div class="steps">
+                    <ol>
+                        <li><strong>Timing marks:</strong> verify camshaft, crankshaft, and auxiliary shaft marks before changing carb settings.</li>
+                        <li><strong>Spark path:</strong> confirm ignition coil, distributor, and all four plug leads are connected in the correct firing order.</li>
+                        <li><strong>Fuel and choke:</strong> make sure there is petrol, the fuel pump is installed, and the choke is used only for cold start.</li>
+                        <li><strong>Flooding:</strong> if you smell fuel after repeated cranking, push choke in, hold throttle fully open, crank briefly, then wait before retrying.</li>
+                    </ol>
+                </div>
+                <div class="warning-box">
+                    <div class="warning-title">Do not chase carb tuning first</div>
+                    <p>If timing or spark is wrong, carb tuning can send you in circles. Verify mechanical timing and ignition wiring before adjusting mixture.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="bug-title" id="ignition-not-working">Ignition Not Working</h2>
+            <div class="problem-card">
+                <span class="category-badge badge-technical">Technical</span>
+                <span class="severity severity-high">High Priority</span>
+                <p><strong>Ignition not working</strong> usually means turning the key gives no useful response: no click, no crank, dead dash, or inconsistent starter behavior.</p>
+                <div class="steps">
+                    <ol>
+                        <li>Check battery positive and negative terminals. Positive should be connected first; ground must make clean metal contact.</li>
+                        <li>Check starter motor main power and trigger wire from ignition switch.</li>
+                        <li>Check fuse box and ignition switch wiring before replacing parts.</li>
+                        <li>Check ignition coil and distributor only after the starter circuit can crank the engine.</li>
+                    </ol>
+                </div>
+                <div class="solution-box">
+                    <div class="solution-title">Fast split</div>
+                    <p><strong>No crank:</strong> electrical/starter circuit. <strong>Cranks but no fire:</strong> spark, timing, fuel, or flooding. <strong>Fires then stalls:</strong> choke, carb, distributor timing, or air/fuel issue.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- 1 Bug per H2 Requirement -->
         <section class="content-section">
