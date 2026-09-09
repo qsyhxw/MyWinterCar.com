@@ -12,6 +12,6 @@ Property: `sc-domain:mywintercar.com`
 | P2-1 | `/wiki` | `wiki.html` | Reference database and fact index | PUBLISHED | `/`, `/car-build-guide`, `/release-date` | `/troubleshooting-guide` | Recheck database query share and homepage protection |
 | P2-2 | `/troubleshooting-guide` | `troubleshooting-guide.html` | Car won't start, ignition, phone and bug diagnosis | PUBLISHED | `/`, `/engine-build-guide`, `/sleep-guide` | `/beginner-guide` | Recheck symptom query CTR and sleep delegation |
 | P2-3 | `/beginner-guide` | `beginner-guide.html` | First 30 minutes and first-day checklist | PUBLISHED | `/`, `/guides`, `/faq` | `/vehicles-guide` | Recheck first-day query CTR and sleep/save handoff |
-| P2-4 | `/vehicles-guide` | `vehicles-guide.html` | Vehicle roles, acquisition, specs and uses | QUEUED | `/`, `/guides`, `/wiki` | `NONE - RETURN TO GSC EXPANSION REVIEW` | Recheck vehicle query impressions and position |
+| P2-4 | `/vehicles-guide` | `vehicles-guide.html` | Vehicle roles, acquisition, specs and uses | PUBLISHED | `/`, `/guides`, `/wiki` | `NONE - RETURN TO GSC EXPANSION REVIEW` | Recheck vehicle query impressions and position |
 
 Status is updated only after the page passes local validation and its dedicated git commit is pushed. No new page, 301, canonical migration or bulk noindex action is approved in this queue.
