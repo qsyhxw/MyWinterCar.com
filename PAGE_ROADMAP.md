@@ -10,7 +10,7 @@ Property: `sc-domain:mywintercar.com`
 | P1-2 | `/sleep-guide` | `sleep-guide.html` | Can't-sleep and missing sleep prompt troubleshooting | PUBLISHED | `/faq`, `/survival-guide`, `/beginner-guide` | `/troubleshooting-guide` | Recheck sleep query share and version-sensitive sleep claims |
 | P1-3 | `/corris-rivett-guide` | `corris-rivett-guide.html` | Corris Rivett buy, build, wire and first start | PUBLISHED | `/`, `/engine-build-guide`, `/parts-acquisition-guide` | `/wiki` | Recheck build query CTR and first-start ownership |
 | P2-1 | `/wiki` | `wiki.html` | Reference database and fact index | PUBLISHED | `/`, `/car-build-guide`, `/release-date` | `/troubleshooting-guide` | Recheck database query share and homepage protection |
-| P2-2 | `/troubleshooting-guide` | `troubleshooting-guide.html` | Car won't start, ignition, phone and bug diagnosis | QUEUED | `/`, `/engine-build-guide`, `/sleep-guide` | `/beginner-guide` | Recheck symptom query CTR and sleep delegation |
+| P2-2 | `/troubleshooting-guide` | `troubleshooting-guide.html` | Car won't start, ignition, phone and bug diagnosis | PUBLISHED | `/`, `/engine-build-guide`, `/sleep-guide` | `/beginner-guide` | Recheck symptom query CTR and sleep delegation |
 | P2-3 | `/beginner-guide` | `beginner-guide.html` | First 30 minutes and first-day checklist | QUEUED | `/`, `/guides`, `/faq` | `/vehicles-guide` | Recheck first-day query CTR and sleep/save handoff |
 | P2-4 | `/vehicles-guide` | `vehicles-guide.html` | Vehicle roles, acquisition, specs and uses | QUEUED | `/`, `/guides`, `/wiki` | `NONE - RETURN TO GSC EXPANSION REVIEW` | Recheck vehicle query impressions and position |
 
