@@ -524,7 +524,7 @@
     <div class="hero">
         <div class="container">
             <h1>🔄 My Winter Car Patch Notes & Update Logs (päivitykset)</h1>
-            <p>Comprehensive history of every My Winter Car update, bug fix, and improvement. We maintain full release notes and update logs from Early Access launch through January 2026. Stay informed about the latest changes from developer Toplessgun.</p>
+            <p>A practical, source-linked summary of major My Winter Car updates from Early Access launch through September 2026. The newest gameplay changes are listed first; use the official Steam announcement feed for every intervening build.</p>
             
             <div class="hero-meta">
                 <div class="meta-item">
@@ -533,11 +533,11 @@
                 </div>
                 <div class="meta-item">
                     <span class="icon">🔧</span>
-                    <span><strong>Latest Patch:</strong> v.260102-01</span>
+                    <span><strong>Latest Reviewed Patch:</strong> v.260917-01</span>
                 </div>
                 <div class="meta-item">
                     <span class="icon">✅</span>
-                    <span><strong>Total Patches:</strong> 3 major updates</span>
+                    <span><strong>Last reviewed:</strong> September 29, 2026</span>
                 </div>
             </div>
         </div>
@@ -550,12 +550,12 @@
             <a href="#latest" class="quick-nav-item">
                 <div class="icon">🆕</div>
                 <div><strong>Latest Patch</strong></div>
-                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">v.260102-01 (Jan 2026)</div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">v.260917-01 (Sep 2026)</div>
             </a>
             <a href="#recent" class="quick-nav-item">
                 <div class="icon">📋</div>
-                <div><strong>Recent Patches</strong></div>
-                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">All January updates</div>
+                <div><strong>Earlier Patches</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Launch-period details</div>
             </a>
             <a href="#ea-launch" class="quick-nav-item">
                 <div class="icon">🚀</div>
@@ -579,51 +579,67 @@
             </a>
             <a href="#known-issues" class="quick-nav-item">
                 <div class="icon">⚠️</div>
-                <div><strong>Known Issues</strong></div>
-                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">Features still in progress</div>
+                <div><strong>Status Corrections</strong></div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">What later patches changed</div>
             </a>
         </div>
 
         <!-- Developer Note -->
         <div class="info-box warning">
-            <div class="info-box-title">⚠️ Important: How Toplessgun Releases Updates</div>
-            <p><strong>During Early Access stability phase, the developer posts minimal patch notes to avoid spamming.</strong> Developer quote: <em>"I will start to put out update notes when I can get back to more normal update cycle. Because the game is just released, it is important to try to get it as stable as possible until the actual development can continue."</em></p>
-            <p style="margin-top: 0.75rem;">Right now, most updates are focused on bug fixes and stability improvements. Once the game stabilizes, more detailed feature updates will be announced.</p>
+            <div class="info-box-title">⚠️ Read the build number before using an old workaround</div>
+            <p>Early Access behavior changes between builds. This page summarizes decision-relevant updates, but it is not a substitute for the developer's complete changelog.</p>
+            <p style="margin-top: 0.75rem;">Check the <a href="https://steamcommunity.com/app/4164420/announcements/" target="_blank" rel="noopener" style="color: var(--accent-ice);">official Steam announcements</a>, then compare the version shown in your game before applying a workaround from an older post.</p>
         </div>
 
         <!-- Latest Patch Section -->
         <section id="latest" class="content-section">
-            <h2>🆕 Latest Patch - v.260102-01</h2>
+            <h2>🆕 Latest Reviewed Patch - v.260917-01</h2>
             
             <div class="patch-card latest">
                 <div class="patch-header">
                     <div>
-                        <div class="patch-version">v.260102-01</div>
-                        <div class="patch-date">📅 January 2, 2026</div>
+                        <div class="patch-version">v.260917-01</div>
+                        <div class="patch-date">📅 September 17, 2026</div>
                     </div>
                     <span class="patch-badge badge-latest">LATEST PATCH</span>
                 </div>
 
-                <p style="margin-bottom: 1rem; color: var(--text-secondary);">Latest stability update focusing on Sorbett vehicle fixes and save data corrections.</p>
+                <p style="margin-bottom: 1rem; color: var(--text-secondary);">A broad gameplay update with changes that affect starting diagnosis, phone calls, controls, survival, vehicle assembly, jobs, and ice racing.</p>
 
                 <ul class="patch-changes">
                     <li>
-                        <span class="change-type type-improvement">IMPROVEMENT</span>
-                        <strong>Additional attempt to fix Sorbett issues</strong> — Continued stability work on the Sorbett vehicle to reduce crashes and physics glitches
+                        <span class="change-type type-improvement">CHANGED</span>
+                        <strong>Longer Corris cranking can now be normal</strong> — The secondary carburetor chamber now evaporates, lengthening cranking times. Do not diagnose a no-start from an old fixed-second rule alone.
                     </li>
                     <li>
                         <span class="change-type type-fix">FIX</span>
-                        <strong>Fixed save data for some items/tools</strong> — Corrected save file corruption for certain items. <span style="color: var(--accent-warning);">⚠️ Warning: Item locations may have reset after this update</span>
+                        <strong>Evening phone calls</strong> — Fixed calls not coming through during evenings. Players on this build should still check the physical phone connection and event prerequisites if calls remain absent.
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Logitech pedal assignment</strong> — Fixed an assignment problem affecting some Logitech pedals; update first, then rebind before relying on an older workaround.
+                    </li>
+                    <li>
+                        <span class="change-type type-added">ADDED</span>
+                        <strong>Separate vehicle parts</strong> — The heater controls box became a separate part, and the choke lever was separated from the bottom dash cover. A missing lower dash cover is no longer, by itself, the explanation for a missing choke lever.
+                    </li>
+                    <li>
+                        <span class="change-type type-added">ADDED</span>
+                        <strong>Progression and survival changes</strong> — Added an intro cutscene, leisure time for Uncle and Jokke with prerequisites, an imported interior fabric roll, extra freezing without a windshield, and a lug wrench requirement for tire changes.
+                    </li>
+                    <li>
+                        <span class="change-type type-fix">FIX</span>
+                        <strong>Systems and reliability</strong> — Ice-race result sheets now save; passing out advances time correctly; oil starvation and worn pistons now have their intended consequences; weather and several vehicle systems were adjusted.
                     </li>
                 </ul>
 
                 <div class="info-box" style="margin-top: 1.5rem;">
-                    <div class="info-box-title">💡 If You're Still Experiencing Sorbett Issues</div>
+                    <div class="info-box-title">💡 Before troubleshooting after this update</div>
                     <ol>
-                        <li>Update to the latest patch (v.260102-01 or newer)</li>
+                        <li>Confirm the installed build is v.260917-01 or newer.</li>
                         <li>Verify game files on Steam (Right-click My Winter Car → Properties → Local Files → Verify Integrity)</li>
-                        <li>Check <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" style="color: var(--accent-ice);">Steam Discussions</a> for community workarounds</li>
-                        <li>Report persistent issues with your save file on Steam forums</li>
+                        <li>Re-check newly separated parts and rebind affected controls before editing a save.</li>
+                        <li>Use the <a href="/troubleshooting-guide">Troubleshooting Guide</a> to split the symptom, then check <a href="https://steamcommunity.com/app/4164420/discussions/" target="_blank" rel="noopener" style="color: var(--accent-ice);">Steam Discussions</a> for build-specific reports.</li>
                     </ol>
                 </div>
             </div>
@@ -631,7 +647,7 @@
 
         <!-- Recent Patches Section -->
         <section id="recent" class="content-section">
-            <h2>📋 Recent Patches - January 2026</h2>
+            <h2>📋 Earlier Launch-Period Patches</h2>
 
             <!-- Patch v.260101-01 -->
             <div class="patch-card">
@@ -778,8 +794,8 @@
 
             <div class="issue-card">
                 <div class="issue-title">2. Ice Race Rewards</div>
-                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
-                <p>Ice races do not have trophies or prize money yet. If you win a race, you are not awarded anything. Racing works, but rewards system not implemented.</p>
+                <span class="issue-status status-planned">LAUNCH ISSUE — LATER CHANGED</span>
+                <p>Trophies and prize money were added in v.260210-01. Result tracking was fixed in that update, and result sheets received a further saving fix in v.260917-01.</p>
             </div>
 
             <div class="issue-card">
@@ -802,8 +818,8 @@
 
             <div class="issue-card">
                 <div class="issue-title">11. No Intro or Ending</div>
-                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
-                <p>Game does not have intro cutscene or ending sequence. It also doesn't have any sort of ending condition, except dying in Permadeath mode.</p>
+                <span class="issue-status status-planned">INTRO ADDED; ENDING UNVERIFIED</span>
+                <p>The launch build lacked an intro, but v.260917-01 added an intro cutscene. This review did not find enough current official evidence to state the ending status.</p>
             </div>
 
             <div class="issue-card">
@@ -814,8 +830,8 @@
 
             <div class="issue-card">
                 <div class="issue-title">13. Custom Paintjobs</div>
-                <span class="issue-status status-not-implemented">NOT YET IMPLEMENTED</span>
-                <p>Importing custom paintjob for Corris is not yet implemented. Coming in future update.</p>
+                <span class="issue-status status-planned">ADDED AFTER LAUNCH</span>
+                <p>Custom paintjob import and a layered template were added in January 2026.</p>
             </div>
 
             <div class="issue-card">
@@ -826,8 +842,8 @@
 
             <div class="issue-card">
                 <div class="issue-title">15. Simplified Weather</div>
-                <span class="issue-status status-planned">TEMPORARY SYSTEM</span>
-                <p>Weather is simplified at this point. Once developer implements the full weather system, it can be forecasted for up to one week and harsh conditions will be rarer. Current simplified weather is for testing what difficulties harsh weather might cause.</p>
+                <span class="issue-status status-planned">MODEL UPDATED</span>
+                <p>A seven-day forecast weather model was added in January 2026, and weather generation received further adjustments in v.260917-01.</p>
             </div>
 
             <div class="info-box warning" style="margin-top: 2rem;">
@@ -894,13 +910,39 @@ C:\Program Files (x86)\Steam\steamapps\common\My Winter Car\Changelog.txt
 
         <!-- Update Timeline -->
         <section id="timeline" class="content-section">
-            <h2>⏱️ Complete Update Timeline</h2>
-            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Visual history of all My Winter Car updates from EA launch to present:</p>
+            <h2>⏱️ Selected Update Timeline</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Decision-relevant checkpoints rather than a claim that every depot build is reproduced here. For the full sequence, use the official Steam feed.</p>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3 style="color: var(--accent-success);">January 2, 2026 - v.260102-01</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Latest stability patch</p>
+                    <h3 style="color: var(--accent-success);">September 17, 2026 - v.260917-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Starting, phone, control, survival and vehicle-part changes</p>
+                    <ul style="margin-left: 1.5rem;">
+                        <li>Longer cranking from secondary carb chamber evaporation</li>
+                        <li>Evening phone-call and some Logitech pedal assignment fixes</li>
+                        <li>Separate choke lever and heater controls box</li>
+                        <li>Intro, leisure events, ice-race saving and survival changes</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">May 16, 2026 - v.260516-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">The last major official checkpoint before the September update.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">May 4, 2026 - v.260504-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Durability, jobs, police checks and carbon-monoxide mechanics.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">February 10, 2026 - v.260210-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Ice-race trophies and prize money were added, with result-tracking fixes.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 style="color: var(--accent-blue);">January 2, 2026 - v.260102-01</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Launch-period stability patch</p>
                     <ul style="margin-left: 1.5rem;">
                         <li>Sorbett stability improvements (ongoing)</li>
                         <li>Save data fixes for items/tools</li>
@@ -943,26 +985,25 @@ C:\Program Files (x86)\Steam\steamapps\common\My Winter Car\Changelog.txt
 
         <!-- Known Issues Section -->
         <section id="known-issues" class="content-section">
-            <h2>⚠️ Ongoing Known Issues (As of January 2026)</h2>
-            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">These issues are acknowledged by the developer and planned for future updates:</p>
+            <h2>⚠️ Launch-Era Status Corrections (Reviewed September 2026)</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Do not treat the December launch list as a current known-issues list. Later official patches changed several of those items.</p>
 
             <div class="info-box warning">
-                <div class="info-box-title">🔧 Still Being Worked On</div>
+                <div class="info-box-title">🔎 Still requires current-build confirmation</div>
                 <ul>
-                    <li><strong>Ice Race Rewards:</strong> Trophies and prize money system not implemented</li>
-                    <li><strong>Custom Paintjobs:</strong> Can't import custom Corris paintjobs yet</li>
-                    <li><strong>Weather System:</strong> Current weather is simplified; full forecast system coming</li>
-                    <li><strong>Death Statistics:</strong> Death screen shows incorrect/random stats</li>
-                    <li><strong>Some Texture Work:</strong> Visual polish ongoing</li>
-                    <li><strong>Historical Inspection:</strong> Not yet fully accurate (may pass/fail incorrectly)</li>
-                    <li><strong>Part Respraying:</strong> Some engine/car parts can't be resprayed yet</li>
-                    <li><strong>Intro/Ending:</strong> No cutscenes or ending sequence</li>
+                    <li><strong>Historical inspection:</strong> multiple later patches adjusted individual checks; verify the exact part/build rather than assuming the launch behavior.</li>
+                    <li><strong>Death statistics, textures, respraying and ending state:</strong> this review did not find enough current official evidence to label each one fixed or ongoing.</li>
+                    <li><strong>Current regressions:</strong> check the official feed and build-specific reports; absence from this summary is not proof of a fix.</li>
                 </ul>
             </div>
 
             <div class="info-box success" style="margin-top: 1.5rem;">
-                <div class="info-box-title">✅ Recently Fixed</div>
+                <div class="info-box-title">✅ Confirmed changed after launch</div>
                 <ul>
+                    <li><strong>Ice-race rewards:</strong> trophies and prize money were added in v.260210-01; result sheets gained further saving fixes in v.260917-01.</li>
+                    <li><strong>Custom paintjobs:</strong> import support was added in January.</li>
+                    <li><strong>Weather:</strong> the seven-day forecast model arrived in January and received later adjustments.</li>
+                    <li><strong>Intro:</strong> an intro cutscene was added in v.260917-01; the ending was not confirmed by this review.</li>
                     <li><strong>Permadeath Save Deletion:</strong> Now properly deletes saves on death (v.251230-04)</li>
                     <li><strong>CD Audio:</strong> Works in Taxi and Sorbett now (v.260101-01)</li>
                     <li><strong>Missing Order Items:</strong> Subwoofers, Antennas, Race Seat fixed (v.260101-01)</li>
