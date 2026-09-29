@@ -157,7 +157,7 @@
         </div>
 
         <div class="version-notice">
-            <strong>📋 Early Access Notice:</strong> Fixes and controls can change after updates. The historical patch references below identify when a report was recorded; for current changes, check the <a href="/patch-notes">Patch Notes</a> before applying a workaround. Last reviewed: September 9, 2026.
+            <strong>📋 Early Access Notice:</strong> Fixes and controls can change after updates. The historical patch references below identify when a report was recorded; for current changes, check the <a href="/patch-notes">Patch Notes</a> before applying a workaround. Last reviewed against v.260917-01: September 29, 2026.
         </div>
 
         <div class="info-box" style="margin-bottom:2rem;">
@@ -231,6 +231,10 @@
                     <div class="warning-title">Do not chase carb tuning first</div>
                     <p>If timing or spark is wrong, carb tuning can send you in circles. Verify mechanical timing and ignition wiring before adjusting mixture.</p>
                 </div>
+                <div class="info-box">
+                    <div class="info-title">v.260917-01 starting change</div>
+                    <p>The secondary carburetor chamber now evaporates, so cranking can take longer than it did on older builds. Treat old fixed-second instructions as a starting point, not a pass/fail test. Use short attempts, watch for flooding and battery drain, and diagnose timing, spark and fuel if the engine still never catches.</p>
+                </div>
             </div>
         </section>
 
@@ -283,11 +287,12 @@
             <div class="problem-card">
                 <span class="category-badge badge-gameplay">Gameplay</span>
                 <span class="severity severity-high">High Priority</span>
-                <p><strong>Cause:</strong> The physical phone wire has been unplugged from the wall socket.</p>
+                <p><strong>First check the build:</strong> v.260917-01 fixed calls not coming through during evenings. If you are updated and calls are still absent, check the physical connection and the event's prerequisites instead of assuming the evening bug is still active.</p>
                 <div class="solution-box">
                     <div class="solution-title">✅ Solution</div>
                     <p>In My Winter Car, the phone requires a physical connection to the wall:</p>
                     <ol>
+                        <li>Update to v.260917-01 or newer, then retry outside any event-specific restriction.</li>
                         <li>Trace the wire from your table phone down to the floorboard.</li>
                         <li>Look in the tight corner behind the desk against the wall.</li>
                         <li>Use the <strong>Q key (lean)</strong> to maneuver your vision into the corner.</li>
@@ -424,10 +429,10 @@
             <div class="problem-card">
                 <span class="category-badge badge-gameplay">Gameplay</span>
                 <span class="severity severity-medium">Medium</span>
-                <p><strong>Cause:</strong> The job has not technically started yet.</p>
+                <p><strong>Cause:</strong> The job has not technically started yet, or you arrived on a day when the interview is unavailable.</p>
                 <div class="solution-box">
                     <div class="solution-title">✅ Timing</div>
-                    <p>Futufon jobs always begin on <strong>Monday</strong>. Revisit the building at 8 AM on the nearest Monday and the main locker door will be unlocked.</p>
+                    <p>Revisit during normal job hours after the required progression. As of v.260917-01, the Futufon boss does not conduct job interviews on Tuesdays, so retry on another workday before treating the door as broken.</p>
                 </div>
             </div>
         </section>
@@ -479,7 +484,7 @@
             <div class="problem-card">
                 <span class="category-badge badge-technical">Technical</span>
                 <span class="severity severity-medium">Medium</span>
-                <p><strong>Workaround:</strong> When setting pedals in the options menu, keep the pedal pressed IN while clicking the bind button. Controller mapping is heavily WIP right now.</p>
+                <p><strong>Patch status:</strong> v.260917-01 fixed an assignment problem affecting some Logitech pedals. Update and restart the game, clear the old binding, then assign the axis again. If an older build still cannot detect the pedal, the historical workaround is to hold the pedal down while clicking the bind control.</p>
             </div>
         </section>
 
