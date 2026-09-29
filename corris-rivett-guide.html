@@ -99,7 +99,12 @@
         .back-to-top:hover { transform: translateY(-5px); }
         
         /* Responsive */
-        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .hero-meta { flex-direction: column; gap: 1rem; } .container { padding: 2rem 1rem; } }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero-meta { flex-direction: column; gap: 1rem; }
+            .container { padding: 2rem 1rem; }
+            .specs-table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        }
 
         /* Related Guides Section */
         .section-description { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; text-align: center; }
@@ -261,7 +266,7 @@
             <div class="meta-item">📅 Based on: 1971-1976 Ford Taunus TC1</div>
             <div class="meta-item">🔧 Total Parts: 200+</div>
             <div class="meta-item">⏱️ Read Time: 45 min</div>
-            <div class="meta-item">🎮 Version: Early Access (Dec 2025)</div>
+            <div class="meta-item">🎮 Starting steps reviewed: v.260917-01</div>
         </div>
     </div>
 
@@ -285,7 +290,7 @@
 
         <div class="info-box warning">
             <div class="info-box-title">⚠️ Important Notice</div>
-            <p>This guide is based on My Winter Car Early Access version (December 29, 2025 release). Some features may change as development continues. Always check the in-game VIN plate and current parts catalogs for your specific Rivett configuration.</p>
+            <p>This guide covers the Early Access Rivett and includes the v.260917-01 starting changes. Other build, tuning and VIN details can still change, so check the in-game VIN plate, current parts catalogs and <a href="/patch-notes">latest reviewed patch notes</a> for your version.</p>
         </div>
 
         <div class="info-box" style="border-left-color: var(--accent-ice);">
@@ -315,18 +320,18 @@
                     <li>✅ <strong>Fuel</strong> — tank has petrol</li>
                     <li>✅ <strong>Battery</strong> — charged, terminals tight (<strong>positive first</strong>)</li>
                     <li>✅ <strong>All wiring</strong> — starter, alternator, fuse box, ignition, all 4 spark plug leads connected</li>
-                    <li>✅ <strong>Lower dash cover installed</strong> — required to access the choke knob</li>
+                    <li>✅ <strong>Choke lever installed and connected</strong> — v.260917-01 separated it from the bottom dash cover</li>
                 </ul>
             </div>
 
             <div class="step">
-                <div class="step-title"><span class="step-number">3</span>Dry Crank — No Choke, No Throttle (5 seconds)</div>
-                <p>Get in the car. Insert the ignition key. With the <strong>choke knob fully pushed IN</strong> (off) and <strong>no throttle input</strong>, crank the starter for approximately 5 seconds. This primes the fuel system without flooding the cylinders. Do not skip this step.</p>
+                <div class="step-title"><span class="step-number">3</span>Initial Crank — No Choke, No Throttle</div>
+                <p>Get in the car. Insert the ignition key. With the <strong>choke knob fully pushed IN</strong> (off) and <strong>no throttle input</strong>, make a short initial crank to prime the fuel system without flooding the cylinders. Do not use an old exact-second value as a pass/fail test: v.260917-01 made the secondary carburetor chamber evaporate, which can lengthen cranking time.</p>
             </div>
 
             <div class="step">
                 <div class="step-title"><span class="step-number">4</span>Pull Choke Fully Out and Crank</div>
-                <p>Pull the <strong>choke knob</strong> (located on the lower dash cover, left of the steering column) all the way out. Now crank the engine for 5–10 seconds. The engine should catch and fire. If it doesn't, release and wait 15 seconds before trying again to avoid flooding.</p>
+                <p>Pull the separately installed <strong>choke lever</strong> all the way out, then crank in short attempts. The engine may take longer to catch on v.260917-01 than older guides suggest. Release between attempts, protect the battery and starter, and stop to diagnose timing, spark, fuel or flooding if it never fires.</p>
             </div>
 
             <div class="step">
@@ -1289,9 +1294,9 @@
                 </div>
 
                 <div style="background: var(--bg-card); border-radius: 10px; border-left: 4px solid #fbbf24; padding: 1.1rem 1.35rem;">
-                    <strong style="color: #fbbf24; font-size:1rem;">🔩 2. Lower dash cover not installed → choke inaccessible</strong>
+                    <strong style="color: #fbbf24; font-size:1rem;">🔩 2. Choke lever missing or not installed</strong>
                     <p style="color:var(--text-secondary); font-size:0.875rem; margin-top:0.4rem;">
-                        The choke knob is part of the lower dash cover assembly. <strong>If you can't find the choke</strong>, check that the lower dash cover panel is fitted. Without it, the choke is completely inaccessible.
+                        Starting with v.260917-01, the choke lever is separate from the bottom dash cover. <strong>If you can't find or operate the choke</strong>, check the lever itself instead of reinstalling the dash cover as an assumed fix.
                     </p>
                 </div>
 
