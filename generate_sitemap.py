@@ -1,10 +1,17 @@
 import os
 import datetime
+from pathlib import Path
+import xml.etree.ElementTree as ET
 
 base_url = 'https://mywintercar.com'
-path = r'd:\Antigravity\MyWinterCar.com'
+path = str(Path(__file__).resolve().parent)
 
-ignore = ['guia.html']
+ignore = ['guia.html', '404.html']
+old_dates = {}
+if Path(path, 'sitemap.xml').exists():
+    for item in ET.parse(Path(path, 'sitemap.xml')).getroot():
+        values = {child.tag.rsplit('}', 1)[-1]: child.text for child in item}
+        old_dates[values.get('loc')] = values.get('lastmod')
 current_date = datetime.datetime.now().strftime('%Y-%m-%d')
 
 priorities = {
@@ -37,7 +44,7 @@ for file in os.listdir(path):
             
         urls.append({
             'loc': loc_full,
-            'lastmod': current_date,
+            'lastmod': old_dates.get(loc_full) or current_date,
             'changefreq': changefreq,
             'priority': priority
         })

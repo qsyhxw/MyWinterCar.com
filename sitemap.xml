@@ -56,6 +56,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mywintercar.com/console-commands</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mywintercar.com/corris-rivett-facelift</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -91,7 +97,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://mywintercar.com/gifu-guide</loc>
     <lastmod>2026-04-14</lastmod>
@@ -110,7 +115,13 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-<url>
+  <url>
+    <loc>https://mywintercar.com/jobs-guide</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mywintercar.com/kilju-guide</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -177,15 +188,20 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mywintercar.com/release-date</loc>
-    <lastmod>2026-06-29</lastmod>
+    <loc>https://mywintercar.com/privacy</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://mywintercar.com/racing-guide</loc>
     <lastmod>2026-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mywintercar.com/release-date</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -255,7 +271,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://mywintercar.com/wiring-guide</loc>
     <lastmod>2026-04-14</lastmod>
@@ -274,13 +289,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://mywintercar.com/console-commands</loc>
-    <lastmod>2026-06-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://mywintercar.com/contact</loc>
     <lastmod>2026-04-14</lastmod>

@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "site": "mywintercar.com",
+  "reviewed": true,
+  "integrations": [
+    {
+      "id": "script-1",
+      "enabled": true,
+      "include": [
+        "about.html",
+        "apartment-guide.html",
+        "bachglotz-guide.html",
+        "beginner-guide.html",
+        "block-heater-guide.html",
+        "body-temperature-guide.html",
+        "car-build-guide.html",
+        "console-commands.html",
+        "contact.html",
+        "corris-rivett-facelift.html",
+        "corris-rivett-gt.html",
+        "corris-rivett-guide.html",
+        "engine-build-guide.html",
+        "faq.html",
+        "fatigue-guide.html",
+        "fleetari-guide.html",
+        "gifu-guide.html",
+        "guia.html",
+        "guides.html",
+        "ice-race-track-guide.html",
+        "index.html",
+        "jacket-vs-coverall.html",
+        "jobs-guide.html",
+        "kilju-guide.html",
+        "map-guide.html",
+        "mods-guide.html",
+        "money-guide.html",
+        "msc-vs-mwc.html",
+        "multiplayer.html",
+        "npcs-guide.html",
+        "parts-acquisition-guide.html",
+        "parts-list.html",
+        "patch-notes.html",
+        "phone-numbers-guide.html",
+        "racing-guide.html",
+        "release-date.html",
+        "save-editor-guide.html",
+        "school-guide.html",
+        "sleep-guide.html",
+        "sorbett-guide.html",
+        "survival-guide.html",
+        "troubleshooting-guide.html",
+        "tuning-guide.html",
+        "vehicle-comparison.html",
+        "vehicles-guide.html",
+        "vin-decoder-guide.html",
+        "wheel-alignment-guide.html",
+        "wiki.html",
+        "wiring-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "attrs": {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-G0QRC4NKKP"
+          },
+          "boolean_attrs": [
+            "async"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "script-2",
+      "enabled": true,
+      "include": [
+        "about.html",
+        "beginner-guide.html",
+        "console-commands.html",
+        "corris-rivett-guide.html",
+        "fleetari-guide.html",
+        "guides.html",
+        "jobs-guide.html",
+        "mods-guide.html",
+        "parts-acquisition-guide.html",
+        "racing-guide.html",
+        "release-date.html",
+        "troubleshooting-guide.html",
+        "wheel-alignment-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "cf9ca039a236f1f4543b1e7cfe2300766f4b2f15a232b647d60a020bb1b38a00"
+        }
+      ]
+    },
+    {
+      "id": "script-3",
+      "enabled": true,
+      "include": [
+        "about.html",
+        "apartment-guide.html",
+        "bachglotz-guide.html",
+        "beginner-guide.html",
+        "block-heater-guide.html",
+        "body-temperature-guide.html",
+        "car-build-guide.html",
+        "console-commands.html",
+        "contact.html",
+        "corris-rivett-facelift.html",
+        "corris-rivett-gt.html",
+        "corris-rivett-guide.html",
+        "engine-build-guide.html",
+        "faq.html",
+        "fatigue-guide.html",
+        "fleetari-guide.html",
+        "gifu-guide.html",
+        "guia.html",
+        "guides.html",
+        "ice-race-track-guide.html",
+        "index.html",
+        "jacket-vs-coverall.html",
+        "jobs-guide.html",
+        "kilju-guide.html",
+        "map-guide.html",
+        "mods-guide.html",
+        "money-guide.html",
+        "msc-vs-mwc.html",
+        "multiplayer.html",
+        "npcs-guide.html",
+        "parts-acquisition-guide.html",
+        "parts-list.html",
+        "patch-notes.html",
+        "phone-numbers-guide.html",
+        "racing-guide.html",
+        "release-date.html",
+        "save-editor-guide.html",
+        "school-guide.html",
+        "sleep-guide.html",
+        "sorbett-guide.html",
+        "survival-guide.html",
+        "troubleshooting-guide.html",
+        "tuning-guide.html",
+        "vehicle-comparison.html",
+        "vehicles-guide.html",
+        "vin-decoder-guide.html",
+        "wheel-alignment-guide.html",
+        "wiki.html",
+        "wiring-guide.html"
+      ],
+      "exclude": [
+        "about.html",
+        "contact.html",
+        "privacy.html",
+        "404.html"
+      ],
+      "authorization": "Retain existing publisher on content pages; trust/404 exclusion per 00 \u00a72.1 and integration protection.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "attrs": {
+            "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8830315294299920",
+            "crossorigin": "anonymous"
+          },
+          "boolean_attrs": [
+            "async"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "script-4",
+      "enabled": true,
+      "include": [
+        "apartment-guide.html",
+        "block-heater-guide.html",
+        "body-temperature-guide.html",
+        "car-build-guide.html",
+        "corris-rivett-facelift.html",
+        "corris-rivett-gt.html",
+        "engine-build-guide.html",
+        "fatigue-guide.html",
+        "gifu-guide.html",
+        "ice-race-track-guide.html",
+        "jacket-vs-coverall.html",
+        "school-guide.html",
+        "sleep-guide.html",
+        "sorbett-guide.html",
+        "wiki.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "4c3ecda71f11ffa74afcaf207f31b5cdcd958316b665d1f668303cbd087f819c"
+        }
+      ]
+    },
+    {
+      "id": "script-5",
+      "enabled": true,
+      "include": [
+        "bachglotz-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "08e9483777cf32fa0119c3fb9e9a6f93765d700e1c014d0e0c7e8ef04c1eb1f6"
+        }
+      ]
+    },
+    {
+      "id": "script-6",
+      "enabled": true,
+      "include": [
+        "beginner-guide.html",
+        "console-commands.html",
+        "corris-rivett-guide.html",
+        "fleetari-guide.html",
+        "mods-guide.html",
+        "money-guide.html",
+        "parts-acquisition-guide.html",
+        "racing-guide.html",
+        "release-date.html",
+        "survival-guide.html",
+        "vehicles-guide.html",
+        "wheel-alignment-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "attrs": {
+            "src": "https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015",
+            "integrity": "sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==",
+            "data-cf-beacon": "{\"version\":\"2024.11.0\",\"token\":\"6c5a4e0d8af84d5ebd5c5fecdc639544\",\"r\":1,\"server_timing\":{\"name\":{\"cfCacheStatus\":true,\"cfEdge\":true,\"cfExtPri\":true,\"cfL4\":true,\"cfOrigin\":true,\"cfSpeedBrain\":true},\"location_startswith\":null}}",
+            "crossorigin": "anonymous"
+          },
+          "boolean_attrs": [
+            "defer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "script-7",
+      "enabled": true,
+      "include": [
+        "car-build-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "914b7eeb41664a300ed37dbc64f838216f983bb3a773fe79e8455e84e92f1280"
+        }
+      ]
+    },
+    {
+      "id": "script-8",
+      "enabled": true,
+      "include": [
+        "contact.html",
+        "faq.html",
+        "kilju-guide.html",
+        "money-guide.html",
+        "msc-vs-mwc.html",
+        "multiplayer.html",
+        "npcs-guide.html",
+        "phone-numbers-guide.html",
+        "save-editor-guide.html",
+        "survival-guide.html",
+        "vehicle-comparison.html",
+        "vehicles-guide.html",
+        "wiring-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "ac1d5f02c418c92174542654c5bf776ece54ded3c7fc6b42b2cb7409fd17cb57"
+        }
+      ]
+    },
+    {
+      "id": "script-9",
+      "enabled": true,
+      "include": [
+        "corris-rivett-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "17a246ca0e96e65976bbeb92ee4172168c99ce30cea24958047ca4cb2f55a0e0"
+        }
+      ]
+    },
+    {
+      "id": "script-10",
+      "enabled": true,
+      "include": [
+        "engine-build-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "b5381d75bab44a0788baf56115d38fb11b48bf23c26d79015c958a6f163dfed2"
+        }
+      ]
+    },
+    {
+      "id": "script-11",
+      "enabled": true,
+      "include": [
+        "fleetari-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "4e9da39449eb9d183375d0c2d8c34f3f4e778541a49dedd372b0ca8163306f41"
+        }
+      ]
+    },
+    {
+      "id": "script-12",
+      "enabled": true,
+      "include": [
+        "guia.html",
+        "index.html",
+        "parts-list.html",
+        "tuning-guide.html",
+        "vin-decoder-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "1c18995049e2eb57b892113dd08219887d3f0fd0380a58606ecd5783170dcf76"
+        }
+      ]
+    },
+    {
+      "id": "script-13",
+      "enabled": true,
+      "include": [
+        "map-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "c04b206c6783ee596c20c04fd468bd91a9d3e30bdc1cee1feee3a15f0ec50355"
+        }
+      ]
+    },
+    {
+      "id": "script-14",
+      "enabled": true,
+      "include": [
+        "map-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "68adbd1896ef7d4b8ec1e9f7971dd63ef73ccc3ef98d2a2b4f57ed3541f5d24b"
+        }
+      ]
+    },
+    {
+      "id": "script-15",
+      "enabled": false,
+      "include": [
+        "mods-guide.html",
+        "vehicle-comparison.html"
+      ],
+      "exclude": [],
+      "authorization": "Production development-server residual: removal authorized by integration protection and user continuation 2026-10-29.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "32be6b212596df994474555898439a62d9f52cfb867e854c579e919070104e1a"
+        }
+      ]
+    },
+    {
+      "id": "script-16",
+      "enabled": true,
+      "include": [
+        "money-guide.html",
+        "survival-guide.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "body",
+          "count": 1,
+          "text_sha256": "99e0e3617e9a44dc031f900ba579d8047522e7bae3d52a0f5eaab4c95a94e1ef"
+        }
+      ]
+    },
+    {
+      "id": "script-17",
+      "enabled": true,
+      "include": [
+        "patch-notes.html"
+      ],
+      "exclude": [],
+      "authorization": "Existing same-site integration preserved under 2026-10-29 user instruction; initial inventory, not new installation.",
+      "checks": [
+        {
+          "tag": "script",
+          "location": "head",
+          "count": 1,
+          "text_sha256": "6540faa1a8926d0690175df2b22bb01e1103a34738687dd9dbefe3e50ca9b03e"
+        }
+      ]
+    }
+  ],
+  "review_notes": "Reviewed against pre-content script inventory; trust-page advertising and Live Server scripts are pre-existing defects, not approved integrations."
+}

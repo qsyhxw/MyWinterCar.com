@@ -1,2 +1,8 @@
 *.csv
 *.xlsx
+
+SITE_PROFILE.md
+ROADMAP.md
+FACT_CHECK.md
+_private/
+__pycache__/
