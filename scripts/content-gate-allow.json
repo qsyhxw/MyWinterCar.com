@@ -1,0 +1,14 @@
+{
+  "/contact": {
+    "max_external": 4,
+    "reason": "Official support channels (v3.20 review 2026-11-12)"
+  },
+  "/mods-guide": {
+    "max_external": 7,
+    "reason": "Mod/tool page: each link is a download or install entry (v3.20 review 2026-11-12)"
+  },
+  "/save-editor-guide": {
+    "max_external": 4,
+    "reason": "Tool download entries (v3.20 review 2026-11-12)"
+  }
+}
